@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Retrieval-Augmented Generation (RAG) aims to address the problem of knowledge-intensive NLP tasks by leveraging external knowledge sources to improve performance. Essentially, it combines the strengths of language models with the ability to access and utilize a vast amount of information – like a knowledge base – to answer questions and generate text more effectively."
+      }
+    }
+  ],
+  "created": 1781907709,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 67,
+    "prompt_tokens": 459,
+    "total_tokens": 526,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-IV7BAnktEL2S6IjCJRQQxNB8FTumYale",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 459,
+    "prompt_ms": 874.827,
+    "prompt_per_token_ms": 1.9059411764705882,
+    "prompt_per_second": 524.6751643467794,
+    "predicted_n": 67,
+    "predicted_ms": 992.481,
+    "predicted_per_token_ms": 14.813149253731343,
+    "predicted_per_second": 67.50758956594635
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 148,
+        "page": 17,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

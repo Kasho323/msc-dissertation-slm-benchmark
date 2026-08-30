@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The role of the retriever in a RAG (Retrieval-Augmented Generator) pipeline is crucial for achieving strong results without expensive, specialized salient span masking pre-training. The retriever is used to retrieve relevant information for the task, which is essential for the generator to produce accurate outputs.\n\nIn a RAG pipeline, the retriever is responsible for identifying the most relevant documents or questions that contain the required information. This process is often referred to as \"retrieval\" or \"information retrieval.\" The retriever is typically trained on a large dataset of questions and documents, and it learns to match the input question with the most relevant documents.\n\nThe retriever is often compared to other retrieval mechanisms, such as BERT-based cross-encoder or extractive reader, but RAG demonstrates that neither is necessary for achieving state-of-the-art performance. The retriever is a key component of the RAG pipeline, and it plays a vital role in retrieving relevant information for the task.\n\nIn the"
+      }
+    }
+  ],
+  "created": 1781906598,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 435,
+    "total_tokens": 635,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-nss2nPJgt6foh4QDcRxtjrhdUO3IAg4l",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 435,
+    "prompt_ms": 517.995,
+    "prompt_per_token_ms": 1.190793103448276,
+    "prompt_per_second": 839.776445718588,
+    "predicted_n": 200,
+    "predicted_ms": 2835.466,
+    "predicted_per_token_ms": 14.17733,
+    "predicted_per_second": 70.53514307701097
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 46,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 21,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

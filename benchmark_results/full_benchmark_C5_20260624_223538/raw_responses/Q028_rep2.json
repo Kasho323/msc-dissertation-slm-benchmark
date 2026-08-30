@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Risk management helps frame deployment practicality by ensuring that AI systems are developed and deployed in a way that minimizes negative impacts while maximizing positive ones. By addressing, documenting, and managing AI risks and potential negative impacts effectively, organizations can create more trustworthy AI systems. This involves assessing the trustworthiness of each AI system, prioritizing resources based on risk level and impact, and allocating resources accordingly. Additionally, it is important to continue applying the MANAGE function to deployed AI systems as methods, contexts, risks, and needs or expectations from relevant AI actors evolve over time."
+      }
+    }
+  ],
+  "created": 1782337516,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 115,
+    "prompt_tokens": 364,
+    "total_tokens": 479,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-e1PHM3jR4Z3Yf0uxUQHHYAvmx62NtfeU",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 364,
+    "prompt_ms": 688.118,
+    "prompt_per_token_ms": 1.8904340659340662,
+    "prompt_per_second": 528.9790413853437,
+    "predicted_n": 115,
+    "predicted_ms": 1951.994,
+    "predicted_per_token_ms": 16.973860869565218,
+    "predicted_per_second": 58.914115514699326
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 248,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 273,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

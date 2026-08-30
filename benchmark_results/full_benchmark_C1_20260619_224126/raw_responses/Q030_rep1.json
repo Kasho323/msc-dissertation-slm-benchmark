@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Data protection principles are relevant to AI systems as they ensure that all functions and individuals responsible for its development, testing, validation, deployment, and monitoring are adequately trained to understand the associated statistical accuracy requirements and measures. This ensures that data is clearly labelled as inferences and predictions, and is not claimed to be factual. Additionally, it is important to manage trade-offs and reasonable expectations, and to adopt a common approach to AI."
+      }
+    }
+  ],
+  "created": 1781905508,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 86,
+    "prompt_tokens": 353,
+    "total_tokens": 439,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-fB8ttrhhuCKmCgozPzNEyTaxZUha2KnJ",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 353,
+    "prompt_ms": 464.662,
+    "prompt_per_token_ms": 1.3163229461756374,
+    "prompt_per_second": 759.6919911677736,
+    "predicted_n": 86,
+    "predicted_ms": 725.451,
+    "predicted_per_token_ms": 8.435476744186047,
+    "predicted_per_second": 118.54694527955714
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 593,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 491,
+        "page": 1,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 600,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

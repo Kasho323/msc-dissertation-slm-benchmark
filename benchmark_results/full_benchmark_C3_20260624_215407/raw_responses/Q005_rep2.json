@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Retrieval supervision is a technique that allows a model to access knowledge beyond its internal parameters. In this approach, the model uses an external source – called a retriever – to find relevant text documents based on a user’s question. This retrieved information is then used as context when generating the model’s response.  Essentially, the retriever acts as a \"memory\" that allows the model to access information that isn’t explicitly stored within its own parameters.  This is particularly useful because it enables the model to focus on information that’s more relevant to a specific question, reducing the likelihood of generating incorrect or nonsensical answers.\n\nHere’s a breakdown of how it works:\n\n*   **RAG Models:** These models use RAG to achieve this. They employ two key components: a retriever (which finds relevant documents) and a generator (which uses the retrieved documents to create an answer).\n*   **Implicit Knowledge:** The retriever doesn’t need to store the entire knowledge base itself. It simply retrieves relevant text passages based on the input question.\n*   **Benefits of Retrieval:** This approach avoids the limitations of models that rely solely on their parameters, which can be limited in scope. It also allows the model to focus on the most pertinent information for a given question.\n\n"
+      }
+    }
+  ],
+  "created": 1782334921,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 263,
+    "prompt_tokens": 430,
+    "total_tokens": 693,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-09Gjci8x2yAm3sxdVHv29fQFuOGWOK5A",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 430,
+    "prompt_ms": 833.051,
+    "prompt_per_token_ms": 1.9373279069767444,
+    "prompt_per_second": 516.1748800493607,
+    "predicted_n": 263,
+    "predicted_ms": 4163.476,
+    "predicted_per_token_ms": 15.8307072243346,
+    "predicted_per_second": 63.168371812399066
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 163,
+        "page": 18,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

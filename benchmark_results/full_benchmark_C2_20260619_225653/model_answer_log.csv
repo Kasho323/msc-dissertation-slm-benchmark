@@ -1,0 +1,1089 @@
+run_id,model_config_id,question_id,repetition,question_text,generated_answer,sources_returned,latency_seconds,time_to_first_token_seconds,tokens_generated,tokens_per_second,peak_memory_mb,error_notes
+FULL_C2_20260619_225653,C2,Q001,1,What problem does retrieval-augmented generation try to address in knowledge-intensive NLP tasks?,"Question: Retrieval-Augmented Generation in knowledge-intensive NLP tasks aims to improve performance by leveraging the stored factual knowledge in pre-trained language models.
+
+Answer: Retrieval-Augmented Generation in knowledge-intensive NLP tasks is an approach that tries to address the challenge of storing and utilizing factual knowledge in pre-trained language models to achieve state-of-the-art results in various NLP tasks.","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 0, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 148, ""page"": 17, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",3.8533,,76,74.15032026108719,1470.0,
+FULL_C2_20260619_225653,C2,Q002,1,How does RAG combine parametric memory and non-parametric memory?,"RAG (Retrieved Attention Guidance) combines parametric and non-parametric memory in a hybrid approach. Here's how it works:
+
+1. **Parametric Memory**: The model uses a retriever function `p(z|x)` that returns (top-K truncated) distributions over text passages given a query `x`. This is a parametric memory component, which is trained to capture specific patterns in the data.
+
+2. **Non-Parametric Memory**: The model also uses a generator function `g(y)` that generates text documents `y` based on the input sequence `x`. This is a non-parametric memory component, which is trained to capture general patterns in the data.
+
+3. **Hybrid Model**: The RAG model combines these two components to leverage the strengths of both parametric and non-parametric memory. The retriever function `p(z|x)` is used to retrieve relevant text passages, and the generator function `g(y)` is used to generate new text documents based","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 12, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 84, ""page"": 9, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.6311,,200,68.48766229007676,1470.07,
+FULL_C2_20260619_225653,C2,Q003,1,Why is provenance important in a question-answering system?,"Here's a rephrased version of the question and answer in my own words, combined with relevant parts from the retrieved context:
+
+**Question:** What is the significance of provenance in a question-answering system?
+
+**Answer:** Provenance refers to the origin, authenticity, and reliability of information. In a question-answering system, provenance is crucial because it ensures that the answers provided are accurate, trustworthy, and reliable. This is particularly important in applications such as fact-checking, where the system needs to verify the credibility of information. By verifying the provenance of the information, the system can provide more reliable and trustworthy answers to users. This is in line with the concept of factuality, which denotes whether a statement can be corroborated by trusted external sources. In this context, provenance is a key aspect of factuality, as it helps to establish the credibility and reliability of the information provided by the system.
+
+This answer combines the concepts of factuality","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 92, ""page"": 10, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 41, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.2953,,200,78.86130583281876,1471.89,
+FULL_C2_20260619_225653,C2,Q004,1,What is the role of the retriever in a RAG pipeline?,"The role of the retriever in a RAG (Retrieval-Augmented Generator) pipeline is crucial for achieving strong results without expensive, specialized salient span masking pre-training. 
+
+In simple terms, the retriever is a component that helps the RAG model find relevant information from a large corpus of documents. It acts as a bridge between the RAG model and the document retrieval process, allowing the model to focus on generating high-quality answers rather than just ranking documents.
+
+The retriever is trained alongside the RAG model using retrieval supervision on Natural Questions and TriviaQA, which enables the model to learn to retrieve relevant information for the task. This is in contrast to other models like BERT-based cross-encoders, which require additional decoding steps to extract relevant information.
+
+The key benefits of using a retriever in a RAG pipeline are:
+
+1. **Improved performance**: RAGs demonstrate that neither a re-ranker nor extractive reader is necessary for state-of-the-art performance,","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 46, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 65, ""page"": 7, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 21, ""page"": 3, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.3482,,200,77.89084066026508,1471.92,
+FULL_C2_20260619_225653,C2,Q005,1,How can retrieval help a model access knowledge that is not stored in its parameters?,"The retrieval mechanism in a model like RAG (Retrieval-Augmented Generative Adversarial Network) can help access knowledge that is not stored in its parameters by leveraging external memory. Here's how:
+
+1. **Retrieval-based memory**: The model uses a retriever component (`p(z|x)`) to retrieve text documents from an external memory, which can be thought of as a knowledge base. This component is trained to return top-K truncated distributions over text passages given a query (`x`).
+
+2. **Knowledge retrieval**: When generating the target sequence (`y`), the model uses the retrieved documents as additional context. This means that the model can access knowledge that is not stored in its own parameters, but rather in the external memory.
+
+3. **Hybrid approach**: The model combines parametric memory (using BERT-base and BART-large) with non-parametric retrieval-based memories. This allows the model to leverage the strengths of both approaches.
+
+4. **Null document","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 5, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 163, ""page"": 18, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.4202,,200,76.32169134973766,1471.94,
+FULL_C2_20260619_225653,C2,Q006,1,What is the difference between generating from model parameters alone and generating with retrieved passages?,"The main difference between generating from model parameters alone and generating with retrieved passages in the context of the Retrieval-Augmented Generation (RAG) model is how the model leverages external information to improve its performance.
+
+**Model Parameters Alone:**
+
+In this scenario, the model is trained solely on the input sequence `x` and generates the target sequence `y` based on the parameters of the model itself. The model's internal workings are not augmented with external information, such as retrieved passages.
+
+**Retrieved Passages:**
+
+In the RAG model, the model is augmented with retrieved passages, which are used as additional context when generating the target sequence `y`. The retrieved passages are treated as a single latent variable that is marginalized to get the sequence probability `p(y|x)` via a top-K approximation. This means that the model now has access to external information, which is used to improve its performance.
+
+The key differences between these two approaches are:
+
+1. **External Information:** The model has","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 10, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 20, ""page"": 3, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.7035,,200,68.60477441206567,1472.01,
+FULL_C2_20260619_225653,C2,Q007,1,According to the paper what kinds of tasks are considered knowledge-intensive?,"According to the paper, knowledge-intensive tasks are those that require humans to not only process and understand the data, but also to extract, manipulate, and apply knowledge to solve problems or answer questions. These tasks typically involve:
+
+1. **Extractive tasks**: These are tasks that involve extracting relevant information from data, such as answering Natural Questions, WebQuestions, and CuratedTrec.
+2. **Knowledge-intensive tasks**: These are tasks that require humans to not only process and understand the data, but also to extract, manipulate, and apply knowledge to solve problems or answer questions.
+
+Examples of knowledge-intensive tasks mentioned in the paper include:
+
+* Answering Natural Questions
+* Answering WebQuestions
+* Answering CuratedTrec
+* Answering TriviaQA (although the paper mentions that these tasks are extractive, it also mentions that unconstrained generation outperforms previous extractive approaches)
+
+The paper does not provide a comprehensive list of knowledge-intensive tasks, but it highlights the importance of these","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf"", ""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 14, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 1, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 387, ""page"": 31, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.2494,,200,77.52163338081533,1471.99,
+FULL_C2_20260619_225653,C2,Q008,1,What limitation of large pre-trained models motivates the use of retrieval?,"The limitation of large pre-trained models that motivates the use of retrieval is that they often store factual knowledge in their parameters, which can lead to overfitting and decreased performance when fine-tuning them on downstream NLP tasks, such as question answering.
+
+In other words, large pre-trained language models have been shown to retain a significant amount of knowledge from their training data, which can be difficult to transfer to new tasks. This can result in poor performance when the model is fine-tuned on a new task, such as question answering, where the model needs to learn new relationships and concepts.
+
+The use of retrieval modules, which are designed to retrieve relevant information from a large pre-trained model, can help to mitigate this limitation. By learning a retrieval module to augment the pre-trained model, researchers can leverage the strengths of both the pre-trained model and the retrieval module, leading to improved performance on downstream tasks.","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 0, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 79, ""page"": 9, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 78, ""page"": 9, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.4956,,183,66.40650798293316,1472.07,
+FULL_C2_20260619_225653,C2,Q009,1,Why is grounding an answer in retrieved evidence useful for reducing unsupported claims?,"Here's a rephrased version of the retrieved context combined with relevant parts:
+
+Grounding an answer in retrieved evidence is useful for reducing unsupported claims because it helps ensure that any decisions made based on potentially incorrect inferences are informed by evidence that may be wrong. This approach is particularly relevant in situations where statistical accuracy may be misconstrued or the AI system used to generate the answer is statistically flawed.
+
+In such cases, retrieving evidence from a reliable source can provide a more accurate understanding of the situation. By grounding an answer in retrieved evidence, individuals can counter unsupported claims and make more informed decisions. This approach can be particularly useful in areas such as medical diagnosis, where high-quality test data may not be available, or in social media analysis, where subjective judgments may be difficult to quantify.
+
+The use of retrieved evidence can also help mitigate the risk of statistical accuracy being misconstrued. By grounding an answer in evidence, individuals can ensure that any decisions made are based on a more accurate understanding of the","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 44, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 584, ""page"": 13, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 570, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.6559,,200,68.61301197743043,1472.1,
+FULL_C2_20260619_225653,C2,Q010,1,What does RAG add to a standard language generation system?,"RAG (Relevance-Aware Generation) is a more diverse and effective generation model compared to RAG-Tokens and BART (Bidirectional Transformers for Attention). 
+
+RAG is particularly effective in tasks that require retrieving relevant information for the task, such as Jeopardy questions. It achieves this by learning to retrieve the most relevant information from a large corpus of documents, which enables it to generate more accurate and factually correct responses.
+
+In contrast, RAG-Tokens and BART are more diverse than RAG because they do not require the same level of retrieval mechanism. RAG-Tokens are a type of language model that can generate text based on a given input, but they do not require the same level of retrieval as RAG. BART, on the other hand, is a state-of-the-art generation model that can generate text based on a given input, but it also requires some form of retrieval mechanism.
+
+The key feature of RAG is its ability to learn to retrieve relevant","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 65, ""page"": 7, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 53, ""page"": 6, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 59, ""page"": 7, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.5078,,200,72.2939297678931,1472.16,
+FULL_C2_20260619_225653,C2,Q011,1,What is the main purpose of llama.cpp?,The main purpose of llama.cpp is to enable Large Language Models (LLMs) inference with minimal setup and state-of-the-art performance on a wide range of tools.,"{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 171, ""page"": 1, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 196, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",3.1474,,34,84.87396216618322,1472.18,
+FULL_C2_20260619_225653,C2,Q012,1,Why is llama.cpp relevant for local or on-device language model deployment?,"Llama.cpp is relevant for local or on-device language model deployment because it provides a lightweight and efficient way to enable large language models (LLMs) for inference on various devices, including:
+
+1. **Mobile devices**: Llama.cpp can be used to deploy LLMs on mobile devices, enabling users to access and interact with AI-powered services on-the-go.
+2. **Edge devices**: The tool can also be used to deploy LLMs on edge devices, such as smart speakers, smart home devices, and other IoT devices, where processing power and memory are limited.
+3. **Serverless environments**: Llama.cpp can be used to deploy LLMs in serverless environments, such as AWS Lambda or Google Cloud Functions, where resources are limited and need to be optimized for performance.
+
+By enabling local or on-device deployment, Llama.cpp can help reduce the need for cloud-based services, improve device performance, and increase accessibility to AI-powered services.
+
+Additionally, the tool's ability to","{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 171, ""page"": 1, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 196, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",5.6652,,200,69.4004185539243,1472.21,
+FULL_C2_20260619_225653,C2,Q013,1,What does GGUF enable in local model serving?,GGUF enables a local model serving endpoint for the `draft.gguf` model.,"{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 202, ""page"": 11, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 193, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",3.0034,,18,86.51308991113183,1472.31,
+FULL_C2_20260619_225653,C2,Q014,1,How does quantisation support faster inference or lower memory use?,"The quantization support in the llama.cpp project enables faster inference and lower memory use by:
+
+1. **Reducing the size of models**: By using smaller integer sizes (1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit), the models can be more compact and require less memory, making inference faster and more efficient.
+
+2. **Minimizing memory usage**: The use of quantization reduces the memory footprint of the models, allowing them to run on devices with limited or no access to external memory.
+
+3. **Optimizing for ARM NEON, Metal, and AVX/AVX2/AVX512/AMX**: The quantization support is optimized for the ARM NEON, Metal, and AVX/AVX2/AVX512/AMX frameworks, which are commonly used on Apple Silicon and other ARM-based devices. This allows for efficient execution on these platforms.
+
+4","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 176, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 175, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 5, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.6938,,200,69.78744488972713,1472.36,
+FULL_C2_20260619_225653,C2,Q015,1,What is the purpose of running llama-server rather than only a command-line model?,"The purpose of running `llama-server` rather than only a command-line model is to enable a lightweight, OpenAI API compatible HTTP server for serving LLMs (Large Language Models). This server is designed to serve multiple users simultaneously, allowing for parallel decoding and enabling the model to be used in real-time applications such as chatbots, virtual assistants, and more.
+
+By running `llama-server`, you can access the model's basic web UI, which includes endpoints for chat completion, and also support multiple users and parallel decoding. This setup enables developers to integrate the model into their applications without having to manually manage the model's state and setup.
+
+In contrast, running a command-line model would require users to manually download, install, and configure the model, which can be more complex and time-consuming. The `llama-server` approach simplifies the process, allowing users to focus on developing their applications without worrying about the underlying model setup.","{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 201, ""page"": 11, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 194, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",5.3454,,190,75.53503652914121,1472.38,
+FULL_C2_20260619_225653,C2,Q016,1,Why is an OpenAI-compatible endpoint useful for this project?,"The question is: Why is an OpenAI-compatible endpoint useful for this project?
+
+An OpenAI-compatible endpoint is useful for this project because it allows the AI system to be hosted and scaled on an existing infrastructure, such as Google Cloud Infrastructure (GCF) or AWS, without requiring the development of all software components from scratch. This is particularly useful for several reasons:
+
+1. **Reduced Development Time and Resources**: By using an existing infrastructure, the development team can focus on fine-tuning and training the AI model, rather than investing time and resources in building the entire system from scratch.
+2. **Access to Rich Ecosystem**: OpenAI-compatible endpoints provide access to a rich ecosystem of services, including Paddler, GPUStack, and Llama, which can help to accelerate the development and deployment of the AI model.
+3. **Improved Scalability**: The use of an existing infrastructure can help to improve the scalability of the AI system, allowing it to handle large amounts of data and traffic","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 618, ""page"": 16, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 189, ""page"": 8, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 619, ""page"": 16, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.5398,,200,70.09759337437548,1472.43,
+FULL_C2_20260619_225653,C2,Q017,1,What hardware or backend options are described as relevant to llama.cpp deployment?,"Based on the context, the following hardware or backend options are described as relevant to llama.cpp deployment:
+
+1. **GPU**: The Vulkan API is mentioned as a relevant backend for deploying llama.cpp.
+2. **CANN**: CANN (Compute Accelerated Network) is also mentioned as a relevant backend.
+3. **OpenCL**: OpenCL is another relevant backend mentioned.
+4. **Adreno GPU**: The Adreno GPU is mentioned as a relevant GPU option.
+5. **IBM zDNN**: IBM zDNN (Deep Neural Network) is mentioned as a relevant backend.
+6. **IBM Z & LinuxONE**: IBM Z and LinuxONE are also mentioned as relevant hardware or backend options.
+7. **WebGPU**: WebGPU is mentioned as a relevant backend option.
+8. **Snapdragon**: Snapdragon is mentioned as a relevant hardware or backend option.
+9. **VirtGPU**: VirtGPU is mentioned as a relevant backend option.
+10. **All**: The text mentions","{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 192, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 173, ""page"": 1, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",5.8635,,200,65.03705486200762,1472.45,
+FULL_C2_20260619_225653,C2,Q018,1,What does local inference change about where model computation happens?,"Local inference changes where the machine learning (ML) model is computed. 
+
+In the context of the retrieved information, local inference refers to the process of making predictions or inferences about an individual's personal data (e.g., faceprints) without relying on a cloud server. This means that the ML model is not hosted on a cloud server, but rather is computed locally on the device from which the query is generated, which already collects and stores the individual's personal data.
+
+Local inference is different from remote inference, where the model is computed on a cloud server. Remote inference is often used for data collection and storage, but local inference is used for prediction and inference, which is a different scenario.
+
+In this scenario, local inference minimizes the personal data involved in prediction by computing the model on the device from which the query is generated, which already collects and stores the individual's personal data. This approach is often referred to as ""inference on-device"" or ""inference on-device with local","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 707, ""page"": 25, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 706, ""page"": 25, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 637, ""page"": 18, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.6314,,200,67.99906297291223,1472.47,
+FULL_C2_20260619_225653,C2,Q019,1,Why might a lightweight runtime matter for a laptop-based dissertation benchmark?,"The question seems to be asking about the importance of a lightweight runtime for a laptop-based dissertation benchmark. Based on the context, it appears that a lightweight runtime can be beneficial for several reasons:
+
+1. **Performance**: A lightweight runtime can help improve the performance of the benchmark, especially when running on a laptop with limited resources. This is because a lightweight runtime can be more efficient in terms of memory usage and computational overhead.
+
+2. **Runtime**: The mention of ""at test time"" suggests that the runtime is being used to run the benchmark. A lightweight runtime can help reduce the runtime required to complete the benchmark, which can be beneficial for laptops with limited processing power.
+
+3. **Index**: The mention of the 2018 index and 2016 leaders suggests that the benchmark is using a specific index or dataset. A lightweight runtime can help improve the performance of the benchmark by reducing the computational overhead associated with loading and processing large datasets.
+
+4. **Latent documents**: The mention of retrieving ","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 205, ""page"": 13, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 73, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 72, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",6.0094,,200,65.35601709974831,1480.19,
+FULL_C2_20260619_225653,C2,Q020,1,What deployment limitation might still remain even if the runtime supports local inference?,"Based on the retrieved context, the deployment limitation that might still remain even if the runtime supports local inference is:
+
+**Data Protection Law Compliance**
+
+Even if the runtime supports local inference, the organization that creates and distributes the model may still be a controller in the sense that they determine the means and purposes of processing. This means that the organization may not be fully compliant with data protection laws, such as GDPR or CCPA, even if the personal data involved in training is being processed on the user's device.
+
+This is because the organization may still be responsible for ensuring that the model is being used in accordance with data protection laws, and may still be able to access and process the user's data, even if it is being processed locally on the device.","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 175, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 709, ""page"": 25, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 690, ""page"": 23, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.0487,,151,65.2637693587035,1480.25,
+FULL_C2_20260619_225653,C2,Q021,1,What is the purpose of the NIST AI Risk Management Framework?,"The NIST AI Risk Management Framework (RMF) is designed to help organizations minimize potential negative impacts of AI systems by addressing, documenting, and managing AI risks and potential negative impacts effectively. The framework aims to provide a structured approach to evaluating the effectiveness of AI Risk Management Frameworks and to promote more trustworthy AI systems.
+
+In simpler terms, the NIST AI Risk Management Framework is a set of guidelines and best practices for organizations to manage AI risks and ensure that AI systems are developed, deployed, and used in a responsible and safe manner. The framework provides a framework for organizations to:
+
+1. Understand and address risks, impacts, and harms associated with AI systems.
+2. Develop and implement effective risk management strategies.
+3. Monitor and measure the effectiveness of AI Risk Management Frameworks.
+
+The framework is designed to be adaptable and flexible, allowing organizations to tailor it to their specific needs and circumstances. By following the framework, organizations can demonstrate their commitment to AI risk management and contribute to the development of more","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 248, ""page"": 9, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 344, ""page"": 24, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 243, ""page"": 8, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.5022,,200,72.37489908225008,1480.28,
+FULL_C2_20260619_225653,C2,Q022,1,Why does AI risk management matter when deploying AI systems?,"AI risk management is crucial when deploying AI systems for several reasons:
+
+1. **Transparency and Trust**: AI systems, like any other technology, can be opaque about their inner workings. By managing risks, developers can ensure that customers and stakeholders have a clear understanding of the system's capabilities and limitations, fostering trust and confidence.
+
+2. **Data Governance**: AI systems often rely on third-party data or integrate with external systems. Without proper governance and safeguards, this data can be compromised, leading to unforeseen risks. Effective risk management helps mitigate these risks and ensures the integrity of the data.
+
+3. **Regulatory Compliance**: AI systems may be subject to various regulations, such as GDPR or HIPAA, which require organizations to manage and mitigate risks associated with data protection and user privacy. Compliance with these regulations is essential to avoid fines and reputational damage.
+
+4. **Security and Integrity**: AI systems can be vulnerable to cyber threats and data breaches. By prioritizing risk management, developers can implement robust","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 416, ""page"": 36, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 258, ""page"": 10, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 275, ""page"": 13, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.4336,,200,71.90949183719404,1480.3,
+FULL_C2_20260619_225653,C2,Q023,1,What does it mean to consider trustworthiness in AI design and evaluation?,"To consider trustworthiness in AI design and evaluation, it means taking into account the various characteristics that make an AI system trustworthy. These characteristics are not just technical or functional, but also social and organizational, and are often intertwined with human judgment and oversight.
+
+Trustworthiness in AI design and evaluation involves:
+
+1. **Inextricable ties**: Trustworthiness characteristics are deeply connected to social and organizational behavior, AI system selection, AI model and algorithm development, and human-AI interactions.
+2. **Human judgment**: Decisions about AI trustworthiness characteristics and threshold values should be based on human judgment, as AI systems can't always accurately assess their own trustworthiness.
+3. **Contextual evaluations**: Evaluating AI trustworthiness requires considering the context in which the AI system will operate, including social and organizational factors.
+4. **Informed decision-making**: Understanding and treating trustworthiness characteristics depends on the AI actor's role within the AI lifecycle, and requires informed decision-making.
+","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 298, ""page"": 17, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 304, ""page"": 18, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 299, ""page"": 17, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.6381,,200,69.13351167474895,1480.32,
+FULL_C2_20260619_225653,C2,Q024,1,How can an AI risk framework support evaluation beyond accuracy alone?,"Based on the retrieved context, an AI risk framework should support evaluation beyond accuracy alone by incorporating the following aspects:
+
+1. **Effectiveness**: Assessing the impact of AI systems on various stakeholders, including users, organizations, and the environment.
+2. **Efficiency**: Evaluating the resource utilization and cost-effectiveness of AI systems.
+3. **Security**: Assessing the potential security risks and vulnerabilities associated with AI systems.
+4. **Sustainability**: Evaluating the long-term sustainability of AI systems and their potential impact on the environment.
+5. **Resilience**: Assessing the ability of AI systems to withstand disruptions, failures, or unexpected events.
+
+To achieve these evaluations, the AI risk framework can consider the following:
+
+1. **Outcome-based evaluation**: Focus on the desired outcomes and expected benefits of AI systems, rather than just measuring accuracy.
+2. **Risk-benefit analysis**: Evaluate the potential risks and benefits of AI systems, considering both positive and negative outcomes.
+3. **Value","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 482, ""page"": 47, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 415, ""page"": 36, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 410, ""page"": 35, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.2874,,200,76.19006984343703,1480.32,
+FULL_C2_20260619_225653,C2,Q025,1,Why should risks to individuals organisations and society be considered separately?,"Risks to individuals, organizations, and society should be considered separately for several reasons:
+
+1. **Contextual differences**: Each entity has unique needs, priorities, and circumstances that influence their risk tolerance. For instance, an individual's risk tolerance may differ significantly from that of an organization or society.
+
+2. **Risk management approaches**: Risk management strategies and policies are tailored to specific contexts. What works for one organization may not be effective for another, and what is acceptable in one context may not be in another.
+
+3. **Emerging knowledge and AI risks**: The rapid advancement of artificial intelligence (AI) and its potential negative impacts require a tailored approach to mitigate risks. Different organizations may need to adapt their risk management strategies to address emerging AI risks.
+
+4. **Regulatory and legal requirements**: Different sectors, industries, and organizations have varying regulatory and legal requirements that must be considered when assessing and managing risks. For example, some organizations may be subject to specific regulations or guidelines that differ from others.
+
+","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 250, ""page"": 9, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 268, ""page"": 12, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 270, ""page"": 12, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.5334,,200,70.31251098632984,1480.32,
+FULL_C2_20260619_225653,C2,Q026,1,How could the AI RMF support the privacy discussion in this dissertation?,"The AI RMF (Risk Management Framework) could support the privacy discussion in the following ways:
+
+1. **Definition of AI-related risks**: The AI RMF could provide a clear definition of AI-related risks, including data breaches, unauthorized access, and misuse of personal data. This would help identify and prioritize privacy risks within the framework.
+
+2. **Risk taxonomy and categorization**: The AI RMF could include a taxonomy and categorization of AI-related risks, such as:
+   - Data protection risks
+   - Surveillance risks
+   - Bias and fairness risks
+   - Transparency and accountability risks
+   - Security risks related to AI systems
+
+3. **Metrics and characterizations for AI risk**: The AI RMF could include metrics and characterizations for AI-related risks, such as:
+   - Data breach frequency and severity
+   - Data misuse rates
+   - Bias and fairness metrics (e.g., accuracy, precision, recall)
+   - Transparency and accountability metrics (e.g., data subject","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 462, ""page"": 44, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 240, ""page"": 7, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 481, ""page"": 47, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.4818,,200,71.10044288465873,1480.32,
+FULL_C2_20260619_225653,C2,Q027,1,Why should an AI system be evaluated for limitations as well as capabilities?,"An AI system should be evaluated for both its limitations and capabilities to ensure that it is used effectively and responsibly. Here's why:
+
+**Limitations:**
+
+1. **Performance constraints**: AI systems may have limitations in terms of processing power, memory, or data storage, which can affect their ability to perform certain tasks or handle specific types of data.
+2. **Data quality issues**: AI systems may struggle with noisy, incomplete, or biased data, which can lead to inaccurate or biased outcomes.
+3. **Safety and security concerns**: AI systems may not be able to ensure the safety and security of humans or other systems, particularly in situations where AI is interacting with humans or other systems.
+4. **Ethical considerations**: AI systems may not be able to fully understand or respect human values, norms, and ethics, which can lead to unintended consequences.
+
+**Capabilities:**
+
+1. **Innovation and creativity**: AI systems can be used to generate new ideas, products, or services that may not","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 380, ""page"": 30, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 254, ""page"": 9, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 375, ""page"": 29, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.3798,,200,72.2318932701545,1480.32,
+FULL_C2_20260619_225653,C2,Q028,1,How does risk management help frame deployment practicality?,"Risk management plays a crucial role in framing the practicality of AI deployment. By identifying and prioritizing risks, organizations can:
+
+1. **Determine the feasibility of deployment**: Risk management helps assess the potential impact of an AI system, allowing organizations to determine whether the risks associated with deployment are manageable.
+2. **Prioritize deployment**: Based on the assessed risk level, organizations can prioritize the deployment of AI systems, focusing on those with lower risk levels.
+3. **Develop mitigation strategies**: Risk management provides actionable risk management efforts, which can be used to develop mitigation strategies to minimize risks associated with deployment.
+4. **Ensure responsible AI deployment**: By prioritizing risks and developing mitigation strategies, organizations can ensure that AI systems are deployed responsibly, minimizing potential risks and negative consequences.
+
+In essence, risk management helps organizations frame the practicality of AI deployment by:
+
+* Identifying potential risks
+* Assessing their impact
+* Prioritizing risks based on their level
+* Developing mitigation strategies
+* Ens","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 273, ""page"": 12, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 259, ""page"": 10, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 264, ""page"": 11, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.1938,,200,77.91702849386773,1480.32,
+FULL_C2_20260619_225653,C2,Q029,1,Why is it useful to separate technical performance from broader trust and governance concerns?,"Separating technical performance from broader trust and governance concerns is useful because it allows organizations to focus on:
+
+1. **Technical aspects**: Understanding AI systems, their limitations, and how they work. This helps organizations to identify potential risks and improve their capacity to manage AI risks.
+2. **Trust and governance**: Ensuring that AI systems are developed and used in a trustworthy manner, aligning with organizational values, culture, and risk tolerance. This involves governance, policies, and organizational practices.
+3. **Risk management**: Identifying and mitigating risks associated with AI systems, such as negative consequences, data breaches, or unintended consequences.
+
+By separating these concerns, organizations can:
+
+- Focus on technical performance to improve AI systems and mitigate risks
+- Ensure that AI systems are developed and used in a trustworthy manner
+- Align technical performance with broader organizational values and risk tolerance
+
+This separation enables organizations to prioritize and address technical performance while maintaining a strong focus on trust, governance, and risk management.","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 226, ""page"": 5, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 379, ""page"": 30, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 359, ""page"": 27, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.6497,,198,66.89620850534612,1480.36,
+FULL_C2_20260619_225653,C2,Q030,1,What data protection principles are relevant to AI systems?,"To assess security and data minimisation in AI systems, it's essential to consider the following data protection principles:
+
+1. **Data minimisation principle**: This principle requires that only the minimum amount of personal data is collected, stored, and processed to achieve the desired purpose. This principle helps ensure that AI systems do not collect more data than necessary.
+
+2. **Right to erasure**: This principle allows individuals to request that their personal data be deleted or removed from AI systems.
+
+3. **Right to access**: This principle enables individuals to request access to their personal data held by AI systems.
+
+4. **Right to correction**: This principle allows individuals to request that their personal data be corrected or updated in AI systems.
+
+5. **Right to portability**: This principle enables individuals to request that their personal data be transferred from one AI system to another.
+
+6. **Data protection by design and default**: This principle requires that AI systems be designed and implemented in a way that minimizes the collection, storage","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 593, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 491, ""page"": 1, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 600, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.3349,,200,74.03162927329072,1480.36,
+FULL_C2_20260619_225653,C2,Q031,1,Why are transparency and explainability important for AI systems that process personal data?,"Here's a rephrased version of the retrieved context combined with the necessary information:
+
+**Why Transparency and Explainability are Crucial for AI Systems Processing Personal Data**
+
+Transparency and explainability are essential components of AI systems that process personal data, as they play a vital role in building trust and confidence in the technology. Here's why:
+
+1. **Purposeful Data Collection**: When collecting personal data, AI systems must consider their purposes and retention periods. This ensures that the data is collected and used in a way that aligns with the individual's rights and interests.
+
+2. **Sharing and Disclosure**: AI systems must disclose who they will share personal data with, as well as the purpose of sharing it. This transparency helps individuals understand how their data is being used and protects them from potential misuse.
+
+3. **Data Protection**: Transparency and explainability are critical in ensuring that personal data is protected from unauthorized access, misuse, or disclosure. By providing clear information about how data is being used,","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 504, ""page"": 3, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 505, ""page"": 3, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 323, ""page"": 20, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.2871,,200,76.25112851670205,1480.36,
+FULL_C2_20260619_225653,C2,Q032,1,What does lawfulness mean in the context of AI and data protection?,"In the context of Artificial Intelligence (AI) and Data Protection, lawfulness refers to the adherence to the principles of data protection law, specifically the accuracy principle and the statistical accuracy of an AI system. Lawfulness ensures that AI systems are used in a way that respects individuals' rights and freedoms, particularly with regards to their personal data.
+
+To ensure lawfulness in AI, organizations should consider the following:
+
+1. **Accuracy**: The AI system should provide accurate information and data, and not make assumptions or infer personal characteristics from behavior or other data.
+2. **Statistical accuracy**: The AI system should be statistically accurate in its processing of data, meaning that it should not make errors or biases that could compromise the accuracy of the data.
+3. **Fairness**: Organizations should ensure that their AI systems are fair and transparent, and that they do not discriminate against individuals based on personal characteristics.
+4. **Legal obligation**: Organizations should consider whether the use of an AI system to process personal data is a","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 508, ""page"": 4, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 566, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 534, ""page"": 7, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.4916,,200,71.95582775645686,1480.36,
+FULL_C2_20260619_225653,C2,Q033,1,Why are accuracy and statistical accuracy relevant to AI outputs?,"Accurate AI outputs are crucial to ensure that personal data is handled fairly and lawfully. Here's why accuracy and statistical accuracy are particularly relevant:
+
+**Accuracy:**
+
+Accuracy refers to how close an AI system's output is to the actual truth. While 100% accuracy might be ideal, it's not always necessary for compliance with the fairness principle. In many cases, AI systems are designed to provide probabilistic or uncertain answers, rather than exact truths. This is because the purpose of AI systems is to provide informed guesses or predictions, rather than making definitive statements.
+
+**Statistical Accuracy:**
+
+Statistical accuracy is a more nuanced concept that involves ensuring that AI systems provide outputs that are representative of the underlying data. This can include measures such as:
+
+* Confidence intervals: providing a range of possible values for a given outcome
+* Probabilities: assigning a likelihood of an outcome occurring
+* Variance: indicating the spread of possible outcomes
+
+These measures help to ensure that AI systems are not misinterpre","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 567, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 568, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 574, ""page"": 12, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.535,,200,71.82930197361782,1480.36,
+FULL_C2_20260619_225653,C2,Q034,1,How do security and data minimisation relate to AI deployment?,"Assessing security and data minimisation in AI is crucial to ensure that AI systems are developed and deployed in a way that protects user data and maintains confidentiality. Here's a rephrased version of the information:
+
+**How AI systems can exacerbate known security risks:**
+
+1. **Data breaches**: AI models can be vulnerable to data breaches, where sensitive information is stolen or compromised.
+2. **Unintended consequences**: AI systems can have unintended consequences, such as creating new security risks or exacerbating existing ones.
+3. **Lack of transparency**: AI models can be opaque, making it difficult to understand how they work and identify potential security risks.
+4. **Dependence on external data**: AI models often rely on external data, which can be incomplete, inaccurate, or biased, leading to security risks.
+
+**Privacy attacks on AI models:**
+
+1. **Predictive modeling**: AI models can be used to predict user behavior, which can be used to target individuals with","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 600, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 602, ""page"": 15, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 599, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.5956,,200,69.364867526976,1480.48,
+FULL_C2_20260619_225653,C2,Q035,1,What kinds of local risks remain even if a model does not send data to a cloud API?,"Even if a model is not sent to a cloud API, there are still several types of local risks that can occur:
+
+1. **Data Exposure**: If a client deploys a model locally, they may still be able to access and use the model's output, potentially exposing personal data or sensitive information.
+
+2. **Model Malfunction**: A local deployment can make it more difficult to monitor and debug the model, increasing the risk of a malfunction or bug that could lead to privacy attacks.
+
+3. **Client-Side Data Storage**: If a client stores the model locally, they may be able to access and use the model's output without needing to send it to a cloud API, potentially exposing personal data.
+
+4. **Local Network Security Risks**: A local deployment can make it more vulnerable to local network security risks, such as unauthorized access or data breaches.
+
+5. **Client-Side Data Processing**: If a client processes the model's output locally, they may be able to access and use","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 653, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 651, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 654, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.4629,,200,72.55535610894331,1480.57,
+FULL_C2_20260619_225653,C2,Q036,1,How can local deployment reduce some privacy risks while leaving other data protection responsibilities in place?,"To reduce privacy risks associated with local deployment of a machine learning (ML) model, consider the following strategies:
+
+1. **Use privacy-preserving query approaches**: Implement techniques that allow one party to retrieve a prediction or classification without revealing all the data used to train the model. This can be done by using secure multi-party computation, homomorphic encryption, or differential privacy.
+
+2. **Separate the ML development environment from the rest of the IT infrastructure**: Use virtual machines or containers to isolate the ML development environment from the rest of the IT system. This will help to further mitigate security risks associated with third-party code.
+
+3. **Pre-configured virtual machines or containers**: Use pre-configured virtual machines or containers specifically for ML tasks. This will ensure that the ML development environment is isolated from the rest of the IT system.
+
+4. **Use secure data pipelines**: Implement secure data pipelines that separate the ML development environment from the rest of the IT infrastructure. This will help to reduce the risk of","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 654, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 711, ""page"": 26, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 625, ""page"": 17, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.577,,200,69.69000492011435,1480.57,
+FULL_C2_20260619_225653,C2,Q037,1,Why does keeping processing local not remove all data protection responsibilities?,"Keeping data processing local may not entirely remove all data protection responsibilities, even if it reduces the scope of the processing. Here's why:
+
+1. **Data Protection Law still applies**: Data protection law, regardless of where the processing takes place, still requires consideration of legitimate interests, impact on individuals, necessity and proportionality, and protection of rights and freedoms.
+
+2. **Local processing may not be sufficient**: Even if data is processed locally, it may still involve processing personal data, which is a sensitive and protected area. Local processing may not be sufficient to ensure that the processing is compliant with data protection laws.
+
+3. **Global processing may still require international cooperation**: Data protection laws are often global, and international cooperation may be required to ensure that data protection principles are applied consistently across borders.
+
+4. **Data protection law applies to all processing, not just local processing**: Data protection law applies to all processing, regardless of where it takes place. This means that even if data is processed locally, the","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 543, ""page"": 8, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 541, ""page"": 8, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 555, ""page"": 10, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.6863,,200,67.14622500565707,1480.57,
+FULL_C2_20260619_225653,C2,Q038,1,How do RAG and local deployment address different parts of the question-answering problem?,"Here's a rephrased version of the text in my own words, combining relevant parts, and addressing any missing information:
+
+RAG (Read-Answer-Generate) is a novel approach that combines the strengths of extractive question answering (QA) and abstractive question answering (QA). In this context, RAG is particularly effective when the correct answer is not present in any retrieved document, achieving an impressive 11.8% accuracy in such cases. This is remarkable, given that traditional QA models often struggle to achieve this level of accuracy.
+
+RAG achieves this success through its ability to generate correct answers even when the correct answer is not available in any retrieved document. This is made possible by its ability to extract relevant information from the retrieved documents and use it to inform its answer generation process.
+
+In terms of experimental details, RAG is trained on a variety of datasets, including Open MS-MARCO NLG, which is a real-world application of knowledge-intensive tasks. To achieve","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 50, ""page"": 6, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 33, ""page"": 4, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 35, ""page"": 4, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.4734,,200,74.99743133797668,1480.57,
+FULL_C2_20260619_225653,C2,Q039,1,How do technical deployment choices connect to privacy and data protection concerns?,"Technical deployment choices in AI systems can significantly impact privacy and data protection concerns. Here's how:
+
+1. **Data Collection and Storage**: The type of data collected, stored, and processed can affect privacy. For instance, collecting sensitive information like biometric data, financial information, or personal identifiable information (PII) may raise concerns about data protection and privacy.
+2. **Model Training and Deployment**: The way AI models are trained and deployed can impact privacy. For example, using data that is not anonymized or aggregated can lead to the exposure of personal data.
+3. **Model Serving and Deployment**: The location and infrastructure where AI models are deployed can also impact privacy. For instance, deploying models on cloud services or edge devices may raise concerns about data protection and privacy.
+4. **User Interface and Experience**: The design of user interfaces and experiences can also impact privacy. For example, using user data to personalize ads or recommending products based on user behavior can raise concerns about data protection and privacy.
+","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 335, ""page"": 22, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 334, ""page"": 22, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 654, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.184,,200,78.67832994229731,1480.57,
+FULL_C2_20260619_225653,C2,Q040,1,Based on the source documents why should the dissertation conclusion be a conditional recommendation rather than a single universal winner?,"Based on the retrieved context, the dissertation conclusion should be a conditional recommendation rather than a single universal winner because the dissertation is focused on factuality and specificity, which implies that the conclusion should be based on the input and output of the input (i.e., the source documents). This is because the context suggests that the input documents are diverse and may not provide a clear answer, and the conclusion should be able to reason about the uncertainty and ambiguity in the input.
+
+In other words, the conclusion should be able to reason about the factuality and specificity of the input documents, and provide a conditional recommendation that takes into account the uncertainty and ambiguity in the input. This is in line with the factuality and specificity definitions mentioned in the context.
+
+Therefore, the correct answer is: the dissertation conclusion should be a conditional recommendation rather than a single universal winner.","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 41, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 160, ""page"": 18, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.1587,,170,72.87829838604578,1480.57,
+FULL_C2_20260619_225653,C2,Q001,2,What problem does retrieval-augmented generation try to address in knowledge-intensive NLP tasks?,"Question: Retrieval-augmented generation in knowledge-intensive NLP tasks aims to improve the performance of large pre-trained language models by leveraging the stored factual knowledge in their parameters.
+
+Answer: Retrieval-augmented generation in knowledge-intensive NLP tasks is an attempt to address the challenge of improving the performance of large pre-trained language models by utilizing the stored factual knowledge in their parameters.","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 0, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 148, ""page"": 17, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",3.9142,,77,68.0505978289208,1480.57,
+FULL_C2_20260619_225653,C2,Q002,2,How does RAG combine parametric memory and non-parametric memory?,"RAG (Retrieval-Augmented Generative Adversarial Network) combines parametric memory and non-parametric memory in the following way:
+
+1. **Parametric Memory**: The model uses a retriever function `p(z|x)` that returns (top-K truncated) distributions over text passages given a query `x`. This is a parametric memory component, which learns to represent the query and passage relationships.
+
+2. **Non-Parametric Memory**: The model also uses a generator function `g(y)` that generates text documents `y` based on the retrieved text passages. This is a non-parametric memory component, which learns to represent the text documents and their relationships.
+
+3. **Hybrid Model**: The RAG model uses both the retriever and generator components to jointly learn the query, passage, and document relationships. This allows the model to leverage the strengths of both parametric and non-parametric memory.
+
+In summary, RAG combines parametric memory (retriever function","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 12, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 84, ""page"": 9, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.5596,,200,71.59077567173625,1480.57,
+FULL_C2_20260619_225653,C2,Q003,2,Why is provenance important in a question-answering system?,"Here's a rephrased version of the context combined with the relevant parts:
+
+**Retrieved Context:**
+
+* A study on question-answering systems, specifically the Yodaqa system, was presented at the International Conference of the Cross-Language Evaluation Forum for European Languages (2015).
+* The study focused on modeling the question-answering task in the Yodaqa system.
+* A paper titled ""Semantic Parsing on Freebase from Question-Answer Pairs"" was published by Jonathan Berant, Andrew Chou, Roy Frostig, and Percy Liang in the Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing.
+
+**Question:** Why is provenance important in a question-answering system?
+
+**Answer:** Provenance refers to the origin, history, or authenticity of information. In the context of question-answering systems, provenance is crucial because it ensures the accuracy and reliability of the information provided. By verifying the proven","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 92, ""page"": 10, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 41, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.5993,,200,72.10642331229509,1480.57,
+FULL_C2_20260619_225653,C2,Q004,2,What is the role of the retriever in a RAG pipeline?,"The role of the retriever in a RAG (Retrieval-Augmented Generator) pipeline is crucial for achieving strong results without expensive, specialized salient span masking pre-training. The retriever is used to retrieve relevant information for the task, which is essential for the generator to produce accurate outputs.
+
+In a RAG pipeline, the retriever is responsible for identifying the most relevant documents or questions that contain the required information. This process is often referred to as ""retrieval"" or ""information retrieval."" The retriever is typically trained on a large dataset of questions and documents, and it learns to match the input question with the most relevant documents.
+
+The retriever is often compared to other retrieval mechanisms, such as BERT-based cross-encoder or extractive reader, but RAG demonstrates that neither is necessary for achieving state-of-the-art performance. The retriever is a key component of the RAG pipeline, and it plays a vital role in retrieving relevant information for the task.
+
+In the","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 46, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 65, ""page"": 7, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 21, ""page"": 3, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.5449,,200,70.53514307701097,1480.57,
+FULL_C2_20260619_225653,C2,Q005,2,How can retrieval help a model access knowledge that is not stored in its parameters?,"The retrieval-based memory in a model like RAG can help access knowledge that is not stored in its parameters by leveraging external knowledge sources. Here's a rephrased version of the context combined with relevant parts:
+
+Retrieval-based memory in models like RAG can be utilized to access knowledge that is not stored in their parameters by leveraging external knowledge sources. This is achieved through the use of a retriever component that can retrieve text documents from a database or other external source. This allows the model to access knowledge that is not encoded in its own parameters, enabling it to make more accurate predictions and improve overall performance.
+
+In essence, the retrieval-based memory in RAG models can be seen as a way to ""update the models knowledge as the world changes"" by incorporating external knowledge sources into the model's decision-making process. This approach can help address some of the limitations of traditional parametric memory models, such as the inability to easily expand or revise their knowledge base, and the potential for producing halluc","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 5, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 163, ""page"": 18, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.5191,,200,72.01526435543279,1480.57,
+FULL_C2_20260619_225653,C2,Q006,2,What is the difference between generating from model parameters alone and generating with retrieved passages?,"The main difference between generating from model parameters alone and generating with retrieved passages in the context of Retrieval-Augmented Generation (RAG) models lies in the way the model's knowledge is updated as the world changes.
+
+**Model Parameters Alone:**
+
+When generating from model parameters alone, the model's knowledge is updated based on the current training data. The model's parameters are updated through backpropagation and optimization, which means that the model's knowledge is updated based on the data it has seen so far.
+
+**Retrieved Passages:**
+
+In contrast, when generating with retrieved passages, the model's knowledge is updated by leveraging the retrieved passages. The model uses the retrieved passages as additional context to generate the output sequence. The retrieved passages are treated as a single latent variable that is marginalized to get the sequence probability.
+
+**Key Differences:**
+
+The key differences between these two approaches are:
+
+1. **Data-Driven vs. Model-Driven**: Model parameters alone are driven by the data, while retrieved","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 10, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 20, ""page"": 3, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.931,,200,63.34151177819576,1480.54,
+FULL_C2_20260619_225653,C2,Q007,2,According to the paper what kinds of tasks are considered knowledge-intensive?,"According to the paper, knowledge-intensive tasks are those that require access to an external knowledge source, and involve tasks such as:
+
+- Open Natural Questions
+- WebQuestions
+- CuratedTrec
+- TriviaQA
+
+These tasks are considered knowledge-intensive because they require the AI system to extract information from external sources, and then use that information to make decisions or take actions.","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf"", ""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 14, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 1, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 387, ""page"": 31, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",3.6743,,77,77.36104399231213,1480.54,
+FULL_C2_20260619_225653,C2,Q008,2,What limitation of large pre-trained models motivates the use of retrieval?,"The limitation of large pre-trained models that motivates the use of retrieval modules is that they often store factual knowledge in their parameters, which can make them less effective when fine-tuned on downstream NLP tasks, such as question answering. This is because the pre-trained models have already learned to recognize patterns in the data, rather than being trained to answer specific questions.
+
+In other words, large pre-trained models have been shown to be effective at retrieving relevant information from large datasets, but when fine-tuned on a specific task like question answering, they may not be able to adapt to the new task and may not provide accurate results.
+
+Retrieval modules, on the other hand, can be used to augment pre-trained models and improve their performance on downstream tasks. By learning a retrieval module, researchers can create a single, unified architecture that can be fine-tuned on a specific task, such as question answering, and achieve stronger performance across both discriminative and generative tasks.","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 0, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 79, ""page"": 9, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 78, ""page"": 9, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.5674,,196,70.1620995077556,1480.54,
+FULL_C2_20260619_225653,C2,Q009,2,Why is grounding an answer in retrieved evidence useful for reducing unsupported claims?,"The use of retrieved evidence in grounding an answer is useful for reducing unsupported claims in several ways:
+
+1. **Provides a basis for confidence**: Grounding an answer in retrieved evidence helps to establish a foundation for the claim, making it more convincing and reducing the likelihood of unsupported claims.
+
+2. **Reduces uncertainty**: By grounding an answer in evidence, the uncertainty associated with the claim is reduced, making it more reliable and trustworthy.
+
+3. **Enhances transparency**: Grounding an answer in evidence promotes transparency by providing a clear and verifiable basis for the claim, which can help to build trust with the audience.
+
+4. **Prevents misinterpretation**: Grounding an answer in evidence helps to prevent misinterpretation by providing a clear and objective basis for the claim, reducing the risk of misinterpretation or miscommunication.
+
+5. **Supports accountability**: Grounding an answer in evidence supports accountability by ensuring that decisions are based on verifiable evidence, rather than relying on statistical accuracy or other","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 44, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 584, ""page"": 13, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 570, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.5977,,200,68.94659259044758,1480.54,
+FULL_C2_20260619_225653,C2,Q010,2,What does RAG add to a standard language generation system?,"RAG (Relevance-Aware Generation) is a more diverse and effective generation model compared to RAG-Tokens (a token-level model) and BART (a transformer-based model) in generating text. 
+
+RAG adds a retrieval mechanism that enables it to retrieve relevant information for the task, which improves its performance in various tasks. 
+
+RAG models are more factually accurate than RAG-Tokens and BART, with RAG being factual in 42.7% of cases and RAG-Tokens being factual in 7.1% of cases. 
+
+RAG's ability to generate more specific and factually accurate responses is due to its retrieval mechanism, which allows it to retrieve relevant information for the task.
+
+RAG's retrieval mechanism is particularly effective in tasks that require retrieving specific information, such as Jeopardy questions, which often contain two separate pieces of information. 
+
+In summary, RAG is a more effective and diverse generation model that adds a retrieval mechanism to improve","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 65, ""page"": 7, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 53, ""page"": 6, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 59, ""page"": 7, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.5873,,200,70.1955120499371,1480.54,
+FULL_C2_20260619_225653,C2,Q011,2,What is the main purpose of llama.cpp?,The main purpose of llama.cpp is to enable Large Language Models (LLMs) for inference with minimal setup and state-of-the-art performance on a wide range of tools.,"{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 171, ""page"": 1, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 196, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",3.1088,,35,85.25190720695265,1480.54,
+FULL_C2_20260619_225653,C2,Q012,2,Why is llama.cpp relevant for local or on-device language model deployment?,"Llama.cpp is a powerful tool for language model inference, but its relevance for local or on-device deployment is primarily due to its ability to enable minimal setup and high-performance inference on a wide range of devices.
+
+Here's a rephrased and combined version of the context:
+
+Llama.cpp is a cutting-edge tool for language model inference that offers several advantages for local or on-device deployment. Its primary benefits include:
+
+1. **Minimal setup**: Llama.cpp allows users to deploy their models on a wide range of devices without requiring extensive setup or configuration.
+2. **High-performance inference**: The tool enables fast and efficient inference on a variety of devices, making it suitable for real-time applications and edge cases.
+3. **Wide range of devices**: Llama.cpp supports deployment on a broad spectrum of devices, including smartphones, tablets, and laptops, making it an attractive option for on-device deployment.
+
+However, it's worth noting that the question specifically asks about local or on-device deployment, and","{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 171, ""page"": 1, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 196, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",5.6095,,200,69.82915946989893,1480.54,
+FULL_C2_20260619_225653,C2,Q013,2,What does GGUF enable in local model serving?,GGUF enables the use of a local model for inference in llama.cpp.,"{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 202, ""page"": 11, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 193, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",2.9574,,16,87.01468916721504,1480.54,
+FULL_C2_20260619_225653,C2,Q014,2,How does quantisation support faster inference or lower memory use?,"Quantization in the context of LLM inference and memory usage can be achieved through several methods, which can be broadly categorized into two types: integer quantization and parameterized implicit knowledge base.
+
+**Integer Quantization:**
+
+Integer quantization involves reducing the precision of the model's weights and activations to a lower number of bits (e.g., 1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit). This process reduces the memory usage and computational requirements of the model, making it faster to train and deploy.
+
+By reducing the precision of the model's weights and activations, the model's parameters are more compact, which can lead to significant reductions in memory usage. Additionally, integer quantization can help to reduce the number of computations required during inference, as the model can operate on a lower-resolution representation of the data.
+
+**Parameterized Implicit Knowledge Base:**
+
+A parameterized implicit knowledge base is a technique that allows","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 176, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 175, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 5, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.5572,,200,72.54414492579096,1480.54,
+FULL_C2_20260619_225653,C2,Q015,2,What is the purpose of running llama-server rather than only a command-line model?,"The purpose of running `llama-server` rather than only a command-line model is to provide a lightweight, OpenAI API compatible HTTP server for serving Large Language Models (LLMs). This server allows users to access and interact with the model using a web interface, enabling features such as:
+
+1. **Basic web UI**: The server provides a basic web interface for users to access the model, including endpoints for chat completion and other operations.
+2. **Chat completion endpoint**: Users can send input to the model, and the server will respond with the output.
+3. **Multiple-users support**: The server can handle multiple users simultaneously, allowing for concurrent requests and parallel decoding.
+4. **Speculative decoding**: The server can enable speculative decoding, which allows the model to generate responses before the user has sent input.
+
+By running `llama-server`, users can access and interact with their LLM model using a web interface, making it easier to use and deploy the model in various applications.
+
+In contrast","{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 201, ""page"": 11, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 194, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",5.836,,200,67.21832748029748,1480.54,
+FULL_C2_20260619_225653,C2,Q016,2,Why is an OpenAI-compatible endpoint useful for this project?,"The question is: Why is an OpenAI-compatible endpoint useful for this project?
+
+An OpenAI-compatible endpoint is useful for this project because it allows you to leverage the power of OpenAI's AI models, such as those used in the example provided, without having to develop the models from scratch. This is particularly beneficial for several reasons:
+
+1. **Reduced Development Time**: By using an OpenAI-compatible endpoint, you can focus on developing your AI system's logic and features, rather than spending time and resources on model development and training.
+
+2. **Access to Pre-trained Models**: OpenAI-compatible endpoints often provide pre-trained models that can be fine-tuned and used in your project. This can save time and effort in model development and training.
+
+3. **Improved Ecosystem Integration**: OpenAI-compatible endpoints often integrate well with other OpenAI services and tools, such as Paddler, which can simplify the development process and reduce the risk of integration issues.
+
+4. **Security and Reliability","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 618, ""page"": 16, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 189, ""page"": 8, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 619, ""page"": 16, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.5379,,200,70.47328093644896,1480.54,
+FULL_C2_20260619_225653,C2,Q017,2,What hardware or backend options are described as relevant to llama.cpp deployment?,"Based on the context, the following hardware or backend options are mentioned as relevant to llama.cpp deployment:
+
+1. **GPU**: Vulkan, GPU, and OpenCL are mentioned as relevant to GPU deployment.
+2. **CANN**: CANN (Compute Accelerated Network) is mentioned as relevant to GPU deployment.
+3. **IBM zDNN**: IBM zDNN (Deep Neural Network) is mentioned as relevant to GPU deployment.
+4. **WebGPU**: WebGPU is mentioned as relevant to GPU deployment.
+5. **All**: The text mentions that all relevant options are described, implying that the following hardware or backend options are also relevant to llama.cpp deployment:
+   - **VirtGPU**: VirtGPU is mentioned as relevant to GPU deployment.
+   - **Adreno GPU**: Adreno GPU is mentioned as relevant to GPU deployment.
+   - **IBM zDNN**: IBM zDNN is mentioned as relevant to GPU deployment.
+   - **All**: The text mentions that all relevant","{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 192, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 173, ""page"": 1, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",5.5551,,200,72.80937522639167,1480.54,
+FULL_C2_20260619_225653,C2,Q018,2,What does local inference change about where model computation happens?,"Local inference changes where model computation happens. When a model is run locally on a device, such as a smartphone, the computation happens on that device, rather than being hosted on a cloud server. This means that the model is not stored on the device and is not accessible from other devices, reducing the amount of personal data that is collected and stored.","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 707, ""page"": 25, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 706, ""page"": 25, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 637, ""page"": 18, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",3.6773,,71,73.70114703897856,1480.54,
+FULL_C2_20260619_225653,C2,Q019,2,Why might a lightweight runtime matter for a laptop-based dissertation benchmark?,"The question seems to be asking about the importance of a lightweight runtime in a laptop-based dissertation benchmark. Based on the context, it appears that a lightweight runtime can impact performance and runtime, particularly in a laptop-based environment.
+
+The text mentions that the benchmark is run on a laptop, which suggests that the runtime is a critical factor in determining the overall performance of the system. A lightweight runtime can help to reduce the system's power consumption and heat generation, which can be beneficial in a laptop-based environment where power efficiency is crucial.
+
+Additionally, the text mentions that the benchmark's performance peaks for a specific number of retrieved documents (10), which suggests that the runtime is closely tied to the number of documents being retrieved. This could imply that a lightweight runtime is necessary to maintain performance and avoid significant drops in speed.
+
+Overall, the importance of a lightweight runtime in a laptop-based dissertation benchmark seems to be related to power efficiency, performance, and heat generation.","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 205, ""page"": 13, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 73, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 72, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.5866,,190,72.53569519737344,1480.54,
+FULL_C2_20260619_225653,C2,Q020,2,What deployment limitation might still remain even if the runtime supports local inference?,"Based on the retrieved context, the deployment limitation that might still remain even if the runtime supports local inference is:
+
+**Data protection law compliance**
+
+Even if the runtime supports local inference, the organization that creates and distributes the model may still be a controller in terms of data protection law, as they determine the means and purposes of processing. This means that the organization may still be responsible for ensuring that personal data involved in training is protected, and that data protection laws are followed.
+
+This is because local processing of personal data may still be subject to certain regulations, such as GDPR, CCPA, or HIPAA, which require organizations to protect personal data and ensure that it is not shared or processed without consent. Even if the model is trained on the user's device, the organization that created and distributed the model may still be responsible for ensuring that the model is used in compliance with data protection laws.","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 175, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 709, ""page"": 25, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 690, ""page"": 23, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",4.9899,,179,76.721629070211,1480.54,
+FULL_C2_20260619_225653,C2,Q021,2,What is the purpose of the NIST AI Risk Management Framework?,"The NIST AI Risk Management Framework (RMF) is designed to help organizations minimize potential negative impacts of AI systems by addressing, documenting, and managing AI risks and potential negative impacts effectively. The framework aims to provide a structured approach to evaluating and mitigating AI risks, ultimately leading to more trustworthy AI systems.
+
+To achieve this purpose, the NIST AI RMF 1.0 Part 1: Foundational Information focuses on:
+
+1. **Understanding and Addressing Risks, Impacts, and Harms**: The framework emphasizes the importance of identifying, assessing, and mitigating AI risks, including their policies, processes, practices, implementation plans, indicators, measurements, and expected outcomes.
+
+2. **Enhanced Processes for Governing, Mapping, Measuring, and Managing AI Risk**: The framework provides guidelines for organizations to develop and implement effective processes for governing, mapping, measuring, and managing AI risk, including clearly documenting outcomes.
+
+3. **Improved Frameworks for Evaluating AI RMFs","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 248, ""page"": 9, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 344, ""page"": 24, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 243, ""page"": 8, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.2256,,200,80.66526255332982,1480.54,
+FULL_C2_20260619_225653,C2,Q022,2,Why does AI risk management matter when deploying AI systems?,"AI risk management is crucial when deploying AI systems for several reasons:
+
+1. **Transparency and Trust**: AI systems, by their nature, lack transparency about their risk metrics and methodologies. This lack of transparency can erode trust between AI actors, customers, and stakeholders. By managing risks, AI developers can build trust and demonstrate their commitment to responsible AI development.
+
+2. **Third-Party Data Integration**: AI systems often rely on third-party data or systems to function. However, integrating these systems without sufficient internal governance structures and technical safeguards can lead to unforeseen risks. AI risk management helps mitigate these risks by ensuring that AI systems are designed and integrated in a way that minimizes potential harm.
+
+3. **Emergent Risks**: AI systems can introduce new risks that may not have been anticipated. By tracking emergent risks, organizations can proactively address potential issues before they become critical. This proactive approach helps prevent AI-related risks from causing harm.
+
+4. **Risk Prioritization**: AI systems","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 416, ""page"": 36, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 258, ""page"": 10, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 275, ""page"": 13, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.1539,,200,81.74506086124144,1480.54,
+FULL_C2_20260619_225653,C2,Q023,2,What does it mean to consider trustworthiness in AI design and evaluation?,"To consider trustworthiness in AI design and evaluation, it means taking into account the various characteristics that make an AI system trustworthy, such as:
+
+- Inextricably tied to social and organizational behavior
+- Relating to the datasets used by AI systems
+- Involving the selection of AI models and algorithms
+- Involving the interactions with humans who provide oversight and insight
+
+When designing and evaluating AI systems, it's essential to consider these trustworthiness characteristics to ensure that the system is:
+
+- Contextually sensitive
+- Able to identify benefits and positive impacts
+- Able to manage risks in social contexts
+
+Ultimately, understanding and treating trustworthiness characteristics is crucial for building AI systems that are trustworthy, reliable, and beneficial to society.","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 298, ""page"": 17, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 304, ""page"": 18, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 299, ""page"": 17, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",4.5694,,152,81.63471365818579,1480.55,
+FULL_C2_20260619_225653,C2,Q024,2,How can an AI risk framework support evaluation beyond accuracy alone?,"The AI Risk Framework should not only focus on accuracy but also consider other aspects to provide a comprehensive evaluation of AI risks. Here are some ways it can support evaluation beyond accuracy alone:
+
+1. **Assessment of Uncertainty**: The framework should consider the uncertainty associated with AI risks, including the likelihood and potential impact of different scenarios. This can be achieved through probabilistic modeling and scenario analysis.
+
+2. **Risk Sensitivity**: The framework should account for the sensitivity of AI systems to different inputs, parameters, and environmental factors. This can be done by incorporating sensitivity analysis and scenario testing.
+
+3. **Value Alignment**: The framework should evaluate how AI systems align with human values, ethics, and societal norms. This can be achieved through the use of value-based metrics and assessments.
+
+4. **Adaptability and Flexibility**: The framework should consider the ability of AI systems to adapt and evolve in response to changing circumstances. This can be done by incorporating flexibility and scalability into the framework.
+
+5. **","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 482, ""page"": 47, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 415, ""page"": 36, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 410, ""page"": 35, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.3442,,200,77.40198683159998,1480.55,
+FULL_C2_20260619_225653,C2,Q025,2,Why should risks to individuals organisations and society be considered separately?,"Risks to individuals, organizations, and society should be considered separately for several reasons:
+
+1. **Contextual differences**: Each entity has unique needs, priorities, and circumstances that influence their risk tolerances. For instance, an organization may have a different risk tolerance than an individual or society due to their organizational structure, resources, and goals.
+
+2. **Risk management approaches**: Risk management strategies and approaches may vary between individuals, organizations, and society. For example, an organization may have a more formalized risk management process, while an individual may rely on personal experience and intuition.
+
+3. **Emerging knowledge and mitigation**: The development of AI systems and the associated risks is a rapidly evolving field. As new knowledge and technologies emerge, risk tolerances may change, and existing risk management approaches may need to be updated or adapted.
+
+4. **Regulatory and legal requirements**: Different sectors, industries, and organizations may have distinct regulatory and legal requirements that need to be considered when assessing risks. For instance","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 250, ""page"": 9, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 268, ""page"": 12, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 270, ""page"": 12, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.1954,,200,80.88792290733844,1480.55,
+FULL_C2_20260619_225653,C2,Q026,2,How could the AI RMF support the privacy discussion in this dissertation?,"The AI RMF (Risk Management Framework) could support the privacy discussion in the following ways:
+
+1. **Definition of AI-related risks**: The AI RMF could provide a clear definition of AI-related risks, including data breaches, unauthorized access, and misuse of personal data. This would help identify potential privacy risks associated with AI systems.
+
+2. **Risk assessment and prioritization**: The framework could help organizations assess and prioritize AI-related risks, taking into account factors such as the potential impact on individuals, the likelihood of occurrence, and the severity of the consequences.
+
+3. **Privacy metrics and characterizations**: The AI RMF could include metrics and characterizations for AI-related risks, such as the likelihood of data breaches, the potential impact on individuals, and the effectiveness of data protection measures. This would provide a standardized way to measure and compare the risks associated with AI systems.
+
+4. **Taxonomy and terminology**: The framework could include a taxonomy and terminology for AI-related risks, making it easier for","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 462, ""page"": 44, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 240, ""page"": 7, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 481, ""page"": 47, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.2347,,200,80.68381143870532,1480.55,
+FULL_C2_20260619_225653,C2,Q027,2,Why should an AI system be evaluated for limitations as well as capabilities?,"An AI system should be evaluated for both its limitations and capabilities to ensure that it is used effectively and safely. Here's why:
+
+**Limitations:**
+
+1. **Performance**: AI systems may not be able to perform tasks as well as humans, especially in complex or dynamic situations.
+2. **Bias**: AI systems can perpetuate existing biases and prejudices, leading to unfair outcomes.
+3. **Lack of transparency**: AI systems may not be able to explain their decision-making processes, making it difficult to understand and trust them.
+4. **Security**: AI systems can be vulnerable to cyber attacks and data breaches, compromising sensitive information.
+
+**Capabilities:**
+
+1. **Accuracy**: AI systems can provide accurate results, especially in areas like image recognition and natural language processing.
+2. **Scalability**: AI systems can process large amounts of data, making them suitable for big data analytics and machine learning.
+3. **Flexibility**: AI systems can adapt to changing conditions and learn from experience.
+","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 380, ""page"": 30, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 254, ""page"": 9, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 375, ""page"": 29, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.2509,,200,77.10795808102966,1480.55,
+FULL_C2_20260619_225653,C2,Q028,2,How does risk management help frame deployment practicality?,"Risk management plays a crucial role in framing the practicality of AI deployment. By identifying and assessing the risks associated with AI systems, organizations can:
+
+1. **Prioritize deployment**: Based on the assessed risk level and potential impact, organizations can prioritize the deployment of AI systems, focusing on the most critical and high-risk systems.
+2. **Optimize deployment strategy**: Risk management helps identify the most suitable deployment model (e.g., standalone, integrated, or as a component) for each AI system, ensuring that the system is deployed in a way that minimizes risks.
+3. **Mitigate risks**: By allocating resources and prioritizing risk management efforts, organizations can mitigate risks associated with AI deployment, such as data breaches, security vulnerabilities, or unintended consequences.
+4. **Ensure accountability**: Risk management helps ensure that all stakeholders involved in AI deployment, including developers, deployers, and users, share responsibilities for designing, developing, and deploying a trustworthy AI system.
+
+By effectively managing risks, organizations can","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 273, ""page"": 12, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 259, ""page"": 10, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 264, ""page"": 11, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.113,,200,82.23346079519757,1480.55,
+FULL_C2_20260619_225653,C2,Q029,2,Why is it useful to separate technical performance from broader trust and governance concerns?,"Separating technical performance from broader trust and governance concerns is useful because it allows organizations to focus on the essential aspects of AI risk management, such as understanding contexts, identifying risks, and aligning technical practices with organizational policies and culture.
+
+By separating these concerns, organizations can:
+
+1. **Improve understanding of contexts**: Technical performance helps identify technical risks, while broader trust and governance concerns inform the overall risk management strategy.
+2. **Prevent negative risks**: By focusing on technical performance, organizations can proactively identify and mitigate risks, whereas broader trust and governance concerns can help prevent negative risks.
+3. **Develop trustworthy AI systems**: By aligning technical practices with organizational policies and culture, organizations can develop AI systems that are more trustworthy and reliable.
+4. **Enhance organizational risk culture**: Strong governance and broader trust and governance concerns can drive organizational risk culture, which is essential for effective AI risk management.
+5. **Facilitate organizational practices**: Separating technical performance from broader trust and governance","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 226, ""page"": 5, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 379, ""page"": 30, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 359, ""page"": 27, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.1966,,200,81.2838293137125,1480.57,
+FULL_C2_20260619_225653,C2,Q030,2,What data protection principles are relevant to AI systems?,"To assess security and data minimisation in AI systems, it's essential to consider the following data protection principles:
+
+1. **Data minimisation principle**: This principle requires that only the minimum amount of personal data is collected and processed. It ensures that the data is not excessive or unnecessary, reducing the risk of data breaches and unauthorized access.
+
+2. **Right to erasure**: This principle allows individuals to request the deletion of their personal data, ensuring that it is not retained for an extended period.
+
+3. **Right to access**: This principle enables individuals to request access to their personal data, allowing them to verify its accuracy and correct any inaccuracies.
+
+4. **Right to correction**: This principle allows individuals to request corrections to their personal data, ensuring that it is accurate and up-to-date.
+
+5. **Right to portability**: This principle enables individuals to request the transfer of their personal data from one organization to another, allowing them to maintain control over their data.
+
+6. **Right to object","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 593, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 491, ""page"": 1, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 600, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.2385,,200,79.70613940524075,1480.57,
+FULL_C2_20260619_225653,C2,Q031,2,Why are transparency and explainability important for AI systems that process personal data?,"Our transparency obligations towards individuals are crucial for several reasons:
+
+1. **Building Trust**: By being transparent about how we process their personal data, we can build trust with individuals who may be concerned about the potential misuse or exploitation of their information.
+
+2. **Compliance with Regulations**: Many countries have regulations that require organizations to be transparent about their data processing practices. By being transparent, we can ensure compliance with these regulations.
+
+3. **Protecting Individuals' Rights**: Transparency helps individuals understand their rights and how they can protect themselves from potential misuse or exploitation of their personal data.
+
+4. **Promoting Accountability**: By being transparent, we can demonstrate accountability for our actions and decisions, which can help to build confidence in the AI system.
+
+5. **Improving User Experience**: Transparency can also improve the user experience by providing individuals with clear information about how their data is being used and by whom.
+
+6. **Enhancing User Confidence**: Transparency can enhance user confidence in the AI system, which is essential","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 504, ""page"": 3, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 505, ""page"": 3, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 323, ""page"": 20, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.3449,,200,75.58613266575661,1480.61,
+FULL_C2_20260619_225653,C2,Q032,2,What does lawfulness mean in the context of AI and data protection?,"In the context of Artificial Intelligence (AI) and data protection, lawfulness refers to the adherence to relevant laws and regulations that govern the processing of personal data. To ensure lawfulness in AI, organizations must consider the following key aspects:
+
+1. **Accuracy Principle**: The accuracy principle of data protection law ensures that AI systems process personal data correctly and without errors. This principle is crucial to prevent the misuse of personal data.
+
+2. **Statistical Accuracy**: The accuracy of an AI system itself is also essential. This means that the AI system should be able to provide accurate results and not introduce errors that could compromise personal data.
+
+3. **Fairness**: Fairness in data protection means that organizations should handle personal data in a way that is reasonable and not discriminatory. This principle is vital to prevent the misuse of personal data for unfair purposes.
+
+4. **Legal Obligation**: In some cases, the use of an AI system to process personal data may be a legal obligation. This means that organizations must","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 508, ""page"": 4, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 566, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 534, ""page"": 7, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.2677,,200,80.70933823185212,1480.65,
+FULL_C2_20260619_225653,C2,Q033,2,Why are accuracy and statistical accuracy relevant to AI outputs?,"Accurate AI outputs are crucial to ensure compliance with the fairness principle and data protection accuracy principle. Here's why accuracy and statistical accuracy are relevant:
+
+**Accuracy:**
+
+Accuracy is essential to ensure that AI systems process personal data in a way that people would reasonably expect. If an AI system is not accurate, it may misinterpret or misrepresent personal data, leading to unjustified adverse effects on individuals. For example, if an AI system is not accurate in predicting an individual's health, it may lead to unnecessary medical interventions or misdiagnosis.
+
+**Statistical accuracy:**
+
+Statistical accuracy is also crucial, as it ensures that AI systems provide statistically informed guesses about individuals. This is particularly important when AI systems are used to make decisions that affect individuals, such as credit scoring, insurance assessments, or employment decisions. If an AI system is not statistically accurate, it may lead to unfair outcomes, such as discriminatory practices or incorrect predictions.
+
+**Why accuracy and statistical accuracy are not enough:**
+
+While accuracy","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 567, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 568, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 574, ""page"": 12, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.1986,,200,81.56683362038062,1480.65,
+FULL_C2_20260619_225653,C2,Q034,2,How do security and data minimisation relate to AI deployment?,"Assessing security and data minimisation in AI is crucial to ensure that AI systems are developed and deployed in a way that protects sensitive information and minimises the risk of data breaches.
+
+**How AI systems can exacerbate known security risks:**
+
+1.  **Increased attack surface**: AI systems can introduce new attack vectors, such as machine learning-based attacks, which can compromise the security of the system.
+2.  **Data exposure**: AI models can collect and process large amounts of personal data, which can be exposed in the event of a data breach or cyber attack.
+3.  **Lack of transparency**: AI systems can be complex and difficult to understand, making it challenging to identify potential security risks and vulnerabilities.
+4.  **Dependence on third-party services**: AI systems often rely on third-party services, such as data storage and processing, which can introduce new security risks if not properly secured.
+
+**Challenges for compliance with the data minimisation principle:**
+
+1. ","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 600, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 602, ""page"": 15, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 599, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.3291,,200,79.27931927605296,1480.65,
+FULL_C2_20260619_225653,C2,Q035,2,What kinds of local risks remain even if a model does not send data to a cloud API?,"Even if a model is not sent to a cloud API, there are still some local risks that may remain:
+
+1. **Data Storage and Retrieval**: If the model is stored on a local device or server, it may still be vulnerable to data breaches or unauthorized access if the device or server is compromised.
+
+2. **Client-Side Malware**: If the model is deployed on a client-side device, such as a mobile app or desktop application, it may be vulnerable to malware attacks that could compromise the model or the device itself.
+
+3. **Local Data Exfiltration**: If the model is deployed on a local device, it may be vulnerable to data exfiltration if the device is connected to a network or the internet without proper security measures.
+
+4. **Insecure Data Storage**: If the model is stored on a local device without proper encryption or secure storage mechanisms, it may be vulnerable to unauthorized access or data breaches.
+
+5. **Lack of Monitoring and Auditing**: If","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 653, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 651, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 654, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.2341,,200,80.41390645932745,1480.65,
+FULL_C2_20260619_225653,C2,Q036,2,How can local deployment reduce some privacy risks while leaving other data protection responsibilities in place?,"To address privacy risks associated with local deployment of machine learning (ML) models, consider the following strategies:
+
+1. **Data anonymization**: Use techniques like data masking, encryption, or hashing to protect sensitive data before it's used to train the model. This way, even if the model is deployed locally, the data used to train it remains anonymous.
+
+2. **Model-specific data protection**: Implement data protection measures that are specific to each model, such as data aggregation, anonymization, or encryption. This ensures that the data used to train the model is protected, even if it's deployed locally.
+
+3. **Secure data sharing**: Establish secure data sharing protocols to ensure that sensitive data is not exposed during the deployment process. This can be achieved through secure communication protocols, encryption, or secure data storage.
+
+4. **Model-specific deployment**: Consider deploying models in a way that minimizes data exposure. For example, you can deploy models in a cloud-based environment, where data is stored securely and","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 654, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 711, ""page"": 26, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 625, ""page"": 17, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.5188,,200,71.60325780502362,1480.65,
+FULL_C2_20260619_225653,C2,Q037,2,Why does keeping processing local not remove all data protection responsibilities?,"Keeping processing data local does not entirely remove all data protection responsibilities. Here's why:
+
+1. **Data Protection Law Applies Regardless of Location**: Data protection law is not limited to processing data within your own organization's borders. It applies to any processing of personal data, regardless of where it is stored or processed.
+
+2. **Data Protection Principles Remain**: Even if you process personal data locally, you must still adhere to the fundamental principles of data protection, such as:
+   - **Informed Consent**: Ensure individuals are aware of how their data is being used and have given their consent.
+   - **Right to Access and Rectification**: Provide individuals with access to their personal data and the ability to correct or delete it.
+   - **Right to Erasure**: Allow individuals to request the deletion of their personal data.
+   - **Right to Data Portability**: Allow individuals to transfer their personal data to another organization.
+   - **Right to Restriction of Processing**: Allow individuals to restrict or oppose the","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 543, ""page"": 8, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 541, ""page"": 8, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 555, ""page"": 10, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.4721,,200,73.11224191378605,1480.63,
+FULL_C2_20260619_225653,C2,Q038,2,How do RAG and local deployment address different parts of the question-answering problem?,"Here's a rephrased and combined version of the retrieved context:
+
+RAG (Read-Answer-Generate) is a novel approach to question answering that combines the strengths of extractive and abstractive models. By leveraging the accuracy of RAG even when the correct answer is not present in retrieved documents, it achieves an impressive 11.8% accuracy in such cases. This is particularly notable given that the models used for training and testing, such as BART, have a 0% accuracy rate.
+
+RAG outperforms BART on Open MS-MARCO NLG by a significant margin, with a 2.6-point improvement in Bleu and 2.6-point improvement in Rouge-L scores. This demonstrates the effectiveness of RAG in generating high-quality answers, even when the correct information is not readily available.
+
+In the context of question answering, RAG is particularly useful for tasks that require not only extracting relevant information from text but also generating answers in a free","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 50, ""page"": 6, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 33, ""page"": 4, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 35, ""page"": 4, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.3223,,200,81.063685252408,1480.63,
+FULL_C2_20260619_225653,C2,Q039,2,How do technical deployment choices connect to privacy and data protection concerns?,"Technical deployment choices in AI systems can significantly impact privacy and data protection concerns. Here's how:
+
+1. **Data Collection and Storage**: The type of data collected, stored, and processed can raise privacy concerns. For instance, collecting and storing sensitive information about individuals, such as biometric data, personal identifiable information (PII), or financial data, can be a significant risk.
+
+2. **Model Training and Deployment**: The way AI models are trained and deployed can also impact privacy. For example, using sensitive data for model training without proper anonymization or de-identification can compromise individual privacy.
+
+3. **Model Deployment Location**: The location where AI models are deployed can also raise privacy concerns. For instance, deploying models in countries with strict data protection laws or regulations can be a concern.
+
+4. **Model Size and Complexity**: The size and complexity of AI models can also impact privacy concerns. For example, larger models can be more difficult to analyze and interpret, making it harder to detect and mitigate","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 335, ""page"": 22, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 334, ""page"": 22, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 654, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.3426,,200,75.64365183345083,1480.63,
+FULL_C2_20260619_225653,C2,Q040,2,Based on the source documents why should the dissertation conclusion be a conditional recommendation rather than a single universal winner?,"Based on the retrieved context, the answer to the question is:
+
+The dissertation conclusion should be a conditional recommendation rather than a single universal winner because the factuality of the dissertation conclusion is uncertain, and the evaluation of the conclusion is based on pairwise comparative evaluation of the answers from BART and RAG. This means that the evaluation is not based on a single, definitive answer, but rather on the comparison of multiple answers to determine the most accurate conclusion.
+
+In other words, the conclusion is not a single, absolute truth, but rather a conditional recommendation based on the evaluation of the answers from BART and RAG. This approach acknowledges that the evaluation is not a single, definitive answer, but rather a comparison of multiple answers to determine the most accurate conclusion.
+
+This approach is in line with the factuality concept, which emphasizes the importance of corroborating external sources to verify the accuracy of a statement. In this case, the evaluation of the dissertation conclusion is based on the comparison of multiple answers, which provides","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 41, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 160, ""page"": 18, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.3404,,200,79.66610342731543,1480.63,
+FULL_C2_20260619_225653,C2,Q001,3,What problem does retrieval-augmented generation try to address in knowledge-intensive NLP tasks?,"The problem that retrieval-augmented generation tries to address in knowledge-intensive NLP tasks is to improve the performance of large pre-trained language models by utilizing the stored factual knowledge they have acquired from a large dataset.
+
+This approach involves training a model on a large pre-existing dataset, which enables it to learn from existing knowledge and improve its performance on downstream NLP tasks. The retrieved context suggests that retrieval-augmented generation can be used to enhance the capabilities of large pre-trained language models in various knowledge-intensive NLP tasks.","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 0, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 148, ""page"": 17, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",4.0953,,105,82.03535176758838,1480.63,
+FULL_C2_20260619_225653,C2,Q002,3,How does RAG combine parametric memory and non-parametric memory?,"RAG (Retrieval-Augmented Generative Adversarial Networks) combines parametric memory and non-parametric memory in the following way:
+
+RAG models use a retriever component that retrieves text documents (parametric memory) and uses them as additional context when generating the target sequence (non-parametric memory). This means that the model first retrieves relevant information from text documents, and then uses this information as additional context to generate the target sequence.
+
+In other words, RAG models leverage both parametric (text-based) and non-parametric (contextual) memory to improve their performance on sequence-to-sequence tasks, such as question answering (QA).","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 12, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 84, ""page"": 9, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",4.4215,,133,81.10750159013392,1480.63,
+FULL_C2_20260619_225653,C2,Q003,3,Why is provenance important in a question-answering system?,"Here's a rephrased version of the text in my own words, combining relevant parts, and addressing any gaps in the context:
+
+**The Importance of Factuality in Question-Answering Systems**
+
+In the context of question-answering systems, factuality plays a crucial role in ensuring the accuracy and reliability of the output. Factuality refers to the ability of a statement to be corroborated by trusted external sources, which is essential for maintaining the trustworthiness of the system.
+
+**The Role of Specicity in Question-Answering Systems**
+
+Specicity, on the other hand, refers to the high mutual dependence between the input and output of a question-answering system. This means that the system should be able to understand the context and nuances of the input, and respond accordingly.
+
+**The BART and RAG Comparison**
+
+Our work compares two state-of-the-art models, BART (Bidirectional Transformers for Reasoning) and RAG (Recurrent Attention Graph-based","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 92, ""page"": 10, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 41, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.3212,,200,80.87850229189456,1480.63,
+FULL_C2_20260619_225653,C2,Q004,3,What is the role of the retriever in a RAG pipeline?,"The role of the retriever in a RAG (Retrieval-Augmented Generator) pipeline is crucial for achieving strong results without expensive, specialized salient span masking pre-training. Here's a rephrased and combined version of the retrieved context:
+
+In a RAG pipeline, the retriever plays a vital role in retrieving relevant information for the task. This is achieved by learning to retrieve the most relevant documents or tokens for a given input, which is then used as a latent document for the generator to choose from. The retriever is typically trained alongside the generator using a combination of retrieval supervision and natural questions or trivia questions.
+
+The retriever's primary function is to identify the most relevant information in the input, which is then used as a starting point for the generator to produce an answer. This process involves retrieving a set of documents or tokens, marginalizing their relevance, and then using the top-ranked documents as a latent document for the generator.
+
+In contrast to other models like BART,","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 46, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 65, ""page"": 7, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 21, ""page"": 3, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.6937,,200,68.96516052503176,1480.63,
+FULL_C2_20260619_225653,C2,Q005,3,How can retrieval help a model access knowledge that is not stored in its parameters?,"The retrieval mechanism in a model like RAG (Retrieval-Augmented Generative Adversarial Network) can help access knowledge that is not stored in its parameters by leveraging external knowledge sources, such as text documents. Here's how:
+
+1. **Retrieval of text documents**: The model uses the input text to retrieve relevant documents from a large knowledge base, which are then used as additional context when generating the target sequence.
+
+2. **Knowledge retrieval**: The model can retrieve knowledge from these documents, which can be used to inform its predictions or update its knowledge base.
+
+3. **Implicit knowledge base**: The model can also utilize an implicit knowledge base, which is a parameterized representation of the model's knowledge. This implicit knowledge base can be used to retrieve knowledge from external sources, such as text documents.
+
+4. **Hybrid models**: Hybrid models that combine parametric memory (e.g., BERT or BART) with non-parametric retrieval mechanisms (e.g., retrieval-based","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 5, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 163, ""page"": 18, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.5347,,200,72.29327647226161,1480.63,
+FULL_C2_20260619_225653,C2,Q006,3,What is the difference between generating from model parameters alone and generating with retrieved passages?,"The main difference between generating from model parameters alone and generating with retrieved passages in the context of Retrieval-Augmented Generation (RAG) models lies in the way the model learns and utilizes the retrieved text documents.
+
+**Generating from Model Parameters Alone:**
+
+In this approach, the model is trained solely on the input sequence `x` and the target sequence `y`. The model's parameters are updated through a standard optimization process, such as backpropagation and gradient descent. The model learns to predict the target sequence `y` based on the input sequence `x` alone.
+
+**Generating with Retrieved Passages:**
+
+In contrast, the RAG model generates the target sequence `y` by first retrieving a set of relevant text documents `z` using a retriever, such as the Dense Passage Retriever (DPR). The model then uses these retrieved documents as additional context to generate the target sequence `y`. This approach leverages the non-parametric memory, which is a pre-trained seq","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 10, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 20, ""page"": 3, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.3833,,200,78.47765898004155,1480.63,
+FULL_C2_20260619_225653,C2,Q007,3,According to the paper what kinds of tasks are considered knowledge-intensive?,"According to the paper, knowledge-intensive tasks are those that require humans to access and precisely manipulate knowledge, and where the AI system's performance lags behind task-specific architectures.","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf"", ""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 14, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 1, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 387, ""page"": 31, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",3.1734,,35,74.26582923103038,1480.63,
+FULL_C2_20260619_225653,C2,Q008,3,What limitation of large pre-trained models motivates the use of retrieval?,"The limitation of large pre-trained models that motivates the use of retrieval is that they often store factual knowledge in their parameters, which can make them less effective when fine-tuned on downstream NLP tasks, such as question answering, where the goal is to predict the next word in a sentence based on the context.
+
+In other words, large pre-trained models have been shown to be good at retrieving relevant information from a large corpus, but when fine-tuned on a specific task like question answering, they may not be able to adapt to the specific requirements of that task. This is because the pre-trained model has already learned to retrieve general information, but not necessarily the specific information required for the task.
+
+Retrieval is a crucial step in many NLP tasks, including question answering, as it allows the model to quickly retrieve relevant information from a large corpus. However, when the model is fine-tuned on a specific task, it may not be able to adapt to the specific requirements of that task","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 0, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 79, ""page"": 9, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 78, ""page"": 9, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.3955,,200,77.05516726172519,1480.63,
+FULL_C2_20260619_225653,C2,Q009,3,Why is grounding an answer in retrieved evidence useful for reducing unsupported claims?,"Grounding an answer in retrieved evidence is useful for reducing unsupported claims because it helps to ensure that any decisions made based on potentially incorrect information are informed by evidence that may be wrong. This is particularly important in situations where statistical accuracy may be misconstrued or the AI system may be statistically flawed.
+
+In essence, grounding provides a way to verify the accuracy of the retrieved evidence and prevent unsupported claims from being made. By incorporating retrieved evidence into the answer, the AI system can provide a more accurate and reliable assessment of the situation, reducing the risk of unsupported claims.
+
+This approach is particularly relevant in areas where statistical accuracy may be uncertain, such as in medical diagnosis or social media analysis. By grounding answers in retrieved evidence, AI systems can provide more accurate and reliable results, and help to prevent unsupported claims that may be misleading or inaccurate.","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 44, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 584, ""page"": 13, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 570, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.2494,,167,67.70530112236739,1480.63,
+FULL_C2_20260619_225653,C2,Q010,3,What does RAG add to a standard language generation system?,"RAG (Relevance-Aware Generation) is a more diverse and effective generation model compared to RAG-Tokens and BART (Bidirectional Transformers for Attention). 
+
+RAG adds a retrieval mechanism that enables it to retrieve relevant information for the task, which improves its performance. 
+
+In contrast, RAG-Tokens are more factually accurate but less diverse than RAG. BART, on the other hand, is a state-of-the-art generation model but lacks the diversity-promoting decoding capabilities of RAG.
+
+RAG's dense retriever is particularly effective in tasks that require retrieving specific information, such as Jeopardy questions, where it excels in generating accurate and specific responses.","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 65, ""page"": 7, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 53, ""page"": 6, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 59, ""page"": 7, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",4.7717,,140,71.4394695925552,1480.63,
+FULL_C2_20260619_225653,C2,Q011,3,What is the main purpose of llama.cpp?,The main purpose of llama.cpp is to enable Large Language Models (LLMs) for inference with minimal setup and optimal performance on a wide range of tools.,"{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 171, ""page"": 1, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 196, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",3.1708,,32,77.53158806498116,1480.63,
+FULL_C2_20260619_225653,C2,Q012,3,Why is llama.cpp relevant for local or on-device language model deployment?,"Llama.cpp is relevant for local or on-device language model deployment because it provides a lightweight, efficient, and flexible framework for building and deploying language models. Here's why:
+
+1. **Lightweight**: Llama.cpp is designed to be lightweight, which means it can run on a single device (e.g., a mobile device or a server) without requiring a lot of resources or infrastructure.
+2. **Efficient**: The framework is optimized for performance, making it suitable for deployment on devices where resources are limited.
+3. **Flexible**: Llama.cpp allows for easy integration with various models, including those from Hugging Face, which means you can experiment with different models and architectures without having to rewrite code.
+4. **Easy to use**: The CLI tool (llama-cli) provides a simple and intuitive way to access and experiment with Llama.cpp's functionality, making it easy to get started with local or on-device deployment.
+5. **Support for various models**: Llama.cpp supports","{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 171, ""page"": 1, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 196, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",5.4203,,200,74.94583289927205,1480.64,
+FULL_C2_20260619_225653,C2,Q013,3,What does GGUF enable in local model serving?,GGUF enables the use of a local model for inference in the llama.cpp server.,"{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 202, ""page"": 11, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 193, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",3.0395,,18,83.42022940563086,1480.64,
+FULL_C2_20260619_225653,C2,Q014,3,How does quantisation support faster inference or lower memory use?,"The quantization support in the LLM inference process enables faster inference and lower memory use by:
+
+1. **Reducing memory usage**: By using smaller integer sizes (1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit), the model can utilize less memory, making it more efficient and reducing the need for external memory access.
+
+2. **Improving inference speed**: The use of quantization reduces the computational complexity of the model, allowing it to process data faster and making it more suitable for real-time applications.
+
+3. **Minimizing computational overhead**: Quantization can help minimize the overhead associated with floating-point operations, which are commonly used in deep learning models. By reducing the number of floating-point operations, the model can process data more quickly.
+
+4. **Enabling hybrid models**: The quantization support also enables the development of hybrid models that combine parametric memory with non-parametric (i.e.,","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 176, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 175, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 5, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.3162,,200,80.58137852981692,1480.64,
+FULL_C2_20260619_225653,C2,Q015,3,What is the purpose of running llama-server rather than only a command-line model?,"The purpose of running `llama-server` is to create a lightweight, OpenAI API compatible HTTP server for serving LLMs (Large Language Models). This server is designed to be a simple and efficient way to host and serve LLMs, making it easy to integrate with other tools and services.
+
+Running `llama-server` provides several benefits:
+
+1. **Easy deployment**: The server can be easily deployed on a local machine or in a cloud environment, making it simple to test and develop LLMs.
+2. **Simplified model serving**: The server can be used to serve LLMs directly, without the need to run a separate model inference process.
+3. **Support for multiple users**: The server can handle multiple users simultaneously, making it suitable for large-scale LLM development and deployment.
+4. **Parallel decoding**: The server can support parallel decoding, allowing for faster inference times and improved performance.
+
+In contrast, running a local HTTP server with default configuration (e.g.,","{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 201, ""page"": 11, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 194, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",5.2826,,200,82.6588030592023,1480.64,
+FULL_C2_20260619_225653,C2,Q016,3,Why is an OpenAI-compatible endpoint useful for this project?,"The question is: Why is an OpenAI-compatible endpoint useful for this project?
+
+An OpenAI-compatible endpoint is useful for this project because it allows you to access and utilize the capabilities of the Google Cloud AI Platform (GCP) in a seamless and integrated manner. This is particularly important for the AI system mentioned in the context, as it relies on fine-tuned and trained models to be effective.
+
+By using an OpenAI-compatible endpoint, you can leverage the vast resources and expertise of Google Cloud AI Platform, including its pre-built Mobile and Web platform wrappers, to develop and deploy your AI system. This can help to accelerate the development process and reduce the risk of implementing AI in an organization that cannot afford to invest in the necessary resources and expertise.
+
+Additionally, using an OpenAI-compatible endpoint can also help to improve the security and reliability of your AI system, as it can be more difficult to replicate and maintain the models and infrastructure used by Google Cloud AI Platform.
+
+In summary, an OpenAI-compatible","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 618, ""page"": 16, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 189, ""page"": 8, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 619, ""page"": 16, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",4.972,,200,88.35174951925605,1480.64,
+FULL_C2_20260619_225653,C2,Q017,3,What hardware or backend options are described as relevant to llama.cpp deployment?,"Based on the context, the following hardware or backend options are described as relevant to llama.cpp deployment:
+
+1. **GPU**: The text mentions that obtaining and quantizing models requires a GPU, specifically mentioning the IBM zDNN and IBM Z & LinuxONE.
+2. **VirtGPU**: The text also mentions VirtGPU, which is a backend option for llama.cpp.
+3. **OpenCL**: The text mentions OpenCL as a backend option for llama.cpp.
+4. **Vulkan**: The text mentions Vulkan as a backend option for llama.cpp, although it is not explicitly stated as a relevant option.
+5. **Adreno GPU**: The text mentions Adreno GPU as a GPU option, although it is not explicitly stated as a relevant option.
+6. **All**: The text mentions that all relevant options are described, including Vulkan, OpenCL, and Adreno GPU.
+
+Therefore, the relevant hardware or backend options for llama.cpp deployment are:
+
+* GPU (specifically, IBM z","{""files"": [""./uploads/D2_llama_cpp_README.pdf""], ""detailed_sources"": [{""chunk_id"": 192, ""page"": 9, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 174, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 173, ""page"": 1, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}]}",5.0954,,200,89.04168441935249,1480.64,
+FULL_C2_20260619_225653,C2,Q018,3,What does local inference change about where model computation happens?,"Local inference changes the location where the Machine Learning (ML) model is computed from the device from which the query is generated to the device itself. This means that instead of being hosted on a cloud server, the ML model is now run locally on the user's own device, which already collects and stores their personal data.
+
+In other words, local inference shifts the computation of the ML model from a remote server to the user's device, potentially reducing the amount of personal data that needs to be transmitted and processed.","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 707, ""page"": 25, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 706, ""page"": 25, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 637, ""page"": 18, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",4.1709,,103,72.3807141235855,1480.64,
+FULL_C2_20260619_225653,C2,Q019,3,Why might a lightweight runtime matter for a laptop-based dissertation benchmark?,"The question seems to be asking about the importance of a lightweight runtime in a laptop-based dissertation benchmark. Based on the context, it appears that a lightweight runtime can be beneficial for several reasons:
+
+1. **Performance**: A lightweight runtime can help improve performance by reducing the computational resources required to run the benchmark. This can be particularly important for laptop-based dissertation benchmarks, where resources may be limited.
+
+2. **Runtime**: The runtime of a benchmark is often a critical factor in determining its overall performance. A lightweight runtime can help ensure that the benchmark runs efficiently, without significant delays or slowdowns.
+
+3. **Resource Utilization**: In laptop-based dissertation benchmarks, resources such as memory and CPU may be limited. A lightweight runtime can help ensure that these resources are utilized efficiently, without wasting them on unnecessary computations.
+
+4. **Latency**: A lightweight runtime can also help reduce latency, which is critical in laptop-based dissertation benchmarks where every millisecond counts.
+
+5. **Flexibility**: The ability to adjust","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 205, ""page"": 13, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 73, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 72, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.2285,,200,88.83081327718634,1480.64,
+FULL_C2_20260619_225653,C2,Q020,3,What deployment limitation might still remain even if the runtime supports local inference?,"Even if the runtime supports local inference, there are still several deployment limitations that might remain:
+
+1. **Data Storage and Transfer**: Local inference requires storing and transferring data to and from the device, which can be a challenge, especially for large datasets. Ensuring that this data is securely stored and transferred, while also adhering to data protection laws, might still be a challenge.
+
+2. **Scalability and Performance**: Local inference might not be scalable or performant enough for certain workloads, especially those requiring high-throughput or complex computations. This could limit the applicability of local inference in certain scenarios.
+
+3. **Security and Trust**: Local inference might not provide the same level of security and trust as cloud-based inference, especially if the device is not trusted or if the data is not properly authenticated. This could lead to security risks if the local inference is not properly secured.
+
+4. **Interoperability and Compatibility**: Local inference might not be compatible with existing applications or services that rely","{""files"": [""./uploads/D2_llama_cpp_README.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 175, ""page"": 2, ""source"": ""./uploads/D2_llama_cpp_README.pdf""}, {""chunk_id"": 709, ""page"": 25, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 690, ""page"": 23, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",4.9787,,200,89.19472769964568,1480.64,
+FULL_C2_20260619_225653,C2,Q021,3,What is the purpose of the NIST AI Risk Management Framework?,"The NIST AI Risk Management Framework (NIST AI RMF) is designed to help organizations minimize potential negative impacts of AI systems, such as threats to civil liberties and rights, while maximizing positive impacts. The framework aims to provide a structured approach to evaluating and managing AI risks and potential negative impacts.
+
+The primary purpose of the NIST AI RMF is to:
+
+1. **Minimize potential negative impacts**: By identifying and addressing risks, impacts, and harms associated with AI systems, organizations can reduce the likelihood of negative consequences.
+2. **Maximize positive impacts**: The framework provides opportunities to maximize positive impacts of AI systems, such as benefits to society, innovation, and economic growth.
+
+To achieve these goals, the NIST AI RMF offers a structured approach to evaluating and managing AI risks and potential negative impacts, including:
+
+* Enhanced processes for governing, mapping, measuring, and managing AI risk
+* Clearly documented outcomes
+* Improved evaluation and management of AI risks and potential negative impacts
+
+The","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 248, ""page"": 9, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 344, ""page"": 24, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 243, ""page"": 8, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.0142,,200,87.61412287092205,1480.64,
+FULL_C2_20260619_225653,C2,Q022,3,Why does AI risk management matter when deploying AI systems?,"AI risk management is crucial when deploying AI systems because it helps to mitigate potential risks that could compromise the integrity, security, and reliability of the AI system. Here's why:
+
+1. **Transparency and Trust**: AI systems are often opaque, making it challenging for users to understand the risks associated with them. By managing risks, developers can ensure that users have a clear understanding of the potential downsides, fostering trust and confidence in the AI system.
+
+2. **Regulatory Compliance**: AI systems can be used in various industries, such as finance, healthcare, and transportation, where regulatory compliance is critical. Risk management helps ensure that AI systems comply with relevant regulations, reducing the risk of non-compliance and associated penalties.
+
+3. **Data Security**: AI systems often rely on third-party data or systems, which can introduce new risks if not properly managed. Risk management helps identify and mitigate these risks, protecting sensitive data and maintaining the security of the AI system.
+
+4. **System Integration**: AI systems","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 416, ""page"": 36, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 258, ""page"": 10, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 275, ""page"": 13, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",4.9631,,200,88.35744828990786,1480.64,
+FULL_C2_20260619_225653,C2,Q023,3,What does it mean to consider trustworthiness in AI design and evaluation?,"To consider trustworthiness in AI design and evaluation, it means taking into account the various characteristics that make an AI system trustworthy, such as:
+
+- Inextricably tied to social and organizational behavior
+- Relating to the datasets used by AI systems
+- The selection of AI models and algorithms
+- The decisions made by those who build the AI system
+- The interactions with humans who provide insight and oversight
+
+When evaluating AI systems, it's essential to consider the following:
+
+- Human judgment is necessary when deciding on specific metrics related to trustworthiness characteristics
+- Input from interested parties and relevant AI actors is crucial for informing contextually sensitive evaluations
+- The AI lifecycle is a critical period for enhancing opportunities for evaluating AI system benefits and positive impacts
+
+Ultimately, considering trustworthiness in AI design and evaluation involves:
+
+- Addressing AI trustworthiness characteristics individually
+- Recognizing that tradeoffs are usually involved
+- Understanding that trustworthiness is a social concept that depends on the AI","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 298, ""page"": 17, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 304, ""page"": 18, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 299, ""page"": 17, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",4.9686,,200,89.04449909797921,1480.64,
+FULL_C2_20260619_225653,C2,Q024,3,How can an AI risk framework support evaluation beyond accuracy alone?,"Here's a rephrased and combined answer:
+
+An AI Risk Framework should go beyond mere accuracy, providing a comprehensive and adaptive approach to evaluating AI risks. This framework should be:
+
+1. **Intuitive and adaptable**: Consistent with other approaches to managing AI risks, and aligned with broader organizational risk management strategies.
+2. **Useful to a wide range of perspectives, sectors, and technology domains**: Universal applicability to any AI technology and context-specific use cases.
+3. **Outcome-focused and non-prescriptive**: Providing a catalog of outcomes and approaches rather than established guidelines.
+4. **Bolstered by processes for assessing emergent risks**: In place for ongoing risk assessment and continual improvement.
+5. **Equipped with mechanisms for continual improvement**: Ensuring the framework remains relevant and effective over time.
+6. **Enhanced capacity for risk management**: Supporting AI system owners and operators in managing risks and allocating resources.
+7. **Focused on prioritizing risk and regular monitoring**: Ensuring","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 482, ""page"": 47, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 415, ""page"": 36, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 410, ""page"": 35, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",4.9288,,200,90.31233165216929,1480.64,
+FULL_C2_20260619_225653,C2,Q025,3,Why should risks to individuals organisations and society be considered separately?,"Risks to individuals, organizations, and society should be considered separately for several reasons:
+
+1. **Contextual differences**: Each entity has unique needs, priorities, and circumstances that influence their risk tolerance. For instance, an individual's risk tolerance may differ significantly from that of an organization or society.
+
+2. **Risk management approaches**: Risk management strategies and approaches may vary between entities. Organizations may have established policies and norms that differ from those of individuals or society.
+
+3. **Emerging knowledge and mitigation**: The risks associated with AI systems are constantly evolving, and different entities may have varying levels of understanding and preparedness to mitigate these risks.
+
+4. **Regulatory and legal requirements**: Different entities may be subject to different regulations, laws, and norms that require distinct risk management approaches.
+
+5. **Different risk tolerance levels**: Organizations, individuals, and society may have varying levels of risk tolerance, which can impact their risk management strategies and decision-making processes.
+
+6. **Specialized knowledge and expertise**:","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 250, ""page"": 9, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 268, ""page"": 12, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 270, ""page"": 12, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.5247,,200,70.99630535226947,1480.64,
+FULL_C2_20260619_225653,C2,Q026,3,How could the AI RMF support the privacy discussion in this dissertation?,"The AI RMF could support the privacy discussion in the following ways:
+
+1. **Establishing a framework for AI data protection**: The AI RMF could provide a structured approach to understanding and managing AI data, including its collection, processing, storage, and usage. This would help organizations ensure that they are protecting sensitive data and complying with relevant regulations.
+
+2. **Providing guidance on data minimization and de-identification**: The AI RMF could offer recommendations on how to minimize the collection and use of personal data in AI systems, and provide guidance on de-identification techniques to protect individual privacy.
+
+3. **Defining and describing AI-specific privacy risks**: The AI RMF could help identify and describe the unique privacy risks associated with AI systems, such as data breaches, surveillance, and profiling.
+
+4. **Offering a taxonomy for AI-related privacy concerns**: The AI RMF could provide a standardized framework for categorizing and describing AI-related privacy concerns, making it easier to identify and address these","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 462, ""page"": 44, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 240, ""page"": 7, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 481, ""page"": 47, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",5.0556,,200,86.93830249486847,1480.64,
+FULL_C2_20260619_225653,C2,Q027,3,Why should an AI system be evaluated for limitations as well as capabilities?,"An AI system should be evaluated for both its limitations and capabilities to ensure that it is used effectively and responsibly. Here's why:
+
+**Limitations:**
+
+1. **Performance**: AI systems can have limitations in terms of processing power, memory, and data storage, which can affect their ability to perform certain tasks.
+2. **Bias**: AI systems can perpetuate existing biases and prejudices, leading to unfair outcomes or discriminatory behavior.
+3. **Lack of transparency**: AI systems can be complex and difficult to understand, making it challenging to identify and address potential limitations.
+4. **Dependence on data**: AI systems require high-quality data to function effectively, and a lack of diverse or relevant data can lead to biased or inaccurate results.
+
+**Capabilities:**
+
+1. **Autonomy**: AI systems can operate independently, making decisions without human intervention, which can have significant implications for decision-making and accountability.
+2. **Scalability**: AI systems can process large amounts of data and perform complex","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 380, ""page"": 30, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 254, ""page"": 9, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 375, ""page"": 29, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",4.8952,,200,88.64501659877936,1480.64,
+FULL_C2_20260619_225653,C2,Q028,3,How does risk management help frame deployment practicality?,"Risk management plays a crucial role in framing the practicality of AI deployment. By identifying and assessing the risks associated with AI systems, organizations can make informed decisions about their deployment, deployment strategies, and resource allocation. This helps to ensure that AI systems are designed and deployed with the necessary safeguards to mitigate potential risks and minimize their impact.
+
+Here's a rephrased version of the question and answer:
+
+Question: How does risk management help frame the practicality of AI deployment?
+
+Answer: Effective risk management helps frame the practicality of AI deployment by providing clear guidelines for assessing trustworthiness of AI systems, prioritizing resources based on risk level and impact, and identifying emergent risks. This enables organizations to make informed decisions about deployment strategies, resource allocation, and practical considerations, ultimately helping to frame the practicality of AI deployment.
+
+In essence, risk management helps to:
+
+1. Assess the trustworthiness of AI systems
+2. Prioritize resources based on risk level and impact
+3. Identify","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 273, ""page"": 12, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 259, ""page"": 10, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 264, ""page"": 11, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",4.8878,,200,90.03298808683502,1480.64,
+FULL_C2_20260619_225653,C2,Q029,3,Why is it useful to separate technical performance from broader trust and governance concerns?,"Separating technical performance from broader trust and governance concerns is useful because it allows organizations to focus on the essential aspects of AI risk management, such as understanding contexts, preventing negative risks, and developing trustworthy AI systems.
+
+Here's a rephrased version of the question and answer:
+
+**Question:** Why is it useful to separate technical performance from broader trust and governance concerns?
+
+**Answer:** 
+
+Separating technical performance from broader trust and governance concerns is useful because it enables organizations to:
+
+1. **Focus on the essential aspects**: By separating technical performance from broader trust and governance concerns, organizations can focus on the essential aspects of AI risk management, such as understanding contexts, preventing negative risks, and developing trustworthy AI systems.
+
+2. **Improve alignment with organizational goals**: Separating technical performance from broader trust and governance concerns helps organizations to align their technical aspects of AI risk management with their overall organizational goals, mission, and values.
+
+3. **Enhance governance and risk management**: By separating technical","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf""], ""detailed_sources"": [{""chunk_id"": 226, ""page"": 5, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 379, ""page"": 30, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 359, ""page"": 27, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",4.8195,,200,90.59242919069254,1480.64,
+FULL_C2_20260619_225653,C2,Q030,3,What data protection principles are relevant to AI systems?,"To assess security and data minimisation in AI systems, it's essential to consider the following data protection principles:
+
+1. **Data minimisation principle**: This principle requires that only the minimum amount of personal data is collected and processed. It ensures that the data collected is relevant to the purpose of the processing and that it is not excessive or unnecessary.
+
+2. **Inference and prediction limitations**: This principle states that AI systems should not claim to be able to make factual predictions or inferences about individuals without sufficient evidence or context.
+
+3. **Transparency and explainability**: This principle requires that AI systems are transparent and explainable, making it possible to understand how the system arrived at a particular decision or prediction.
+
+4. **Accountability and responsibility**: This principle involves ensuring that AI systems are accountable for their decisions and actions, and that there are clear lines of responsibility in case of errors or harm.
+
+5. **Fairness and non-discrimination**: This principle requires that AI systems are designed and used","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 593, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 491, ""page"": 1, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 600, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.5664,,200,86.66036934649415,1480.64,
+FULL_C2_20260619_225653,C2,Q031,3,Why are transparency and explainability important for AI systems that process personal data?,"Here's a rephrased version of the retrieved context with combined relevant parts:
+
+**Transparency and Explainability in AI Systems**
+
+In our Explaining Decisions Made with AI product, transparency and explainability are crucial aspects of our AI system. To ensure compliance with the principle of transparency, we must be transparent about how we process personal data in our AI system.
+
+**Key Transparency Obligations**
+
+1. **Purpose of Processing Personal Data**: We must clearly state the purposes for which we process personal data, including the specific data we collect, how we use it, and for what purpose.
+2. **Retention Periods for Personal Data**: We must specify the retention periods for personal data, ensuring that we only store it for as long as necessary.
+3. **Sharing of Personal Data**: We must inform individuals about who we share their personal data with, and for what purpose.
+
+**Providing Privacy Information**
+
+When collecting personal data directly from individuals, we must provide them with privacy information at","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 504, ""page"": 3, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 505, ""page"": 3, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 323, ""page"": 20, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}]}",4.9107,,200,90.18254751267514,1480.64,
+FULL_C2_20260619_225653,C2,Q032,3,What does lawfulness mean in the context of AI and data protection?,"In the context of Artificial Intelligence (AI) and data protection, lawfulness refers to ensuring that AI systems are used in a way that respects individuals' rights and freedoms. Here's a rephrased and combined version of the retrieved context:
+
+**What is Lawfulness in AI and Data Protection?**
+
+Lawfulness in AI and data protection means that AI systems are used in a way that respects individuals' rights and freedoms. This includes ensuring that personal data is collected, processed, and used in a way that is transparent, fair, and respectful.
+
+**Key Principles:**
+
+1. **Accuracy**: AI systems should be accurate in their processing of personal data, meaning that they should not misrepresent or misinterpret individuals' information.
+2. **Statistical Accuracy**: AI systems should be accurate in their statistical analysis and decision-making processes, ensuring that they do not make errors or biases.
+3. **Fairness**: AI systems should be fair and transparent in their decision-making processes, ensuring that they do","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 508, ""page"": 4, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 566, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 534, ""page"": 7, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.2265,,200,80.80230221919481,1480.64,
+FULL_C2_20260619_225653,C2,Q033,3,Why are accuracy and statistical accuracy relevant to AI outputs?,"Accurate AI outputs are crucial to ensure that personal data is handled fairly and lawfully. Here's why accuracy and statistical accuracy are relevant:
+
+**Why Accuracy is Important:**
+
+1. **Compliance**: Accurate AI outputs help organizations comply with data protection regulations, such as GDPR and CCPA, by ensuring that personal data is not misinterpreted or mishandled.
+2. **Trust**: When AI outputs are accurate, individuals trust the system to provide reliable and trustworthy information.
+3. **Fairness**: Inaccurate AI outputs can lead to unfair treatment, such as discrimination or biased decision-making, which is a fundamental principle of fairness.
+
+**Why Statistical Accuracy is Relevant:**
+
+1. **Representative Data**: Statistical accuracy ensures that AI outputs represent a statistically informed guess about an individual, rather than a factual statement.
+2. **Avoid Misinterpretation**: Statistical accuracy helps prevent personal data from being misinterpreted as factual information, which can lead to unintended consequences.
+3. **Contextual Understanding","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 567, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 568, ""page"": 11, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 574, ""page"": 12, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.0666,,200,86.37603721425188,1480.64,
+FULL_C2_20260619_225653,C2,Q034,3,How do security and data minimisation relate to AI deployment?,"Assessing security and data minimisation in AI is crucial to ensure that AI systems are developed, deployed, and managed in a way that protects sensitive information and minimises the risk of data breaches.
+
+**How AI systems can exacerbate known security risks:**
+
+1. **Increased attack surface**: AI systems can introduce new vulnerabilities and attack surfaces, making them more susceptible to cyber attacks.
+2. **Data collection and processing**: AI models often require large amounts of data to train and deploy, which can lead to the collection and processing of sensitive information without proper consent or controls.
+3. **Lack of transparency and explainability**: AI models can be complex and difficult to understand, making it challenging to identify and mitigate potential security risks.
+4. **Dependence on third-party services**: AI systems often rely on third-party services, such as cloud providers or data storage providers, which can introduce new security risks if not properly secured.
+
+**Challenges for compliance with the data minimisation principle:**
+
+","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 600, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 602, ""page"": 15, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 599, ""page"": 14, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",4.9321,,200,90.0034111292818,1480.64,
+FULL_C2_20260619_225653,C2,Q035,3,What kinds of local risks remain even if a model does not send data to a cloud API?,"Even if a model is not sent to a cloud API, there are still some local risks that can arise, including:
+
+1. **Data exposure**: If the model is deployed locally on a client's device, it can still be vulnerable to data exposure if the device is compromised or if the model is not properly secured.
+
+2. **Privilege escalation**: If the model is running with elevated privileges, it can still pose a risk if an attacker gains access to the device or the model.
+
+3. **Local storage**: If the model is storing data locally, it can still be vulnerable to data breaches or unauthorized access if the device is compromised or if the data is not properly secured.
+
+4. **Malware or viruses**: If the model is running on a device that is infected with malware or a virus, it can still be vulnerable to attack even if it is not sent to a cloud API.
+
+5. **Physical attacks**: If the model is running on a device that is physically accessible, it","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 653, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 651, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 654, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.0501,,200,89.9467020816815,1480.64,
+FULL_C2_20260619_225653,C2,Q036,3,How can local deployment reduce some privacy risks while leaving other data protection responsibilities in place?,"To address privacy risks associated with local deployment of machine learning (ML) models, consider the following strategies:
+
+1. **Data Masking**: Implement data masking techniques to protect sensitive data used for training the model. This can be achieved by replacing sensitive data with generic values or using encryption to protect the data.
+
+2. **Access Control**: Implement access control measures to restrict access to the model deployment environment. This can be done by using role-based access control (RBAC) or attribute-based access control (ABAC) to ensure that only authorized personnel can access the model.
+
+3. **Secure Data Storage**: Ensure that sensitive data is stored securely, such as using encryption or secure storage solutions like cloud-based services that offer end-to-end encryption.
+
+4. **Model Serving**: Use model serving platforms that provide secure and encrypted model serving, such as AWS SageMaker or Google Cloud AI Platform, which offer built-in security features and encryption.
+
+5. **Secure Data Retrieval**: Implement secure data retrieval mechanisms,","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 654, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 711, ""page"": 26, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 625, ""page"": 17, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",4.9286,,200,90.00831226763792,1480.64,
+FULL_C2_20260619_225653,C2,Q037,3,Why does keeping processing local not remove all data protection responsibilities?,"Keeping data processing local does not entirely remove all data protection responsibilities for several reasons:
+
+1. **Data Protection Law Applies Regardless of Location**: Data protection law is not limited to processing data within the same country or region. It applies globally, and local processing does not exempt the organization from its obligations.
+
+2. **International Data Transfers**: Even if data is processed locally, it may still involve international data transfers. Organizations must ensure that these transfers comply with the relevant data protection laws, including the EU's General Data Protection Regulation (GDPR) and the US's Health Insurance Portability and Accountability Act (HIPAA).
+
+3. **Transborder Processing**: Some data processing involves transborder transfers, where personal data is collected, processed, and stored in one country, and then used or shared in another country. This may require additional measures to ensure the protection of individuals' rights and freedoms.
+
+4. **Data Breaches and Cybersecurity Risks**: Local processing may not be sufficient to protect against data breaches","{""files"": [""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 543, ""page"": 8, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 541, ""page"": 8, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}, {""chunk_id"": 555, ""page"": 10, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",4.8947,,200,89.98952072031211,1480.64,
+FULL_C2_20260619_225653,C2,Q038,3,How do RAG and local deployment address different parts of the question-answering problem?,"Here's a rephrased version of the text in my own words, combining relevant parts:
+
+RAG (Read-Answer-Generate) is a novel approach that combines the strengths of extractive question-answering models (QAs) and abstractive text generation models. By leveraging the accuracy of RAG in generating correct answers even when the correct answer is not present in retrieved documents, it achieves an impressive 11.8% accuracy in such cases. This is particularly notable given that traditional QAs, such as BART, struggle to achieve even 0% accuracy in retrieving correct answers.
+
+RAG's performance is further enhanced by its ability to outperform BART on Open MS-MARCO NLG by 2.6 Bleu points and 2.6 Rouge-L points. This suggests that RAG is capable of generating high-quality answers that are not only accurate but also coherent and engaging.
+
+In terms of experimental details, RAG is trained using a combination of","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 50, ""page"": 6, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 33, ""page"": 4, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 35, ""page"": 4, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.1139,,200,88.48105023467386,1480.64,
+FULL_C2_20260619_225653,C2,Q039,3,How do technical deployment choices connect to privacy and data protection concerns?,"Technical deployment choices in AI systems can significantly impact privacy and data protection concerns. Here's how:
+
+1. **Data Collection and Storage**: The type of data collected, stored, and processed can greatly affect privacy. For instance, collecting and storing sensitive information like biometric data, financial information, or personal identifiable information (PII) requires careful consideration of data protection regulations and technical measures to ensure confidentiality and security.
+
+2. **Model Training and Deployment**: The way AI models are trained and deployed can also raise privacy concerns. For example, using techniques like data hashing or encryption can help protect data, but may not be effective if the model is not properly deployed or maintained.
+
+3. **Model Serving and Inference**: The process of serving and inferring AI models can also be a privacy concern. For instance, using model serving platforms that collect and process user data can raise privacy concerns if not properly secured.
+
+4. **Model Interpretability and Explainability**: The interpretability and explainability of AI models","{""files"": [""./uploads/D3_NIST_AI_RMF_1_0.pdf"", ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""], ""detailed_sources"": [{""chunk_id"": 335, ""page"": 22, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 334, ""page"": 22, ""source"": ""./uploads/D3_NIST_AI_RMF_1_0.pdf""}, {""chunk_id"": 654, ""page"": 20, ""source"": ""./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf""}]}",5.0422,,200,86.69481647357563,1480.64,
+FULL_C2_20260619_225653,C2,Q040,3,Based on the source documents why should the dissertation conclusion be a conditional recommendation rather than a single universal winner?,"Based on the retrieved context, the dissertation conclusion should be a conditional recommendation rather than a single universal winner because the source documents provide varying opinions and perspectives on the claim, making it difficult to determine a single, definitive answer. The factuality of the source documents is high, as they are based on trusted external sources, and the specicity of the input is also high, as the input is a dissertation conclusion that requires a nuanced evaluation of multiple sources.
+
+This approach is in line with the factuality and specificity concepts, which emphasize the importance of evaluating multiple sources and considering their mutual dependence. By acknowledging the varying opinions and perspectives in the source documents, the conclusion can be seen as a conditional recommendation, rather than a single, absolute answer.
+
+In contrast, a single universal winner would oversimplify the complex opinions expressed in the source documents, which would be a less accurate representation of the dissertation conclusion. Therefore, the answer is that the dissertation conclusion should be a conditional recommendation rather than a single universal winner.","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 41, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 160, ""page"": 18, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",4.9964,,200,89.72540884504107,1480.64,

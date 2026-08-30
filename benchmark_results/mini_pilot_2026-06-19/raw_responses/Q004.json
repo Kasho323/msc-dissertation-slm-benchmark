@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "In a RAG pipeline, the retriever plays a crucial role. It is initialized using a retrieval supervision mechanism, which uses retrieval data from Natural Questions and TriviaQA. The retriever is trained to retrieve relevant information for the task, allowing the RAG to generate accurate answers."
+      }
+    }
+  ],
+  "created": 1781886445,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 58,
+    "prompt_tokens": 417,
+    "total_tokens": 475,
+    "prompt_tokens_details": {
+      "cached_tokens": 68
+    }
+  },
+  "id": "chatcmpl-RFTiwJcBFHBkFs0hcOOvwnxA9BVmTMGg",
+  "timings": {
+    "cache_n": 68,
+    "prompt_n": 349,
+    "prompt_ms": 437.016,
+    "prompt_per_token_ms": 1.252194842406877,
+    "prompt_per_second": 798.5977630109652,
+    "predicted_n": 58,
+    "predicted_ms": 584.943,
+    "predicted_per_token_ms": 10.085224137931034,
+    "predicted_per_second": 99.15496039785073
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 46,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 21,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

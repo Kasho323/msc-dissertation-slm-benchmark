@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Grounding an answer in retrieved evidence is useful for reducing unsupported claims because it allows the AI system to evaluate the accuracy of its predictions and classify them as either \"supports\", \"refutes\", or \"not enough info\". This approach ensures that the system's inference is based on evidence rather than subjective assumptions. By using retrieved evidence, the AI can verify the accuracy of its predictions and avoid making unsupported claims. This reduces the risk of statistical errors and ensures that the AI's conclusions are based on reliable data."
+      }
+    }
+  ],
+  "created": 1782332873,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 102,
+    "prompt_tokens": 398,
+    "total_tokens": 500,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-yz5XYzRT8kPk9xb7Nk2Sq1clkm3wQ3PB",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 398,
+    "prompt_ms": 550.856,
+    "prompt_per_token_ms": 1.3840603015075377,
+    "prompt_per_second": 722.5118724312706,
+    "predicted_n": 102,
+    "predicted_ms": 1053.039,
+    "predicted_per_token_ms": 10.323911764705882,
+    "predicted_per_second": 96.86250936574999
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 44,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 584,
+        "page": 13,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 570,
+        "page": 11,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

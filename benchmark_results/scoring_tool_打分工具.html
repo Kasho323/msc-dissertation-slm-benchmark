@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>Dissertation 打分工具 / Scoring Tool</title>
+<style>
+  :root { --line:#ccc; --accent:#1f4e79; --good:#2e7d32; --warn:#c62828; --bg:#f7f7f7; }
+  * { box-sizing: border-box; }
+  body { font-family: Calibri, "Microsoft YaHei", sans-serif; margin:0; background:var(--bg); color:#111; }
+  header { background:#fff; border-bottom:2px solid var(--accent); padding:10px 18px; position:sticky; top:0; z-index:5; }
+  header h1 { font-size:16px; margin:0 0 6px 0; }
+  .bar { display:flex; gap:14px; align-items:center; flex-wrap:wrap; font-size:13px; }
+  .bar button, .bar label.btn { padding:5px 12px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; border-radius:4px; font-size:13px; }
+  .bar button.primary { background:var(--accent); color:#fff; }
+  .bar button:disabled { opacity:.4; cursor:not-allowed; }
+  #progressWrap { flex:1; min-width:160px; height:14px; background:#e0e0e0; border-radius:7px; overflow:hidden; }
+  #progressFill { height:100%; background:var(--good); width:0%; transition:width .2s; }
+  main { max-width: 1000px; margin: 14px auto 120px auto; padding: 0 14px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:8px; padding:16px 20px; margin-bottom:14px; }
+  .meta { font-size:12px; color:#666; margin-bottom:6px; }
+  .qtext { font-size:16px; font-weight:bold; margin:4px 0 10px 0; }
+  .label { font-size:12px; font-weight:bold; color:var(--accent); margin-top:10px; text-transform:uppercase; letter-spacing:.4px; }
+  .box { background:#fafafa; border:1px solid #e5e5e5; border-radius:6px; padding:8px 12px; font-size:14px; line-height:1.55; white-space:pre-wrap; }
+  .answer { background:#f2f7fb; border-color:#cfe0ee; }
+  .dims { width:100%; border-collapse:collapse; margin-top:8px; }
+  .dims td { padding:6px 8px; border-bottom:1px solid #eee; font-size:14px; vertical-align:middle; }
+  .dims td.dn { width:280px; }
+  .dims .hint { color:#888; font-size:12px; display:block; }
+  .scorebtns { display:flex; gap:6px; }
+  .scorebtns button { width:34px; height:30px; border:1px solid var(--line); background:#fff; cursor:pointer; border-radius:4px; font-size:14px; }
+  .scorebtns button.sel { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .dims tr.current td { background:#fffbe6; }
+  .aidraft { color:#8a6d00; font-size:13px; width:70px; text-align:center; }
+  textarea.notes { width:100%; min-height:52px; font-family:inherit; font-size:13px; border:1px solid var(--line); border-radius:5px; padding:6px 9px; margin-top:6px; }
+  .avg { font-size:14px; margin-top:8px; }
+  .avg b { font-size:18px; }
+  footer.nav { position:fixed; bottom:0; left:0; right:0; background:#fff; border-top:1px solid var(--line); padding:10px 18px; display:flex; gap:10px; align-items:center; justify-content:center; z-index:5; }
+  footer.nav button { padding:8px 22px; font-size:14px; border-radius:5px; border:1px solid var(--accent); background:#fff; color:var(--accent); cursor:pointer; }
+  footer.nav button.primary { background:var(--accent); color:#fff; }
+  footer.nav .agreeBtn { border-color:var(--good); color:var(--good); }
+  #jump { font-size:13px; padding:5px; }
+  .status-ok { color:var(--good); font-weight:bold; }
+  .status-no { color:var(--warn); font-weight:bold; }
+  .kb { font-size:12px; color:#777; }
+  #start { max-width:760px; margin:40px auto; background:#fff; border:1px solid var(--line); border-radius:8px; padding:26px 32px; font-size:14px; line-height:1.7; }
+  .pill { display:inline-block; padding:1px 8px; border-radius:10px; background:#eef; font-size:12px; margin-right:6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Dissertation 盲评打分工具 <span class="kb">Stage 1(独立打分)与 Stage 2(AI 辅助 review)通用</span></h1>
+  <div class="bar">
+    <label class="btn">📂 载入 CSV<input type="file" id="file" accept=".csv" style="display:none"></label>
+    <span id="fileinfo" class="kb">未载入文件</span>
+    <div id="progressWrap"><div id="progressFill"></div></div>
+    <span id="progtext" class="kb">0 / 0</span>
+    <select id="jump"></select>
+    <button id="exportBtn" class="primary">⬇ 导出已打分 CSV</button>
+  </div>
+</header>
+
+<main>
+  <div id="start">
+    <b>使用步骤 / How to use</b><br><br>
+    1. 点左上角 <b>📂 载入 CSV</b>,选择打分文件(第一段选 <code>human_stage1_independent_60_2026-06-29.csv</code>)。<br>
+    2. 每屏一个答案:读题 → 读预期答案要点 → 读模型答案 → 给六个维度各打 0-5 分 → 写一句备注(低分必写)→ 下一个。<br>
+    3. <b>键盘快捷键:</b>直接按数字 <b>0-5</b> 给当前高亮的维度打分并自动跳到下一维度;<b>←/→</b> 上一个/下一个答案;<b>N</b> 聚焦备注框。<br>
+    4. 进度<b>自动保存在浏览器里</b>(localStorage),中途关掉浏览器也不会丢,重新载入同一个 CSV 即可继续。<br>
+    5. 全部打完后点右上 <b>⬇ 导出</b>,把下载的文件发给 Claude 做后续统计。<br><br>
+    <b>打分原则:</b>0=不可用 1=很差 2=弱 3=可接受 4=好 5=优秀。<b>以 3 为重心</b>,4 要"确实好",5 要"挑不出毛病"。幻觉维度分越高=编造越少。
+  </div>
+  <div id="card" style="display:none"></div>
+</main>
+
+<footer class="nav" id="nav" style="display:none">
+  <button id="prevBtn">← 上一个 (←)</button>
+  <button id="agreeBtn" class="agreeBtn" style="display:none">✓ 同意 AI 草稿并下一个</button>
+  <button id="nextBtn" class="primary">下一个 → (→ / Enter)</button>
+</footer>
+
+<script>
+"use strict";
+const DIMS = ["relevance","correctness","faithfulness_to_source","completeness","hallucination_risk","source_grounding"];
+const DIM_LABELS = {
+  relevance:["相关性 Relevance","是否在回答这道题?"],
+  correctness:["正确性 Correctness","对照预期要点,事实对吗?"],
+  faithfulness_to_source:["忠实度 Faithfulness","说法能在来源/证据里找到吗?"],
+  completeness:["完整性 Completeness","预期要点覆盖了多少?"],
+  hallucination_risk:["幻觉 Hallucination(高=少编造)","有编造吗?5=完全没有,0=严重编造"],
+  source_grounding:["来源依据 Source grounding","是否明显基于给它的材料?"]
+};
+
+let headers=[], rows=[], idx=0, stage2=false, fileName="", storeKey="";
+let curDim=0;
+
+// ---------- CSV ----------
+function parseCSV(text){
+  const out=[]; let row=[], field="", inQ=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(inQ){
+      if(c==='"'){ if(text[i+1]==='"'){ field+='"'; i++; } else inQ=false; }
+      else field+=c;
+    } else {
+      if(c==='"') inQ=true;
+      else if(c===','){ row.push(field); field=""; }
+      else if(c==='\n'){ row.push(field); field=""; if(row.length>1||row[0]!=="") out.push(row); row=[]; }
+      else if(c==='\r'){ /* skip */ }
+      else field+=c;
+    }
+  }
+  if(field!==""||row.length){ row.push(field); out.push(row); }
+  return out;
+}
+function csvField(v){
+  v = v==null? "": String(v);
+  return /[",\n\r]/.test(v) ? '"'+v.replace(/"/g,'""')+'"' : v;
+}
+
+// ---------- load ----------
+document.getElementById('file').addEventListener('change', e=>{
+  const f=e.target.files[0]; if(!f) return;
+  fileName=f.name; storeKey="scoring::"+fileName;
+  const r=new FileReader();
+  r.onload=()=>{ init(r.result.replace(/^﻿/,"")); };
+  r.readAsText(f,"utf-8");
+});
+
+function init(text){
+  const table=parseCSV(text);
+  headers=table[0];
+  rows=table.slice(1).map(a=>{ const o={}; headers.forEach((h,i)=>o[h]=a[i]??""); return o; });
+  stage2=headers.includes("ai_draft_relevance");
+  // restore saved work
+  const saved=JSON.parse(localStorage.getItem(storeKey)||"{}");
+  rows.forEach(r=>{ const s=saved[r.blind_answer_id]; if(s) Object.assign(r,s); });
+  idx = rows.findIndex(r=>!isDone(r)); if(idx<0) idx=0;
+  document.getElementById('fileinfo').textContent=fileName+(stage2?"(Stage 2 模式:显示 AI 草稿)":"(Stage 1 模式:独立打分)");
+  document.getElementById('start').style.display='none';
+  document.getElementById('card').style.display='block';
+  document.getElementById('nav').style.display='flex';
+  document.getElementById('agreeBtn').style.display=stage2?'inline-block':'none';
+  buildJump(); render();
+}
+
+function dimField(d){ return stage2? "human_"+d : d; }
+function avgField(){ return stage2? "human_average" : "average_quality_score"; }
+function notesField(){ return stage2? "human_notes" : "scoring_notes"; }
+function isDone(r){ return DIMS.every(d=>r[dimField(d)]!==""&&r[dimField(d)]!=null); }
+
+function save(){
+  const saved={};
+  rows.forEach(r=>{
+    const s={};
+    DIMS.forEach(d=>s[dimField(d)]=r[dimField(d)]||"");
+    s[avgField()]=r[avgField()]||""; s[notesField()]=r[notesField()]||"";
+    s.scored_by=r.scored_by||""; s.scored_date=r.scored_date||"";
+    if(stage2) s.review_status=r.review_status||"";
+    saved[r.blind_answer_id]=s;
+  });
+  localStorage.setItem(storeKey, JSON.stringify(saved));
+  updateProgress();
+}
+function updateProgress(){
+  const done=rows.filter(isDone).length;
+  document.getElementById('progressFill').style.width=(100*done/rows.length)+"%";
+  document.getElementById('progtext').textContent=done+" / "+rows.length;
+  buildJump();
+}
+function buildJump(){
+  const j=document.getElementById('jump');
+  j.innerHTML=rows.map((r,i)=>`<option value="${i}" ${i===idx?"selected":""}>${i+1}. ${r.blind_answer_id} ${isDone(r)?"✓":"·"}</option>`).join("");
+}
+document.getElementById('jump').addEventListener('change',e=>{ idx=+e.target.value; curDim=0; render(); });
+
+// ---------- render ----------
+function render(){
+  const r=rows[idx];
+  const dimRows=DIMS.map((d,i)=>{
+    const val=r[dimField(d)];
+    const btns=[0,1,2,3,4,5].map(n=>`<button data-d="${i}" data-v="${n}" class="${String(val)===String(n)?'sel':''}">${n}</button>`).join("");
+    const ai = stage2? `<td class="aidraft">AI: ${r["ai_draft_"+d]??""}</td>` : "";
+    return `<tr class="${i===curDim?'current':''}"><td class="dn"><b>${DIM_LABELS[d][0]}</b><span class="hint">${DIM_LABELS[d][1]}</span></td>${ai}<td><div class="scorebtns">${btns}</div></td></tr>`;
+  }).join("");
+  const avg=calcAvg(r);
+  const aiNotes = stage2 && r.ai_draft_notes ? `<div class="label">AI 草稿备注</div><div class="box">${esc(r.ai_draft_notes)}</div>`:"";
+  const statusTxt = isDone(r)? `<span class="status-ok">✓ 已完成</span>` : `<span class="status-no">未完成</span>`;
+  document.getElementById('card').innerHTML=`
+  <div class="card">
+    <div class="meta">
+      <span class="pill">${idx+1} / ${rows.length}</span>
+      <span class="pill">${esc(r.blind_answer_id)}</span>
+      <span class="pill">${esc(r.question_type||"")}</span>
+      <span class="pill">难度 ${esc(r.difficulty||"")}</span>
+      <span class="pill">${esc(r.source_title||r.source_id||"")}</span>
+      ${statusTxt}
+    </div>
+    <div class="qtext">${esc(r.question_text)}</div>
+    <div class="label">预期答案要点 Expected answer notes</div>
+    <div class="box">${esc(r.expected_answer_notes)}</div>
+    <div class="label">证据位置 Evidence location</div>
+    <div class="box">${esc(r.evidence_location)}</div>
+    <div class="label">模型答案 Generated answer</div>
+    <div class="box answer">${esc(r.generated_answer)}</div>
+    <div class="label">打分(键盘 0-5 直接给黄色高亮行打分)</div>
+    <table class="dims">${dimRows}</table>
+    <div class="avg">平均分 Average: <b>${avg!==null?avg.toFixed(2):"—"}</b></div>
+    <div class="label">备注 Notes(低分必写原因)</div>
+    <textarea class="notes" id="notes" placeholder="${stage2?'不同意 AI 草稿时,以 Human review: 开头写原因':'一句话:好在哪/差在哪'}">${esc(r[notesField()]||"")}</textarea>
+  </div>`;
+  document.getElementById('card').querySelectorAll('.scorebtns button').forEach(b=>{
+    b.addEventListener('click',()=>{ setScore(+b.dataset.d, b.dataset.v); });
+  });
+  document.getElementById('notes').addEventListener('input',e=>{ r[notesField()]=e.target.value; save(); });
+  buildJump();
+  window.scrollTo(0,0);
+}
+function esc(s){ return (s==null?"":String(s)).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function calcAvg(r){
+  const vals=DIMS.map(d=>r[dimField(d)]).filter(v=>v!==""&&v!=null).map(Number);
+  if(vals.length<DIMS.length) return null;
+  return vals.reduce((a,b)=>a+b,0)/DIMS.length;
+}
+function setScore(dimIndex, value){
+  const r=rows[idx];
+  r[dimField(DIMS[dimIndex])]=String(value);
+  const avg=calcAvg(r);
+  if(avg!==null){
+    r[avgField()]=avg.toFixed(2);
+    r.scored_by=stage2?"human_reviewed":"human";
+    r.scored_date=new Date().toISOString().slice(0,10);
+    if(stage2){
+      const agree=DIMS.every(d=>String(r["human_"+d])===String(r["ai_draft_"+d]));
+      r.review_status=agree?"Human reviewed - agreed":"Human reviewed - changed";
+    }
+  }
+  curDim=Math.min(dimIndex+1, DIMS.length-1);
+  save(); render();
+}
+
+// ---------- nav ----------
+function next(){ if(idx<rows.length-1){ idx++; curDim=0; render(); } }
+function prev(){ if(idx>0){ idx--; curDim=0; render(); } }
+document.getElementById('nextBtn').addEventListener('click',next);
+document.getElementById('prevBtn').addEventListener('click',prev);
+document.getElementById('agreeBtn').addEventListener('click',()=>{
+  const r=rows[idx];
+  DIMS.forEach(d=>r["human_"+d]=r["ai_draft_"+d]);
+  r[avgField()]=calcAvg(r).toFixed(2);
+  r.review_status="Human reviewed - agreed";
+  r.scored_by="human_reviewed"; r.scored_date=new Date().toISOString().slice(0,10);
+  save(); next();
+});
+document.addEventListener('keydown',e=>{
+  if(!rows.length) return;
+  if(e.target.tagName==='TEXTAREA'){ if(e.key==='Escape') e.target.blur(); return; }
+  if(e.key>='0'&&e.key<='5'){ setScore(curDim, e.key); e.preventDefault(); }
+  else if(e.key==='ArrowRight'||e.key==='Enter'){ next(); e.preventDefault(); }
+  else if(e.key==='ArrowLeft'){ prev(); e.preventDefault(); }
+  else if(e.key.toLowerCase()==='n'){ document.getElementById('notes').focus(); e.preventDefault(); }
+  else if(e.key==='ArrowUp'){ curDim=Math.max(0,curDim-1); render(); e.preventDefault(); }
+  else if(e.key==='ArrowDown'){ curDim=Math.min(DIMS.length-1,curDim+1); render(); e.preventDefault(); }
+});
+
+// ---------- export ----------
+document.getElementById('exportBtn').addEventListener('click',()=>{
+  if(!rows.length){ alert("先载入 CSV"); return; }
+  const undone=rows.filter(r=>!isDone(r)).length;
+  if(undone>0 && !confirm(`还有 ${undone} 个答案未打完分。仍要导出吗?(导出的是当前进度)`)) return;
+  const lines=[headers.map(csvField).join(",")];
+  rows.forEach(r=>lines.push(headers.map(h=>csvField(r[h])).join(",")));
+  const blob=new Blob(["﻿"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=fileName.replace(/\.csv$/i,"")+"_HUMAN_SCORED.csv";
+  a.click();
+});
+</script>
+</body>
+</html>

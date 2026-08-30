@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "    Petr Baudi and Jan ediv`y. Modeling of the question answering task in the yodaqa system. In International Conference of the Cross-Language Evaluation Forum for European Languages, pages 222228. Springer, 2015. URL https://link.springer.com/chapter/10.1007% 2F978-3-319-24027-5_20 . [3] Jonathan Berant, Andrew Chou, Roy Frostig, and Percy Liang. Semantic Parsing on Freebase from Question-Answer Pairs. In Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing, pages 1-10. Right: MS-MARCO Bleu-1 and Rouge-L as more documents are retrieved. 5 Related Work Single-Task Retrieval Prior work has shown that retrieval improves performance across a variety of NLP tasks when considered in"
+      }
+    }
+  ],
+  "created": 1781888020,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 502,
+    "total_tokens": 702,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-WNowiU706b1uEOyJUWrmSPklXquYnlGD",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 502,
+    "prompt_ms": 610.401,
+    "prompt_per_token_ms": 1.2159382470119522,
+    "prompt_per_second": 822.410186090783,
+    "predicted_n": 200,
+    "predicted_ms": 1975.63,
+    "predicted_per_token_ms": 9.87815,
+    "predicted_per_second": 101.23353056999538
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 92,
+        "page": 10,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

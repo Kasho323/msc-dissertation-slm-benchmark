@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Based on the source documents, the dissertation conclusion should be a conditional recommendation rather than a single universal winner. The conclusion should reflect a nuanced understanding of the research, acknowledging the strengths and weaknesses of the evidence presented. It should also provide a balanced view, acknowledging both the positive contributions and the potential limitations of the research. The conclusion should be grounded in the specific context and methodology used in the dissertation, ensuring that it is not a one-size-fits-all recommendation."
+      }
+    }
+  ],
+  "created": 1781906148,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 93,
+    "prompt_tokens": 463,
+    "total_tokens": 556,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-LomtR6av2SIFVxAwsWa8eqwznLDoqy9W",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 463,
+    "prompt_ms": 543.875,
+    "prompt_per_token_ms": 1.1746760259179265,
+    "prompt_per_second": 851.2985520569983,
+    "predicted_n": 93,
+    "predicted_ms": 953.805,
+    "predicted_per_token_ms": 10.255967741935484,
+    "predicted_per_second": 97.50420683473037
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 160,
+        "page": 18,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

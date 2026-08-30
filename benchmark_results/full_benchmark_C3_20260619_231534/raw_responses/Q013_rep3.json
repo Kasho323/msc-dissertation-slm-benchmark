@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "GGUF allows for local model serving, enabling LLM inference with minimal setup and state-of-the-art performance on a wide range of models, using models from Hugging Face or other model hosting sites. It’s a way to run models directly without relying on a cloud server or complex setup.\n\nHere’s a breakdown of how it works:\n\n*   **Model Format:** GGUF is a format for storing language models, specifically designed for efficient inference.\n*   **Local Serving:** It allows you to serve models directly on your machine, without needing a dedicated server.\n*   **Compatibility:** It supports models from various sources, including those hosted on Hugging Face.\n*   **CLI Tools:** It’s used with a command-line interface (CLI) to manage and run these models.\n\nEssentially, GGUF provides a streamlined way to run LLMs locally.\n"
+      }
+    }
+  ],
+  "created": 1781908189,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 188,
+    "prompt_tokens": 471,
+    "total_tokens": 659,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-4wNUXM1zIolExfB9JvQU5TjmGVQcTT3l",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 471,
+    "prompt_ms": 911.078,
+    "prompt_per_token_ms": 1.934348195329087,
+    "prompt_per_second": 516.9700069587894,
+    "predicted_n": 188,
+    "predicted_ms": 3091.767,
+    "predicted_per_token_ms": 16.44556914893617,
+    "predicted_per_second": 60.80665198897589
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 202,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 193,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

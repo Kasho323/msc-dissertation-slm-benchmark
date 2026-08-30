@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The dissertation conclusion should be a conditional recommendation rather than a single universal winner because it addresses a specific question and provides a solution to a particular problem. The conclusion aims to provide a comprehensive and well-supported solution to the research question, which is the main focus of the dissertation. By addressing the specific question, the conclusion ensures that the solution is tailored to the needs and concerns of the reader, making it a more effective and relevant recommendation. Additionally, the conclusion provides a clear and concise solution to the research problem, which is essential for the reader to understand and apply the findings effectively."
+      }
+    }
+  ],
+  "created": 1781905868,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 116,
+    "prompt_tokens": 463,
+    "total_tokens": 579,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-DzHoYFW48l2kUQAfeOAuM5D43S3rZKtV",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 463,
+    "prompt_ms": 609.854,
+    "prompt_per_token_ms": 1.3171792656587473,
+    "prompt_per_second": 759.1981031525577,
+    "predicted_n": 116,
+    "predicted_ms": 1131.087,
+    "predicted_per_token_ms": 9.75075,
+    "predicted_per_second": 102.55621362459297
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 160,
+        "page": 18,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Local deployment can reduce some privacy risks while leaving other data protection responsibilities in place by minimizing the data that is revealed in queries sent to ML models. This approach allows one party to retrieve predictions or classifications without fully revealing all the information to the party running the model. Essentially, it enables a party to get an answer without having to fully reveal the question. This method is particularly useful when it is not feasible to deploy the model locally. Local deployment can help in protecting personal data used to train the model by reducing the amount of data that is exposed during the query process. This can be achieved through privacy-preserving query approaches, which allow for secure data sharing and minimize the risk of exposing personal data. However, it's important to note that local deployment may not fully address all privacy risks and data protection responsibilities. Therefore, it's crucial to collaborate with clients to understand the particular deployment contexts and associated threat models. As part of your procurement policy, there should be sufficient information sharing between each party to perform their respective responsibilities effectively."
+      }
+    }
+  ],
+  "created": 1782338325,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 205,
+    "prompt_tokens": 350,
+    "total_tokens": 555,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-D3oR1Qqe7lKDiUO4mI1BQrfYJEBwMe9j",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 350,
+    "prompt_ms": 1242.946,
+    "prompt_per_token_ms": 3.5512742857142854,
+    "prompt_per_second": 281.5890634025935,
+    "predicted_n": 205,
+    "predicted_ms": 5190.559,
+    "predicted_per_token_ms": 25.3198,
+    "predicted_per_second": 39.49478273920015
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 654,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 711,
+        "page": 26,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 554,
+        "page": 9,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

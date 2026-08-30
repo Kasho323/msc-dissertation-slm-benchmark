@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Retrieval-augmented generation aims to address the problem of knowledge-intensive NLP tasks by leveraging the stored factual knowledge in pre-trained language models. The context mentions that large pre-trained language models have been shown to store factual knowledge in their parameters and achieve state-of-the-art results when tuned on downstream NLP tasks. The paper also discusses the retrieval-augmented generation for knowledge-intensive NLP tasks, including open-domain QA, RAG-Token models, RAG-Sequence models, and Open-MSMarco and Jeopardy question generation. The context mentions that retrieval improves performance across a variety of NLP tasks when considered in isolation, and the paper reports test numbers using 15 retrieved documents for RAG-Token models and 50 retrieved documents for RAG-Sequence models. The context also mentions that the Thorough Decoding approach is used since answers are generally short. The paper uses greedy decoding for QA as it did not find beam search improved results. The context mentions that right: MS-MARCO Bleu-1 and Rouge-L as more documents are retrieved."
+      }
+    }
+  ],
+  "created": 1782332471,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 218,
+    "prompt_tokens": 469,
+    "total_tokens": 687,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-MSV4wDLfFJ0FnIrJ0ZzQCkDmB6bbJAwr",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 469,
+    "prompt_ms": 575.207,
+    "prompt_per_token_ms": 1.2264541577825159,
+    "prompt_per_second": 815.3586448009152,
+    "predicted_n": 218,
+    "predicted_ms": 2062.48,
+    "predicted_per_token_ms": 9.46091743119266,
+    "predicted_per_second": 105.69799464722081
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 148,
+        "page": 17,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

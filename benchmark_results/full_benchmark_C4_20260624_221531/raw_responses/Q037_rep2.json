@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Keeping processing local does not remove all data protection responsibilities because the organization that creates and distributes the model is still a controller in so far as it determines the means and purposes of processing. Additionally, the key is understanding that while legitimate interests may be more flexible, it comes with additional responsibilities. It requires you to assess the impact of your processing on individuals and be able to demonstrate that there is a compelling benefit to the processing. You must also be able to demonstrate the necessity and proportionality of the processing."
+      }
+    }
+  ],
+  "created": 1782336497,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 101,
+    "prompt_tokens": 364,
+    "total_tokens": 465,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-10plpSRnbXprlczHXmEw3neZNJYKhRib",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 364,
+    "prompt_ms": 915.406,
+    "prompt_per_token_ms": 2.514851648351648,
+    "prompt_per_second": 397.6377694705956,
+    "predicted_n": 101,
+    "predicted_ms": 1462.96,
+    "predicted_per_token_ms": 14.484752475247525,
+    "predicted_per_second": 69.0381145075737
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 709,
+        "page": 25,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 543,
+        "page": 8,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 541,
+        "page": 8,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

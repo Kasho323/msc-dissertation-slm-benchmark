@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG addresses the question-answering problem by generating correct answers even when the correct answer is not present in any retrieved document, achieving 11.8% accuracy in such cases for NQ. It also outperforms extractive models in abstractive question answering tasks, such as Open MS-MARCO NLG, where it outperforms BART by 2.6 BLEU points and 2.6 ROUGE-L points. RAG models are trained using dev data with different values of k for training and test time, and experimental details for each task are discussed."
+      }
+    }
+  ],
+  "created": 1782337259,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 122,
+    "prompt_tokens": 502,
+    "total_tokens": 624,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-afVBti8Dj2DPjebAAXyewq6pzRiosxQU",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 502,
+    "prompt_ms": 858.583,
+    "prompt_per_token_ms": 1.710324701195219,
+    "prompt_per_second": 584.6842995959622,
+    "predicted_n": 122,
+    "predicted_ms": 1908.642,
+    "predicted_per_token_ms": 15.644606557377049,
+    "predicted_per_second": 63.9197921873248
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 50,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 33,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 35,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

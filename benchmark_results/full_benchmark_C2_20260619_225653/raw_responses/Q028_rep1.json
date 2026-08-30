@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Risk management plays a crucial role in framing the practicality of AI deployment. By identifying and prioritizing risks, organizations can:\n\n1. **Determine the feasibility of deployment**: Risk management helps assess the potential impact of an AI system, allowing organizations to determine whether the risks associated with deployment are manageable.\n2. **Prioritize deployment**: Based on the assessed risk level, organizations can prioritize the deployment of AI systems, focusing on those with lower risk levels.\n3. **Develop mitigation strategies**: Risk management provides actionable risk management efforts, which can be used to develop mitigation strategies to minimize risks associated with deployment.\n4. **Ensure responsible AI deployment**: By prioritizing risks and developing mitigation strategies, organizations can ensure that AI systems are deployed responsibly, minimizing potential risks and negative consequences.\n\nIn essence, risk management helps organizations frame the practicality of AI deployment by:\n\n* Identifying potential risks\n* Assessing their impact\n* Prioritizing risks based on their level\n* Developing mitigation strategies\n* Ens"
+      }
+    }
+  ],
+  "created": 1781906458,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 330,
+    "total_tokens": 530,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-UhORAuwiVv82VrqGhmQiJxx8K3TzvgU6",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 330,
+    "prompt_ms": 430.884,
+    "prompt_per_token_ms": 1.305709090909091,
+    "prompt_per_second": 765.8673796195727,
+    "predicted_n": 200,
+    "predicted_ms": 2566.833,
+    "predicted_per_token_ms": 12.834165,
+    "predicted_per_second": 77.91702849386773
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 273,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 259,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 264,
+        "page": 11,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

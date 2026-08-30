@@ -1,0 +1,9 @@
+batch_number,input_file,rows,first_answer_id,last_answer_id,status
+1,batch_01.json,30,R9-Q027-R1,A7-Q012-R1,prepared
+2,batch_02.json,30,M4-Q008-R1,R9-Q031-R1,prepared
+3,batch_03.json,30,M4-Q035-R1,M4-Q005-R1,prepared
+4,batch_04.json,30,M4-Q009-R1,F3-Q008-R1,prepared
+5,batch_05.json,30,F3-Q014-R1,A7-Q006-R1,prepared
+6,batch_06.json,30,K8-Q010-R1,K8-Q012-R1,prepared
+7,batch_07.json,30,T2-Q001-R1,F3-Q002-R1,prepared
+8,batch_08.json,30,T2-Q006-R1,T2-Q014-R1,prepared

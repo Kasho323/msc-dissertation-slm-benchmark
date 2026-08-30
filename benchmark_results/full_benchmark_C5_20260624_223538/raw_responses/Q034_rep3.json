@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Security and data minimisation are crucial aspects when deploying AI systems. AI can introduce new security risks, making it harder to manage these risks effectively. The data minimisation principle aims to reduce the amount of personal data processed, ensuring appropriate levels of security and ensuring the data is fit for purpose. Techniques are presented to help with both data minimisation and effective AI development and deployment. This section is aimed at technical professionals associated with security and data minimisation in AI."
+      }
+    }
+  ],
+  "created": 1782337909,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 93,
+    "prompt_tokens": 390,
+    "total_tokens": 483,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-gSNuJjeretRedTiipowJvREf8Vq5uJFD",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 390,
+    "prompt_ms": 698.236,
+    "prompt_per_token_ms": 1.7903487179487179,
+    "prompt_per_second": 558.5504041613437,
+    "predicted_n": 93,
+    "predicted_ms": 1495.796,
+    "predicted_per_token_ms": 16.083827956989246,
+    "predicted_per_second": 62.174253708393394
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 600,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 602,
+        "page": 15,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 599,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

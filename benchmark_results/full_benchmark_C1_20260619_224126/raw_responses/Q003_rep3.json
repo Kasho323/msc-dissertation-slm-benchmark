@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "    Petr Baudi and Jan ediv`y. Modeling of the question answering task in the yodaqa system. In International Conference of the Cross-Language Evaluation Forum for European Languages, pages 222228. Springer, 2015. URL https://link.springer.com/chapter/10.1007% 2F978-3-319-24027-5_20 . [3] Jonathan Berant, Andrew Chou, Roy Frostig, and Percy Liang. Semantic Parsing on Freebase from Question-Answer Pairs. In Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing, pages\n\nperfor- mance in NQ. Right: MS-MARCO Bleu-1 and Rouge-L as more documents are retrieved. 5 Related Work Single-Task Retrieval Prior work has shown that retrieval improves performance across a variety of NLP"
+      }
+    }
+  ],
+  "created": 1781905888,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 502,
+    "total_tokens": 702,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-iopJS4MdoUZ237OQjIEArh36l496I3CI",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 502,
+    "prompt_ms": 560.182,
+    "prompt_per_token_ms": 1.1159003984063744,
+    "prompt_per_second": 896.1373267973622,
+    "predicted_n": 200,
+    "predicted_ms": 1768.731,
+    "predicted_per_token_ms": 8.843655,
+    "predicted_per_second": 113.07541960874774
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 92,
+        "page": 10,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

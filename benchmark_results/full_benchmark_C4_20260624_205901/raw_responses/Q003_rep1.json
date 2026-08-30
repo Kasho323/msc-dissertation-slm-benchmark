@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Provenance is important in a question-answering system because it helps ensure the accuracy and reliability of the information being used. By providing the origin and context of the information, it helps to verify the information and ensure that it is relevant and trustworthy. This is crucial for the accuracy of the information being used in the system, and it is important for the overall performance and effectiveness of the system. Provenance helps to ensure that the information being used is accurate and relevant, and it is important for the overall performance and effectiveness of the system."
+      }
+    }
+  ],
+  "created": 1782331172,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 112,
+    "prompt_tokens": 534,
+    "total_tokens": 646,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-lXiuWg9efh1YJLYKs1GbCwkm5QPJptVs",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 534,
+    "prompt_ms": 1266.377,
+    "prompt_per_token_ms": 2.371492509363296,
+    "prompt_per_second": 421.6753778693075,
+    "predicted_n": 112,
+    "predicted_ms": 1592.902,
+    "predicted_per_token_ms": 14.222339285714286,
+    "predicted_per_second": 70.31192126069274
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 142,
+        "page": 15,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

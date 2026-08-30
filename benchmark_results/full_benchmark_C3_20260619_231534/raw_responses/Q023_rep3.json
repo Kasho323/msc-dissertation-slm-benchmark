@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Okay, here’s a rephrased and expanded answer based on the provided context, aiming for clarity and incorporating relevant details:\n\n“When considering trustworthiness in AI design and evaluation, it means that we need to deeply understand and address the various aspects of how an AI system is designed and used. It’s not just about technical accuracy; it’s about ensuring that these systems are reliable, ethical, and aligned with human values.  Specifically, it involves considering the entire AI lifecycle, from the initial design and development to deployment and ongoing monitoring.  Crucially, human judgment and input from various stakeholders – including interested parties and relevant AI actors – are essential throughout this process.  This helps to ensure that the metrics used to assess trustworthiness are carefully chosen and that the AI system’s benefits and positive impacts are appropriately evaluated.  However, it’s important to recognize that trustworthiness is a complex social concept, and it’s rarely a straightforward issue.  There are often trade-"
+      }
+    }
+  ],
+  "created": 1781908277,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 351,
+    "total_tokens": 551,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-lw7HVwRO27puR3fSGIjCfRTAIW5S5AwH",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 351,
+    "prompt_ms": 709.83,
+    "prompt_per_token_ms": 2.0223076923076926,
+    "prompt_per_second": 494.4845949030049,
+    "predicted_n": 200,
+    "predicted_ms": 3502.134,
+    "predicted_per_token_ms": 17.51067,
+    "predicted_per_second": 57.10803755652982
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 298,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 304,
+        "page": 18,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 299,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Generating from model parameters alone involves training a model to generate text based solely on the input sequence x. This approach relies on the model's parameters to generate text, which can be trained using various methods such as backpropagation through time (BPTT) or gradient descent. On the other hand, generating with retrieved passages involves training a model to generate text based on the context of previous i1 tokens y1:i1, the original input x, and a retrieved passage z. This approach uses the retrieved passage as additional context when generating the target sequence y, which can be trained using various methods such as backpropagation through time (BPTT) or gradient descent."
+      }
+    }
+  ],
+  "created": 1781905629,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 136,
+    "prompt_tokens": 425,
+    "total_tokens": 561,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-HUoQ3vXIe21otrVXyApMdqcnI0w9bWS1",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 425,
+    "prompt_ms": 529.642,
+    "prompt_per_token_ms": 1.2462164705882355,
+    "prompt_per_second": 802.4288104040087,
+    "predicted_n": 136,
+    "predicted_ms": 1421.416,
+    "predicted_per_token_ms": 10.451588235294118,
+    "predicted_per_second": 95.67923816813656
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 18,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 10,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

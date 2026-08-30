@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The main difference between generating from model parameters alone and generating with retrieved passages in the context of Retrieval-Augmented Generation (RAG) models is how the model leverages external information to improve its performance.\n\n**Model Parameters Alone (i.e., only using the input sequence)**\n\nIn this scenario, the model is trained solely on the input sequence `x` without any external information. The model generates the target sequence `y` based solely on the input sequence, without any prior knowledge or context.\n\n**Retrieved Passages (i.e., using the input sequence as additional context)**\n\nIn this scenario, the model uses retrieved passages (i.e., previously retrieved documents) as additional context to improve its performance. The model generates the target sequence `y` by combining the input sequence `x` with the retrieved passages.\n\nThe key difference between these two approaches is that the model is using external information (retrieved passages) to augment its internal knowledge (input sequence), rather than relying solely on the input sequence to generate the output.\n\n**RAG Models**\n\nRAG models, such as the one described in the context, combine the benefits of both approaches. They use the input sequence as additional context (i.e., retrieved passages) to improve the model's performance. The model generates the target sequence `y` by combining the input sequence `x` with the retrieved passages.\n\nIn summary, the main difference between generating from model parameters alone and generating with retrieved passages is that the former relies solely on the input sequence, while the latter uses external information to augment the model's internal knowledge."
+      }
+    }
+  ],
+  "created": 1782333630,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 320,
+    "prompt_tokens": 467,
+    "total_tokens": 787,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-KAfGA0oxe7DVuFq4jjzW9gimmcVDvuhm",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 467,
+    "prompt_ms": 592.826,
+    "prompt_per_token_ms": 1.2694346895074946,
+    "prompt_per_second": 787.7522240927354,
+    "predicted_n": 320,
+    "predicted_ms": 4022.021,
+    "predicted_per_token_ms": 12.568815625000001,
+    "predicted_per_second": 79.56199134713617
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 10,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 20,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

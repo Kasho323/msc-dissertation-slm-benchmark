@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The AI RMF could support the privacy discussion in this dissertation by providing a comprehensive taxonomy, terminology, definitions, metrics, and characterizations for AI risk. This would enable practitioners to communicate AI risks across an organization, between organizations, with customers, and to the public at large. Additionally, the AI RMF should offer a common language and understanding to manage AI risks, making it easier to use and fit well with other aspects of risk management."
+      }
+    }
+  ],
+  "created": 1781905764,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 90,
+    "prompt_tokens": 387,
+    "total_tokens": 477,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-4zuNp0vruAtsgeGhjjAImh5ohsGPpiXv",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 387,
+    "prompt_ms": 462.914,
+    "prompt_per_token_ms": 1.1961602067183463,
+    "prompt_per_second": 836.0084162501026,
+    "predicted_n": 90,
+    "predicted_ms": 729.501,
+    "predicted_per_token_ms": 8.105566666666666,
+    "predicted_per_second": 123.37200360246251
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 462,
+        "page": 44,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 240,
+        "page": 7,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 481,
+        "page": 47,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

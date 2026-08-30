@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Based on the retrieved context, here's a rephrased answer:\n\nEven if the runtime supports local inference, there may still be deployment limitations to consider, such as:\n\n* Limited computational resources or memory constraints, which could impact the model's performance or accuracy.\n* Network constraints, such as bandwidth or latency limitations, which could affect the model's ability to be deployed locally.\n* Regulatory or compliance requirements that necessitate the model to be deployed in a specific format or with certain security measures in place.\n* Technical limitations, such as the need for the model to be deployed on a specific hardware platform or with specific software dependencies.\n\nThese limitations could impact the model's statistical accuracy, data minimization, and privacy protection, and may require additional measures to be taken to ensure that the model is deployed in a way that minimizes risks and protects individuals' data."
+      }
+    }
+  ],
+  "created": 1782333767,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 173,
+    "prompt_tokens": 343,
+    "total_tokens": 516,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-VBKeFqGHkIu25zfjDj1yE68YWr4vA9Iz",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 343,
+    "prompt_ms": 474.856,
+    "prompt_per_token_ms": 1.3844198250728863,
+    "prompt_per_second": 722.3242414542514,
+    "predicted_n": 173,
+    "predicted_ms": 2131.552,
+    "predicted_per_token_ms": 12.321109826589597,
+    "predicted_per_second": 81.16151986909068
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 690,
+        "page": 23,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 594,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 653,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

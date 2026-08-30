@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "To reduce privacy risks associated with local deployment of a machine learning (ML) model, consider the following strategies:\n\n1. **Use privacy-preserving query approaches**: Implement techniques that allow one party to retrieve a prediction or classification without revealing all the data used to train the model. This can be done by using secure multi-party computation, homomorphic encryption, or differential privacy.\n\n2. **Separate the ML development environment from the rest of the IT infrastructure**: Use virtual machines or containers to isolate the ML development environment from the rest of the IT system. This will help to further mitigate security risks associated with third-party code.\n\n3. **Pre-configured virtual machines or containers**: Use pre-configured virtual machines or containers specifically for ML tasks. This will ensure that the ML development environment is isolated from the rest of the IT system.\n\n4. **Use secure data pipelines**: Implement secure data pipelines that separate the ML development environment from the rest of the IT infrastructure. This will help to reduce the risk of"
+      }
+    }
+  ],
+  "created": 1781906529,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 391,
+    "total_tokens": 591,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-1msOftZ8syKZcP2SP04uiOjW2aJ4dXDz",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 391,
+    "prompt_ms": 502.88,
+    "prompt_per_token_ms": 1.2861381074168798,
+    "prompt_per_second": 777.521476296532,
+    "predicted_n": 200,
+    "predicted_ms": 2869.852,
+    "predicted_per_token_ms": 14.34926,
+    "predicted_per_second": 69.69000492011435
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 654,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 711,
+        "page": 26,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 625,
+        "page": 17,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

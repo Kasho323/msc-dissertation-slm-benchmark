@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Risk management plays a crucial role in helping organizations determine the practicality of deploying AI systems. It focuses on minimizing potential negative impacts, both for civil liberties and rights, while also maximizing positive ones.  Specifically, it encourages a deliberate allocation of resources based on the assessed risk level and potential impact of each AI system.  This process involves creating clear guidelines for evaluating trustworthiness and prioritizing efforts, and it also helps organizations identify and track emerging risks – a key aspect of effective risk management."
+      }
+    }
+  ],
+  "created": 1781907584,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 96,
+    "prompt_tokens": 326,
+    "total_tokens": 422,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Q3qSvZpiczLOEtiRyUSlYhq9kj5dGuXV",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 326,
+    "prompt_ms": 662.277,
+    "prompt_per_token_ms": 2.0315245398773008,
+    "prompt_per_second": 492.24116193073286,
+    "predicted_n": 96,
+    "predicted_ms": 1500.305,
+    "predicted_per_token_ms": 15.628177083333334,
+    "predicted_per_second": 63.986989312173186
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 248,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 273,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 259,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

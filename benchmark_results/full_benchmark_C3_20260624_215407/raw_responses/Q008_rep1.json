@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The retrieved context suggests that a limitation of large pre-trained models is that they store factual knowledge within their parameters, which can lead to challenges when fine-tuning for specific downstream tasks. Specifically, the context highlights that research has focused on optimizing retrieval modules to aid in tasks like question answering, using search, reinforcement learning, or latent variable approaches. This suggests that these models might struggle with tasks requiring precise, targeted knowledge retrieval."
+      }
+    }
+  ],
+  "created": 1782334520,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 86,
+    "prompt_tokens": 430,
+    "total_tokens": 516,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-sj15INeOFHp8DCqUafJr5ijF0Ic6L5F1",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 430,
+    "prompt_ms": 848.709,
+    "prompt_per_token_ms": 1.9737418604651162,
+    "prompt_per_second": 506.6518677190887,
+    "predicted_n": 86,
+    "predicted_ms": 1147.973,
+    "predicted_per_token_ms": 13.348523255813953,
+    "predicted_per_second": 74.91465391607643
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 79,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 78,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

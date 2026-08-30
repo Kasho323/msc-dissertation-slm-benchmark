@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Based on the source documents, the dissertation conclusion should be a conditional recommendation rather than a single universal winner. This is because the source documents provide a range of reliable and corroborated statements, which can be used to support the conclusion. However, the conclusion should also consider the unique contributions and insights provided by the dissertation. The conclusion should highlight the key findings, methodologies, and implications of the research, while also acknowledging the limitations and potential areas for further exploration. The conclusion should also provide a clear roadmap for future research, including potential areas for further investigation, potential applications of the research, and potential future directions for research."
+      }
+    }
+  ],
+  "created": 1781905587,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 124,
+    "prompt_tokens": 463,
+    "total_tokens": 587,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-qP2k3p5wsU0iNJmzFd15gzSWHeLpe9vX",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 463,
+    "prompt_ms": 539.409,
+    "prompt_per_token_ms": 1.1650302375809936,
+    "prompt_per_second": 858.3468203163092,
+    "predicted_n": 124,
+    "predicted_ms": 1057.895,
+    "predicted_per_token_ms": 8.53141129032258,
+    "predicted_per_second": 117.21390119057185
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 160,
+        "page": 18,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

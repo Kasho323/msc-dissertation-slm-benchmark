@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The RAG (Retriever-Generator) combines two types of memory: parametric and non-parametric. The parametric memory is like a neural network that has been trained to generate the correct answers, while the non-parametric memory is like a memory network that has been trained to update the models knowledge as the world changes. The two types of memory work together to generate the correct answers and update the models knowledge as the world changes."
+      }
+    }
+  ],
+  "created": 1782331651,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 90,
+    "prompt_tokens": 419,
+    "total_tokens": 509,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-InTLAY1R8x2HZRFB8o02BP0hf9m5293T",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 419,
+    "prompt_ms": 1050.585,
+    "prompt_per_token_ms": 2.50736276849642,
+    "prompt_per_second": 398.8254163156717,
+    "predicted_n": 90,
+    "predicted_ms": 1288.686,
+    "predicted_per_token_ms": 14.318733333333332,
+    "predicted_per_second": 69.83857976264196
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 12,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 84,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

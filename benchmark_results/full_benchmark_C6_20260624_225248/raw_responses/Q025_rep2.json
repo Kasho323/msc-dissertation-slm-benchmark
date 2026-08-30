@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Risks to individuals, organizations, and society should be considered separately because each entity is affected differently by potential events and their impact varies. For instance, an individual might face significant harm from a severe accident, while an organization could suffer financial losses or operational disruptions. Society as a whole may experience broader impacts like economic instability or environmental degradation. Therefore, addressing risks to these entities requires tailored strategies and considerations that account for their unique vulnerabilities and impacts."
+      }
+    }
+  ],
+  "created": 1782338615,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 89,
+    "prompt_tokens": 407,
+    "total_tokens": 496,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-JCWOrEBZOrc6ckX5twNtBFgRl3xorYxs",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 407,
+    "prompt_ms": 1254.9,
+    "prompt_per_token_ms": 3.0832923832923833,
+    "prompt_per_second": 324.32863176348707,
+    "predicted_n": 89,
+    "predicted_ms": 2030.363,
+    "predicted_per_token_ms": 22.813067415730337,
+    "predicted_per_second": 43.83452614138457
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 250,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 268,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 460,
+        "page": 44,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

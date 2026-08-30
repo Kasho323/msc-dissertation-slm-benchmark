@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG adds a key feature to standard language generation systems: it learns to retrieve relevant information for the task. This retrieval process improves the system’s performance significantly, as demonstrated by Ablations where the retriever is frozen during training.  The results show that RAG’s retrieval mechanism is more diverse than RAG-Tokens, and it’s more effective at retrieving relevant information for all tasks, outperforming both BART and RAG in 17% of cases.  Furthermore, evaluators consistently find RAG generations to be more specific and factually accurate than RAG and BART."
+      }
+    }
+  ],
+  "created": 1781907790,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 120,
+    "prompt_tokens": 423,
+    "total_tokens": 543,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-OMUNlfVFbeVCuPi8m2v4OSf7GWZDXmAs",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 423,
+    "prompt_ms": 889.914,
+    "prompt_per_token_ms": 2.1038156028368795,
+    "prompt_per_second": 475.32682933407045,
+    "predicted_n": 120,
+    "predicted_ms": 1949.16,
+    "predicted_per_token_ms": 16.243000000000002,
+    "predicted_per_second": 61.56498183833036
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 53,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 59,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

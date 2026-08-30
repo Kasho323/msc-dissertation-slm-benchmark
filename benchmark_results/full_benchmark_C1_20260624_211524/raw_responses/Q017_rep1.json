@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The relevant hardware and backend options for deploying llama.cpp include:\n\n- GPU: The platform hosts a number of LLMs compatible with llama.cpp, which can be installed on GPUs.\n\n- Backend: The platform supports various backends, including Vulkan, CANN, OpenCL, IBM zDNN, and WebGPU. These backends are used for different types of models and applications.\n\n- Model: The platform supports various models, including those compatible with llama.cpp, which can be downloaded or directly used from Hugging Face or other model hosting sites.\n\n- Backend: The platform supports various backends, including Vulkan, CANN, OpenCL, IBM zDNN, and WebGPU. These backends are used for different types of models and applications.\n\n- Model: The platform supports various models, including those compatible with llama.cpp, which can be downloaded or directly used from Hugging Face or other model hosting sites.\n\n- Backend: The platform supports various backends, including Vulkan, CANN, OpenCL, IBM zDNN, and WebGPU. These backends are used for different types of models and applications."
+      }
+    }
+  ],
+  "created": 1782332266,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 226,
+    "prompt_tokens": 431,
+    "total_tokens": 657,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-JDejNPw9nAtRzzPUaKHQwnMJAv8HLW1S",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 431,
+    "prompt_ms": 596.325,
+    "prompt_per_token_ms": 1.3835846867749422,
+    "prompt_per_second": 722.7602398021212,
+    "predicted_n": 226,
+    "predicted_ms": 2296.082,
+    "predicted_per_token_ms": 10.159654867256636,
+    "predicted_per_second": 98.42854044411307
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 192,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 173,
+        "page": 1,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

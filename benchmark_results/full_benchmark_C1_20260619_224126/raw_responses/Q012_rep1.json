@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Llama.cpp is relevant for local or on-device language model deployment because it enables minimal setup and state-of-the-art performance on a wide range of models. The main goal of llama.cpp is to enable LLM inference with minimal setup and state-of-the-art performance on a wide range of tools."
+      }
+    }
+  ],
+  "created": 1781905378,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 60,
+    "prompt_tokens": 387,
+    "total_tokens": 447,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-2lUIPk338zb68IQQwUWPcPiC13FQ2qaP",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 387,
+    "prompt_ms": 461.071,
+    "prompt_per_token_ms": 1.1913979328165376,
+    "prompt_per_second": 839.3501217816779,
+    "predicted_n": 60,
+    "predicted_ms": 430.981,
+    "predicted_per_token_ms": 7.183016666666666,
+    "predicted_per_second": 139.21727407936777
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 171,
+        "page": 1,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 196,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

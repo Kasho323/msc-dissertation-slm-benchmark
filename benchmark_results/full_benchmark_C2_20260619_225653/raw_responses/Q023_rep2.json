@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "To consider trustworthiness in AI design and evaluation, it means taking into account the various characteristics that make an AI system trustworthy, such as:\n\n- Inextricably tied to social and organizational behavior\n- Relating to the datasets used by AI systems\n- Involving the selection of AI models and algorithms\n- Involving the interactions with humans who provide oversight and insight\n\nWhen designing and evaluating AI systems, it's essential to consider these trustworthiness characteristics to ensure that the system is:\n\n- Contextually sensitive\n- Able to identify benefits and positive impacts\n- Able to manage risks in social contexts\n\nUltimately, understanding and treating trustworthiness characteristics is crucial for building AI systems that are trustworthy, reliable, and beneficial to society."
+      }
+    }
+  ],
+  "created": 1781906760,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 152,
+    "prompt_tokens": 388,
+    "total_tokens": 540,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Dr9Vr3c0x0tpT97VaZmtMq5RmPh6oLHB",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 388,
+    "prompt_ms": 506.101,
+    "prompt_per_token_ms": 1.3043840206185566,
+    "prompt_per_second": 766.6453929156434,
+    "predicted_n": 152,
+    "predicted_ms": 1861.953,
+    "predicted_per_token_ms": 12.249690789473684,
+    "predicted_per_second": 81.63471365818579
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 298,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 304,
+        "page": 18,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 299,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Based on the source documents, the dissertation conclusion should be a conditional recommendation rather than a single universal winner. The conclusion should be based on a combination of evidence from multiple sources, rather than a single source that is universally accepted as the best option. This approach allows for a more nuanced and comprehensive evaluation of the research, taking into account the varying perspectives and evidence presented in the literature."
+      }
+    }
+  ],
+  "created": 1782333132,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 77,
+    "prompt_tokens": 463,
+    "total_tokens": 540,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-UL2ajL4VWr8tzuQQ6aPkBij26dAOrEHH",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 463,
+    "prompt_ms": 594.27,
+    "prompt_per_token_ms": 1.2835205183585312,
+    "prompt_per_second": 779.1071398522557,
+    "predicted_n": 77,
+    "predicted_ms": 860.389,
+    "predicted_per_token_ms": 11.173883116883117,
+    "predicted_per_second": 89.4944031130105
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 160,
+        "page": 18,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

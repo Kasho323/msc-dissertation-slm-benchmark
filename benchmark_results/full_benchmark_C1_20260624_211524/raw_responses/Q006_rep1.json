@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The key difference between generating from model parameters alone and generating with retrieved passages lies in the approach used to update the models' knowledge as the world changes. In the former method, the models rely solely on the input sequence \\( x \\) to retrieve text documents \\( z \\) and use them as additional context for generating the target sequence \\( y \\). This approach is straightforward and does not require any external knowledge to update the models' knowledge. However, it is limited to the context provided by the input sequence \\( x \\), and the models' knowledge is not updated as the world changes. On the other hand, in the latter method, the models use the input sequence \\( x \\) to retrieve text documents \\( z \\) and use them as additional context for generating the target sequence \\( y \\). This approach allows the models to update their knowledge as the world changes, as the retrieved documents \\( z \\) provide a new context for generating the target sequence \\( y \\)."
+      }
+    }
+  ],
+  "created": 1782332178,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 197,
+    "prompt_tokens": 449,
+    "total_tokens": 646,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-ROHqlQ8DW7lRr2uSfY4NyIkhRTnKqNzQ",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 449,
+    "prompt_ms": 594.171,
+    "prompt_per_token_ms": 1.3233207126948776,
+    "prompt_per_second": 755.6747131717973,
+    "predicted_n": 197,
+    "predicted_ms": 1785.233,
+    "predicted_per_token_ms": 9.062096446700508,
+    "predicted_per_second": 110.34974146231893
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 10,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 20,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

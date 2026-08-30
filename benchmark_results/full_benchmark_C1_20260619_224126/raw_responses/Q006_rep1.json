@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The key difference between generating from model parameters alone and generating with retrieved passages lies in the approach used to generate the text. \n\nWhen generating from model parameters alone, the text is generated based solely on the input sequence and the parameters of the model. This approach is straightforward and relies on the model's internal structure and parameters to generate the text. The text is generated using the model's internal representation and the parameters of the model, which are learned during training. This method is suitable for generating text based on a fixed input sequence and a fixed model structure, such as a neural network or a sequence-to-sequence model.\n\nOn the other hand, when generating with retrieved passages, the text is generated based on the input sequence and the retrieved passages. The text is generated using the retrieved passages as additional context when generating the target sequence. This approach is more flexible and allows for the generation of text based on a dynamic input sequence and a dynamic model structure. The text is generated using the retrieved passages as additional context"
+      }
+    }
+  ],
+  "created": 1781905335,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 425,
+    "total_tokens": 625,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-ESNIcZ8tC9AXvwWtLCgWtGxeZOJ6CSme",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 425,
+    "prompt_ms": 507.417,
+    "prompt_per_token_ms": 1.1939223529411764,
+    "prompt_per_second": 837.5754064211487,
+    "predicted_n": 200,
+    "predicted_ms": 1873.76,
+    "predicted_per_token_ms": 9.3688,
+    "predicted_per_second": 106.73725557168474
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 18,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 10,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "    The context provided discusses the modeling of the question answering task in a Yodaqa system, specifically focusing on the retrieval of documents. It mentions that the work has shown that retrieving documents improves performance across a variety of NLP tasks when considered in isolation. The context also mentions that such tasks include open-domain question answering, fact checking, fact completion, long-form question answering, Wikipedia article generation, dialogue, translation, and language modeling. The work unites factuality and specificity, defining factuality as whether a statement can be corroborated by trusted external sources, and specicity as high mutual dependence between the input and output. The context also mentions the use of pairwise comparative evaluation and the evaluation of answers and generated questions."
+      }
+    }
+  ],
+  "created": 1781905312,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 145,
+    "prompt_tokens": 502,
+    "total_tokens": 647,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-soA6U1izvVAvwgf29tX64JlEBwe2xmns",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 502,
+    "prompt_ms": 590.803,
+    "prompt_per_token_ms": 1.176898406374502,
+    "prompt_per_second": 849.6910137558543,
+    "predicted_n": 145,
+    "predicted_ms": 1117.389,
+    "predicted_per_token_ms": 7.706131034482758,
+    "predicted_per_second": 129.76680457745692
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 92,
+        "page": 10,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

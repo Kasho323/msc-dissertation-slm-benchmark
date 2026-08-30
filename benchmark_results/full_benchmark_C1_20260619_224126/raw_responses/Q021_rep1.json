@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The NIST AI Risk Management Framework aims to minimize potential negative impacts of AI systems, such as threats to civil liberties and rights, while also providing opportunities to maximize positive impacts. It addresses, documents, and manages AI risks and potential negative impacts effectively, leading to more trustworthy AI systems."
+      }
+    }
+  ],
+  "created": 1781905443,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 58,
+    "prompt_tokens": 418,
+    "total_tokens": 476,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-rz03xttKwLBc3F7nmnJnGkeE7wCrkqx0",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 418,
+    "prompt_ms": 496.767,
+    "prompt_per_token_ms": 1.1884377990430621,
+    "prompt_per_second": 841.4407559278294,
+    "predicted_n": 58,
+    "predicted_ms": 416.472,
+    "predicted_per_token_ms": 7.18055172413793,
+    "predicted_per_second": 139.26506463819896
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 248,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 344,
+        "page": 24,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 243,
+        "page": 8,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG (Recurrent Attention-Augmented Generative) adds diversity to standard language generation systems. It is more diverse than RAG-Tokens and BART, and it performs better than both RAG and BART in certain tasks. RAG is particularly effective in generating documents for Jeopardy games, where it can generate responses that are more specific and factually accurate."
+      }
+    }
+  ],
+  "created": 1781905656,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 76,
+    "prompt_tokens": 431,
+    "total_tokens": 507,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-h1UOE3UbngIth8Zm8PK7MzmkxDenFqvL",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 431,
+    "prompt_ms": 557.056,
+    "prompt_per_token_ms": 1.2924733178654293,
+    "prompt_per_second": 773.7103630514705,
+    "predicted_n": 76,
+    "predicted_ms": 818.436,
+    "predicted_per_token_ms": 10.768894736842105,
+    "predicted_per_second": 92.8600403696807
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 53,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 59,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

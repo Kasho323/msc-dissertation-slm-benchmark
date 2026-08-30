@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG combines parametric memory and non-parametric memory by leveraging both types of memory in its models. The parametric memory component is used to generate the target sequence, while the non-parametric memory component is used to retrieve text documents and provide additional context for the generation process. This allows RAG to learn latent retrieval and retrieve evidence documents rather than related training pairs."
+      }
+    }
+  ],
+  "created": 1782337293,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 75,
+    "prompt_tokens": 419,
+    "total_tokens": 494,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-vut0pN26Qd7hxQxxuyzS9jaBl7WYcrNz",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 419,
+    "prompt_ms": 739.564,
+    "prompt_per_token_ms": 1.7650692124105012,
+    "prompt_per_second": 566.5500213639389,
+    "predicted_n": 75,
+    "predicted_ms": 1175.572,
+    "predicted_per_token_ms": 15.674293333333331,
+    "predicted_per_second": 63.79872946956886
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 12,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 84,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "An OpenAI-compatible endpoint is useful for this project because it allows for seamless integration with the latest advancements in artificial intelligence. By using an OpenAI-compatible endpoint, you can leverage the latest models and algorithms developed by the company. This enables you to take advantage of the most advanced capabilities and performance in the field. Additionally, OpenAI's API is designed to be compatible with various platforms, making it easier to integrate with existing systems and workflows. This makes it an ideal choice for projects that require seamless integration with the latest technologies and advancements in AI."
+      }
+    }
+  ],
+  "created": 1781905696,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 110,
+    "prompt_tokens": 441,
+    "total_tokens": 551,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-QMA8hoqCMAcbr7779nHAh6qtPxjDvMYT",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 441,
+    "prompt_ms": 516.841,
+    "prompt_per_token_ms": 1.1719750566893423,
+    "prompt_per_second": 853.2604804959359,
+    "predicted_n": 110,
+    "predicted_ms": 971.937,
+    "predicted_per_token_ms": 8.835790909090909,
+    "predicted_per_second": 113.17605976519054
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 201,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 618,
+        "page": 16,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

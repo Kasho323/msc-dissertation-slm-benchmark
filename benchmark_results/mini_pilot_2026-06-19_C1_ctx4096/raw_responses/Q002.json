@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG models combine parametric and non-parametric memory by leveraging two components:\n\n1. A retriever component: This component returns (top-K truncated) distributions over text passages given a query. This allows the model to retrieve relevant information from the context, which can be used to improve the quality of the generated text.\n\n2. A generator component: This component generates the target sequence y, which is then combined with the retrieved text documents zand used as additional context for generating the target sequence y. This allows the model to learn from the context and improve its performance on open-domain QA tasks."
+      }
+    }
+  ],
+  "created": 1781888011,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 120,
+    "prompt_tokens": 419,
+    "total_tokens": 539,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-is7vwivY9D5C3EW4JQLwZ9iclOMq2F1h",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 419,
+    "prompt_ms": 531.749,
+    "prompt_per_token_ms": 1.269090692124105,
+    "prompt_per_second": 787.9657507583464,
+    "predicted_n": 120,
+    "predicted_ms": 1136.549,
+    "predicted_per_token_ms": 9.471241666666666,
+    "predicted_per_second": 105.58277733736074
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 12,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 84,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

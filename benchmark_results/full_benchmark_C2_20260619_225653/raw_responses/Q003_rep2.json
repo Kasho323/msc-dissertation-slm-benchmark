@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Here's a rephrased version of the context combined with the relevant parts:\n\n**Retrieved Context:**\n\n* A study on question-answering systems, specifically the Yodaqa system, was presented at the International Conference of the Cross-Language Evaluation Forum for European Languages (2015).\n* The study focused on modeling the question-answering task in the Yodaqa system.\n* A paper titled \"Semantic Parsing on Freebase from Question-Answer Pairs\" was published by Jonathan Berant, Andrew Chou, Roy Frostig, and Percy Liang in the Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing.\n\n**Question:** Why is provenance important in a question-answering system?\n\n**Answer:** Provenance refers to the origin, history, or authenticity of information. In the context of question-answering systems, provenance is crucial because it ensures the accuracy and reliability of the information provided. By verifying the proven"
+      }
+    }
+  ],
+  "created": 1781906590,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 489,
+    "total_tokens": 689,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-7FD5Oj9hBiZQdTxfrhSVaxsGo1vfmk2G",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 489,
+    "prompt_ms": 611.136,
+    "prompt_per_token_ms": 1.249766871165644,
+    "prompt_per_second": 800.1492302858939,
+    "predicted_n": 200,
+    "predicted_ms": 2773.678,
+    "predicted_per_token_ms": 13.86839,
+    "predicted_per_second": 72.10642331229509
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 92,
+        "page": 10,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

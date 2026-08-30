@@ -1,0 +1,1197 @@
+[34m0.00.086.525[0m [32mI [0mlog_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+[34m0.00.086.536[0m [32mI [0mdevice_info:
+[34m0.00.086.546[0m [32mI [0m  - CPU     : Intel(R) Core(TM) Ultra 9 275HX (32189 MiB, 10396 MiB free)
+[34m0.00.086.619[0m [32mI [0msystem_info: n_threads = 24 (n_threads_batch = 24) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+[34m0.00.086.690[0m [32mI [0msrv          init: running without SSL
+[34m0.00.086.724[0m [32mI [0msrv          init: using 23 threads for HTTP server
+[34m0.00.086.891[0m [32mI [0msrv         start: binding port with default address family
+[34m0.00.091.231[0m [32mI [0msrv  llama_server: loading model
+[34m0.00.091.244[0m [32mI [0msrv    load_model: loading model 'C:\Users\Crbd2\Desktop\Dissertation\Jetson-Nano-RAG-LLM\models\qwen2.5-1.5b-instruct-q8_0.gguf'
+[34m0.00.091.333[0m [32mI [0mcommon_init_result: fitting params to device memory ...
+[34m0.00.091.334[0m [32mI [0mcommon_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+[34m0.00.439.867[0m [32mI [0mcommon_params_fit_impl: projected to use 1981 MiB of host memory vs. 32189 MiB of total host memory
+[34m0.00.662.861[0m [35mW load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.00.899.507[0m [35mW llama_context: n_ctx_seq (4096) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+[0m[34m0.00.943.441[0m [32mI [0mcommon_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+[34m0.01.259.005[0m [32mI [0msrv    load_model: initializing slots, n_slots = 1
+[34m0.01.302.448[0m [35mW common_speculative_init: no implementations specified for speculative decoding
+[0m[34m0.01.302.454[0m [32mI [0mslot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+[34m0.01.302.543[0m [32mI [0msrv    load_model: prompt cache is disabled - use `--cache-ram N` to enable it
+[34m0.01.302.544[0m [32mI [0msrv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+[34m0.01.302.544[0m [32mI [0msrv    load_model: context checkpoints disabled
+[34m0.01.302.579[0m [35mW srv          init: --cache-idle-slots requires --cache-ram, disabling
+[0m[34m0.01.306.696[0m [32mI [0minit: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+[34m0.01.309.053[0m [32mI [0msrv          init: init: chat template, thinking = 0
+[34m0.01.309.072[0m [32mI [0msrv  llama_server: model loaded
+[34m0.01.309.075[0m [32mI [0msrv  llama_server: server is listening on http://127.0.0.1:8080
+[34m0.01.309.080[0m [32mI [0msrv  update_slots: all slots are idle
+[34m0.04.701.816[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m0.04.702.423[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+[34m0.04.702.484[0m [32mI [0mslot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+[34m0.07.947.367[0m [32mI [0mslot print_timing: id  0 | task 0 | prompt eval time =    1475.51 ms /   469 tokens (    3.15 ms per token,   317.86 tokens per second)
+[34m0.07.947.374[0m [32mI [0mslot print_timing: id  0 | task 0 |        eval time =    1769.33 ms /    79 tokens (   22.40 ms per token,    44.65 tokens per second)
+[34m0.07.947.375[0m [32mI [0mslot print_timing: id  0 | task 0 |       total time =    3244.85 ms /   548 tokens
+[34m0.07.947.376[0m [32mI [0mslot print_timing: id  0 | task 0 |    graphs reused =         77
+[34m0.07.947.417[0m [32mI [0mslot      release: id  0 | task 0 | stop processing: n_tokens = 547, truncated = 0
+[34m0.07.947.426[0m [32mI [0msrv  update_slots: all slots are idle
+[34m0.13.925.562[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m0.13.925.882[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.162 (> 0.100 thold), f_keep = 0.124
+[34m0.13.926.106[0m [32mI [0mslot launch_slot_: id  0 | task 81 | processing task, is_child = 0
+[34m0.16.424.339[0m [32mI [0mslot print_timing: id  0 | task 81 | prompt eval time =    1324.62 ms /   419 tokens (    3.16 ms per token,   316.32 tokens per second)
+[34m0.16.424.345[0m [32mI [0mslot print_timing: id  0 | task 81 |        eval time =    1173.59 ms /    52 tokens (   22.57 ms per token,    44.31 tokens per second)
+[34m0.16.424.346[0m [32mI [0mslot print_timing: id  0 | task 81 |       total time =    2498.20 ms /   471 tokens
+[34m0.16.424.346[0m [32mI [0mslot print_timing: id  0 | task 81 |    graphs reused =        127
+[34m0.16.424.380[0m [32mI [0mslot      release: id  0 | task 81 | stop processing: n_tokens = 470, truncated = 0
+[34m0.16.424.390[0m [32mI [0msrv  update_slots: all slots are idle
+[34m0.22.396.942[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m0.22.397.277[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.135 (> 0.100 thold), f_keep = 0.145
+[34m0.22.397.494[0m [32mI [0mslot launch_slot_: id  0 | task 135 | processing task, is_child = 0
+[34m0.26.210.605[0m [32mI [0mslot print_timing: id  0 | task 135 | n_decoded =    100, tg =  43.69 t/s
+[34m0.27.317.249[0m [32mI [0mslot print_timing: id  0 | task 135 | prompt eval time =    1524.25 ms /   502 tokens (    3.04 ms per token,   329.34 tokens per second)
+[34m0.27.317.255[0m [32mI [0mslot print_timing: id  0 | task 135 |        eval time =    3395.47 ms /   144 tokens (   23.58 ms per token,    42.41 tokens per second)
+[34m0.27.317.255[0m [32mI [0mslot print_timing: id  0 | task 135 |       total time =    4919.72 ms /   646 tokens
+[34m0.27.317.256[0m [32mI [0mslot print_timing: id  0 | task 135 |    graphs reused =        268
+[34m0.27.317.293[0m [32mI [0mslot      release: id  0 | task 135 | stop processing: n_tokens = 645, truncated = 0
+[34m0.27.317.304[0m [32mI [0msrv  update_slots: all slots are idle
+[34m0.33.299.397[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m0.33.299.782[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.163 (> 0.100 thold), f_keep = 0.105
+[34m0.33.300.003[0m [32mI [0mslot launch_slot_: id  0 | task 281 | processing task, is_child = 0
+[34m0.36.825.008[0m [32mI [0mslot print_timing: id  0 | task 281 | prompt eval time =    1305.15 ms /   417 tokens (    3.13 ms per token,   319.50 tokens per second)
+[34m0.36.825.014[0m [32mI [0mslot print_timing: id  0 | task 281 |        eval time =    2219.83 ms /    97 tokens (   22.88 ms per token,    43.70 tokens per second)
+[34m0.36.825.015[0m [32mI [0mslot print_timing: id  0 | task 281 |       total time =    3524.98 ms /   514 tokens
+[34m0.36.825.015[0m [32mI [0mslot print_timing: id  0 | task 281 |    graphs reused =        362
+[34m0.36.825.059[0m [32mI [0mslot      release: id  0 | task 281 | stop processing: n_tokens = 513, truncated = 0
+[34m0.36.825.073[0m [32mI [0msrv  update_slots: all slots are idle
+[34m0.42.764.544[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m0.42.764.811[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.157 (> 0.100 thold), f_keep = 0.133
+[34m0.42.765.039[0m [32mI [0mslot launch_slot_: id  0 | task 380 | processing task, is_child = 0
+[34m0.45.461.287[0m [32mI [0mslot print_timing: id  0 | task 380 | prompt eval time =    1323.67 ms /   432 tokens (    3.06 ms per token,   326.37 tokens per second)
+[34m0.45.461.293[0m [32mI [0mslot print_timing: id  0 | task 380 |        eval time =    1372.55 ms /    59 tokens (   23.26 ms per token,    42.99 tokens per second)
+[34m0.45.461.294[0m [32mI [0mslot print_timing: id  0 | task 380 |       total time =    2696.22 ms /   491 tokens
+[34m0.45.461.294[0m [32mI [0mslot print_timing: id  0 | task 380 |    graphs reused =        419
+[34m0.45.461.330[0m [32mI [0mslot      release: id  0 | task 380 | stop processing: n_tokens = 490, truncated = 0
+[34m0.45.461.341[0m [32mI [0msrv  update_slots: all slots are idle
+[34m0.51.450.069[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m0.51.450.373[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.392 (> 0.100 thold), f_keep = 0.359
+[34m0.51.450.596[0m [32mI [0mslot launch_slot_: id  0 | task 441 | processing task, is_child = 0
+[34m0.55.146.282[0m [32mI [0mslot print_timing: id  0 | task 441 | n_decoded =    100, tg =  43.56 t/s
+[34m0.55.535.932[0m [32mI [0mslot print_timing: id  0 | task 441 | prompt eval time =    1399.74 ms /   449 tokens (    3.12 ms per token,   320.77 tokens per second)
+[34m0.55.535.937[0m [32mI [0mslot print_timing: id  0 | task 441 |        eval time =    2685.57 ms /   117 tokens (   22.95 ms per token,    43.57 tokens per second)
+[34m0.55.535.938[0m [32mI [0mslot print_timing: id  0 | task 441 |       total time =    4085.31 ms /   566 tokens
+[34m0.55.535.939[0m [32mI [0mslot print_timing: id  0 | task 441 |    graphs reused =        533
+[34m0.55.535.973[0m [32mI [0mslot      release: id  0 | task 441 | stop processing: n_tokens = 565, truncated = 0
+[34m0.55.535.984[0m [32mI [0msrv  update_slots: all slots are idle
+[34m1.01.612.432[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m1.01.612.776[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.166 (> 0.100 thold), f_keep = 0.120
+[34m1.01.612.996[0m [32mI [0mslot launch_slot_: id  0 | task 560 | processing task, is_child = 0
+[34m1.03.805.221[0m [32mI [0mslot print_timing: id  0 | task 560 | prompt eval time =    1280.44 ms /   409 tokens (    3.13 ms per token,   319.42 tokens per second)
+[34m1.03.805.227[0m [32mI [0mslot print_timing: id  0 | task 560 |        eval time =     911.76 ms /    41 tokens (   22.24 ms per token,    44.97 tokens per second)
+[34m1.03.805.228[0m [32mI [0mslot print_timing: id  0 | task 560 |       total time =    2192.20 ms /   450 tokens
+[34m1.03.805.229[0m [32mI [0mslot print_timing: id  0 | task 560 |    graphs reused =        572
+[34m1.03.805.261[0m [32mI [0mslot      release: id  0 | task 560 | stop processing: n_tokens = 449, truncated = 0
+[34m1.03.805.273[0m [32mI [0msrv  update_slots: all slots are idle
+[34m1.09.712.527[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m1.09.712.826[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.155 (> 0.100 thold), f_keep = 0.151
+[34m1.09.713.027[0m [32mI [0mslot launch_slot_: id  0 | task 603 | processing task, is_child = 0
+[34m1.12.645.031[0m [32mI [0mslot print_timing: id  0 | task 603 | prompt eval time =    1384.13 ms /   440 tokens (    3.15 ms per token,   317.89 tokens per second)
+[34m1.12.645.037[0m [32mI [0mslot print_timing: id  0 | task 603 |        eval time =    1547.85 ms /    68 tokens (   22.76 ms per token,    43.93 tokens per second)
+[34m1.12.645.038[0m [32mI [0mslot print_timing: id  0 | task 603 |       total time =    2931.98 ms /   508 tokens
+[34m1.12.645.039[0m [32mI [0mslot print_timing: id  0 | task 603 |    graphs reused =        638
+[34m1.12.645.070[0m [32mI [0mslot      release: id  0 | task 603 | stop processing: n_tokens = 507, truncated = 0
+[34m1.12.645.081[0m [32mI [0msrv  update_slots: all slots are idle
+[34m1.18.578.961[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m1.18.579.260[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.171 (> 0.100 thold), f_keep = 0.134
+[34m1.18.579.462[0m [32mI [0mslot launch_slot_: id  0 | task 673 | processing task, is_child = 0
+[34m1.22.151.277[0m [32mI [0mslot print_timing: id  0 | task 673 | n_decoded =    100, tg =  43.42 t/s
+[34m1.23.847.068[0m [32mI [0mslot print_timing: id  0 | task 673 | prompt eval time =    1268.72 ms /   398 tokens (    3.19 ms per token,   313.70 tokens per second)
+[34m1.23.847.073[0m [32mI [0mslot print_timing: id  0 | task 673 |        eval time =    3998.85 ms /   174 tokens (   22.98 ms per token,    43.51 tokens per second)
+[34m1.23.847.074[0m [32mI [0mslot print_timing: id  0 | task 673 |       total time =    5267.57 ms /   572 tokens
+[34m1.23.847.074[0m [32mI [0mslot print_timing: id  0 | task 673 |    graphs reused =        809
+[34m1.23.847.104[0m [32mI [0mslot      release: id  0 | task 673 | stop processing: n_tokens = 571, truncated = 0
+[34m1.23.847.117[0m [32mI [0msrv  update_slots: all slots are idle
+[34m1.29.801.263[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m1.29.801.604[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.158 (> 0.100 thold), f_keep = 0.119
+[34m1.29.801.843[0m [32mI [0mslot launch_slot_: id  0 | task 849 | processing task, is_child = 0
+[34m1.32.973.344[0m [32mI [0mslot print_timing: id  0 | task 849 | prompt eval time =    1395.68 ms /   431 tokens (    3.24 ms per token,   308.81 tokens per second)
+[34m1.32.973.350[0m [32mI [0mslot print_timing: id  0 | task 849 |        eval time =    1775.79 ms /    79 tokens (   22.48 ms per token,    44.49 tokens per second)
+[34m1.32.973.351[0m [32mI [0mslot print_timing: id  0 | task 849 |       total time =    3171.47 ms /   510 tokens
+[34m1.32.973.352[0m [32mI [0mslot print_timing: id  0 | task 849 |    graphs reused =        886
+[34m1.32.973.399[0m [32mI [0mslot      release: id  0 | task 849 | stop processing: n_tokens = 509, truncated = 0
+[34m1.32.973.415[0m [32mI [0msrv  update_slots: all slots are idle
+[34m1.38.860.007[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m1.38.860.339[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.178 (> 0.100 thold), f_keep = 0.134
+[34m1.38.860.558[0m [32mI [0mslot launch_slot_: id  0 | task 930 | processing task, is_child = 0
+[34m1.40.870.494[0m [32mI [0mslot print_timing: id  0 | task 930 | prompt eval time =    1208.15 ms /   382 tokens (    3.16 ms per token,   316.19 tokens per second)
+[34m1.40.870.501[0m [32mI [0mslot print_timing: id  0 | task 930 |        eval time =     801.76 ms /    35 tokens (   22.91 ms per token,    43.65 tokens per second)
+[34m1.40.870.502[0m [32mI [0mslot print_timing: id  0 | task 930 |       total time =    2009.91 ms /   417 tokens
+[34m1.40.870.502[0m [32mI [0mslot print_timing: id  0 | task 930 |    graphs reused =        919
+[34m1.40.870.537[0m [32mI [0mslot      release: id  0 | task 930 | stop processing: n_tokens = 416, truncated = 0
+[34m1.40.870.550[0m [32mI [0msrv  update_slots: all slots are idle
+[34m1.46.825.405[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m1.46.825.719[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.941 (> 0.100 thold), f_keep = 0.875
+[34m1.46.825.939[0m [32mI [0mslot launch_slot_: id  0 | task 967 | processing task, is_child = 0
+[34m1.49.374.937[0m [32mI [0mslot print_timing: id  0 | task 967 | prompt eval time =    1243.60 ms /   387 tokens (    3.21 ms per token,   311.19 tokens per second)
+[34m1.49.374.944[0m [32mI [0mslot print_timing: id  0 | task 967 |        eval time =    1305.38 ms /    58 tokens (   22.51 ms per token,    44.43 tokens per second)
+[34m1.49.374.945[0m [32mI [0mslot print_timing: id  0 | task 967 |       total time =    2548.97 ms /   445 tokens
+[34m1.49.374.945[0m [32mI [0mslot print_timing: id  0 | task 967 |    graphs reused =        975
+[34m1.49.374.977[0m [32mI [0mslot      release: id  0 | task 967 | stop processing: n_tokens = 444, truncated = 0
+[34m1.49.374.988[0m [32mI [0msrv  update_slots: all slots are idle
+[34m1.55.355.928[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m1.55.356.195[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.156 (> 0.100 thold), f_keep = 0.153
+[34m1.55.356.410[0m [32mI [0mslot launch_slot_: id  0 | task 1027 | processing task, is_child = 0
+[34m1.58.419.338[0m [32mI [0mslot print_timing: id  0 | task 1027 | prompt eval time =    1352.08 ms /   437 tokens (    3.09 ms per token,   323.21 tokens per second)
+[34m1.58.419.344[0m [32mI [0mslot print_timing: id  0 | task 1027 |        eval time =    1710.82 ms /    65 tokens (   26.32 ms per token,    37.99 tokens per second)
+[34m1.58.419.345[0m [32mI [0mslot print_timing: id  0 | task 1027 |       total time =    3062.90 ms /   502 tokens
+[34m1.58.419.345[0m [32mI [0mslot print_timing: id  0 | task 1027 |    graphs reused =       1038
+[34m1.58.419.379[0m [32mI [0mslot      release: id  0 | task 1027 | stop processing: n_tokens = 501, truncated = 0
+[34m1.58.419.393[0m [32mI [0msrv  update_slots: all slots are idle
+[34m2.04.414.610[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m2.04.414.874[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.145 (> 0.100 thold), f_keep = 0.136
+[34m2.04.415.105[0m [32mI [0mslot launch_slot_: id  0 | task 1094 | processing task, is_child = 0
+[34m2.07.818.362[0m [32mI [0mslot print_timing: id  0 | task 1094 | prompt eval time =    1452.11 ms /   470 tokens (    3.09 ms per token,   323.67 tokens per second)
+[34m2.07.818.369[0m [32mI [0mslot print_timing: id  0 | task 1094 |        eval time =    1951.12 ms /    86 tokens (   22.69 ms per token,    44.08 tokens per second)
+[34m2.07.818.369[0m [32mI [0mslot print_timing: id  0 | task 1094 |       total time =    3403.23 ms /   556 tokens
+[34m2.07.818.370[0m [32mI [0mslot print_timing: id  0 | task 1094 |    graphs reused =       1121
+[34m2.07.818.405[0m [32mI [0mslot      release: id  0 | task 1094 | stop processing: n_tokens = 555, truncated = 0
+[34m2.07.818.415[0m [32mI [0msrv  update_slots: all slots are idle
+[34m2.13.746.365[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m2.13.746.685[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.144 (> 0.100 thold), f_keep = 0.123
+[34m2.13.746.899[0m [32mI [0mslot launch_slot_: id  0 | task 1182 | processing task, is_child = 0
+[34m2.17.688.911[0m [32mI [0mslot print_timing: id  0 | task 1182 | n_decoded =    100, tg =  40.13 t/s
+[34m2.20.023.708[0m [32mI [0mslot print_timing: id  0 | task 1182 | prompt eval time =    1449.82 ms /   472 tokens (    3.07 ms per token,   325.56 tokens per second)
+[34m2.20.023.714[0m [32mI [0mslot print_timing: id  0 | task 1182 |        eval time =    4826.96 ms /   189 tokens (   25.54 ms per token,    39.16 tokens per second)
+[34m2.20.023.715[0m [32mI [0mslot print_timing: id  0 | task 1182 |       total time =    6276.78 ms /   661 tokens
+[34m2.20.023.715[0m [32mI [0mslot print_timing: id  0 | task 1182 |    graphs reused =       1307
+[34m2.20.023.749[0m [32mI [0mslot      release: id  0 | task 1182 | stop processing: n_tokens = 660, truncated = 0
+[34m2.20.023.759[0m [32mI [0msrv  update_slots: all slots are idle
+[34m2.25.842.811[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m2.25.843.107[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.173 (> 0.100 thold), f_keep = 0.103
+[34m2.25.843.345[0m [32mI [0mslot launch_slot_: id  0 | task 1373 | processing task, is_child = 0
+[34m2.29.697.907[0m [32mI [0mslot print_timing: id  0 | task 1373 | n_decoded =    100, tg =  39.17 t/s
+[34m2.30.063.375[0m [32mI [0mslot print_timing: id  0 | task 1373 | prompt eval time =    1301.45 ms /   394 tokens (    3.30 ms per token,   302.74 tokens per second)
+[34m2.30.063.382[0m [32mI [0mslot print_timing: id  0 | task 1373 |        eval time =    2918.55 ms /   116 tokens (   25.16 ms per token,    39.75 tokens per second)
+[34m2.30.063.383[0m [32mI [0mslot print_timing: id  0 | task 1373 |       total time =    4220.00 ms /   510 tokens
+[34m2.30.063.383[0m [32mI [0mslot print_timing: id  0 | task 1373 |    graphs reused =       1421
+[34m2.30.063.416[0m [32mI [0mslot      release: id  0 | task 1373 | stop processing: n_tokens = 509, truncated = 0
+[34m2.30.063.427[0m [32mI [0msrv  update_slots: all slots are idle
+[34m2.35.964.735[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m2.35.965.080[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.158 (> 0.100 thold), f_keep = 0.134
+[34m2.35.965.294[0m [32mI [0mslot launch_slot_: id  0 | task 1491 | processing task, is_child = 0
+[34m2.39.434.346[0m [32mI [0mslot print_timing: id  0 | task 1491 | prompt eval time =    1349.30 ms /   431 tokens (    3.13 ms per token,   319.42 tokens per second)
+[34m2.39.434.353[0m [32mI [0mslot print_timing: id  0 | task 1491 |        eval time =    2119.72 ms /    90 tokens (   23.55 ms per token,    42.46 tokens per second)
+[34m2.39.434.354[0m [32mI [0mslot print_timing: id  0 | task 1491 |       total time =    3469.02 ms /   521 tokens
+[34m2.39.434.354[0m [32mI [0mslot print_timing: id  0 | task 1491 |    graphs reused =       1508
+[34m2.39.434.389[0m [32mI [0mslot      release: id  0 | task 1491 | stop processing: n_tokens = 520, truncated = 0
+[34m2.39.434.400[0m [32mI [0msrv  update_slots: all slots are idle
+[34m2.45.295.233[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m2.45.295.505[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.183 (> 0.100 thold), f_keep = 0.131
+[34m2.45.295.735[0m [32mI [0mslot launch_slot_: id  0 | task 1583 | processing task, is_child = 0
+[34m2.48.002.615[0m [32mI [0mslot print_timing: id  0 | task 1583 | prompt eval time =    1156.45 ms /   372 tokens (    3.11 ms per token,   321.67 tokens per second)
+[34m2.48.002.622[0m [32mI [0mslot print_timing: id  0 | task 1583 |        eval time =    1550.40 ms /    69 tokens (   22.47 ms per token,    44.50 tokens per second)
+[34m2.48.002.622[0m [32mI [0mslot print_timing: id  0 | task 1583 |       total time =    2706.85 ms /   441 tokens
+[34m2.48.002.623[0m [32mI [0mslot print_timing: id  0 | task 1583 |    graphs reused =       1575
+[34m2.48.002.656[0m [32mI [0mslot      release: id  0 | task 1583 | stop processing: n_tokens = 440, truncated = 0
+[34m2.48.002.667[0m [32mI [0msrv  update_slots: all slots are idle
+[34m2.53.882.271[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m2.53.882.649[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.118 (> 0.100 thold), f_keep = 0.155
+[34m2.53.882.872[0m [32mI [0mslot launch_slot_: id  0 | task 1654 | processing task, is_child = 0
+[34m2.57.084.341[0m [32mI [0mslot print_timing: id  0 | task 1654 | prompt eval time =    1786.55 ms /   575 tokens (    3.11 ms per token,   321.85 tokens per second)
+[34m2.57.084.348[0m [32mI [0mslot print_timing: id  0 | task 1654 |        eval time =    1414.89 ms /    60 tokens (   23.58 ms per token,    42.41 tokens per second)
+[34m2.57.084.349[0m [32mI [0mslot print_timing: id  0 | task 1654 |       total time =    3201.44 ms /   635 tokens
+[34m2.57.084.350[0m [32mI [0mslot print_timing: id  0 | task 1654 |    graphs reused =       1633
+[34m2.57.084.394[0m [32mI [0mslot      release: id  0 | task 1654 | stop processing: n_tokens = 634, truncated = 0
+[34m2.57.084.409[0m [32mI [0msrv  update_slots: all slots are idle
+[34m3.03.072.683[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m3.03.072.972[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.210 (> 0.100 thold), f_keep = 0.107
+[34m3.03.073.166[0m [32mI [0mslot launch_slot_: id  0 | task 1716 | processing task, is_child = 0
+[34m3.05.594.687[0m [32mI [0mslot print_timing: id  0 | task 1716 | prompt eval time =    1041.25 ms /   324 tokens (    3.21 ms per token,   311.16 tokens per second)
+[34m3.05.594.694[0m [32mI [0mslot print_timing: id  0 | task 1716 |        eval time =    1480.24 ms /    66 tokens (   22.43 ms per token,    44.59 tokens per second)
+[34m3.05.594.695[0m [32mI [0mslot print_timing: id  0 | task 1716 |       total time =    2521.49 ms /   390 tokens
+[34m3.05.594.696[0m [32mI [0mslot print_timing: id  0 | task 1716 |    graphs reused =       1697
+[34m3.05.594.746[0m [32mI [0mslot      release: id  0 | task 1716 | stop processing: n_tokens = 389, truncated = 0
+[34m3.05.594.758[0m [32mI [0msrv  update_slots: all slots are idle
+[34m3.11.496.276[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m3.11.496.680[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.163 (> 0.100 thold), f_keep = 0.175
+[34m3.11.496.852[0m [32mI [0mslot launch_slot_: id  0 | task 1784 | processing task, is_child = 0
+[34m3.14.928.451[0m [32mI [0mslot print_timing: id  0 | task 1784 | prompt eval time =    1292.95 ms /   418 tokens (    3.09 ms per token,   323.29 tokens per second)
+[34m3.14.928.459[0m [32mI [0mslot print_timing: id  0 | task 1784 |        eval time =    2138.62 ms /    94 tokens (   22.75 ms per token,    43.95 tokens per second)
+[34m3.14.928.460[0m [32mI [0mslot print_timing: id  0 | task 1784 |       total time =    3431.57 ms /   512 tokens
+[34m3.14.928.460[0m [32mI [0mslot print_timing: id  0 | task 1784 |    graphs reused =       1789
+[34m3.14.928.501[0m [32mI [0mslot      release: id  0 | task 1784 | stop processing: n_tokens = 511, truncated = 0
+[34m3.14.928.515[0m [32mI [0msrv  update_slots: all slots are idle
+[34m3.20.732.249[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m3.20.732.571[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.204 (> 0.100 thold), f_keep = 0.133
+[34m3.20.732.791[0m [32mI [0mslot launch_slot_: id  0 | task 1880 | processing task, is_child = 0
+[34m3.24.056.894[0m [32mI [0mslot print_timing: id  0 | task 1880 | n_decoded =    100, tg =  44.40 t/s
+[34m3.26.423.858[0m [32mI [0mslot print_timing: id  0 | task 1880 | prompt eval time =    1072.06 ms /   334 tokens (    3.21 ms per token,   311.55 tokens per second)
+[34m3.26.423.864[0m [32mI [0mslot print_timing: id  0 | task 1880 |        eval time =    4618.97 ms /   199 tokens (   23.21 ms per token,    43.08 tokens per second)
+[34m3.26.423.865[0m [32mI [0mslot print_timing: id  0 | task 1880 |       total time =    5691.03 ms /   533 tokens
+[34m3.26.423.865[0m [32mI [0mslot print_timing: id  0 | task 1880 |    graphs reused =       1985
+[34m3.26.423.903[0m [32mI [0mslot      release: id  0 | task 1880 | stop processing: n_tokens = 532, truncated = 0
+[34m3.26.423.920[0m [32mI [0msrv  update_slots: all slots are idle
+[34m3.32.369.376[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m3.32.369.782[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.184 (> 0.100 thold), f_keep = 0.128
+[34m3.32.369.993[0m [32mI [0mslot launch_slot_: id  0 | task 2081 | processing task, is_child = 0
+[34m3.35.815.707[0m [32mI [0mslot print_timing: id  0 | task 2081 | n_decoded =    100, tg =  44.02 t/s
+[34m3.36.041.703[0m [32mI [0mslot print_timing: id  0 | task 2081 | prompt eval time =    1174.01 ms /   369 tokens (    3.18 ms per token,   314.31 tokens per second)
+[34m3.36.041.708[0m [32mI [0mslot print_timing: id  0 | task 2081 |        eval time =    2497.67 ms /   109 tokens (   22.91 ms per token,    43.64 tokens per second)
+[34m3.36.041.709[0m [32mI [0mslot print_timing: id  0 | task 2081 |       total time =    3671.68 ms /   478 tokens
+[34m3.36.041.709[0m [32mI [0mslot print_timing: id  0 | task 2081 |    graphs reused =       2092
+[34m3.36.041.743[0m [32mI [0mslot      release: id  0 | task 2081 | stop processing: n_tokens = 477, truncated = 0
+[34m3.36.041.753[0m [32mI [0msrv  update_slots: all slots are idle
+[34m3.41.912.340[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m3.41.912.588[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.186 (> 0.100 thold), f_keep = 0.143
+[34m3.41.912.812[0m [32mI [0mslot launch_slot_: id  0 | task 2192 | processing task, is_child = 0
+[34m3.45.319.746[0m [32mI [0mslot print_timing: id  0 | task 2192 | n_decoded =    100, tg =  44.26 t/s
+[34m3.46.829.333[0m [32mI [0mslot print_timing: id  0 | task 2192 | prompt eval time =    1147.73 ms /   365 tokens (    3.14 ms per token,   318.02 tokens per second)
+[34m3.46.829.339[0m [32mI [0mslot print_timing: id  0 | task 2192 |        eval time =    3768.75 ms /   166 tokens (   22.70 ms per token,    44.05 tokens per second)
+[34m3.46.829.340[0m [32mI [0mslot print_timing: id  0 | task 2192 |       total time =    4916.49 ms /   531 tokens
+[34m3.46.829.341[0m [32mI [0mslot print_timing: id  0 | task 2192 |    graphs reused =       2255
+[34m3.46.829.381[0m [32mI [0mslot      release: id  0 | task 2192 | stop processing: n_tokens = 530, truncated = 0
+[34m3.46.829.396[0m [32mI [0msrv  update_slots: all slots are idle
+[34m3.52.641.951[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m3.52.642.238[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.167 (> 0.100 thold), f_keep = 0.128
+[34m3.52.642.442[0m [32mI [0mslot launch_slot_: id  0 | task 2360 | processing task, is_child = 0
+[34m3.55.928.388[0m [32mI [0mslot print_timing: id  0 | task 2360 | prompt eval time =    1271.77 ms /   407 tokens (    3.12 ms per token,   320.03 tokens per second)
+[34m3.55.928.394[0m [32mI [0mslot print_timing: id  0 | task 2360 |        eval time =    2014.14 ms /    89 tokens (   22.63 ms per token,    44.19 tokens per second)
+[34m3.55.928.395[0m [32mI [0mslot print_timing: id  0 | task 2360 |       total time =    3285.92 ms /   496 tokens
+[34m3.55.928.396[0m [32mI [0mslot print_timing: id  0 | task 2360 |    graphs reused =       2342
+[34m3.55.928.427[0m [32mI [0mslot      release: id  0 | task 2360 | stop processing: n_tokens = 495, truncated = 0
+[34m3.55.928.440[0m [32mI [0msrv  update_slots: all slots are idle
+[34m4.02.131.742[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m4.02.132.065[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.178 (> 0.100 thold), f_keep = 0.137
+[34m4.02.132.269[0m [32mI [0mslot launch_slot_: id  0 | task 2451 | processing task, is_child = 0
+[34m4.05.597.463[0m [32mI [0mslot print_timing: id  0 | task 2451 | n_decoded =    100, tg =  44.42 t/s
+[34m4.06.571.782[0m [32mI [0mslot print_timing: id  0 | task 2451 | prompt eval time =    1213.82 ms /   383 tokens (    3.17 ms per token,   315.53 tokens per second)
+[34m4.06.571.787[0m [32mI [0mslot print_timing: id  0 | task 2451 |        eval time =    3225.66 ms /   142 tokens (   22.72 ms per token,    44.02 tokens per second)
+[34m4.06.571.788[0m [32mI [0mslot print_timing: id  0 | task 2451 |       total time =    4439.48 ms /   525 tokens
+[34m4.06.571.789[0m [32mI [0mslot print_timing: id  0 | task 2451 |    graphs reused =       2481
+[34m4.06.571.821[0m [32mI [0mslot      release: id  0 | task 2451 | stop processing: n_tokens = 524, truncated = 0
+[34m4.06.571.831[0m [32mI [0msrv  update_slots: all slots are idle
+[34m4.12.490.518[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m4.12.490.825[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.207 (> 0.100 thold), f_keep = 0.130
+[34m4.12.491.034[0m [32mI [0mslot launch_slot_: id  0 | task 2595 | processing task, is_child = 0
+[34m4.15.071.616[0m [32mI [0mslot print_timing: id  0 | task 2595 | prompt eval time =    1060.24 ms /   328 tokens (    3.23 ms per token,   309.36 tokens per second)
+[34m4.15.071.629[0m [32mI [0mslot print_timing: id  0 | task 2595 |        eval time =    1520.31 ms /    67 tokens (   22.69 ms per token,    44.07 tokens per second)
+[34m4.15.071.630[0m [32mI [0mslot print_timing: id  0 | task 2595 |       total time =    2580.55 ms /   395 tokens
+[34m4.15.071.631[0m [32mI [0mslot print_timing: id  0 | task 2595 |    graphs reused =       2546
+[34m4.15.071.671[0m [32mI [0mslot      release: id  0 | task 2595 | stop processing: n_tokens = 394, truncated = 0
+[34m4.15.071.688[0m [32mI [0msrv  update_slots: all slots are idle
+[34m4.20.852.536[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m4.20.852.837[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.187 (> 0.100 thold), f_keep = 0.173
+[34m4.20.853.078[0m [32mI [0mslot launch_slot_: id  0 | task 2664 | processing task, is_child = 0
+[34m4.24.428.424[0m [32mI [0mslot print_timing: id  0 | task 2664 | n_decoded =    100, tg =  40.88 t/s
+[34m4.25.124.263[0m [32mI [0mslot print_timing: id  0 | task 2664 | prompt eval time =    1129.20 ms /   364 tokens (    3.10 ms per token,   322.35 tokens per second)
+[34m4.25.124.268[0m [32mI [0mslot print_timing: id  0 | task 2664 |        eval time =    3141.96 ms /   126 tokens (   24.94 ms per token,    40.10 tokens per second)
+[34m4.25.124.269[0m [32mI [0mslot print_timing: id  0 | task 2664 |       total time =    4271.15 ms /   490 tokens
+[34m4.25.124.270[0m [32mI [0mslot print_timing: id  0 | task 2664 |    graphs reused =       2670
+[34m4.25.124.300[0m [32mI [0mslot      release: id  0 | task 2664 | stop processing: n_tokens = 489, truncated = 0
+[34m4.25.124.311[0m [32mI [0msrv  update_slots: all slots are idle
+[34m4.31.094.490[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m4.31.094.773[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.186 (> 0.100 thold), f_keep = 0.139
+[34m4.31.094.996[0m [32mI [0mslot launch_slot_: id  0 | task 2792 | processing task, is_child = 0
+[34m4.34.502.195[0m [32mI [0mslot print_timing: id  0 | task 2792 | n_decoded =    100, tg =  44.28 t/s
+[34m4.35.371.039[0m [32mI [0mslot print_timing: id  0 | task 2792 | prompt eval time =    1148.84 ms /   365 tokens (    3.15 ms per token,   317.71 tokens per second)
+[34m4.35.371.051[0m [32mI [0mslot print_timing: id  0 | task 2792 |        eval time =    3127.16 ms /   134 tokens (   23.34 ms per token,    42.85 tokens per second)
+[34m4.35.371.053[0m [32mI [0mslot print_timing: id  0 | task 2792 |       total time =    4276.00 ms /   499 tokens
+[34m4.35.371.059[0m [32mI [0mslot print_timing: id  0 | task 2792 |    graphs reused =       2802
+[34m4.35.371.117[0m [32mI [0mslot      release: id  0 | task 2792 | stop processing: n_tokens = 498, truncated = 0
+[34m4.35.371.135[0m [32mI [0msrv  update_slots: all slots are idle
+[34m4.41.321.399[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m4.41.321.660[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.193 (> 0.100 thold), f_keep = 0.137
+[34m4.41.321.884[0m [32mI [0mslot launch_slot_: id  0 | task 2928 | processing task, is_child = 0
+[34m4.44.721.038[0m [32mI [0mslot print_timing: id  0 | task 2928 | n_decoded =    100, tg =  43.62 t/s
+[34m4.44.992.708[0m [32mI [0mslot print_timing: id  0 | task 2928 | prompt eval time =    1106.78 ms /   353 tokens (    3.14 ms per token,   318.94 tokens per second)
+[34m4.44.992.715[0m [32mI [0mslot print_timing: id  0 | task 2928 |        eval time =    2564.02 ms /   112 tokens (   22.89 ms per token,    43.68 tokens per second)
+[34m4.44.992.716[0m [32mI [0mslot print_timing: id  0 | task 2928 |       total time =    3670.80 ms /   465 tokens
+[34m4.44.992.717[0m [32mI [0mslot print_timing: id  0 | task 2928 |    graphs reused =       2912
+[34m4.44.992.754[0m [32mI [0mslot      release: id  0 | task 2928 | stop processing: n_tokens = 464, truncated = 0
+[34m4.44.992.771[0m [32mI [0msrv  update_slots: all slots are idle
+[34m4.50.967.632[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m4.50.967.901[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.182 (> 0.100 thold), f_keep = 0.147
+[34m4.50.968.128[0m [32mI [0mslot launch_slot_: id  0 | task 3042 | processing task, is_child = 0
+[34m4.54.367.841[0m [32mI [0mslot print_timing: id  0 | task 3042 | n_decoded =    100, tg =  44.67 t/s
+[34m4.57.381.127[0m [32mI [0mslot print_timing: id  0 | task 3042 | n_decoded =    227, tg =  43.22 t/s
+[34m5.00.381.684[0m [32mI [0mslot print_timing: id  0 | task 3042 | n_decoded =    346, tg =  41.93 t/s
+[34m5.00.753.305[0m [32mI [0mslot print_timing: id  0 | task 3042 | prompt eval time =    1160.92 ms /   373 tokens (    3.11 ms per token,   321.30 tokens per second)
+[34m5.00.753.310[0m [32mI [0mslot print_timing: id  0 | task 3042 |        eval time =    8624.21 ms /   362 tokens (   23.82 ms per token,    41.97 tokens per second)
+[34m5.00.753.311[0m [32mI [0mslot print_timing: id  0 | task 3042 |       total time =    9785.13 ms /   735 tokens
+[34m5.00.753.312[0m [32mI [0mslot print_timing: id  0 | task 3042 |    graphs reused =       3271
+[34m5.00.753.344[0m [32mI [0mslot      release: id  0 | task 3042 | stop processing: n_tokens = 734, truncated = 0
+[34m5.00.753.356[0m [32mI [0msrv  update_slots: all slots are idle
+[34m5.06.713.170[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m5.06.713.476[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.167 (> 0.100 thold), f_keep = 0.093
+[34m5.06.713.703[0m [32mI [0mslot launch_slot_: id  0 | task 3406 | processing task, is_child = 0
+[34m5.10.256.128[0m [32mI [0mslot print_timing: id  0 | task 3406 | n_decoded =    100, tg =  44.41 t/s
+[34m5.11.063.405[0m [32mI [0mslot print_timing: id  0 | task 3406 | prompt eval time =    1290.79 ms /   408 tokens (    3.16 ms per token,   316.09 tokens per second)
+[34m5.11.063.410[0m [32mI [0mslot print_timing: id  0 | task 3406 |        eval time =    3058.88 ms /   135 tokens (   22.66 ms per token,    44.13 tokens per second)
+[34m5.11.063.411[0m [32mI [0mslot print_timing: id  0 | task 3406 |       total time =    4349.67 ms /   543 tokens
+[34m5.11.063.411[0m [32mI [0mslot print_timing: id  0 | task 3406 |    graphs reused =       3403
+[34m5.11.063.445[0m [32mI [0mslot      release: id  0 | task 3406 | stop processing: n_tokens = 542, truncated = 0
+[34m5.11.063.456[0m [32mI [0msrv  update_slots: all slots are idle
+[34m5.16.952.984[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m5.16.953.337[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.179 (> 0.100 thold), f_keep = 0.125
+[34m5.16.953.548[0m [32mI [0mslot launch_slot_: id  0 | task 3543 | processing task, is_child = 0
+[34m5.20.420.942[0m [32mI [0mslot print_timing: id  0 | task 3543 | n_decoded =    100, tg =  44.70 t/s
+[34m5.21.049.219[0m [32mI [0mslot print_timing: id  0 | task 3543 | prompt eval time =    1229.99 ms /   379 tokens (    3.25 ms per token,   308.13 tokens per second)
+[34m5.21.049.225[0m [32mI [0mslot print_timing: id  0 | task 3543 |        eval time =    2865.65 ms /   128 tokens (   22.39 ms per token,    44.67 tokens per second)
+[34m5.21.049.226[0m [32mI [0mslot print_timing: id  0 | task 3543 |       total time =    4095.64 ms /   507 tokens
+[34m5.21.049.227[0m [32mI [0mslot print_timing: id  0 | task 3543 |    graphs reused =       3529
+[34m5.21.049.267[0m [32mI [0mslot      release: id  0 | task 3543 | stop processing: n_tokens = 506, truncated = 0
+[34m5.21.049.280[0m [32mI [0msrv  update_slots: all slots are idle
+[34m5.26.896.340[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m5.26.896.599[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.174 (> 0.100 thold), f_keep = 0.134
+[34m5.26.896.772[0m [32mI [0mslot launch_slot_: id  0 | task 3673 | processing task, is_child = 0
+[34m5.30.760.648[0m [32mI [0mslot print_timing: id  0 | task 3673 | n_decoded =    100, tg =  41.67 t/s
+[34m5.33.114.298[0m [32mI [0mslot print_timing: id  0 | task 3673 | prompt eval time =    1464.06 ms /   390 tokens (    3.75 ms per token,   266.38 tokens per second)
+[34m5.33.114.304[0m [32mI [0mslot print_timing: id  0 | task 3673 |        eval time =    4753.43 ms /   199 tokens (   23.89 ms per token,    41.86 tokens per second)
+[34m5.33.114.305[0m [32mI [0mslot print_timing: id  0 | task 3673 |       total time =    6217.49 ms /   589 tokens
+[34m5.33.114.305[0m [32mI [0mslot print_timing: id  0 | task 3673 |    graphs reused =       3725
+[34m5.33.114.338[0m [32mI [0mslot      release: id  0 | task 3673 | stop processing: n_tokens = 588, truncated = 0
+[34m5.33.114.349[0m [32mI [0msrv  update_slots: all slots are idle
+[34m5.39.433.322[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m5.39.433.727[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.172 (> 0.100 thold), f_keep = 0.116
+[34m5.39.433.949[0m [32mI [0mslot launch_slot_: id  0 | task 3874 | processing task, is_child = 0
+[34m5.43.185.128[0m [32mI [0mslot print_timing: id  0 | task 3874 | n_decoded =    100, tg =  41.50 t/s
+[34m5.46.185.743[0m [32mI [0mslot print_timing: id  0 | task 3874 | n_decoded =    212, tg =  39.18 t/s
+[34m5.46.840.728[0m [32mI [0mslot print_timing: id  0 | task 3874 | prompt eval time =    1341.32 ms /   395 tokens (    3.40 ms per token,   294.49 tokens per second)
+[34m5.46.840.733[0m [32mI [0mslot print_timing: id  0 | task 3874 |        eval time =    6065.43 ms /   239 tokens (   25.38 ms per token,    39.40 tokens per second)
+[34m5.46.840.734[0m [32mI [0mslot print_timing: id  0 | task 3874 |       total time =    7406.74 ms /   634 tokens
+[34m5.46.840.735[0m [32mI [0mslot print_timing: id  0 | task 3874 |    graphs reused =       3961
+[34m5.46.840.767[0m [32mI [0mslot      release: id  0 | task 3874 | stop processing: n_tokens = 633, truncated = 0
+[34m5.46.840.778[0m [32mI [0msrv  update_slots: all slots are idle
+[34m5.52.798.458[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m5.52.798.670[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.194 (> 0.100 thold), f_keep = 0.107
+[34m5.52.798.941[0m [32mI [0mslot launch_slot_: id  0 | task 4115 | processing task, is_child = 0
+[34m5.56.369.953[0m [32mI [0mslot print_timing: id  0 | task 4115 | n_decoded =    100, tg =  42.95 t/s
+[34m5.59.232.480[0m [32mI [0mslot print_timing: id  0 | task 4115 | prompt eval time =    1242.95 ms /   350 tokens (    3.55 ms per token,   281.59 tokens per second)
+[34m5.59.232.485[0m [32mI [0mslot print_timing: id  0 | task 4115 |        eval time =    5190.56 ms /   205 tokens (   25.32 ms per token,    39.49 tokens per second)
+[34m5.59.232.486[0m [32mI [0mslot print_timing: id  0 | task 4115 |       total time =    6433.51 ms /   555 tokens
+[34m5.59.232.487[0m [32mI [0mslot print_timing: id  0 | task 4115 |    graphs reused =       4163
+[34m5.59.232.521[0m [32mI [0mslot      release: id  0 | task 4115 | stop processing: n_tokens = 554, truncated = 0
+[34m5.59.232.533[0m [32mI [0msrv  update_slots: all slots are idle
+[34m6.05.282.625[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m6.05.282.897[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.187 (> 0.100 thold), f_keep = 0.123
+[34m6.05.283.118[0m [32mI [0mslot launch_slot_: id  0 | task 4322 | processing task, is_child = 0
+[34m6.08.847.503[0m [32mI [0mslot print_timing: id  0 | task 4322 | prompt eval time =    1201.19 ms /   364 tokens (    3.30 ms per token,   303.03 tokens per second)
+[34m6.08.847.509[0m [32mI [0mslot print_timing: id  0 | task 4322 |        eval time =    2363.17 ms /    95 tokens (   24.88 ms per token,    40.20 tokens per second)
+[34m6.08.847.510[0m [32mI [0mslot print_timing: id  0 | task 4322 |       total time =    3564.36 ms /   459 tokens
+[34m6.08.847.513[0m [32mI [0mslot print_timing: id  0 | task 4322 |    graphs reused =       4256
+[34m6.08.847.545[0m [32mI [0mslot      release: id  0 | task 4322 | stop processing: n_tokens = 458, truncated = 0
+[34m6.08.847.558[0m [32mI [0msrv  update_slots: all slots are idle
+[34m6.14.745.185[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m6.14.745.670[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.135 (> 0.100 thold), f_keep = 0.148
+[34m6.14.745.871[0m [32mI [0mslot launch_slot_: id  0 | task 4419 | processing task, is_child = 0
+[34m6.18.596.990[0m [32mI [0mslot print_timing: id  0 | task 4419 | n_decoded =    100, tg =  43.57 t/s
+[34m6.21.613.534[0m [32mI [0mslot print_timing: id  0 | task 4419 | n_decoded =    229, tg =  43.11 t/s
+[34m6.24.638.566[0m [32mI [0mslot print_timing: id  0 | task 4419 | n_decoded =    341, tg =  40.90 t/s
+[34m6.27.639.562[0m [32mI [0mslot print_timing: id  0 | task 4419 | n_decoded =    446, tg =  39.34 t/s
+[34m6.29.750.008[0m [32mI [0mslot print_timing: id  0 | task 4419 | prompt eval time =    1555.76 ms /   502 tokens (    3.10 ms per token,   322.67 tokens per second)
+[34m6.29.750.013[0m [32mI [0mslot print_timing: id  0 | task 4419 |        eval time =   13448.32 ms /   512 tokens (   26.27 ms per token,    38.07 tokens per second)
+[34m6.29.750.014[0m [32mI [0mslot print_timing: id  0 | task 4419 |       total time =   15004.08 ms /  1014 tokens
+[34m6.29.750.014[0m [32mI [0mslot print_timing: id  0 | task 4419 |    graphs reused =       4764
+[34m6.29.750.066[0m [32mI [0mslot      release: id  0 | task 4419 | stop processing: n_tokens = 1013, truncated = 0
+[34m6.29.750.083[0m [32mI [0msrv  update_slots: all slots are idle
+[34m6.35.640.999[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m6.35.641.357[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.188 (> 0.100 thold), f_keep = 0.067
+[34m6.35.641.608[0m [32mI [0mslot launch_slot_: id  0 | task 4933 | processing task, is_child = 0
+[34m6.39.070.052[0m [32mI [0mslot print_timing: id  0 | task 4933 | n_decoded =    100, tg =  43.91 t/s
+[34m6.42.072.284[0m [32mI [0mslot print_timing: id  0 | task 4933 | n_decoded =    231, tg =  43.75 t/s
+[34m6.42.346.898[0m [32mI [0mslot print_timing: id  0 | task 4933 | prompt eval time =    1151.04 ms /   361 tokens (    3.19 ms per token,   313.63 tokens per second)
+[34m6.42.346.906[0m [32mI [0mslot print_timing: id  0 | task 4933 |        eval time =    5554.21 ms /   243 tokens (   22.86 ms per token,    43.75 tokens per second)
+[34m6.42.346.907[0m [32mI [0mslot print_timing: id  0 | task 4933 |       total time =    6705.25 ms /   604 tokens
+[34m6.42.346.907[0m [32mI [0mslot print_timing: id  0 | task 4933 |    graphs reused =       5004
+[34m6.42.346.948[0m [32mI [0mslot      release: id  0 | task 4933 | stop processing: n_tokens = 603, truncated = 0
+[34m6.42.346.963[0m [32mI [0msrv  update_slots: all slots are idle
+[34m6.48.381.481[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m6.48.381.799[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.147 (> 0.100 thold), f_keep = 0.113
+[34m6.48.382.038[0m [32mI [0mslot launch_slot_: id  0 | task 5178 | processing task, is_child = 0
+[34m6.51.347.483[0m [32mI [0mslot print_timing: id  0 | task 5178 | prompt eval time =    1443.50 ms /   463 tokens (    3.12 ms per token,   320.75 tokens per second)
+[34m6.51.347.490[0m [32mI [0mslot print_timing: id  0 | task 5178 |        eval time =    1521.91 ms /    67 tokens (   22.72 ms per token,    44.02 tokens per second)
+[34m6.51.347.491[0m [32mI [0mslot print_timing: id  0 | task 5178 |       total time =    2965.42 ms /   530 tokens
+[34m6.51.347.492[0m [32mI [0mslot print_timing: id  0 | task 5178 |    graphs reused =       5068
+[34m6.51.347.527[0m [32mI [0mslot      release: id  0 | task 5178 | stop processing: n_tokens = 529, truncated = 0
+[34m6.51.347.538[0m [32mI [0msrv  update_slots: all slots are idle
+[34m6.57.303.221[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m6.57.303.436[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.145 (> 0.100 thold), f_keep = 0.129
+[34m6.57.303.615[0m [32mI [0mslot launch_slot_: id  0 | task 5247 | processing task, is_child = 0
+[34m7.00.863.400[0m [32mI [0mslot print_timing: id  0 | task 5247 | prompt eval time =    1679.54 ms /   469 tokens (    3.58 ms per token,   279.24 tokens per second)
+[34m7.00.863.406[0m [32mI [0mslot print_timing: id  0 | task 5247 |        eval time =    1880.22 ms /    79 tokens (   23.80 ms per token,    42.02 tokens per second)
+[34m7.00.863.406[0m [32mI [0mslot print_timing: id  0 | task 5247 |       total time =    3559.76 ms /   548 tokens
+[34m7.00.863.407[0m [32mI [0mslot print_timing: id  0 | task 5247 |    graphs reused =       5144
+[34m7.00.863.444[0m [32mI [0mslot      release: id  0 | task 5247 | stop processing: n_tokens = 547, truncated = 0
+[34m7.00.863.456[0m [32mI [0msrv  update_slots: all slots are idle
+[34m7.06.847.142[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m7.06.847.400[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.162 (> 0.100 thold), f_keep = 0.124
+[34m7.06.847.636[0m [32mI [0mslot launch_slot_: id  0 | task 5328 | processing task, is_child = 0
+[34m7.09.438.972[0m [32mI [0mslot print_timing: id  0 | task 5328 | prompt eval time =    1318.34 ms /   419 tokens (    3.15 ms per token,   317.82 tokens per second)
+[34m7.09.438.978[0m [32mI [0mslot print_timing: id  0 | task 5328 |        eval time =    1272.97 ms /    52 tokens (   24.48 ms per token,    40.85 tokens per second)
+[34m7.09.438.979[0m [32mI [0mslot print_timing: id  0 | task 5328 |       total time =    2591.31 ms /   471 tokens
+[34m7.09.438.980[0m [32mI [0mslot print_timing: id  0 | task 5328 |    graphs reused =       5194
+[34m7.09.439.011[0m [32mI [0mslot      release: id  0 | task 5328 | stop processing: n_tokens = 470, truncated = 0
+[34m7.09.439.022[0m [32mI [0msrv  update_slots: all slots are idle
+[34m7.15.288.617[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m7.15.288.921[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.135 (> 0.100 thold), f_keep = 0.145
+[34m7.15.289.123[0m [32mI [0mslot launch_slot_: id  0 | task 5382 | processing task, is_child = 0
+[34m7.19.113.815[0m [32mI [0mslot print_timing: id  0 | task 5382 | n_decoded =    100, tg =  43.87 t/s
+[34m7.20.114.751[0m [32mI [0mslot print_timing: id  0 | task 5382 | prompt eval time =    1545.20 ms /   502 tokens (    3.08 ms per token,   324.88 tokens per second)
+[34m7.20.114.757[0m [32mI [0mslot print_timing: id  0 | task 5382 |        eval time =    3280.39 ms /   144 tokens (   22.78 ms per token,    43.90 tokens per second)
+[34m7.20.114.757[0m [32mI [0mslot print_timing: id  0 | task 5382 |       total time =    4825.60 ms /   646 tokens
+[34m7.20.114.758[0m [32mI [0mslot print_timing: id  0 | task 5382 |    graphs reused =       5335
+[34m7.20.114.794[0m [32mI [0mslot      release: id  0 | task 5382 | stop processing: n_tokens = 645, truncated = 0
+[34m7.20.114.806[0m [32mI [0msrv  update_slots: all slots are idle
+[34m7.26.130.181[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m7.26.130.465[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.163 (> 0.100 thold), f_keep = 0.105
+[34m7.26.130.708[0m [32mI [0mslot launch_slot_: id  0 | task 5528 | processing task, is_child = 0
+[34m7.29.974.161[0m [32mI [0mslot print_timing: id  0 | task 5528 | prompt eval time =    1410.51 ms /   417 tokens (    3.38 ms per token,   295.64 tokens per second)
+[34m7.29.974.167[0m [32mI [0mslot print_timing: id  0 | task 5528 |        eval time =    2432.91 ms /    97 tokens (   25.08 ms per token,    39.87 tokens per second)
+[34m7.29.974.168[0m [32mI [0mslot print_timing: id  0 | task 5528 |       total time =    3843.42 ms /   514 tokens
+[34m7.29.974.168[0m [32mI [0mslot print_timing: id  0 | task 5528 |    graphs reused =       5429
+[34m7.29.974.203[0m [32mI [0mslot      release: id  0 | task 5528 | stop processing: n_tokens = 513, truncated = 0
+[34m7.29.974.216[0m [32mI [0msrv  update_slots: all slots are idle
+[34m7.35.984.884[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m7.35.985.172[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.157 (> 0.100 thold), f_keep = 0.133
+[34m7.35.985.390[0m [32mI [0mslot launch_slot_: id  0 | task 5627 | processing task, is_child = 0
+[34m7.38.694.953[0m [32mI [0mslot print_timing: id  0 | task 5627 | prompt eval time =    1384.32 ms /   432 tokens (    3.20 ms per token,   312.07 tokens per second)
+[34m7.38.694.960[0m [32mI [0mslot print_timing: id  0 | task 5627 |        eval time =    1325.22 ms /    59 tokens (   22.46 ms per token,    44.52 tokens per second)
+[34m7.38.694.961[0m [32mI [0mslot print_timing: id  0 | task 5627 |       total time =    2709.53 ms /   491 tokens
+[34m7.38.694.961[0m [32mI [0mslot print_timing: id  0 | task 5627 |    graphs reused =       5486
+[34m7.38.695.003[0m [32mI [0mslot      release: id  0 | task 5627 | stop processing: n_tokens = 490, truncated = 0
+[34m7.38.695.018[0m [32mI [0msrv  update_slots: all slots are idle
+[34m7.44.664.034[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m7.44.664.357[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.392 (> 0.100 thold), f_keep = 0.359
+[34m7.44.664.560[0m [32mI [0mslot launch_slot_: id  0 | task 5688 | processing task, is_child = 0
+[34m7.48.339.996[0m [32mI [0mslot print_timing: id  0 | task 5688 | n_decoded =    100, tg =  43.93 t/s
+[34m7.48.739.579[0m [32mI [0mslot print_timing: id  0 | task 5688 | prompt eval time =    1399.21 ms /   449 tokens (    3.12 ms per token,   320.89 tokens per second)
+[34m7.48.739.586[0m [32mI [0mslot print_timing: id  0 | task 5688 |        eval time =    2675.78 ms /   117 tokens (   22.87 ms per token,    43.73 tokens per second)
+[34m7.48.739.587[0m [32mI [0mslot print_timing: id  0 | task 5688 |       total time =    4074.99 ms /   566 tokens
+[34m7.48.739.587[0m [32mI [0mslot print_timing: id  0 | task 5688 |    graphs reused =       5600
+[34m7.48.739.631[0m [32mI [0mslot      release: id  0 | task 5688 | stop processing: n_tokens = 565, truncated = 0
+[34m7.48.739.645[0m [32mI [0msrv  update_slots: all slots are idle
+[34m7.54.710.090[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m7.54.710.360[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.166 (> 0.100 thold), f_keep = 0.120
+[34m7.54.710.565[0m [32mI [0mslot launch_slot_: id  0 | task 5807 | processing task, is_child = 0
+[34m7.56.921.232[0m [32mI [0mslot print_timing: id  0 | task 5807 | prompt eval time =    1245.84 ms /   409 tokens (    3.05 ms per token,   328.29 tokens per second)
+[34m7.56.921.239[0m [32mI [0mslot print_timing: id  0 | task 5807 |        eval time =     964.81 ms /    41 tokens (   23.53 ms per token,    42.50 tokens per second)
+[34m7.56.921.240[0m [32mI [0mslot print_timing: id  0 | task 5807 |       total time =    2210.64 ms /   450 tokens
+[34m7.56.921.241[0m [32mI [0mslot print_timing: id  0 | task 5807 |    graphs reused =       5639
+[34m7.56.921.274[0m [32mI [0mslot      release: id  0 | task 5807 | stop processing: n_tokens = 449, truncated = 0
+[34m7.56.921.287[0m [32mI [0msrv  update_slots: all slots are idle
+[34m8.02.893.708[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m8.02.894.010[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.155 (> 0.100 thold), f_keep = 0.151
+[34m8.02.894.232[0m [32mI [0mslot launch_slot_: id  0 | task 5850 | processing task, is_child = 0
+[34m8.05.786.298[0m [32mI [0mslot print_timing: id  0 | task 5850 | prompt eval time =    1341.34 ms /   440 tokens (    3.05 ms per token,   328.03 tokens per second)
+[34m8.05.786.304[0m [32mI [0mslot print_timing: id  0 | task 5850 |        eval time =    1550.70 ms /    68 tokens (   22.80 ms per token,    43.85 tokens per second)
+[34m8.05.786.305[0m [32mI [0mslot print_timing: id  0 | task 5850 |       total time =    2892.04 ms /   508 tokens
+[34m8.05.786.306[0m [32mI [0mslot print_timing: id  0 | task 5850 |    graphs reused =       5705
+[34m8.05.786.340[0m [32mI [0mslot      release: id  0 | task 5850 | stop processing: n_tokens = 507, truncated = 0
+[34m8.05.786.352[0m [32mI [0msrv  update_slots: all slots are idle
+[34m8.11.744.123[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m8.11.744.450[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.171 (> 0.100 thold), f_keep = 0.134
+[34m8.11.744.678[0m [32mI [0mslot launch_slot_: id  0 | task 5920 | processing task, is_child = 0
+[34m8.15.262.915[0m [32mI [0mslot print_timing: id  0 | task 5920 | n_decoded =    100, tg =  44.27 t/s
+[34m8.17.012.036[0m [32mI [0mslot print_timing: id  0 | task 5920 | prompt eval time =    1259.10 ms /   398 tokens (    3.16 ms per token,   316.10 tokens per second)
+[34m8.17.012.041[0m [32mI [0mslot print_timing: id  0 | task 5920 |        eval time =    4008.23 ms /   174 tokens (   23.04 ms per token,    43.41 tokens per second)
+[34m8.17.012.042[0m [32mI [0mslot print_timing: id  0 | task 5920 |       total time =    5267.32 ms /   572 tokens
+[34m8.17.012.045[0m [32mI [0mslot print_timing: id  0 | task 5920 |    graphs reused =       5876
+[34m8.17.012.077[0m [32mI [0mslot      release: id  0 | task 5920 | stop processing: n_tokens = 571, truncated = 0
+[34m8.17.012.090[0m [32mI [0msrv  update_slots: all slots are idle
+[34m8.22.935.573[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m8.22.935.901[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.158 (> 0.100 thold), f_keep = 0.119
+[34m8.22.936.116[0m [32mI [0mslot launch_slot_: id  0 | task 6096 | processing task, is_child = 0
+[34m8.26.144.781[0m [32mI [0mslot print_timing: id  0 | task 6096 | prompt eval time =    1338.23 ms /   431 tokens (    3.10 ms per token,   322.07 tokens per second)
+[34m8.26.144.787[0m [32mI [0mslot print_timing: id  0 | task 6096 |        eval time =    1870.40 ms /    79 tokens (   23.68 ms per token,    42.24 tokens per second)
+[34m8.26.144.788[0m [32mI [0mslot print_timing: id  0 | task 6096 |       total time =    3208.64 ms /   510 tokens
+[34m8.26.144.788[0m [32mI [0mslot print_timing: id  0 | task 6096 |    graphs reused =       5953
+[34m8.26.144.824[0m [32mI [0mslot      release: id  0 | task 6096 | stop processing: n_tokens = 509, truncated = 0
+[34m8.26.144.836[0m [32mI [0msrv  update_slots: all slots are idle
+[34m8.32.374.870[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m8.32.375.131[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.178 (> 0.100 thold), f_keep = 0.134
+[34m8.32.375.337[0m [32mI [0mslot launch_slot_: id  0 | task 6177 | processing task, is_child = 0
+[34m8.34.537.207[0m [32mI [0mslot print_timing: id  0 | task 6177 | prompt eval time =    1333.62 ms /   382 tokens (    3.49 ms per token,   286.44 tokens per second)
+[34m8.34.537.212[0m [32mI [0mslot print_timing: id  0 | task 6177 |        eval time =     828.23 ms /    35 tokens (   23.66 ms per token,    42.26 tokens per second)
+[34m8.34.537.213[0m [32mI [0mslot print_timing: id  0 | task 6177 |       total time =    2161.85 ms /   417 tokens
+[34m8.34.537.214[0m [32mI [0mslot print_timing: id  0 | task 6177 |    graphs reused =       5986
+[34m8.34.537.249[0m [32mI [0mslot      release: id  0 | task 6177 | stop processing: n_tokens = 416, truncated = 0
+[34m8.34.537.259[0m [32mI [0msrv  update_slots: all slots are idle
+[34m8.40.477.611[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m8.40.477.892[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.941 (> 0.100 thold), f_keep = 0.875
+[34m8.40.478.089[0m [32mI [0mslot launch_slot_: id  0 | task 6214 | processing task, is_child = 0
+[34m8.43.043.673[0m [32mI [0mslot print_timing: id  0 | task 6214 | prompt eval time =    1233.03 ms /   387 tokens (    3.19 ms per token,   313.86 tokens per second)
+[34m8.43.043.679[0m [32mI [0mslot print_timing: id  0 | task 6214 |        eval time =    1332.53 ms /    58 tokens (   22.97 ms per token,    43.53 tokens per second)
+[34m8.43.043.680[0m [32mI [0mslot print_timing: id  0 | task 6214 |       total time =    2565.56 ms /   445 tokens
+[34m8.43.043.680[0m [32mI [0mslot print_timing: id  0 | task 6214 |    graphs reused =       6042
+[34m8.43.043.714[0m [32mI [0mslot      release: id  0 | task 6214 | stop processing: n_tokens = 444, truncated = 0
+[34m8.43.043.726[0m [32mI [0msrv  update_slots: all slots are idle
+[34m8.48.985.981[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m8.48.986.278[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.156 (> 0.100 thold), f_keep = 0.153
+[34m8.48.986.490[0m [32mI [0mslot launch_slot_: id  0 | task 6274 | processing task, is_child = 0
+[34m8.51.796.375[0m [32mI [0mslot print_timing: id  0 | task 6274 | prompt eval time =    1351.89 ms /   437 tokens (    3.09 ms per token,   323.25 tokens per second)
+[34m8.51.796.382[0m [32mI [0mslot print_timing: id  0 | task 6274 |        eval time =    1457.97 ms /    65 tokens (   22.43 ms per token,    44.58 tokens per second)
+[34m8.51.796.383[0m [32mI [0mslot print_timing: id  0 | task 6274 |       total time =    2809.86 ms /   502 tokens
+[34m8.51.796.383[0m [32mI [0mslot print_timing: id  0 | task 6274 |    graphs reused =       6105
+[34m8.51.796.425[0m [32mI [0mslot      release: id  0 | task 6274 | stop processing: n_tokens = 501, truncated = 0
+[34m8.51.796.440[0m [32mI [0msrv  update_slots: all slots are idle
+[34m8.57.692.706[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m8.57.692.982[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.145 (> 0.100 thold), f_keep = 0.136
+[34m8.57.693.242[0m [32mI [0mslot launch_slot_: id  0 | task 6341 | processing task, is_child = 0
+[34m9.01.447.880[0m [32mI [0mslot print_timing: id  0 | task 6341 | prompt eval time =    1649.65 ms /   470 tokens (    3.51 ms per token,   284.91 tokens per second)
+[34m9.01.447.892[0m [32mI [0mslot print_timing: id  0 | task 6341 |        eval time =    2104.95 ms /    86 tokens (   24.48 ms per token,    40.86 tokens per second)
+[34m9.01.447.894[0m [32mI [0mslot print_timing: id  0 | task 6341 |       total time =    3754.60 ms /   556 tokens
+[34m9.01.447.895[0m [32mI [0mslot print_timing: id  0 | task 6341 |    graphs reused =       6188
+[34m9.01.447.962[0m [32mI [0mslot      release: id  0 | task 6341 | stop processing: n_tokens = 555, truncated = 0
+[34m9.01.447.978[0m [32mI [0msrv  update_slots: all slots are idle
+[34m9.07.501.363[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m9.07.501.831[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.144 (> 0.100 thold), f_keep = 0.123
+[34m9.07.502.154[0m [32mI [0mslot launch_slot_: id  0 | task 6429 | processing task, is_child = 0
+[34m9.11.225.655[0m [32mI [0mslot print_timing: id  0 | task 6429 | n_decoded =    100, tg =  43.91 t/s
+[34m9.13.268.460[0m [32mI [0mslot print_timing: id  0 | task 6429 | prompt eval time =    1445.94 ms /   472 tokens (    3.06 ms per token,   326.43 tokens per second)
+[34m9.13.268.467[0m [32mI [0mslot print_timing: id  0 | task 6429 |        eval time =    4320.33 ms /   189 tokens (   22.86 ms per token,    43.75 tokens per second)
+[34m9.13.268.468[0m [32mI [0mslot print_timing: id  0 | task 6429 |       total time =    5766.27 ms /   661 tokens
+[34m9.13.268.468[0m [32mI [0mslot print_timing: id  0 | task 6429 |    graphs reused =       6374
+[34m9.13.268.519[0m [32mI [0mslot      release: id  0 | task 6429 | stop processing: n_tokens = 660, truncated = 0
+[34m9.13.268.537[0m [32mI [0msrv  update_slots: all slots are idle
+[34m9.19.213.345[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m9.19.213.602[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.173 (> 0.100 thold), f_keep = 0.103
+[34m9.19.213.810[0m [32mI [0mslot launch_slot_: id  0 | task 6620 | processing task, is_child = 0
+[34m9.22.737.031[0m [32mI [0mslot print_timing: id  0 | task 6620 | n_decoded =    100, tg =  44.08 t/s
+[34m9.23.096.916[0m [32mI [0mslot print_timing: id  0 | task 6620 | prompt eval time =    1254.56 ms /   394 tokens (    3.18 ms per token,   314.05 tokens per second)
+[34m9.23.096.921[0m [32mI [0mslot print_timing: id  0 | task 6620 |        eval time =    2628.52 ms /   116 tokens (   22.66 ms per token,    44.13 tokens per second)
+[34m9.23.096.922[0m [32mI [0mslot print_timing: id  0 | task 6620 |       total time =    3883.08 ms /   510 tokens
+[34m9.23.096.923[0m [32mI [0mslot print_timing: id  0 | task 6620 |    graphs reused =       6488
+[34m9.23.096.963[0m [32mI [0mslot      release: id  0 | task 6620 | stop processing: n_tokens = 509, truncated = 0
+[34m9.23.096.976[0m [32mI [0msrv  update_slots: all slots are idle
+[34m9.28.939.403[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m9.28.939.907[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.158 (> 0.100 thold), f_keep = 0.134
+[34m9.28.940.131[0m [32mI [0mslot launch_slot_: id  0 | task 6738 | processing task, is_child = 0
+[34m9.32.435.682[0m [32mI [0mslot print_timing: id  0 | task 6738 | prompt eval time =    1471.97 ms /   431 tokens (    3.42 ms per token,   292.80 tokens per second)
+[34m9.32.435.689[0m [32mI [0mslot print_timing: id  0 | task 6738 |        eval time =    2023.55 ms /    90 tokens (   22.48 ms per token,    44.48 tokens per second)
+[34m9.32.435.690[0m [32mI [0mslot print_timing: id  0 | task 6738 |       total time =    3495.52 ms /   521 tokens
+[34m9.32.435.690[0m [32mI [0mslot print_timing: id  0 | task 6738 |    graphs reused =       6575
+[34m9.32.435.735[0m [32mI [0mslot      release: id  0 | task 6738 | stop processing: n_tokens = 520, truncated = 0
+[34m9.32.435.750[0m [32mI [0msrv  update_slots: all slots are idle
+[34m9.38.276.884[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m9.38.277.143[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.183 (> 0.100 thold), f_keep = 0.131
+[34m9.38.277.503[0m [32mI [0mslot launch_slot_: id  0 | task 6830 | processing task, is_child = 0
+[34m9.41.033.239[0m [32mI [0mslot print_timing: id  0 | task 6830 | prompt eval time =    1186.09 ms /   372 tokens (    3.19 ms per token,   313.64 tokens per second)
+[34m9.41.033.247[0m [32mI [0mslot print_timing: id  0 | task 6830 |        eval time =    1569.62 ms /    69 tokens (   22.75 ms per token,    43.96 tokens per second)
+[34m9.41.033.248[0m [32mI [0mslot print_timing: id  0 | task 6830 |       total time =    2755.71 ms /   441 tokens
+[34m9.41.033.248[0m [32mI [0mslot print_timing: id  0 | task 6830 |    graphs reused =       6642
+[34m9.41.033.289[0m [32mI [0mslot      release: id  0 | task 6830 | stop processing: n_tokens = 440, truncated = 0
+[34m9.41.033.302[0m [32mI [0msrv  update_slots: all slots are idle
+[34m9.47.077.094[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m9.47.077.673[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.118 (> 0.100 thold), f_keep = 0.155
+[34m9.47.077.926[0m [32mI [0mslot launch_slot_: id  0 | task 6901 | processing task, is_child = 0
+[34m9.50.227.130[0m [32mI [0mslot print_timing: id  0 | task 6901 | prompt eval time =    1759.57 ms /   575 tokens (    3.06 ms per token,   326.79 tokens per second)
+[34m9.50.227.136[0m [32mI [0mslot print_timing: id  0 | task 6901 |        eval time =    1389.61 ms /    60 tokens (   23.16 ms per token,    43.18 tokens per second)
+[34m9.50.227.136[0m [32mI [0mslot print_timing: id  0 | task 6901 |       total time =    3149.17 ms /   635 tokens
+[34m9.50.227.137[0m [32mI [0mslot print_timing: id  0 | task 6901 |    graphs reused =       6700
+[34m9.50.227.172[0m [32mI [0mslot      release: id  0 | task 6901 | stop processing: n_tokens = 634, truncated = 0
+[34m9.50.227.185[0m [32mI [0msrv  update_slots: all slots are idle
+[34m9.56.207.306[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m9.56.207.594[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.210 (> 0.100 thold), f_keep = 0.107
+[34m9.56.207.785[0m [32mI [0mslot launch_slot_: id  0 | task 6963 | processing task, is_child = 0
+[34m9.58.982.778[0m [32mI [0mslot print_timing: id  0 | task 6963 | prompt eval time =    1098.42 ms /   324 tokens (    3.39 ms per token,   294.97 tokens per second)
+[34m9.58.982.783[0m [32mI [0mslot print_timing: id  0 | task 6963 |        eval time =    1676.55 ms /    66 tokens (   25.40 ms per token,    39.37 tokens per second)
+[34m9.58.982.784[0m [32mI [0mslot print_timing: id  0 | task 6963 |       total time =    2774.97 ms /   390 tokens
+[34m9.58.982.785[0m [32mI [0mslot print_timing: id  0 | task 6963 |    graphs reused =       6764
+[34m9.58.982.813[0m [32mI [0mslot      release: id  0 | task 6963 | stop processing: n_tokens = 389, truncated = 0
+[34m9.58.982.824[0m [32mI [0msrv  update_slots: all slots are idle
+[34m10.04.968.153[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m10.04.968.448[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.163 (> 0.100 thold), f_keep = 0.175
+[34m10.04.968.650[0m [32mI [0mslot launch_slot_: id  0 | task 7031 | processing task, is_child = 0
+[34m10.08.432.213[0m [32mI [0mslot print_timing: id  0 | task 7031 | prompt eval time =    1280.61 ms /   418 tokens (    3.06 ms per token,   326.41 tokens per second)
+[34m10.08.432.221[0m [32mI [0mslot print_timing: id  0 | task 7031 |        eval time =    2182.92 ms /    94 tokens (   23.22 ms per token,    43.06 tokens per second)
+[34m10.08.432.222[0m [32mI [0mslot print_timing: id  0 | task 7031 |       total time =    3463.53 ms /   512 tokens
+[34m10.08.432.222[0m [32mI [0mslot print_timing: id  0 | task 7031 |    graphs reused =       6856
+[34m10.08.432.267[0m [32mI [0mslot      release: id  0 | task 7031 | stop processing: n_tokens = 511, truncated = 0
+[34m10.08.432.281[0m [32mI [0msrv  update_slots: all slots are idle
+[34m10.14.297.359[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m10.14.297.705[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.204 (> 0.100 thold), f_keep = 0.133
+[34m10.14.297.919[0m [32mI [0mslot launch_slot_: id  0 | task 7127 | processing task, is_child = 0
+[34m10.17.607.682[0m [32mI [0mslot print_timing: id  0 | task 7127 | n_decoded =    100, tg =  44.51 t/s
+[34m10.19.866.850[0m [32mI [0mslot print_timing: id  0 | task 7127 | prompt eval time =    1063.20 ms /   334 tokens (    3.18 ms per token,   314.14 tokens per second)
+[34m10.19.866.855[0m [32mI [0mslot print_timing: id  0 | task 7127 |        eval time =    4505.70 ms /   199 tokens (   22.64 ms per token,    44.17 tokens per second)
+[34m10.19.866.856[0m [32mI [0mslot print_timing: id  0 | task 7127 |       total time =    5568.90 ms /   533 tokens
+[34m10.19.866.857[0m [32mI [0mslot print_timing: id  0 | task 7127 |    graphs reused =       7052
+[34m10.19.866.886[0m [32mI [0mslot      release: id  0 | task 7127 | stop processing: n_tokens = 532, truncated = 0
+[34m10.19.866.898[0m [32mI [0msrv  update_slots: all slots are idle
+[34m10.25.844.235[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m10.25.844.640[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.184 (> 0.100 thold), f_keep = 0.128
+[34m10.25.844.889[0m [32mI [0mslot launch_slot_: id  0 | task 7328 | processing task, is_child = 0
+[34m10.29.580.152[0m [32mI [0mslot print_timing: id  0 | task 7328 | n_decoded =    100, tg =  39.03 t/s
+[34m10.29.800.660[0m [32mI [0mslot print_timing: id  0 | task 7328 | prompt eval time =    1173.43 ms /   369 tokens (    3.18 ms per token,   314.46 tokens per second)
+[34m10.29.800.665[0m [32mI [0mslot print_timing: id  0 | task 7328 |        eval time =    2782.31 ms /   109 tokens (   25.53 ms per token,    39.18 tokens per second)
+[34m10.29.800.665[0m [32mI [0mslot print_timing: id  0 | task 7328 |       total time =    3955.74 ms /   478 tokens
+[34m10.29.800.666[0m [32mI [0mslot print_timing: id  0 | task 7328 |    graphs reused =       7159
+[34m10.29.800.698[0m [32mI [0mslot      release: id  0 | task 7328 | stop processing: n_tokens = 477, truncated = 0
+[34m10.29.800.711[0m [32mI [0msrv  update_slots: all slots are idle
+[34m10.35.700.040[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m10.35.700.352[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.186 (> 0.100 thold), f_keep = 0.143
+[34m10.35.700.576[0m [32mI [0mslot launch_slot_: id  0 | task 7439 | processing task, is_child = 0
+[34m10.39.127.714[0m [32mI [0mslot print_timing: id  0 | task 7439 | n_decoded =    100, tg =  43.90 t/s
+[34m10.40.644.561[0m [32mI [0mslot print_timing: id  0 | task 7439 | prompt eval time =    1149.00 ms /   365 tokens (    3.15 ms per token,   317.67 tokens per second)
+[34m10.40.644.566[0m [32mI [0mslot print_timing: id  0 | task 7439 |        eval time =    3794.96 ms /   166 tokens (   22.86 ms per token,    43.74 tokens per second)
+[34m10.40.644.567[0m [32mI [0mslot print_timing: id  0 | task 7439 |       total time =    4943.95 ms /   531 tokens
+[34m10.40.644.567[0m [32mI [0mslot print_timing: id  0 | task 7439 |    graphs reused =       7322
+[34m10.40.644.599[0m [32mI [0mslot      release: id  0 | task 7439 | stop processing: n_tokens = 530, truncated = 0
+[34m10.40.644.610[0m [32mI [0msrv  update_slots: all slots are idle
+[34m10.46.443.338[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m10.46.443.657[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.167 (> 0.100 thold), f_keep = 0.128
+[34m10.46.443.859[0m [32mI [0mslot launch_slot_: id  0 | task 7607 | processing task, is_child = 0
+[34m10.49.729.149[0m [32mI [0mslot print_timing: id  0 | task 7607 | prompt eval time =    1254.90 ms /   407 tokens (    3.08 ms per token,   324.33 tokens per second)
+[34m10.49.729.154[0m [32mI [0mslot print_timing: id  0 | task 7607 |        eval time =    2030.36 ms /    89 tokens (   22.81 ms per token,    43.83 tokens per second)
+[34m10.49.729.155[0m [32mI [0mslot print_timing: id  0 | task 7607 |       total time =    3285.26 ms /   496 tokens
+[34m10.49.729.155[0m [32mI [0mslot print_timing: id  0 | task 7607 |    graphs reused =       7409
+[34m10.49.729.188[0m [32mI [0mslot      release: id  0 | task 7607 | stop processing: n_tokens = 495, truncated = 0
+[34m10.49.729.201[0m [32mI [0msrv  update_slots: all slots are idle
+[34m10.55.626.967[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m10.55.627.239[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.178 (> 0.100 thold), f_keep = 0.137
+[34m10.55.627.489[0m [32mI [0mslot launch_slot_: id  0 | task 7698 | processing task, is_child = 0
+[34m10.59.399.528[0m [32mI [0mslot print_timing: id  0 | task 7698 | n_decoded =    100, tg =  38.95 t/s
+[34m11.00.465.533[0m [32mI [0mslot print_timing: id  0 | task 7698 | prompt eval time =    1204.48 ms /   383 tokens (    3.14 ms per token,   317.98 tokens per second)
+[34m11.00.465.539[0m [32mI [0mslot print_timing: id  0 | task 7698 |        eval time =    3633.53 ms /   142 tokens (   25.59 ms per token,    39.08 tokens per second)
+[34m11.00.465.540[0m [32mI [0mslot print_timing: id  0 | task 7698 |       total time =    4838.01 ms /   525 tokens
+[34m11.00.465.541[0m [32mI [0mslot print_timing: id  0 | task 7698 |    graphs reused =       7548
+[34m11.00.465.574[0m [32mI [0mslot      release: id  0 | task 7698 | stop processing: n_tokens = 524, truncated = 0
+[34m11.00.465.584[0m [32mI [0msrv  update_slots: all slots are idle
+[34m11.06.480.578[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m11.06.480.839[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.207 (> 0.100 thold), f_keep = 0.130
+[34m11.06.481.099[0m [32mI [0mslot launch_slot_: id  0 | task 7842 | processing task, is_child = 0
+[34m11.09.049.528[0m [32mI [0mslot print_timing: id  0 | task 7842 | prompt eval time =    1035.40 ms /   328 tokens (    3.16 ms per token,   316.78 tokens per second)
+[34m11.09.049.535[0m [32mI [0mslot print_timing: id  0 | task 7842 |        eval time =    1532.99 ms /    67 tokens (   22.88 ms per token,    43.71 tokens per second)
+[34m11.09.049.536[0m [32mI [0mslot print_timing: id  0 | task 7842 |       total time =    2568.40 ms /   395 tokens
+[34m11.09.049.536[0m [32mI [0mslot print_timing: id  0 | task 7842 |    graphs reused =       7613
+[34m11.09.049.577[0m [32mI [0mslot      release: id  0 | task 7842 | stop processing: n_tokens = 394, truncated = 0
+[34m11.09.049.593[0m [32mI [0msrv  update_slots: all slots are idle
+[34m11.14.850.718[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m11.14.851.022[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.187 (> 0.100 thold), f_keep = 0.173
+[34m11.14.851.249[0m [32mI [0mslot launch_slot_: id  0 | task 7911 | processing task, is_child = 0
+[34m11.18.280.892[0m [32mI [0mslot print_timing: id  0 | task 7911 | n_decoded =    100, tg =  44.25 t/s
+[34m11.18.875.393[0m [32mI [0mslot print_timing: id  0 | task 7911 | prompt eval time =    1169.67 ms /   364 tokens (    3.21 ms per token,   311.20 tokens per second)
+[34m11.18.875.398[0m [32mI [0mslot print_timing: id  0 | task 7911 |        eval time =    2854.45 ms /   126 tokens (   22.65 ms per token,    44.14 tokens per second)
+[34m11.18.875.399[0m [32mI [0mslot print_timing: id  0 | task 7911 |       total time =    4024.12 ms /   490 tokens
+[34m11.18.875.400[0m [32mI [0mslot print_timing: id  0 | task 7911 |    graphs reused =       7737
+[34m11.18.875.431[0m [32mI [0mslot      release: id  0 | task 7911 | stop processing: n_tokens = 489, truncated = 0
+[34m11.18.875.442[0m [32mI [0msrv  update_slots: all slots are idle
+[34m11.24.788.147[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m11.24.788.410[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.186 (> 0.100 thold), f_keep = 0.139
+[34m11.24.788.643[0m [32mI [0mslot launch_slot_: id  0 | task 8039 | processing task, is_child = 0
+[34m11.28.397.315[0m [32mI [0mslot print_timing: id  0 | task 8039 | n_decoded =    100, tg =  40.47 t/s
+[34m11.29.256.773[0m [32mI [0mslot print_timing: id  0 | task 8039 | prompt eval time =    1137.40 ms /   365 tokens (    3.12 ms per token,   320.91 tokens per second)
+[34m11.29.256.780[0m [32mI [0mslot print_timing: id  0 | task 8039 |        eval time =    3330.69 ms /   134 tokens (   24.86 ms per token,    40.23 tokens per second)
+[34m11.29.256.780[0m [32mI [0mslot print_timing: id  0 | task 8039 |       total time =    4468.09 ms /   499 tokens
+[34m11.29.256.781[0m [32mI [0mslot print_timing: id  0 | task 8039 |    graphs reused =       7869
+[34m11.29.256.821[0m [32mI [0mslot      release: id  0 | task 8039 | stop processing: n_tokens = 498, truncated = 0
+[34m11.29.256.836[0m [32mI [0msrv  update_slots: all slots are idle
+[34m11.35.266.180[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m11.35.266.626[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.193 (> 0.100 thold), f_keep = 0.137
+[34m11.35.266.849[0m [32mI [0mslot launch_slot_: id  0 | task 8175 | processing task, is_child = 0
+[34m11.38.698.269[0m [32mI [0mslot print_timing: id  0 | task 8175 | n_decoded =    100, tg =  43.64 t/s
+[34m11.38.976.768[0m [32mI [0mslot print_timing: id  0 | task 8175 | prompt eval time =    1139.92 ms /   353 tokens (    3.23 ms per token,   309.67 tokens per second)
+[34m11.38.976.774[0m [32mI [0mslot print_timing: id  0 | task 8175 |        eval time =    2569.97 ms /   112 tokens (   22.95 ms per token,    43.58 tokens per second)
+[34m11.38.976.775[0m [32mI [0mslot print_timing: id  0 | task 8175 |       total time =    3709.89 ms /   465 tokens
+[34m11.38.976.776[0m [32mI [0mslot print_timing: id  0 | task 8175 |    graphs reused =       7979
+[34m11.38.976.807[0m [32mI [0mslot      release: id  0 | task 8175 | stop processing: n_tokens = 464, truncated = 0
+[34m11.38.976.819[0m [32mI [0msrv  update_slots: all slots are idle
+[34m11.44.827.131[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m11.44.827.390[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.182 (> 0.100 thold), f_keep = 0.147
+[34m11.44.827.599[0m [32mI [0mslot launch_slot_: id  0 | task 8289 | processing task, is_child = 0
+[34m11.48.368.918[0m [32mI [0mslot print_timing: id  0 | task 8289 | n_decoded =    100, tg =  42.38 t/s
+[34m11.51.379.950[0m [32mI [0mslot print_timing: id  0 | task 8289 | n_decoded =    226, tg =  42.08 t/s
+[34m11.54.393.634[0m [32mI [0mslot print_timing: id  0 | task 8289 | n_decoded =    354, tg =  42.22 t/s
+[34m11.54.605.894[0m [32mI [0mslot print_timing: id  0 | task 8289 | prompt eval time =    1181.49 ms /   373 tokens (    3.17 ms per token,   315.70 tokens per second)
+[34m11.54.605.899[0m [32mI [0mslot print_timing: id  0 | task 8289 |        eval time =    8596.76 ms /   362 tokens (   23.75 ms per token,    42.11 tokens per second)
+[34m11.54.605.899[0m [32mI [0mslot print_timing: id  0 | task 8289 |       total time =    9778.25 ms /   735 tokens
+[34m11.54.605.900[0m [32mI [0mslot print_timing: id  0 | task 8289 |    graphs reused =       8338
+[34m11.54.605.934[0m [32mI [0mslot      release: id  0 | task 8289 | stop processing: n_tokens = 734, truncated = 0
+[34m11.54.605.947[0m [32mI [0msrv  update_slots: all slots are idle
+[34m12.00.692.393[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m12.00.692.669[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.167 (> 0.100 thold), f_keep = 0.093
+[34m12.00.692.866[0m [32mI [0mslot launch_slot_: id  0 | task 8653 | processing task, is_child = 0
+[34m12.04.261.422[0m [32mI [0mslot print_timing: id  0 | task 8653 | n_decoded =    100, tg =  44.18 t/s
+[34m12.05.068.880[0m [32mI [0mslot print_timing: id  0 | task 8653 | prompt eval time =    1305.04 ms /   408 tokens (    3.20 ms per token,   312.63 tokens per second)
+[34m12.05.068.885[0m [32mI [0mslot print_timing: id  0 | task 8653 |        eval time =    3070.94 ms /   135 tokens (   22.75 ms per token,    43.96 tokens per second)
+[34m12.05.068.886[0m [32mI [0mslot print_timing: id  0 | task 8653 |       total time =    4375.98 ms /   543 tokens
+[34m12.05.068.887[0m [32mI [0mslot print_timing: id  0 | task 8653 |    graphs reused =       8470
+[34m12.05.068.920[0m [32mI [0mslot      release: id  0 | task 8653 | stop processing: n_tokens = 542, truncated = 0
+[34m12.05.068.931[0m [32mI [0msrv  update_slots: all slots are idle
+[34m12.11.060.096[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m12.11.060.378[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.179 (> 0.100 thold), f_keep = 0.125
+[34m12.11.060.587[0m [32mI [0mslot launch_slot_: id  0 | task 8790 | processing task, is_child = 0
+[34m12.14.520.728[0m [32mI [0mslot print_timing: id  0 | task 8790 | n_decoded =    100, tg =  44.09 t/s
+[34m12.15.157.836[0m [32mI [0mslot print_timing: id  0 | task 8790 | prompt eval time =    1192.03 ms /   379 tokens (    3.15 ms per token,   317.95 tokens per second)
+[34m12.15.157.843[0m [32mI [0mslot print_timing: id  0 | task 8790 |        eval time =    2905.19 ms /   128 tokens (   22.70 ms per token,    44.06 tokens per second)
+[34m12.15.157.844[0m [32mI [0mslot print_timing: id  0 | task 8790 |       total time =    4097.22 ms /   507 tokens
+[34m12.15.157.845[0m [32mI [0mslot print_timing: id  0 | task 8790 |    graphs reused =       8596
+[34m12.15.157.885[0m [32mI [0mslot      release: id  0 | task 8790 | stop processing: n_tokens = 506, truncated = 0
+[34m12.15.157.899[0m [32mI [0msrv  update_slots: all slots are idle
+[34m12.21.082.037[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m12.21.082.353[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.174 (> 0.100 thold), f_keep = 0.134
+[34m12.21.082.569[0m [32mI [0mslot launch_slot_: id  0 | task 8920 | processing task, is_child = 0
+[34m12.24.554.288[0m [32mI [0mslot print_timing: id  0 | task 8920 | n_decoded =    100, tg =  44.16 t/s
+[34m12.26.832.703[0m [32mI [0mslot print_timing: id  0 | task 8920 | prompt eval time =    1206.99 ms /   390 tokens (    3.09 ms per token,   323.12 tokens per second)
+[34m12.26.832.712[0m [32mI [0mslot print_timing: id  0 | task 8920 |        eval time =    4543.11 ms /   199 tokens (   22.83 ms per token,    43.80 tokens per second)
+[34m12.26.832.713[0m [32mI [0mslot print_timing: id  0 | task 8920 |       total time =    5750.10 ms /   589 tokens
+[34m12.26.832.713[0m [32mI [0mslot print_timing: id  0 | task 8920 |    graphs reused =       8792
+[34m12.26.832.746[0m [32mI [0mslot      release: id  0 | task 8920 | stop processing: n_tokens = 588, truncated = 0
+[34m12.26.832.758[0m [32mI [0msrv  update_slots: all slots are idle
+[34m12.32.853.476[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m12.32.853.730[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.172 (> 0.100 thold), f_keep = 0.116
+[34m12.32.853.955[0m [32mI [0mslot launch_slot_: id  0 | task 9121 | processing task, is_child = 0
+[34m12.36.351.804[0m [32mI [0mslot print_timing: id  0 | task 9121 | n_decoded =    100, tg =  44.36 t/s
+[34m12.39.366.257[0m [32mI [0mslot print_timing: id  0 | task 9121 | n_decoded =    230, tg =  43.66 t/s
+[34m12.39.569.562[0m [32mI [0mslot print_timing: id  0 | task 9121 | prompt eval time =    1243.78 ms /   395 tokens (    3.15 ms per token,   317.58 tokens per second)
+[34m12.39.569.567[0m [32mI [0mslot print_timing: id  0 | task 9121 |        eval time =    5471.79 ms /   239 tokens (   22.89 ms per token,    43.68 tokens per second)
+[34m12.39.569.568[0m [32mI [0mslot print_timing: id  0 | task 9121 |       total time =    6715.57 ms /   634 tokens
+[34m12.39.569.569[0m [32mI [0mslot print_timing: id  0 | task 9121 |    graphs reused =       9028
+[34m12.39.569.601[0m [32mI [0mslot      release: id  0 | task 9121 | stop processing: n_tokens = 633, truncated = 0
+[34m12.39.569.616[0m [32mI [0msrv  update_slots: all slots are idle
+[34m12.45.541.867[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m12.45.542.137[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.194 (> 0.100 thold), f_keep = 0.107
+[34m12.45.542.644[0m [32mI [0mslot launch_slot_: id  0 | task 9362 | processing task, is_child = 0
+[34m12.48.923.471[0m [32mI [0mslot print_timing: id  0 | task 9362 | n_decoded =    100, tg =  44.22 t/s
+[34m12.51.340.593[0m [32mI [0mslot print_timing: id  0 | task 9362 | prompt eval time =    1119.27 ms /   350 tokens (    3.20 ms per token,   312.70 tokens per second)
+[34m12.51.340.600[0m [32mI [0mslot print_timing: id  0 | task 9362 |        eval time =    4678.64 ms /   205 tokens (   22.82 ms per token,    43.82 tokens per second)
+[34m12.51.340.601[0m [32mI [0mslot print_timing: id  0 | task 9362 |       total time =    5797.91 ms /   555 tokens
+[34m12.51.340.602[0m [32mI [0mslot print_timing: id  0 | task 9362 |    graphs reused =       9230
+[34m12.51.340.642[0m [32mI [0mslot      release: id  0 | task 9362 | stop processing: n_tokens = 554, truncated = 0
+[34m12.51.340.658[0m [32mI [0msrv  update_slots: all slots are idle
+[34m12.57.276.892[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m12.57.277.141[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.187 (> 0.100 thold), f_keep = 0.123
+[34m12.57.277.304[0m [32mI [0mslot launch_slot_: id  0 | task 9569 | processing task, is_child = 0
+[34m13.00.895.766[0m [32mI [0mslot print_timing: id  0 | task 9569 | prompt eval time =    1368.09 ms /   364 tokens (    3.76 ms per token,   266.07 tokens per second)
+[34m13.00.895.772[0m [32mI [0mslot print_timing: id  0 | task 9569 |        eval time =    2250.35 ms /    95 tokens (   23.69 ms per token,    42.22 tokens per second)
+[34m13.00.895.773[0m [32mI [0mslot print_timing: id  0 | task 9569 |       total time =    3618.44 ms /   459 tokens
+[34m13.00.895.774[0m [32mI [0mslot print_timing: id  0 | task 9569 |    graphs reused =       9323
+[34m13.00.895.803[0m [32mI [0mslot      release: id  0 | task 9569 | stop processing: n_tokens = 458, truncated = 0
+[34m13.00.895.814[0m [32mI [0msrv  update_slots: all slots are idle
+[34m13.06.888.098[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m13.06.888.401[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.135 (> 0.100 thold), f_keep = 0.148
+[34m13.06.888.970[0m [32mI [0mslot launch_slot_: id  0 | task 9666 | processing task, is_child = 0
+[34m13.10.834.370[0m [32mI [0mslot print_timing: id  0 | task 9666 | n_decoded =    100, tg =  42.62 t/s
+[34m13.13.850.396[0m [32mI [0mslot print_timing: id  0 | task 9666 | n_decoded =    230, tg =  42.89 t/s
+[34m13.16.855.973[0m [32mI [0mslot print_timing: id  0 | task 9666 | n_decoded =    359, tg =  42.90 t/s
+[34m13.19.856.786[0m [32mI [0mslot print_timing: id  0 | task 9666 | n_decoded =    488, tg =  42.92 t/s
+[34m13.20.422.795[0m [32mI [0mslot print_timing: id  0 | task 9666 | prompt eval time =    1599.04 ms /   502 tokens (    3.19 ms per token,   313.94 tokens per second)
+[34m13.20.422.802[0m [32mI [0mslot print_timing: id  0 | task 9666 |        eval time =   11934.73 ms /   512 tokens (   23.31 ms per token,    42.90 tokens per second)
+[34m13.20.422.803[0m [32mI [0mslot print_timing: id  0 | task 9666 |       total time =   13533.77 ms /  1014 tokens
+[34m13.20.422.803[0m [32mI [0mslot print_timing: id  0 | task 9666 |    graphs reused =       9831
+[34m13.20.422.845[0m [32mI [0mslot      release: id  0 | task 9666 | stop processing: n_tokens = 1013, truncated = 0
+[34m13.20.422.863[0m [32mI [0msrv  update_slots: all slots are idle
+[34m13.26.648.369[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m13.26.648.638[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.188 (> 0.100 thold), f_keep = 0.067
+[34m13.26.648.866[0m [32mI [0mslot launch_slot_: id  0 | task 10180 | processing task, is_child = 0
+[34m13.30.581.750[0m [32mI [0mslot print_timing: id  0 | task 10180 | n_decoded =    100, tg =  39.29 t/s
+[34m13.33.597.151[0m [32mI [0mslot print_timing: id  0 | task 10180 | n_decoded =    226, tg =  40.65 t/s
+[34m13.33.991.412[0m [32mI [0mslot print_timing: id  0 | task 10180 | prompt eval time =    1387.97 ms /   361 tokens (    3.84 ms per token,   260.09 tokens per second)
+[34m13.33.991.419[0m [32mI [0mslot print_timing: id  0 | task 10180 |        eval time =    5954.53 ms /   243 tokens (   24.50 ms per token,    40.81 tokens per second)
+[34m13.33.991.420[0m [32mI [0mslot print_timing: id  0 | task 10180 |       total time =    7342.51 ms /   604 tokens
+[34m13.33.991.421[0m [32mI [0mslot print_timing: id  0 | task 10180 |    graphs reused =      10071
+[34m13.33.991.460[0m [32mI [0mslot      release: id  0 | task 10180 | stop processing: n_tokens = 603, truncated = 0
+[34m13.33.991.475[0m [32mI [0msrv  update_slots: all slots are idle
+[34m13.40.068.576[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m13.40.069.301[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.147 (> 0.100 thold), f_keep = 0.113
+[34m13.40.069.535[0m [32mI [0mslot launch_slot_: id  0 | task 10425 | processing task, is_child = 0
+[34m13.43.045.422[0m [32mI [0mslot print_timing: id  0 | task 10425 | prompt eval time =    1445.38 ms /   463 tokens (    3.12 ms per token,   320.33 tokens per second)
+[34m13.43.045.429[0m [32mI [0mslot print_timing: id  0 | task 10425 |        eval time =    1530.48 ms /    67 tokens (   22.84 ms per token,    43.78 tokens per second)
+[34m13.43.045.430[0m [32mI [0mslot print_timing: id  0 | task 10425 |       total time =    2975.86 ms /   530 tokens
+[34m13.43.045.431[0m [32mI [0mslot print_timing: id  0 | task 10425 |    graphs reused =      10135
+[34m13.43.045.469[0m [32mI [0mslot      release: id  0 | task 10425 | stop processing: n_tokens = 529, truncated = 0
+[34m13.43.045.481[0m [32mI [0msrv  update_slots: all slots are idle
+[34m13.49.046.362[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m13.49.046.594[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.145 (> 0.100 thold), f_keep = 0.129
+[34m13.49.046.804[0m [32mI [0mslot launch_slot_: id  0 | task 10494 | processing task, is_child = 0
+[34m13.52.280.404[0m [32mI [0mslot print_timing: id  0 | task 10494 | prompt eval time =    1449.10 ms /   469 tokens (    3.09 ms per token,   323.65 tokens per second)
+[34m13.52.280.411[0m [32mI [0mslot print_timing: id  0 | task 10494 |        eval time =    1784.48 ms /    79 tokens (   22.59 ms per token,    44.27 tokens per second)
+[34m13.52.280.412[0m [32mI [0mslot print_timing: id  0 | task 10494 |       total time =    3233.57 ms /   548 tokens
+[34m13.52.280.412[0m [32mI [0mslot print_timing: id  0 | task 10494 |    graphs reused =      10211
+[34m13.52.280.447[0m [32mI [0mslot      release: id  0 | task 10494 | stop processing: n_tokens = 547, truncated = 0
+[34m13.52.280.458[0m [32mI [0msrv  update_slots: all slots are idle
+[34m13.58.213.658[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m13.58.213.868[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.162 (> 0.100 thold), f_keep = 0.124
+[34m13.58.214.037[0m [32mI [0mslot launch_slot_: id  0 | task 10575 | processing task, is_child = 0
+[34m14.01.262.230[0m [32mI [0mslot print_timing: id  0 | task 10575 | prompt eval time =    1687.95 ms /   419 tokens (    4.03 ms per token,   248.23 tokens per second)
+[34m14.01.262.236[0m [32mI [0mslot print_timing: id  0 | task 10575 |        eval time =    1360.22 ms /    52 tokens (   26.16 ms per token,    38.23 tokens per second)
+[34m14.01.262.237[0m [32mI [0mslot print_timing: id  0 | task 10575 |       total time =    3048.17 ms /   471 tokens
+[34m14.01.262.237[0m [32mI [0mslot print_timing: id  0 | task 10575 |    graphs reused =      10261
+[34m14.01.262.270[0m [32mI [0mslot      release: id  0 | task 10575 | stop processing: n_tokens = 470, truncated = 0
+[34m14.01.262.284[0m [32mI [0msrv  update_slots: all slots are idle
+[34m14.07.611.431[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m14.07.611.711[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.135 (> 0.100 thold), f_keep = 0.145
+[34m14.07.611.919[0m [32mI [0mslot launch_slot_: id  0 | task 10629 | processing task, is_child = 0
+[34m14.11.484.110[0m [32mI [0mslot print_timing: id  0 | task 10629 | n_decoded =    100, tg =  43.74 t/s
+[34m14.12.504.001[0m [32mI [0mslot print_timing: id  0 | task 10629 | prompt eval time =    1585.99 ms /   502 tokens (    3.16 ms per token,   316.52 tokens per second)
+[34m14.12.504.014[0m [32mI [0mslot print_timing: id  0 | task 10629 |        eval time =    3306.06 ms /   144 tokens (   22.96 ms per token,    43.56 tokens per second)
+[34m14.12.504.015[0m [32mI [0mslot print_timing: id  0 | task 10629 |       total time =    4892.05 ms /   646 tokens
+[34m14.12.504.016[0m [32mI [0mslot print_timing: id  0 | task 10629 |    graphs reused =      10402
+[34m14.12.504.059[0m [32mI [0mslot      release: id  0 | task 10629 | stop processing: n_tokens = 645, truncated = 0
+[34m14.12.504.076[0m [32mI [0msrv  update_slots: all slots are idle
+[34m14.18.522.199[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m14.18.522.467[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.163 (> 0.100 thold), f_keep = 0.105
+[34m14.18.522.691[0m [32mI [0mslot launch_slot_: id  0 | task 10775 | processing task, is_child = 0
+[34m14.21.999.238[0m [32mI [0mslot print_timing: id  0 | task 10775 | prompt eval time =    1293.08 ms /   417 tokens (    3.10 ms per token,   322.49 tokens per second)
+[34m14.21.999.245[0m [32mI [0mslot print_timing: id  0 | task 10775 |        eval time =    2183.43 ms /    97 tokens (   22.51 ms per token,    44.43 tokens per second)
+[34m14.21.999.246[0m [32mI [0mslot print_timing: id  0 | task 10775 |       total time =    3476.51 ms /   514 tokens
+[34m14.21.999.247[0m [32mI [0mslot print_timing: id  0 | task 10775 |    graphs reused =      10496
+[34m14.21.999.290[0m [32mI [0mslot      release: id  0 | task 10775 | stop processing: n_tokens = 513, truncated = 0
+[34m14.21.999.305[0m [32mI [0msrv  update_slots: all slots are idle
+[34m14.28.006.057[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m14.28.006.280[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.157 (> 0.100 thold), f_keep = 0.133
+[34m14.28.006.479[0m [32mI [0mslot launch_slot_: id  0 | task 10874 | processing task, is_child = 0
+[34m14.30.949.389[0m [32mI [0mslot print_timing: id  0 | task 10874 | prompt eval time =    1578.45 ms /   432 tokens (    3.65 ms per token,   273.69 tokens per second)
+[34m14.30.949.396[0m [32mI [0mslot print_timing: id  0 | task 10874 |        eval time =    1364.43 ms /    59 tokens (   23.13 ms per token,    43.24 tokens per second)
+[34m14.30.949.397[0m [32mI [0mslot print_timing: id  0 | task 10874 |       total time =    2942.88 ms /   491 tokens
+[34m14.30.949.398[0m [32mI [0mslot print_timing: id  0 | task 10874 |    graphs reused =      10553
+[34m14.30.949.441[0m [32mI [0mslot      release: id  0 | task 10874 | stop processing: n_tokens = 490, truncated = 0
+[34m14.30.949.458[0m [32mI [0msrv  update_slots: all slots are idle
+[34m14.36.941.686[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m14.36.942.014[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.392 (> 0.100 thold), f_keep = 0.359
+[34m14.36.942.298[0m [32mI [0mslot launch_slot_: id  0 | task 10935 | processing task, is_child = 0
+[34m14.40.682.947[0m [32mI [0mslot print_timing: id  0 | task 10935 | n_decoded =    100, tg =  43.03 t/s
+[34m14.41.084.805[0m [32mI [0mslot print_timing: id  0 | task 10935 | prompt eval time =    1416.39 ms /   449 tokens (    3.15 ms per token,   317.00 tokens per second)
+[34m14.41.084.811[0m [32mI [0mslot print_timing: id  0 | task 10935 |        eval time =    2726.08 ms /   117 tokens (   23.30 ms per token,    42.92 tokens per second)
+[34m14.41.084.812[0m [32mI [0mslot print_timing: id  0 | task 10935 |       total time =    4142.47 ms /   566 tokens
+[34m14.41.084.812[0m [32mI [0mslot print_timing: id  0 | task 10935 |    graphs reused =      10667
+[34m14.41.084.849[0m [32mI [0mslot      release: id  0 | task 10935 | stop processing: n_tokens = 565, truncated = 0
+[34m14.41.084.861[0m [32mI [0msrv  update_slots: all slots are idle
+[34m14.47.035.443[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m14.47.036.328[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.166 (> 0.100 thold), f_keep = 0.120
+[34m14.47.036.550[0m [32mI [0mslot launch_slot_: id  0 | task 11054 | processing task, is_child = 0
+[34m14.49.204.090[0m [32mI [0mslot print_timing: id  0 | task 11054 | prompt eval time =    1247.16 ms /   409 tokens (    3.05 ms per token,   327.94 tokens per second)
+[34m14.49.204.096[0m [32mI [0mslot print_timing: id  0 | task 11054 |        eval time =     920.35 ms /    41 tokens (   22.45 ms per token,    44.55 tokens per second)
+[34m14.49.204.097[0m [32mI [0mslot print_timing: id  0 | task 11054 |       total time =    2167.51 ms /   450 tokens
+[34m14.49.204.098[0m [32mI [0mslot print_timing: id  0 | task 11054 |    graphs reused =      10706
+[34m14.49.204.132[0m [32mI [0mslot      release: id  0 | task 11054 | stop processing: n_tokens = 449, truncated = 0
+[34m14.49.204.144[0m [32mI [0msrv  update_slots: all slots are idle
+[34m14.55.153.233[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m14.55.153.539[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.155 (> 0.100 thold), f_keep = 0.151
+[34m14.55.153.744[0m [32mI [0mslot launch_slot_: id  0 | task 11097 | processing task, is_child = 0
+[34m14.58.209.481[0m [32mI [0mslot print_timing: id  0 | task 11097 | prompt eval time =    1338.89 ms /   440 tokens (    3.04 ms per token,   328.63 tokens per second)
+[34m14.58.209.487[0m [32mI [0mslot print_timing: id  0 | task 11097 |        eval time =    1716.82 ms /    68 tokens (   25.25 ms per token,    39.61 tokens per second)
+[34m14.58.209.488[0m [32mI [0mslot print_timing: id  0 | task 11097 |       total time =    3055.71 ms /   508 tokens
+[34m14.58.209.488[0m [32mI [0mslot print_timing: id  0 | task 11097 |    graphs reused =      10772
+[34m14.58.209.520[0m [32mI [0mslot      release: id  0 | task 11097 | stop processing: n_tokens = 507, truncated = 0
+[34m14.58.209.533[0m [32mI [0msrv  update_slots: all slots are idle
+[34m15.04.334.800[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m15.04.335.114[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.171 (> 0.100 thold), f_keep = 0.134
+[34m15.04.335.348[0m [32mI [0mslot launch_slot_: id  0 | task 11167 | processing task, is_child = 0
+[34m15.07.903.832[0m [32mI [0mslot print_timing: id  0 | task 11167 | n_decoded =    100, tg =  43.00 t/s
+[34m15.09.904.281[0m [32mI [0mslot print_timing: id  0 | task 11167 | prompt eval time =    1243.00 ms /   398 tokens (    3.12 ms per token,   320.19 tokens per second)
+[34m15.09.904.286[0m [32mI [0mslot print_timing: id  0 | task 11167 |        eval time =    4325.90 ms /   174 tokens (   24.86 ms per token,    40.22 tokens per second)
+[34m15.09.904.287[0m [32mI [0mslot print_timing: id  0 | task 11167 |       total time =    5568.90 ms /   572 tokens
+[34m15.09.904.288[0m [32mI [0mslot print_timing: id  0 | task 11167 |    graphs reused =      10943
+[34m15.09.904.319[0m [32mI [0mslot      release: id  0 | task 11167 | stop processing: n_tokens = 571, truncated = 0
+[34m15.09.904.332[0m [32mI [0msrv  update_slots: all slots are idle
+[34m15.15.889.763[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m15.15.889.976[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.158 (> 0.100 thold), f_keep = 0.119
+[34m15.15.890.153[0m [32mI [0mslot launch_slot_: id  0 | task 11343 | processing task, is_child = 0
+[34m15.19.014.450[0m [32mI [0mslot print_timing: id  0 | task 11343 | prompt eval time =    1325.81 ms /   431 tokens (    3.08 ms per token,   325.09 tokens per second)
+[34m15.19.014.456[0m [32mI [0mslot print_timing: id  0 | task 11343 |        eval time =    1798.46 ms /    79 tokens (   22.77 ms per token,    43.93 tokens per second)
+[34m15.19.014.457[0m [32mI [0mslot print_timing: id  0 | task 11343 |       total time =    3124.27 ms /   510 tokens
+[34m15.19.014.457[0m [32mI [0mslot print_timing: id  0 | task 11343 |    graphs reused =      11020
+[34m15.19.014.493[0m [32mI [0mslot      release: id  0 | task 11343 | stop processing: n_tokens = 509, truncated = 0
+[34m15.19.014.506[0m [32mI [0msrv  update_slots: all slots are idle
+[34m15.25.053.872[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m15.25.054.174[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.178 (> 0.100 thold), f_keep = 0.134
+[34m15.25.054.366[0m [32mI [0mslot launch_slot_: id  0 | task 11424 | processing task, is_child = 0
+[34m15.27.051.097[0m [32mI [0mslot print_timing: id  0 | task 11424 | prompt eval time =    1195.81 ms /   382 tokens (    3.13 ms per token,   319.45 tokens per second)
+[34m15.27.051.104[0m [32mI [0mslot print_timing: id  0 | task 11424 |        eval time =     800.90 ms /    35 tokens (   22.88 ms per token,    43.70 tokens per second)
+[34m15.27.051.105[0m [32mI [0mslot print_timing: id  0 | task 11424 |       total time =    1996.70 ms /   417 tokens
+[34m15.27.051.105[0m [32mI [0mslot print_timing: id  0 | task 11424 |    graphs reused =      11053
+[34m15.27.051.137[0m [32mI [0mslot      release: id  0 | task 11424 | stop processing: n_tokens = 416, truncated = 0
+[34m15.27.051.149[0m [32mI [0msrv  update_slots: all slots are idle
+[34m15.33.114.011[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m15.33.114.352[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.941 (> 0.100 thold), f_keep = 0.875
+[34m15.33.114.569[0m [32mI [0mslot launch_slot_: id  0 | task 11461 | processing task, is_child = 0
+[34m15.35.612.275[0m [32mI [0mslot print_timing: id  0 | task 11461 | prompt eval time =    1192.07 ms /   387 tokens (    3.08 ms per token,   324.65 tokens per second)
+[34m15.35.612.281[0m [32mI [0mslot print_timing: id  0 | task 11461 |        eval time =    1305.61 ms /    58 tokens (   22.51 ms per token,    44.42 tokens per second)
+[34m15.35.612.282[0m [32mI [0mslot print_timing: id  0 | task 11461 |       total time =    2497.68 ms /   445 tokens
+[34m15.35.612.283[0m [32mI [0mslot print_timing: id  0 | task 11461 |    graphs reused =      11109
+[34m15.35.612.316[0m [32mI [0mslot      release: id  0 | task 11461 | stop processing: n_tokens = 444, truncated = 0
+[34m15.35.612.328[0m [32mI [0msrv  update_slots: all slots are idle
+[34m15.42.499.280[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m15.42.499.673[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.156 (> 0.100 thold), f_keep = 0.153
+[34m15.42.499.866[0m [32mI [0mslot launch_slot_: id  0 | task 11521 | processing task, is_child = 0
+[34m15.45.335.772[0m [32mI [0mslot print_timing: id  0 | task 11521 | prompt eval time =    1371.96 ms /   437 tokens (    3.14 ms per token,   318.52 tokens per second)
+[34m15.45.335.779[0m [32mI [0mslot print_timing: id  0 | task 11521 |        eval time =    1463.92 ms /    65 tokens (   22.52 ms per token,    44.40 tokens per second)
+[34m15.45.335.780[0m [32mI [0mslot print_timing: id  0 | task 11521 |       total time =    2835.88 ms /   502 tokens
+[34m15.45.335.780[0m [32mI [0mslot print_timing: id  0 | task 11521 |    graphs reused =      11172
+[34m15.45.335.823[0m [32mI [0mslot      release: id  0 | task 11521 | stop processing: n_tokens = 501, truncated = 0
+[34m15.45.335.838[0m [32mI [0msrv  update_slots: all slots are idle
+[34m15.51.334.508[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m15.51.334.896[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.145 (> 0.100 thold), f_keep = 0.136
+[34m15.51.335.114[0m [32mI [0mslot launch_slot_: id  0 | task 11588 | processing task, is_child = 0
+[34m15.54.792.283[0m [32mI [0mslot print_timing: id  0 | task 11588 | prompt eval time =    1443.29 ms /   470 tokens (    3.07 ms per token,   325.65 tokens per second)
+[34m15.54.792.290[0m [32mI [0mslot print_timing: id  0 | task 11588 |        eval time =    2013.85 ms /    86 tokens (   23.42 ms per token,    42.70 tokens per second)
+[34m15.54.792.291[0m [32mI [0mslot print_timing: id  0 | task 11588 |       total time =    3457.14 ms /   556 tokens
+[34m15.54.792.292[0m [32mI [0mslot print_timing: id  0 | task 11588 |    graphs reused =      11255
+[34m15.54.792.336[0m [32mI [0mslot      release: id  0 | task 11588 | stop processing: n_tokens = 555, truncated = 0
+[34m15.54.792.351[0m [32mI [0msrv  update_slots: all slots are idle
+[34m16.00.896.215[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m16.00.896.540[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.144 (> 0.100 thold), f_keep = 0.123
+[34m16.00.896.752[0m [32mI [0mslot launch_slot_: id  0 | task 11676 | processing task, is_child = 0
+[34m16.04.835.951[0m [32mI [0mslot print_timing: id  0 | task 11676 | n_decoded =    100, tg =  40.26 t/s
+[34m16.07.179.288[0m [32mI [0mslot print_timing: id  0 | task 11676 | prompt eval time =    1455.48 ms /   472 tokens (    3.08 ms per token,   324.29 tokens per second)
+[34m16.07.179.299[0m [32mI [0mslot print_timing: id  0 | task 11676 |        eval time =    4827.01 ms /   189 tokens (   25.54 ms per token,    39.15 tokens per second)
+[34m16.07.179.300[0m [32mI [0mslot print_timing: id  0 | task 11676 |       total time =    6282.49 ms /   661 tokens
+[34m16.07.179.302[0m [32mI [0mslot print_timing: id  0 | task 11676 |    graphs reused =      11441
+[34m16.07.179.366[0m [32mI [0mslot      release: id  0 | task 11676 | stop processing: n_tokens = 660, truncated = 0
+[34m16.07.179.386[0m [32mI [0msrv  update_slots: all slots are idle
+[34m16.13.197.121[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m16.13.197.353[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.173 (> 0.100 thold), f_keep = 0.103
+[34m16.13.197.531[0m [32mI [0mslot launch_slot_: id  0 | task 11867 | processing task, is_child = 0
+[34m16.16.710.565[0m [32mI [0mslot print_timing: id  0 | task 11867 | n_decoded =    100, tg =  44.03 t/s
+[34m16.17.071.436[0m [32mI [0mslot print_timing: id  0 | task 11867 | prompt eval time =    1241.79 ms /   394 tokens (    3.15 ms per token,   317.28 tokens per second)
+[34m16.17.071.442[0m [32mI [0mslot print_timing: id  0 | task 11867 |        eval time =    2632.09 ms /   116 tokens (   22.69 ms per token,    44.07 tokens per second)
+[34m16.17.071.443[0m [32mI [0mslot print_timing: id  0 | task 11867 |       total time =    3873.88 ms /   510 tokens
+[34m16.17.071.443[0m [32mI [0mslot print_timing: id  0 | task 11867 |    graphs reused =      11555
+[34m16.17.071.483[0m [32mI [0mslot      release: id  0 | task 11867 | stop processing: n_tokens = 509, truncated = 0
+[34m16.17.071.497[0m [32mI [0msrv  update_slots: all slots are idle
+[34m16.23.124.523[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m16.23.125.330[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.158 (> 0.100 thold), f_keep = 0.134
+[34m16.23.125.694[0m [32mI [0mslot launch_slot_: id  0 | task 11985 | processing task, is_child = 0
+[34m16.26.518.940[0m [32mI [0mslot print_timing: id  0 | task 11985 | prompt eval time =    1361.14 ms /   431 tokens (    3.16 ms per token,   316.65 tokens per second)
+[34m16.26.518.947[0m [32mI [0mslot print_timing: id  0 | task 11985 |        eval time =    2032.07 ms /    90 tokens (   22.58 ms per token,    44.29 tokens per second)
+[34m16.26.518.948[0m [32mI [0mslot print_timing: id  0 | task 11985 |       total time =    3393.22 ms /   521 tokens
+[34m16.26.518.949[0m [32mI [0mslot print_timing: id  0 | task 11985 |    graphs reused =      11642
+[34m16.26.518.992[0m [32mI [0mslot      release: id  0 | task 11985 | stop processing: n_tokens = 520, truncated = 0
+[34m16.26.519.004[0m [32mI [0msrv  update_slots: all slots are idle
+[34m16.32.526.156[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m16.32.526.464[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.183 (> 0.100 thold), f_keep = 0.131
+[34m16.32.526.691[0m [32mI [0mslot launch_slot_: id  0 | task 12077 | processing task, is_child = 0
+[34m16.35.262.770[0m [32mI [0mslot print_timing: id  0 | task 12077 | prompt eval time =    1184.40 ms /   372 tokens (    3.18 ms per token,   314.08 tokens per second)
+[34m16.35.262.775[0m [32mI [0mslot print_timing: id  0 | task 12077 |        eval time =    1551.65 ms /    69 tokens (   22.49 ms per token,    44.47 tokens per second)
+[34m16.35.262.776[0m [32mI [0mslot print_timing: id  0 | task 12077 |       total time =    2736.05 ms /   441 tokens
+[34m16.35.262.777[0m [32mI [0mslot print_timing: id  0 | task 12077 |    graphs reused =      11709
+[34m16.35.262.811[0m [32mI [0mslot      release: id  0 | task 12077 | stop processing: n_tokens = 440, truncated = 0
+[34m16.35.262.822[0m [32mI [0msrv  update_slots: all slots are idle
+[34m16.41.316.305[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m16.41.316.572[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.118 (> 0.100 thold), f_keep = 0.155
+[34m16.41.316.853[0m [32mI [0mslot launch_slot_: id  0 | task 12148 | processing task, is_child = 0
+[34m16.44.430.309[0m [32mI [0mslot print_timing: id  0 | task 12148 | prompt eval time =    1754.64 ms /   575 tokens (    3.05 ms per token,   327.70 tokens per second)
+[34m16.44.430.315[0m [32mI [0mslot print_timing: id  0 | task 12148 |        eval time =    1358.79 ms /    60 tokens (   22.65 ms per token,    44.16 tokens per second)
+[34m16.44.430.316[0m [32mI [0mslot print_timing: id  0 | task 12148 |       total time =    3113.43 ms /   635 tokens
+[34m16.44.430.317[0m [32mI [0mslot print_timing: id  0 | task 12148 |    graphs reused =      11767
+[34m16.44.430.357[0m [32mI [0mslot      release: id  0 | task 12148 | stop processing: n_tokens = 634, truncated = 0
+[34m16.44.430.367[0m [32mI [0msrv  update_slots: all slots are idle
+[34m16.50.311.648[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m16.50.311.925[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.210 (> 0.100 thold), f_keep = 0.107
+[34m16.50.312.147[0m [32mI [0mslot launch_slot_: id  0 | task 12210 | processing task, is_child = 0
+[34m16.52.807.780[0m [32mI [0mslot print_timing: id  0 | task 12210 | prompt eval time =    1028.52 ms /   324 tokens (    3.17 ms per token,   315.01 tokens per second)
+[34m16.52.807.786[0m [32mI [0mslot print_timing: id  0 | task 12210 |        eval time =    1467.08 ms /    66 tokens (   22.23 ms per token,    44.99 tokens per second)
+[34m16.52.807.786[0m [32mI [0mslot print_timing: id  0 | task 12210 |       total time =    2495.61 ms /   390 tokens
+[34m16.52.807.787[0m [32mI [0mslot print_timing: id  0 | task 12210 |    graphs reused =      11831
+[34m16.52.807.817[0m [32mI [0mslot      release: id  0 | task 12210 | stop processing: n_tokens = 389, truncated = 0
+[34m16.52.807.829[0m [32mI [0msrv  update_slots: all slots are idle
+[34m16.58.771.118[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m16.58.771.311[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.163 (> 0.100 thold), f_keep = 0.175
+[34m16.58.771.473[0m [32mI [0mslot launch_slot_: id  0 | task 12278 | processing task, is_child = 0
+[34m17.02.383.362[0m [32mI [0mslot print_timing: id  0 | task 12278 | prompt eval time =    1481.36 ms /   418 tokens (    3.54 ms per token,   282.17 tokens per second)
+[34m17.02.383.369[0m [32mI [0mslot print_timing: id  0 | task 12278 |        eval time =    2130.51 ms /    94 tokens (   22.66 ms per token,    44.12 tokens per second)
+[34m17.02.383.369[0m [32mI [0mslot print_timing: id  0 | task 12278 |       total time =    3611.86 ms /   512 tokens
+[34m17.02.383.370[0m [32mI [0mslot print_timing: id  0 | task 12278 |    graphs reused =      11923
+[34m17.02.383.405[0m [32mI [0mslot      release: id  0 | task 12278 | stop processing: n_tokens = 511, truncated = 0
+[34m17.02.383.416[0m [32mI [0msrv  update_slots: all slots are idle
+[34m17.08.330.589[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m17.08.330.874[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.204 (> 0.100 thold), f_keep = 0.133
+[34m17.08.331.078[0m [32mI [0mslot launch_slot_: id  0 | task 12374 | processing task, is_child = 0
+[34m17.11.665.411[0m [32mI [0mslot print_timing: id  0 | task 12374 | n_decoded =    100, tg =  44.29 t/s
+[34m17.14.006.165[0m [32mI [0mslot print_timing: id  0 | task 12374 | prompt eval time =    1076.61 ms /   334 tokens (    3.22 ms per token,   310.23 tokens per second)
+[34m17.14.006.171[0m [32mI [0mslot print_timing: id  0 | task 12374 |        eval time =    4598.45 ms /   199 tokens (   23.11 ms per token,    43.28 tokens per second)
+[34m17.14.006.172[0m [32mI [0mslot print_timing: id  0 | task 12374 |       total time =    5675.05 ms /   533 tokens
+[34m17.14.006.172[0m [32mI [0mslot print_timing: id  0 | task 12374 |    graphs reused =      12119
+[34m17.14.006.205[0m [32mI [0mslot      release: id  0 | task 12374 | stop processing: n_tokens = 532, truncated = 0
+[34m17.14.006.218[0m [32mI [0msrv  update_slots: all slots are idle
+[34m17.19.971.559[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m17.19.971.949[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.184 (> 0.100 thold), f_keep = 0.128
+[34m17.19.972.139[0m [32mI [0mslot launch_slot_: id  0 | task 12575 | processing task, is_child = 0
+[34m17.23.384.823[0m [32mI [0mslot print_timing: id  0 | task 12575 | n_decoded =    100, tg =  44.38 t/s
+[34m17.23.601.481[0m [32mI [0mslot print_timing: id  0 | task 12575 | prompt eval time =    1159.17 ms /   369 tokens (    3.14 ms per token,   318.33 tokens per second)
+[34m17.23.601.488[0m [32mI [0mslot print_timing: id  0 | task 12575 |        eval time =    2470.15 ms /   109 tokens (   22.66 ms per token,    44.13 tokens per second)
+[34m17.23.601.489[0m [32mI [0mslot print_timing: id  0 | task 12575 |       total time =    3629.31 ms /   478 tokens
+[34m17.23.601.489[0m [32mI [0mslot print_timing: id  0 | task 12575 |    graphs reused =      12226
+[34m17.23.601.533[0m [32mI [0mslot      release: id  0 | task 12575 | stop processing: n_tokens = 477, truncated = 0
+[34m17.23.601.547[0m [32mI [0msrv  update_slots: all slots are idle
+[34m17.29.556.755[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m17.29.557.088[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.186 (> 0.100 thold), f_keep = 0.143
+[34m17.29.557.306[0m [32mI [0mslot launch_slot_: id  0 | task 12686 | processing task, is_child = 0
+[34m17.33.044.736[0m [32mI [0mslot print_timing: id  0 | task 12686 | n_decoded =    100, tg =  44.46 t/s
+[34m17.34.760.580[0m [32mI [0mslot print_timing: id  0 | task 12686 | prompt eval time =    1237.94 ms /   365 tokens (    3.39 ms per token,   294.84 tokens per second)
+[34m17.34.760.587[0m [32mI [0mslot print_timing: id  0 | task 12686 |        eval time =    3965.30 ms /   166 tokens (   23.89 ms per token,    41.86 tokens per second)
+[34m17.34.760.588[0m [32mI [0mslot print_timing: id  0 | task 12686 |       total time =    5203.24 ms /   531 tokens
+[34m17.34.760.588[0m [32mI [0mslot print_timing: id  0 | task 12686 |    graphs reused =      12389
+[34m17.34.760.621[0m [32mI [0mslot      release: id  0 | task 12686 | stop processing: n_tokens = 530, truncated = 0
+[34m17.34.760.632[0m [32mI [0msrv  update_slots: all slots are idle
+[34m17.40.714.417[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m17.40.714.678[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.167 (> 0.100 thold), f_keep = 0.128
+[34m17.40.714.845[0m [32mI [0mslot launch_slot_: id  0 | task 12854 | processing task, is_child = 0
+[34m17.44.069.688[0m [32mI [0mslot print_timing: id  0 | task 12854 | prompt eval time =    1258.93 ms /   407 tokens (    3.09 ms per token,   323.29 tokens per second)
+[34m17.44.069.694[0m [32mI [0mslot print_timing: id  0 | task 12854 |        eval time =    2095.89 ms /    89 tokens (   23.55 ms per token,    42.46 tokens per second)
+[34m17.44.069.695[0m [32mI [0mslot print_timing: id  0 | task 12854 |       total time =    3354.82 ms /   496 tokens
+[34m17.44.069.696[0m [32mI [0mslot print_timing: id  0 | task 12854 |    graphs reused =      12476
+[34m17.44.069.745[0m [32mI [0mslot      release: id  0 | task 12854 | stop processing: n_tokens = 495, truncated = 0
+[34m17.44.069.758[0m [32mI [0msrv  update_slots: all slots are idle
+[34m17.49.983.940[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m17.49.984.207[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.178 (> 0.100 thold), f_keep = 0.137
+[34m17.49.984.540[0m [32mI [0mslot launch_slot_: id  0 | task 12945 | processing task, is_child = 0
+[34m17.53.461.663[0m [32mI [0mslot print_timing: id  0 | task 12945 | n_decoded =    100, tg =  44.70 t/s
+[34m17.54.406.193[0m [32mI [0mslot print_timing: id  0 | task 12945 | prompt eval time =    1240.08 ms /   383 tokens (    3.24 ms per token,   308.85 tokens per second)
+[34m17.54.406.199[0m [32mI [0mslot print_timing: id  0 | task 12945 |        eval time =    3181.55 ms /   142 tokens (   22.41 ms per token,    44.63 tokens per second)
+[34m17.54.406.200[0m [32mI [0mslot print_timing: id  0 | task 12945 |       total time =    4421.62 ms /   525 tokens
+[34m17.54.406.200[0m [32mI [0mslot print_timing: id  0 | task 12945 |    graphs reused =      12615
+[34m17.54.406.233[0m [32mI [0mslot      release: id  0 | task 12945 | stop processing: n_tokens = 524, truncated = 0
+[34m17.54.406.244[0m [32mI [0msrv  update_slots: all slots are idle
+[34m18.00.555.342[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m18.00.555.555[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.207 (> 0.100 thold), f_keep = 0.130
+[34m18.00.555.740[0m [32mI [0mslot launch_slot_: id  0 | task 13089 | processing task, is_child = 0
+[34m18.03.147.213[0m [32mI [0mslot print_timing: id  0 | task 13089 | prompt eval time =    1097.91 ms /   328 tokens (    3.35 ms per token,   298.75 tokens per second)
+[34m18.03.147.219[0m [32mI [0mslot print_timing: id  0 | task 13089 |        eval time =    1493.54 ms /    67 tokens (   22.29 ms per token,    44.86 tokens per second)
+[34m18.03.147.220[0m [32mI [0mslot print_timing: id  0 | task 13089 |       total time =    2591.45 ms /   395 tokens
+[34m18.03.147.220[0m [32mI [0mslot print_timing: id  0 | task 13089 |    graphs reused =      12680
+[34m18.03.147.251[0m [32mI [0mslot      release: id  0 | task 13089 | stop processing: n_tokens = 394, truncated = 0
+[34m18.03.147.264[0m [32mI [0msrv  update_slots: all slots are idle
+[34m18.09.127.083[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m18.09.127.425[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.187 (> 0.100 thold), f_keep = 0.173
+[34m18.09.127.629[0m [32mI [0mslot launch_slot_: id  0 | task 13158 | processing task, is_child = 0
+[34m18.12.574.121[0m [32mI [0mslot print_timing: id  0 | task 13158 | n_decoded =    100, tg =  43.96 t/s
+[34m18.13.162.059[0m [32mI [0mslot print_timing: id  0 | task 13158 | prompt eval time =    1171.90 ms /   364 tokens (    3.22 ms per token,   310.61 tokens per second)
+[34m18.13.162.066[0m [32mI [0mslot print_timing: id  0 | task 13158 |        eval time =    2862.50 ms /   126 tokens (   22.72 ms per token,    44.02 tokens per second)
+[34m18.13.162.067[0m [32mI [0mslot print_timing: id  0 | task 13158 |       total time =    4034.40 ms /   490 tokens
+[34m18.13.162.068[0m [32mI [0mslot print_timing: id  0 | task 13158 |    graphs reused =      12804
+[34m18.13.162.109[0m [32mI [0mslot      release: id  0 | task 13158 | stop processing: n_tokens = 489, truncated = 0
+[34m18.13.162.125[0m [32mI [0msrv  update_slots: all slots are idle
+[34m18.19.139.849[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m18.19.140.140[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.186 (> 0.100 thold), f_keep = 0.139
+[34m18.19.140.466[0m [32mI [0mslot launch_slot_: id  0 | task 13286 | processing task, is_child = 0
+[34m18.22.526.178[0m [32mI [0mslot print_timing: id  0 | task 13286 | n_decoded =    100, tg =  44.46 t/s
+[34m18.23.294.739[0m [32mI [0mslot print_timing: id  0 | task 13286 | prompt eval time =    1136.69 ms /   365 tokens (    3.11 ms per token,   321.11 tokens per second)
+[34m18.23.294.746[0m [32mI [0mslot print_timing: id  0 | task 13286 |        eval time =    3017.55 ms /   134 tokens (   22.52 ms per token,    44.41 tokens per second)
+[34m18.23.294.747[0m [32mI [0mslot print_timing: id  0 | task 13286 |       total time =    4154.24 ms /   499 tokens
+[34m18.23.294.747[0m [32mI [0mslot print_timing: id  0 | task 13286 |    graphs reused =      12936
+[34m18.23.294.788[0m [32mI [0mslot      release: id  0 | task 13286 | stop processing: n_tokens = 498, truncated = 0
+[34m18.23.294.803[0m [32mI [0msrv  update_slots: all slots are idle
+[34m18.29.332.997[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m18.29.333.288[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.193 (> 0.100 thold), f_keep = 0.137
+[34m18.29.333.521[0m [32mI [0mslot launch_slot_: id  0 | task 13422 | processing task, is_child = 0
+[34m18.33.279.872[0m [32mI [0mslot print_timing: id  0 | task 13422 | n_decoded =    100, tg =  37.69 t/s
+[34m18.33.622.414[0m [32mI [0mslot print_timing: id  0 | task 13422 | prompt eval time =    1293.15 ms /   353 tokens (    3.66 ms per token,   272.98 tokens per second)
+[34m18.33.622.427[0m [32mI [0mslot print_timing: id  0 | task 13422 |        eval time =    2995.71 ms /   112 tokens (   26.75 ms per token,    37.39 tokens per second)
+[34m18.33.622.429[0m [32mI [0mslot print_timing: id  0 | task 13422 |       total time =    4288.85 ms /   465 tokens
+[34m18.33.622.435[0m [32mI [0mslot print_timing: id  0 | task 13422 |    graphs reused =      13046
+[34m18.33.622.495[0m [32mI [0mslot      release: id  0 | task 13422 | stop processing: n_tokens = 464, truncated = 0
+[34m18.33.622.518[0m [32mI [0msrv  update_slots: all slots are idle
+[34m18.39.554.115[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m18.39.554.559[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.182 (> 0.100 thold), f_keep = 0.147
+[34m18.39.554.779[0m [32mI [0mslot launch_slot_: id  0 | task 13536 | processing task, is_child = 0
+[34m18.43.018.833[0m [32mI [0mslot print_timing: id  0 | task 13536 | n_decoded =    100, tg =  43.57 t/s
+[34m18.46.020.002[0m [32mI [0mslot print_timing: id  0 | task 13536 | n_decoded =    230, tg =  43.42 t/s
+[34m18.49.027.869[0m [32mI [0mslot print_timing: id  0 | task 13536 | n_decoded =    359, tg =  43.23 t/s
+[34m18.49.095.035[0m [32mI [0mslot print_timing: id  0 | task 13536 | prompt eval time =    1168.61 ms /   373 tokens (    3.13 ms per token,   319.18 tokens per second)
+[34m18.49.095.042[0m [32mI [0mslot print_timing: id  0 | task 13536 |        eval time =    8371.61 ms /   362 tokens (   23.13 ms per token,    43.24 tokens per second)
+[34m18.49.095.043[0m [32mI [0mslot print_timing: id  0 | task 13536 |       total time =    9540.21 ms /   735 tokens
+[34m18.49.095.043[0m [32mI [0mslot print_timing: id  0 | task 13536 |    graphs reused =      13405
+[34m18.49.095.083[0m [32mI [0mslot      release: id  0 | task 13536 | stop processing: n_tokens = 734, truncated = 0
+[34m18.49.095.101[0m [32mI [0msrv  update_slots: all slots are idle
+[34m18.55.038.330[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m18.55.038.662[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.167 (> 0.100 thold), f_keep = 0.093
+[34m18.55.038.918[0m [32mI [0mslot launch_slot_: id  0 | task 13900 | processing task, is_child = 0
+[34m18.58.836.199[0m [32mI [0mslot print_timing: id  0 | task 13900 | n_decoded =    100, tg =  39.88 t/s
+[34m18.59.714.196[0m [32mI [0mslot print_timing: id  0 | task 13900 | prompt eval time =    1289.96 ms /   408 tokens (    3.16 ms per token,   316.29 tokens per second)
+[34m18.59.714.201[0m [32mI [0mslot print_timing: id  0 | task 13900 |        eval time =    3385.29 ms /   135 tokens (   25.08 ms per token,    39.88 tokens per second)
+[34m18.59.714.202[0m [32mI [0mslot print_timing: id  0 | task 13900 |       total time =    4675.24 ms /   543 tokens
+[34m18.59.714.203[0m [32mI [0mslot print_timing: id  0 | task 13900 |    graphs reused =      13537
+[34m18.59.714.236[0m [32mI [0mslot      release: id  0 | task 13900 | stop processing: n_tokens = 542, truncated = 0
+[34m18.59.714.249[0m [32mI [0msrv  update_slots: all slots are idle
+[34m19.05.745.095[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m19.05.745.393[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.179 (> 0.100 thold), f_keep = 0.125
+[34m19.05.745.591[0m [32mI [0mslot launch_slot_: id  0 | task 14037 | processing task, is_child = 0
+[34m19.09.212.760[0m [32mI [0mslot print_timing: id  0 | task 14037 | n_decoded =    100, tg =  44.10 t/s
+[34m19.09.908.086[0m [32mI [0mslot print_timing: id  0 | task 14037 | prompt eval time =    1199.62 ms /   379 tokens (    3.17 ms per token,   315.93 tokens per second)
+[34m19.09.908.091[0m [32mI [0mslot print_timing: id  0 | task 14037 |        eval time =    2962.85 ms /   128 tokens (   23.15 ms per token,    43.20 tokens per second)
+[34m19.09.908.092[0m [32mI [0mslot print_timing: id  0 | task 14037 |       total time =    4162.47 ms /   507 tokens
+[34m19.09.908.092[0m [32mI [0mslot print_timing: id  0 | task 14037 |    graphs reused =      13663
+[34m19.09.908.126[0m [32mI [0mslot      release: id  0 | task 14037 | stop processing: n_tokens = 506, truncated = 0
+[34m19.09.908.136[0m [32mI [0msrv  update_slots: all slots are idle
+[34m19.15.761.618[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m19.15.761.947[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.174 (> 0.100 thold), f_keep = 0.134
+[34m19.15.762.159[0m [32mI [0mslot launch_slot_: id  0 | task 14167 | processing task, is_child = 0
+[34m19.19.254.288[0m [32mI [0mslot print_timing: id  0 | task 14167 | n_decoded =    100, tg =  44.45 t/s
+[34m19.21.507.307[0m [32mI [0mslot print_timing: id  0 | task 14167 | prompt eval time =    1242.40 ms /   390 tokens (    3.19 ms per token,   313.91 tokens per second)
+[34m19.21.507.313[0m [32mI [0mslot print_timing: id  0 | task 14167 |        eval time =    4502.71 ms /   199 tokens (   22.63 ms per token,    44.20 tokens per second)
+[34m19.21.507.314[0m [32mI [0mslot print_timing: id  0 | task 14167 |       total time =    5745.12 ms /   589 tokens
+[34m19.21.507.314[0m [32mI [0mslot print_timing: id  0 | task 14167 |    graphs reused =      13859
+[34m19.21.507.347[0m [32mI [0mslot      release: id  0 | task 14167 | stop processing: n_tokens = 588, truncated = 0
+[34m19.21.507.359[0m [32mI [0msrv  update_slots: all slots are idle
+[34m19.27.405.756[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m19.27.405.970[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.172 (> 0.100 thold), f_keep = 0.116
+[34m19.27.406.155[0m [32mI [0mslot launch_slot_: id  0 | task 14368 | processing task, is_child = 0
+[34m19.31.394.985[0m [32mI [0mslot print_timing: id  0 | task 14368 | n_decoded =    100, tg =  39.81 t/s
+[34m19.34.428.833[0m [32mI [0mslot print_timing: id  0 | task 14368 | n_decoded =    214, tg =  38.59 t/s
+[34m19.35.146.410[0m [32mI [0mslot print_timing: id  0 | task 14368 | prompt eval time =    1477.10 ms /   395 tokens (    3.74 ms per token,   267.42 tokens per second)
+[34m19.35.146.421[0m [32mI [0mslot print_timing: id  0 | task 14368 |        eval time =    6263.11 ms /   239 tokens (   26.21 ms per token,    38.16 tokens per second)
+[34m19.35.146.423[0m [32mI [0mslot print_timing: id  0 | task 14368 |       total time =    7740.21 ms /   634 tokens
+[34m19.35.146.424[0m [32mI [0mslot print_timing: id  0 | task 14368 |    graphs reused =      14095
+[34m19.35.146.483[0m [32mI [0mslot      release: id  0 | task 14368 | stop processing: n_tokens = 633, truncated = 0
+[34m19.35.146.511[0m [32mI [0msrv  update_slots: all slots are idle
+[34m19.41.160.825[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m19.41.161.285[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.194 (> 0.100 thold), f_keep = 0.107
+[34m19.41.161.494[0m [32mI [0mslot launch_slot_: id  0 | task 14609 | processing task, is_child = 0
+[34m19.44.508.917[0m [32mI [0mslot print_timing: id  0 | task 14609 | n_decoded =    100, tg =  44.26 t/s
+[34m19.46.907.490[0m [32mI [0mslot print_timing: id  0 | task 14609 | prompt eval time =    1087.77 ms /   350 tokens (    3.11 ms per token,   321.76 tokens per second)
+[34m19.46.907.495[0m [32mI [0mslot print_timing: id  0 | task 14609 |        eval time =    4658.19 ms /   205 tokens (   22.72 ms per token,    44.01 tokens per second)
+[34m19.46.907.496[0m [32mI [0mslot print_timing: id  0 | task 14609 |       total time =    5745.96 ms /   555 tokens
+[34m19.46.907.496[0m [32mI [0mslot print_timing: id  0 | task 14609 |    graphs reused =      14297
+[34m19.46.907.530[0m [32mI [0mslot      release: id  0 | task 14609 | stop processing: n_tokens = 554, truncated = 0
+[34m19.46.907.544[0m [32mI [0msrv  update_slots: all slots are idle
+[34m19.53.125.147[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m19.53.125.451[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.187 (> 0.100 thold), f_keep = 0.123
+[34m19.53.125.655[0m [32mI [0mslot launch_slot_: id  0 | task 14816 | processing task, is_child = 0
+[34m19.56.588.042[0m [32mI [0mslot print_timing: id  0 | task 14816 | prompt eval time =    1184.04 ms /   364 tokens (    3.25 ms per token,   307.42 tokens per second)
+[34m19.56.588.048[0m [32mI [0mslot print_timing: id  0 | task 14816 |        eval time =    2278.32 ms /    95 tokens (   23.98 ms per token,    41.70 tokens per second)
+[34m19.56.588.049[0m [32mI [0mslot print_timing: id  0 | task 14816 |       total time =    3462.36 ms /   459 tokens
+[34m19.56.588.049[0m [32mI [0mslot print_timing: id  0 | task 14816 |    graphs reused =      14390
+[34m19.56.588.082[0m [32mI [0mslot      release: id  0 | task 14816 | stop processing: n_tokens = 458, truncated = 0
+[34m19.56.588.095[0m [32mI [0msrv  update_slots: all slots are idle
+[34m20.02.697.075[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m20.02.697.340[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.135 (> 0.100 thold), f_keep = 0.148
+[34m20.02.697.554[0m [32mI [0mslot launch_slot_: id  0 | task 14913 | processing task, is_child = 0
+[34m20.06.562.869[0m [32mI [0mslot print_timing: id  0 | task 14913 | n_decoded =    100, tg =  43.12 t/s
+[34m20.09.569.228[0m [32mI [0mslot print_timing: id  0 | task 14913 | n_decoded =    229, tg =  43.00 t/s
+[34m20.12.586.017[0m [32mI [0mslot print_timing: id  0 | task 14913 | n_decoded =    358, tg =  42.92 t/s
+[34m20.15.593.682[0m [32mI [0mslot print_timing: id  0 | task 14913 | n_decoded =    486, tg =  42.82 t/s
+[34m20.16.190.867[0m [32mI [0mslot print_timing: id  0 | task 14913 | prompt eval time =    1546.37 ms /   502 tokens (    3.08 ms per token,   324.63 tokens per second)
+[34m20.16.190.872[0m [32mI [0mslot print_timing: id  0 | task 14913 |        eval time =   11946.90 ms /   512 tokens (   23.33 ms per token,    42.86 tokens per second)
+[34m20.16.190.873[0m [32mI [0mslot print_timing: id  0 | task 14913 |       total time =   13493.26 ms /  1014 tokens
+[34m20.16.190.873[0m [32mI [0mslot print_timing: id  0 | task 14913 |    graphs reused =      14898
+[34m20.16.190.908[0m [32mI [0mslot      release: id  0 | task 14913 | stop processing: n_tokens = 1013, truncated = 0
+[34m20.16.190.923[0m [32mI [0msrv  update_slots: all slots are idle
+[34m20.22.192.482[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m20.22.192.767[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.188 (> 0.100 thold), f_keep = 0.067
+[34m20.22.193.000[0m [32mI [0mslot launch_slot_: id  0 | task 15427 | processing task, is_child = 0
+[34m20.25.621.403[0m [32mI [0mslot print_timing: id  0 | task 15427 | n_decoded =    100, tg =  43.60 t/s
+[34m20.28.622.208[0m [32mI [0mslot print_timing: id  0 | task 15427 | n_decoded =    222, tg =  41.93 t/s
+[34m20.29.161.007[0m [32mI [0mslot print_timing: id  0 | task 15427 | prompt eval time =    1134.86 ms /   361 tokens (    3.14 ms per token,   318.10 tokens per second)
+[34m20.29.161.013[0m [32mI [0mslot print_timing: id  0 | task 15427 |        eval time =    5833.11 ms /   243 tokens (   24.00 ms per token,    41.66 tokens per second)
+[34m20.29.161.014[0m [32mI [0mslot print_timing: id  0 | task 15427 |       total time =    6967.97 ms /   604 tokens
+[34m20.29.161.017[0m [32mI [0mslot print_timing: id  0 | task 15427 |    graphs reused =      15138
+[34m20.29.161.049[0m [32mI [0mslot      release: id  0 | task 15427 | stop processing: n_tokens = 603, truncated = 0
+[34m20.29.161.062[0m [32mI [0msrv  update_slots: all slots are idle
+[34m20.35.170.242[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m20.35.170.789[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.147 (> 0.100 thold), f_keep = 0.113
+[34m20.35.170.999[0m [32mI [0mslot launch_slot_: id  0 | task 15672 | processing task, is_child = 0
+[34m20.38.287.943[0m [32mI [0mslot print_timing: id  0 | task 15672 | prompt eval time =    1508.54 ms /   463 tokens (    3.26 ms per token,   306.92 tokens per second)
+[34m20.38.287.948[0m [32mI [0mslot print_timing: id  0 | task 15672 |        eval time =    1608.38 ms /    67 tokens (   24.01 ms per token,    41.66 tokens per second)
+[34m20.38.287.949[0m [32mI [0mslot print_timing: id  0 | task 15672 |       total time =    3116.92 ms /   530 tokens
+[34m20.38.287.950[0m [32mI [0mslot print_timing: id  0 | task 15672 |    graphs reused =      15202
+[34m20.38.287.988[0m [32mI [0mslot      release: id  0 | task 15672 | stop processing: n_tokens = 529, truncated = 0
+[34m20.38.288.001[0m [32mI [0msrv  update_slots: all slots are idle

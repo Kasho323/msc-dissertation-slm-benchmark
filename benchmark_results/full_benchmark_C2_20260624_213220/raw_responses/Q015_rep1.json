@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The purpose of running `llama-server` rather than only a command-line model is to provide a lightweight, OpenAI API-compatible HTTP server for serving Large Language Models (LLMs). This server allows users to access and interact with the model over the web, enabling features such as:\n\n1. **Basic web UI**: The server provides a basic web interface that allows users to access the model's chat completion endpoint.\n2. **Chat completion endpoint**: Users can interact with the model by sending messages, which are then processed and responded to.\n3. **Multiple users and parallel decoding**: The server can handle multiple users simultaneously, and each user can have up to 4 concurrent requests, with a maximum context size of 4096.\n\nBy running `llama-server`, users can access and interact with their LLM models over the web, making it easier to use and experiment with these models. This approach also enables features like chat completion, which can be useful for tasks such as text summarization, question answering, and more.\n\nIn contrast, running a command-line model only provides a simple way to use the model, but it does not offer the same level of web-based interaction and features as the `llama-server` approach."
+      }
+    }
+  ],
+  "created": 1782333284,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 248,
+    "prompt_tokens": 478,
+    "total_tokens": 726,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-pFz4wFk9NRHCcTXkHOyTqXMlr5o7OL6U",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 478,
+    "prompt_ms": 607.907,
+    "prompt_per_token_ms": 1.2717719665271967,
+    "prompt_per_second": 786.3044840740441,
+    "predicted_n": 248,
+    "predicted_ms": 3671.557,
+    "predicted_per_token_ms": 14.804665322580645,
+    "predicted_per_second": 67.54627532678916
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 201,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 194,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

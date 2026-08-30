@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Here's a rephrased version of the text in my own words, combining relevant parts:\n\nRAG (Read-Answer-Generate) is a novel approach that combines the strengths of extractive question-answering models (QAs) and abstractive text generation models. By leveraging the accuracy of RAG in generating correct answers even when the correct answer is not present in retrieved documents, it achieves an impressive 11.8% accuracy in such cases. This is particularly notable given that traditional QAs, such as BART, struggle to achieve even 0% accuracy in retrieving correct answers.\n\nRAG's performance is further enhanced by its ability to outperform BART on Open MS-MARCO NLG by 2.6 Bleu points and 2.6 Rouge-L points. This suggests that RAG is capable of generating high-quality answers that are not only accurate but also coherent and engaging.\n\nIn terms of experimental details, RAG is trained using a combination of"
+      }
+    }
+  ],
+  "created": 1781907238,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 510,
+    "total_tokens": 710,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-X48Z1oZ7O3OOnrTHzzmxDA6o0AJF4h1Q",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 510,
+    "prompt_ms": 615.82,
+    "prompt_per_token_ms": 1.2074901960784314,
+    "prompt_per_second": 828.1640739177031,
+    "predicted_n": 200,
+    "predicted_ms": 2260.371,
+    "predicted_per_token_ms": 11.301855,
+    "predicted_per_second": 88.48105023467386
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 50,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 33,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 35,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

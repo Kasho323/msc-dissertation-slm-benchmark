@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "GGUF (Generalized GEMM) enables local model serving by enabling speculative decoding, which is a technique used in GEMM (Generalized Elementary Matrix Multiplication) to optimize the computation of matrix products. This allows the model to make fewer computations and potentially reduce the likelihood of errors, making it more efficient and reliable for local inference."
+      }
+    }
+  ],
+  "created": 1782332570,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 70,
+    "prompt_tokens": 437,
+    "total_tokens": 507,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-iAehMyNp7JwLIj1k3IAJIZaQoSkd1Xts",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 437,
+    "prompt_ms": 577.232,
+    "prompt_per_token_ms": 1.3208970251716246,
+    "prompt_per_second": 757.0612855836129,
+    "predicted_n": 70,
+    "predicted_ms": 530.889,
+    "predicted_per_token_ms": 7.584128571428572,
+    "predicted_per_second": 131.8543047605055
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 202,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 193,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

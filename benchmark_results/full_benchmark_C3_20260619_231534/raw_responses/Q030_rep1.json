@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "According to the retrieved context, the relevant data protection principles for AI systems are:\n\n*   **Ensuring adequate training for individuals responsible for development, testing, validation, deployment, and monitoring:** This is crucial to understand the statistical accuracy requirements and measures.\n*   **Clearly labelling inferences and predictions as such:** This is important for transparency and accountability.\n*   **Managing trade-offs and reasonable expectations:** This acknowledges the potential for AI systems to have unintended consequences.\n*   **Adopting a common and opportunities presented by AI:** This highlights the need to be proactive and responsive to the evolving landscape of AI.\n\nThe context also indicates that the ICO (Information Commissioner’s Office) is focusing on making data protection guidance user-friendly, reducing compliance burdens, and reflecting upcoming changes in AI regulation and data protection."
+      }
+    }
+  ],
+  "created": 1781907603,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 167,
+    "prompt_tokens": 350,
+    "total_tokens": 517,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-K7XWwIDtyAwRRctTRYuoTjFsaE80sqCy",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 350,
+    "prompt_ms": 727.6,
+    "prompt_per_token_ms": 2.0788571428571427,
+    "prompt_per_second": 481.0335349092908,
+    "predicted_n": 167,
+    "predicted_ms": 2732.429,
+    "predicted_per_token_ms": 16.361850299401198,
+    "predicted_per_second": 61.11778201739185
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 593,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 491,
+        "page": 1,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 600,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

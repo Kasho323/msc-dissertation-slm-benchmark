@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Retrieval-augmented generation aims to address the problem of improving performance in knowledge-intensive natural language processing (NLP) tasks when retrieval is considered in isolation. Specifically, it seeks to enhance the effectiveness of downstream NLP tasks such as open-domain question answering, fact checking, fact completion, long-form question answering, Wikipedia article generation, dialogue, translation, and language modeling by leveraging retrieval techniques."
+      }
+    }
+  ],
+  "created": 1782331228,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 81,
+    "prompt_tokens": 469,
+    "total_tokens": 550,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-75TRiCim33ySdsZ3nxORbmnHO4cMq4K9",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 469,
+    "prompt_ms": 823.653,
+    "prompt_per_token_ms": 1.7561897654584222,
+    "prompt_per_second": 569.4145471454605,
+    "predicted_n": 81,
+    "predicted_ms": 1510.642,
+    "predicted_per_token_ms": 18.649901234567903,
+    "predicted_per_second": 53.61958690411096
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 148,
+        "page": 17,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG (Retrieval-Augmented Generative Adversarial Network) combines parametric and non-parametric memory in the following way:\n\nRAG models use both parametric and non-parametric memory in their architecture. The parametric memory is used to learn latent retrieval, which is a way of representing the content of the retrieved item in a way that can be used to generate new text. This latent retrieval is learned from scratch for specific tasks, such as memory networks.\n\nThe non-parametric memory, on the other hand, is used to aggregate content from multiple pieces of retrieved content. This non-parametric memory is not learned from scratch, but rather is a learned representation of the aggregated content.\n\nIn other words, RAG models use parametric memory to learn the underlying structure of the retrieved item, and non-parametric memory to aggregate content from multiple sources and represent it in a way that can be used to generate new text.\n\nThis combination of parametric and non-parametric memory allows RAG"
+      }
+    }
+  ],
+  "created": 1781887429,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 433,
+    "total_tokens": 633,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-zDijtFyK2rC8eKccbNuegYCy3E9CcZpJ",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 433,
+    "prompt_ms": 599.031,
+    "prompt_per_token_ms": 1.3834434180138566,
+    "prompt_per_second": 722.8340436471568,
+    "predicted_n": 200,
+    "predicted_ms": 2792.017,
+    "predicted_per_token_ms": 13.960085,
+    "predicted_per_second": 71.6328016627406
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 12,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 84,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

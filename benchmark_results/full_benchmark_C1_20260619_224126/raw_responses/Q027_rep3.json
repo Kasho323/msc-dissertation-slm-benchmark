@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "An AI system should be evaluated for limitations as well as capabilities because it is essential to understand the potential impacts of its use on individuals, communities, organizations, society, and the planet. Evaluating both aspects allows for a comprehensive assessment of the system's capabilities and limitations, enabling organizations to identify potential risks and opportunities."
+      }
+    }
+  ],
+  "created": 1781906055,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 64,
+    "prompt_tokens": 332,
+    "total_tokens": 396,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-j6NnE14W9zoH9vypNlxDVorSFYsdIpPu",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 332,
+    "prompt_ms": 410.852,
+    "prompt_per_token_ms": 1.2375060240963855,
+    "prompt_per_second": 808.0768743975934,
+    "predicted_n": 64,
+    "predicted_ms": 538.516,
+    "predicted_per_token_ms": 8.4143125,
+    "predicted_per_second": 118.84512252189351
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 380,
+        "page": 30,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 254,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 384,
+        "page": 31,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

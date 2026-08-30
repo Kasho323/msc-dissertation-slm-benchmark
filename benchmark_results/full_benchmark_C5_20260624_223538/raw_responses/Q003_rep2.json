@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The question \"Why is provenance important in a question-answering system?\" is not covered in the provided context."
+      }
+    }
+  ],
+  "created": 1782337301,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 26,
+    "prompt_tokens": 502,
+    "total_tokens": 528,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-c3PoyNl5RmHg5qZvHzXaPXJDwTIGRgjw",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 502,
+    "prompt_ms": 843.052,
+    "prompt_per_token_ms": 1.679386454183267,
+    "prompt_per_second": 595.4555590876956,
+    "predicted_n": 26,
+    "predicted_ms": 442.123,
+    "predicted_per_token_ms": 17.00473076923077,
+    "predicted_per_second": 58.80716452209001
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 92,
+        "page": 10,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

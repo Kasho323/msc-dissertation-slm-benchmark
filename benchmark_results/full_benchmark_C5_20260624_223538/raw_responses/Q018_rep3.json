@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Local inference changes where model computation happens by allowing the model to make inferences locally on the device from which the query is generated, rather than relying on a cloud server. This means the model can process data directly on the user's device, such as a smartphone, without needing to send the data to a remote server first. For example, an ML model could be installed on a user's smartphone to predict what news content they might be interested in, and the model would make predictions based on the local data collected during the day. The model's confidence in its predictions can be influenced by the user's past interactions, as the model has seen them before. This approach can be particularly useful for privacy-sensitive applications where data collection and storage are already managed locally by the user."
+      }
+    }
+  ],
+  "created": 1782337771,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 155,
+    "prompt_tokens": 372,
+    "total_tokens": 527,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-BYyzCfn8JsgA8TUmBdFqmtMxWD0T7A2q",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 372,
+    "prompt_ms": 659.369,
+    "prompt_per_token_ms": 1.772497311827957,
+    "prompt_per_second": 564.1757498456858,
+    "predicted_n": 155,
+    "predicted_ms": 2431.33,
+    "predicted_per_token_ms": 15.686,
+    "predicted_per_second": 63.75111564452378
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 707,
+        "page": 25,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 637,
+        "page": 18,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 638,
+        "page": 18,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

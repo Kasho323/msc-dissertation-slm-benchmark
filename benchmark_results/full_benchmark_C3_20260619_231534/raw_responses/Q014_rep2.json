@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Quantization techniques, specifically using 1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit integer representations, are designed to enable faster inference and reduce memory usage. By representing model parameters with fewer bits, the computational demands of the model are lessened, allowing for quicker processing and reduced storage requirements.\n\nHere’s a breakdown of how it works:\n\n*   **Faster Inference:** Fewer bits mean less computation is needed to perform operations on the model.\n*   **Reduced Memory Use:** Smaller data representations require less memory to store the model parameters, making it possible to run larger models on less powerful hardware.\n\nThe context highlights that this quantisation approach is particularly beneficial for models like LLMs, and it’s being used in conjunction with various hardware backends, including Vulkan and SYCL, to optimize performance across different platforms."
+      }
+    }
+  ],
+  "created": 1781907828,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 194,
+    "prompt_tokens": 480,
+    "total_tokens": 674,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-uMOX3lDMKfDaw8RsppbAihw4f22HXz2u",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 480,
+    "prompt_ms": 915.568,
+    "prompt_per_token_ms": 1.9074333333333333,
+    "prompt_per_second": 524.2647187319784,
+    "predicted_n": 194,
+    "predicted_ms": 3064.047,
+    "predicted_per_token_ms": 15.794056701030929,
+    "predicted_per_second": 63.31495567789919
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 176,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 167,
+        "page": 19,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

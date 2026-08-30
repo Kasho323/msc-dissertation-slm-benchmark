@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The retriever in a RAG pipeline plays a crucial role in generating diverse and relevant responses. It helps the RAG system to retrieve relevant information for the task, which is essential for achieving state-of-the-art performance. The retriever is trained to learn to retrieve relevant information for the task, making it an effective component in the RAG pipeline."
+      }
+    }
+  ],
+  "created": 1781905894,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 71,
+    "prompt_tokens": 417,
+    "total_tokens": 488,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-nX71AzgYmqUF1smUTEJOo7pHQ0UUybJP",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 417,
+    "prompt_ms": 485.985,
+    "prompt_per_token_ms": 1.165431654676259,
+    "prompt_per_second": 858.0511744189635,
+    "predicted_n": 71,
+    "predicted_ms": 606.162,
+    "predicted_per_token_ms": 8.53749295774648,
+    "predicted_per_second": 117.13040408339685
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 46,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 21,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

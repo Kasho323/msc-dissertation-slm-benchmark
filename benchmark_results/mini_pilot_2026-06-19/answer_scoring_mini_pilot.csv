@@ -1,0 +1,6 @@
+run_id,model_config_id,question_id,repetition,relevance,correctness,faithfulness_to_source,completeness,hallucination_risk,source_grounding,average_quality_score,scoring_notes,scored_by,scored_date
+MINI_C1_20260619_172658,C1,Q001,1,4,3,3,2,3,3,3.00,"Partly relevant and source-related, but incorrectly says the goal is to store knowledge in the model parameters and misses provenance/updating limitations.",Cairenbading,2026-06-19
+MINI_C1_20260619_172658,C1,Q002,1,4,3,3,3,3,3,3.17,"Identifies retriever and generator, but confuses some mechanics by saying the retriever/generator creates text documents. Partially complete.",Cairenbading,2026-06-19
+MINI_C1_20260619_172658,C1,Q003,1,0,1,1,0,1,1,0.67,"Answer is off-topic and discusses YodaQA/references instead of explaining provenance. This is a clear retrieval/generation failure example.",Cairenbading,2026-06-19
+MINI_C1_20260619_172658,C1,Q004,1,4,3,3,3,4,3,3.33,"Mostly answers the role of the retriever, but focuses on training/retrieval supervision rather than clearly saying it searches the index and returns passages for the generator.",Cairenbading,2026-06-19
+MINI_C1_20260619_172658,C1,Q005,1,5,4,4,4,5,4,4.33,"Good answer: explains retrieving text documents and updating knowledge as the world changes. Could be more explicit about external index and not relying only on parameters.",Cairenbading,2026-06-19

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "AI risk management is crucial when deploying AI systems because it helps ensure that the risks associated with the AI system are understood and managed effectively. This is particularly important as the methods, contexts, risks, and needs or expectations from relevant AI actors evolve over time. Additionally, it is incumbent upon Framework users to continue applying the MANAGE function to deployed AI systems as these factors and needs or expectations change. The lack of transparency in risk metrics and methodologies used by AI systems can complicate risk measurement and management, especially when integrating third-party data or systems into AI products or services. Regardless, all parties and AI actors should manage risk in the AI systems they develop, deploy, or use as standalone or integrated components. Tracking emergent risks is essential to ensure that risks are managed safely and effectively. When an AI system is found to be low-risk in a specific context, it may suggest a lower prioritization of risk management efforts. The initial prioritization of risks may differ between AI systems designed or deployed to directly interact with humans compared to those that are not. Higher initial prioritization may be necessary in settings where the AI system is directly involved with humans."
+      }
+    }
+  ],
+  "created": 1782337464,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 230,
+    "prompt_tokens": 334,
+    "total_tokens": 564,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-vjSgE7OOtan5hKcS0T30zaqL2dlJxXzu",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 334,
+    "prompt_ms": 633.783,
+    "prompt_per_token_ms": 1.8975538922155688,
+    "prompt_per_second": 526.9942551314882,
+    "predicted_n": 230,
+    "predicted_ms": 3725.211,
+    "predicted_per_token_ms": 16.19656956521739,
+    "predicted_per_second": 61.74146914094262
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 258,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 275,
+        "page": 13,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

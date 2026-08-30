@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Even with the runtime supporting local inference, there are still potential deployment limitations. While the context highlights that the technology is increasingly viable on user hardware, recent advancements in specialized hardware for smartphones and embedded devices are making it a more practical option. This means that while the system *can* run locally, it might still face challenges related to the specific hardware it’s running on. Specifically, the effectiveness of these optimizations – like ARM NEON, Accelerate, and Metal – might be limited by the capabilities of the underlying processor. Therefore, while the system is designed to be readily available, it might not always achieve the same level of performance or efficiency as dedicated hardware solutions."
+      }
+    }
+  ],
+  "created": 1781908251,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 135,
+    "prompt_tokens": 383,
+    "total_tokens": 518,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-5MAtAHwncsaqxrYz2kEvEUsJjv2PV0S4",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 383,
+    "prompt_ms": 775.191,
+    "prompt_per_token_ms": 2.0239973890339424,
+    "prompt_per_second": 494.0717835991387,
+    "predicted_n": 135,
+    "predicted_ms": 2341.557,
+    "predicted_per_token_ms": 17.344866666666665,
+    "predicted_per_second": 57.653945643860055
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf",
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 709,
+        "page": 25,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 690,
+        "page": 23,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

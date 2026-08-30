@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "AI risk management is important when deploying AI systems because it helps to identify and manage risks associated with AI technology. This includes assessing and prioritizing risks based on the assessed risks and priorities. The AI system may not be transparent about the risk metrics or methodologies it used, but it is incumbent on the user to continue to apply the MANAGE function to deployed AI systems. The methods, contexts, risks, and needs of the AI actors evolve over time, so all parties and AI actors should manage risk in the AI systems they develop, deploy, or use as standalone or integrated components. Tracking emergent risks: Organizations risk. Risks are present during development and deployment should cease in a safe manner until risks can be sufficiently managed. If an AI systems development, deployment, and use cases are found to be low-risk in a specific context, that may suggest potentially lower prioritization. The answer is not provided in the context, but it is stated that AI risk management is important for identifying and managing risks associated with AI technology, and for assessing and prioritizing risks based on the assessed risks and priorities."
+      }
+    }
+  ],
+  "created": 1782336341,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 220,
+    "prompt_tokens": 334,
+    "total_tokens": 554,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Bc6CBE17wyDf8FzqquwYWmX0HHEpJdHn",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 334,
+    "prompt_ms": 816.364,
+    "prompt_per_token_ms": 2.4442035928143713,
+    "prompt_per_second": 409.1312208769617,
+    "predicted_n": 220,
+    "predicted_ms": 2526.332,
+    "predicted_per_token_ms": 11.483327272727273,
+    "predicted_per_second": 87.08277455219662
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 258,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 275,
+        "page": 13,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "An AI system should be evaluated for limitations as well as capabilities because it is essential to understand the potential impacts of its use on individuals, communities, organizations, society, and the planet. Evaluating the system's limitations helps ensure that it is designed and used in a way that does not compromise its intended purpose or cause negative consequences. The evaluation also allows for the identification of potential positive and negative impacts, which can guide decisions about the system's intended use and its intended impact on society. Additionally, understanding the system's limitations can help identify potential risks beyond the intended use, such as unintended consequences or unintended impacts on individuals, communities, organizations, society, and the planet."
+      }
+    }
+  ],
+  "created": 1781905487,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 135,
+    "prompt_tokens": 332,
+    "total_tokens": 467,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-XrKW4JWXMUXxV2vFbHyrDXDQmEM3lHgT",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 332,
+    "prompt_ms": 425.077,
+    "prompt_per_token_ms": 1.2803524096385541,
+    "prompt_per_second": 781.0349654297928,
+    "predicted_n": 135,
+    "predicted_ms": 988.321,
+    "predicted_per_token_ms": 7.320896296296296,
+    "predicted_per_second": 136.59529646744326
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 380,
+        "page": 30,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 254,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 384,
+        "page": 31,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

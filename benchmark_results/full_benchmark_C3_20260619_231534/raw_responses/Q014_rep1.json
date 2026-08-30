@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Quantization techniques, specifically for integer representations like 1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit, are designed to speed up inference and reduce memory usage. By reducing the precision of the numbers used to represent the model's weights and activations, it allows for faster processing and lower memory demands.\n\nHere’s a breakdown of how it works:\n\n*   **Faster Inference:** Lower precision means calculations are quicker.\n*   **Reduced Memory Use:** Smaller numbers require less memory to store and process.\n\nThe context highlights that these quantization methods are particularly beneficial for models like LLMs, and are being used in conjunction with NVIDIA GPUs to enable efficient inference, especially for models that exceed the GPU’s VRAM capacity."
+      }
+    }
+  ],
+  "created": 1781907460,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 174,
+    "prompt_tokens": 480,
+    "total_tokens": 654,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-UHXRhPXeLopwxgCQNnwgOR8aqWqjOamt",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 480,
+    "prompt_ms": 1100.752,
+    "prompt_per_token_ms": 2.2932333333333332,
+    "prompt_per_second": 436.0655261130573,
+    "predicted_n": 174,
+    "predicted_ms": 3076.94,
+    "predicted_per_token_ms": 17.683563218390805,
+    "predicted_per_second": 56.54968897671063
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 176,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 167,
+        "page": 19,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "According to the paper, tasks that are considered knowledge-intensive include open-domain question answering, fact checking, fact completion, long-form question answering, Wikipedia article generation, dialogue, translation, and language modeling."
+      }
+    }
+  ],
+  "created": 1782336995,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 41,
+    "prompt_tokens": 409,
+    "total_tokens": 450,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Axs69UC6jgSkTnImYKmXqCyzakhmGRUx",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 409,
+    "prompt_ms": 726.533,
+    "prompt_per_token_ms": 1.7763643031784841,
+    "prompt_per_second": 562.9475880655111,
+    "predicted_n": 41,
+    "predicted_ms": 619.407,
+    "predicted_per_token_ms": 15.10748780487805,
+    "predicted_per_second": 66.19234203036129
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 387,
+        "page": 31,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 432,
+        "page": 40,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

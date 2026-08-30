@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Local deployment can reduce some privacy risks by minimizing data exposure during the training phase of the model. However, it is essential to collaborate with clients to understand the specific deployment contexts and threat models to fully assess the risk. Additionally, there should be sufficient information sharing between each party to perform their respective responsibilities."
+      }
+    }
+  ],
+  "created": 1781905554,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 61,
+    "prompt_tokens": 350,
+    "total_tokens": 411,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-jXTbJkPkYvvH2W6Dnm0JEAKekfBbeU2m",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 350,
+    "prompt_ms": 472.533,
+    "prompt_per_token_ms": 1.3500942857142857,
+    "prompt_per_second": 740.6890100797193,
+    "predicted_n": 61,
+    "predicted_ms": 669.519,
+    "predicted_per_token_ms": 10.975721311475409,
+    "predicted_per_second": 91.11018507316446
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 654,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 711,
+        "page": 26,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 554,
+        "page": 9,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

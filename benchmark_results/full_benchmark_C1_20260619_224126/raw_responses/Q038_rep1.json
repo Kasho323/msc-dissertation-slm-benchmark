@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG and local deployment address the following different parts of the question-answering problem:\n\n1. **Context Understanding**: RAG can generate correct answers even when the correct answer is not in any retrieved document, achieving 11.8% accuracy in cases where an extractive model would score 0%. This demonstrates the model's ability to handle ambiguous or incomplete questions.\n\n2. **Context Expansion**: RAG can generate correct answers even when the correct answer is not in any retrieved document, achieving 11.8% accuracy in cases where an extractive model would score 0%. This indicates that RAG can expand the context of the question-answering process, allowing for more nuanced and contextually rich answers.\n\n3. **Context Expansion**: RAG can generate correct answers even when the correct answer is not in any retrieved document, achieving 11.8% accuracy in cases where an extractive model would score 0%. This shows that RAG can expand the"
+      }
+    }
+  ],
+  "created": 1781905572,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 502,
+    "total_tokens": 702,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-jNNJGxoLldK4spwbhXgxnLLDmkKJypMo",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 502,
+    "prompt_ms": 594.643,
+    "prompt_per_token_ms": 1.1845478087649404,
+    "prompt_per_second": 844.204001392432,
+    "predicted_n": 200,
+    "predicted_ms": 1873.809,
+    "predicted_per_token_ms": 9.369045,
+    "predicted_per_second": 106.73446439845256
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 50,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 33,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 35,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

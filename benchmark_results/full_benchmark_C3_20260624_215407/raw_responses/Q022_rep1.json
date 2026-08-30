@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "AI risk management is crucial because it’s incumbent on Framework users to continue applying the MANAGE function to deployed AI systems as evolving contexts, risks, and needs from relevant AI actors change over time. It’s important to manage risk in AI systems, especially when customers integrate third-party data or systems, and this can be complicated by the lack of sufficient internal governance and technical safeguards.  Ultimately, organizations should cease development and deployment until risks are sufficiently managed.  Prioritization can differ significantly depending on whether the AI system is designed to directly interact with humans versus not."
+      }
+    }
+  ],
+  "created": 1782334656,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 116,
+    "prompt_tokens": 328,
+    "total_tokens": 444,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-3J028xRN509LvmT3KeTrAzZLp5knYJxC",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 328,
+    "prompt_ms": 675.199,
+    "prompt_per_token_ms": 2.0585335365853656,
+    "prompt_per_second": 485.7827099862411,
+    "predicted_n": 116,
+    "predicted_ms": 1497.315,
+    "predicted_per_token_ms": 12.907887931034484,
+    "predicted_per_second": 77.47200822806157
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 258,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 275,
+        "page": 13,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

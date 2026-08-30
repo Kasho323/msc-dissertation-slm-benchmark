@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Local deployment can reduce some privacy risks by minimizing the data that is revealed in queries sent to a machine learning model. This is achieved through privacy-preserving techniques that allow one party to retrieve a prediction or classification without revealing all of the information to the party running the model. These techniques enable the model to make predictions without revealing the specific question being asked. Additionally, local deployment can help to minimize data protection responsibilities by ensuring that the model is only used to train on data that has been anonymized and protected. This approach allows the model to be used without compromising the privacy of the individuals being trained."
+      }
+    }
+  ],
+  "created": 1782332424,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 120,
+    "prompt_tokens": 350,
+    "total_tokens": 470,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-BRVLdleC2huLxn67NmXj09fxUynKkOPG",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 350,
+    "prompt_ms": 506.173,
+    "prompt_per_token_ms": 1.4462085714285715,
+    "prompt_per_second": 691.4631953897185,
+    "predicted_n": 120,
+    "predicted_ms": 1069.134,
+    "predicted_per_token_ms": 8.90945,
+    "predicted_per_second": 112.24037398492612
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 654,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 711,
+        "page": 26,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 554,
+        "page": 9,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

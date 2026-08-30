@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG and local deployment offer distinct approaches to tackling the question-answering problem. RAG, which leverages retrieved documents, focuses on generating correct answers even when the correct answer isn’t explicitly present in the documents. It achieves a high level of accuracy – 11.8% in NQ scenarios – compared to extractive QA models, which typically score 0%. Local deployment, on the other hand, allows the model to generate answers directly, without relying on external documents. This approach is particularly effective for tasks like Open-domain Question Answering (QA) and Abstractive Question Answering, where the answer might require a more detailed explanation.\n\nEssentially, RAG handles the task of finding relevant information and using it to answer, while local deployment focuses on generating the answer itself."
+      }
+    }
+  ],
+  "created": 1781907682,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 160,
+    "prompt_tokens": 499,
+    "total_tokens": 659,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-nHJcAyQATT7KoP7U5MN9gpw4XFfgDXBY",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 499,
+    "prompt_ms": 953.086,
+    "prompt_per_token_ms": 1.9099919839679358,
+    "prompt_per_second": 523.5624067502828,
+    "predicted_n": 160,
+    "predicted_ms": 2479.662,
+    "predicted_per_token_ms": 15.4978875,
+    "predicted_per_second": 64.52492315484933
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 50,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 33,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 35,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

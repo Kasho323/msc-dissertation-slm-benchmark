@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Retrieval supervision is a technique that allows a model to access knowledge beyond its internal parameters. In this method, the model uses an external source of information – called a \"retrieval\" – to find relevant text documents. These documents are then used as additional context when generating an answer.  Essentially, the model doesn’t need to store all the knowledge itself; it can retrieve relevant information from a database and use it to inform its responses. This approach is particularly useful because it allows the model to focus on the most pertinent information for a given question, avoiding unnecessary processing of irrelevant data.\n\nHere’s a breakdown of how it works:\n\n*   **RAG Models:** These models use RAG to retrieve text documents.\n*   **Retrieval Process:** The model first uses an “retriever” to find relevant text documents based on the input question (x).\n*   **Contextualization:** The retrieved documents are then used as context when generating the model’s"
+      }
+    }
+  ],
+  "created": 1781908117,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 430,
+    "total_tokens": 630,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-byxRow6WeOz0hKl3MkFih0rYwBX6Hu86",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 430,
+    "prompt_ms": 798.045,
+    "prompt_per_token_ms": 1.8559186046511627,
+    "prompt_per_second": 538.8167333922273,
+    "predicted_n": 200,
+    "predicted_ms": 3737.105,
+    "predicted_per_token_ms": 18.685525,
+    "predicted_per_second": 53.517361701102864
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 163,
+        "page": 18,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

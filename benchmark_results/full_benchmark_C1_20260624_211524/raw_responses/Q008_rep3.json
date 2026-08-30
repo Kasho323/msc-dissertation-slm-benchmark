@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Large pre-trained models, particularly those with deep architectures, have been shown to store factual knowledge in their parameters and achieve state-of-the-art results when tuned on downstream NLP tasks. However, these models may struggle with tasks that require more complex retrieval mechanisms, such as question answering. The limitations of large pre-trained models include:\n\n1. Limited scope: Large pre-trained models are designed to handle a wide range of tasks, but may not be well-suited for specific, complex retrieval tasks that require specialized knowledge.\n\n2. Overfitting: Large pre-trained models can become overfit to the training data, leading to poor performance on new, unseen tasks.\n\n3. Complexity: Large pre-trained models may struggle with tasks that require more complex retrieval mechanisms, such as question answering, which can be challenging for neural language models.\n\n4. Limited diversity: Large pre-trained models may not be well-suited for tasks that require diverse knowledge, such as natural language processing, which can be challenging for deep architectures.\n\n5. Limited scalability: Large pre-trained models may not be well-suited for tasks that require scalability, such as large-scale language models, which can be challenging for deep architectures.\n\n6. Limited interpretability: Large pre-trained models may not be well-suited for tasks that require interpretability, such as question answering, which can be challenging for neural language models.\n\n7. Limited generalization: Large pre-trained models may not be well-suited for tasks that require generalization, such as language translation, which can be challenging for deep architectures.\n\n8. Limited scalability: Large pre-trained models may not be well-suited for tasks that require scalability, such as large-scale language models, which can be challenging for deep architectures.\n\n9. Limited interpretability: Large pre-trained models may not be well-suited for tasks that require interpretability, such as question answering, which can be challenging for neural language models.\n\n10. Limited generalization: Large pre-trained models may not be well-suited for tasks that require generalization, such as language translation, which can be challenging for deep architectures."
+      }
+    }
+  ],
+  "created": 1782332865,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 420,
+    "prompt_tokens": 440,
+    "total_tokens": 860,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-5tecmzzGuJaXrqzEN9EGzIRYxkWBiwxw",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 440,
+    "prompt_ms": 542.43,
+    "prompt_per_token_ms": 1.2327954545454545,
+    "prompt_per_second": 811.1645742307763,
+    "predicted_n": 420,
+    "predicted_ms": 4396.267,
+    "predicted_per_token_ms": 10.46730238095238,
+    "predicted_per_second": 95.5355987250092
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 79,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 78,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

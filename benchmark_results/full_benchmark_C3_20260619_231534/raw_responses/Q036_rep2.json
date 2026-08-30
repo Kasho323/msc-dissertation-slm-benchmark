@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Okay, here’s a rephrased and expanded answer addressing the question, drawing on the provided context and adding some general knowledge:\n\n“Local deployment of models offers a way to mitigate privacy risks while still maintaining essential data protection responsibilities. Instead of sending sensitive data to a central server, you can run the model directly on your own infrastructure. This reduces the risk of exposure because the data never leaves your environment. However, it’s crucial to remember that this approach doesn’t eliminate all data protection obligations.  You still need to consider how your clients are deploying the model – their specific context and the potential threats they pose.\n\nTo effectively address this, a robust procurement policy is vital. This policy should facilitate sufficient information sharing between you and your clients.  This collaboration is key to understanding the particular deployment scenarios and the associated security challenges.  \n\nThere are several privacy-enhancing techniques that can be employed when deploying models outside of a central server. These techniques allow you to retrieve"
+      }
+    }
+  ],
+  "created": 1781908029,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 368,
+    "total_tokens": 568,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Ct8m804W0vpM2zPJsgqg9bi0pugnCzub",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 368,
+    "prompt_ms": 844.544,
+    "prompt_per_token_ms": 2.2949565217391306,
+    "prompt_per_second": 435.73810245528955,
+    "predicted_n": 200,
+    "predicted_ms": 4244.432,
+    "predicted_per_token_ms": 21.22216,
+    "predicted_per_second": 47.12055700268022
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 654,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 711,
+        "page": 26,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 334,
+        "page": 22,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

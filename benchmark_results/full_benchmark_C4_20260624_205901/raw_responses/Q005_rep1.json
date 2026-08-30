@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Retrievery can help a model access knowledge that is not stored in its parameters by allowing the model to access additional context when generating the target sequence. This is demonstrated in the methods section, where the model leverages two components: a retriever and a generator. The retriever is used to return the most relevant text passages from the document, while the generator is used to generate the overall output. This approach allows the model to be flexible and adjust its knowledge as the world changes."
+      }
+    }
+  ],
+  "created": 1782331189,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 98,
+    "prompt_tokens": 428,
+    "total_tokens": 526,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-qZpjNCDC3hyPKgc5kvBLZ1lBXfC5IDQ1",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 428,
+    "prompt_ms": 1047.248,
+    "prompt_per_token_ms": 2.446841121495327,
+    "prompt_per_second": 408.6902051854002,
+    "predicted_n": 98,
+    "predicted_ms": 1275.566,
+    "predicted_per_token_ms": 13.015979591836736,
+    "predicted_per_second": 76.82863920800648
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 163,
+        "page": 18,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 67,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

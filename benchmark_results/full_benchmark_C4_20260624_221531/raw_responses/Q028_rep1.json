@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "    The context provided indicates that risk management is a critical component of the AI RMF, 1.0. It suggests that AI risk management can be used to help minimize potential negative impacts of AI systems, such as threats to civil liberties and rights. However, it also notes that AI risk management is not the same for all AI systems and that resources can be allocated purposefully. The text also mentions that actionable risk management efforts can be used to lay out clear guidelines for assessing the trustworthiness of each AI system, and that policies and resources should be prioritized based on the assessed risk level and potential impact of an AI system. The extent to which an AI system may be customized or tailored to the specific context of use by the AI deployer can also be a contributing factor. It is also stated that it is incumbent on Framework users to continue to apply the MANAGE function to deployed AI systems as methods, contexts, risks, and needs or expectations from relevant AI actors evolve over time. This suggests that the practicality of AI management is dependent on the evolving context of use and the evolving needs of the AI actors. The context does not provide a direct answer to the question \"How does risk management help frame deployment practicality?\" but it does suggest that the practicality of AI management is dependent on the evolving context of use and the evolving needs of the AI actors."
+      }
+    }
+  ],
+  "created": 1782336004,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 277,
+    "prompt_tokens": 364,
+    "total_tokens": 641,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-v83A9LzbqiVYLUAxgWoFmFXDkMTMQeQL",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 364,
+    "prompt_ms": 897.912,
+    "prompt_per_token_ms": 2.466791208791209,
+    "prompt_per_second": 405.38493749944314,
+    "predicted_n": 277,
+    "predicted_ms": 3270.206,
+    "predicted_per_token_ms": 11.805797833935019,
+    "predicted_per_second": 84.70414402028496
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 248,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 273,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The limitation of large pre-trained models that motivates the use of retrieval is that they often store factual knowledge in their parameters, which can make them less effective when fine-tuned on downstream NLP tasks, such as question answering, where the goal is to predict the next word in a sentence based on the context.\n\nIn other words, large pre-trained models have been shown to be good at retrieving relevant information from a large corpus, but when fine-tuned on a specific task like question answering, they may not be able to adapt to the specific requirements of that task. This is because the pre-trained model has already learned to retrieve general information, but not necessarily the specific information required for the task.\n\nRetrieval is a crucial step in many NLP tasks, including question answering, as it allows the model to quickly retrieve relevant information from a large corpus. However, when the model is fine-tuned on a specific task, it may not be able to adapt to the specific requirements of that task"
+      }
+    }
+  ],
+  "created": 1781906985,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 449,
+    "total_tokens": 649,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-WrtQ7PoNvsoyzoXGIWHeQ8LD84BUIsZY",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 449,
+    "prompt_ms": 555.446,
+    "prompt_per_token_ms": 1.2370734966592427,
+    "prompt_per_second": 808.3594084753513,
+    "predicted_n": 200,
+    "predicted_ms": 2595.543,
+    "predicted_per_token_ms": 12.977715,
+    "predicted_per_second": 77.05516726172519
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 79,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 78,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Okay, here’s a rephrased answer based on the provided context, incorporating key details and expanding slightly:\n\n“The context describes a new approach called Retrieval-Augmented Generation (RAG).  Instead of relying solely on the model’s internal parameters, RAG models use a retriever to find relevant text documents – called the Dense Passage Retriever (DPR) – and then combine this retrieved information with the model’s generation process.  Essentially, the retriever identifies the most relevant passages from a large collection of text, and the generator uses these passages as context to produce the output sequence.  The key difference is that the retriever provides a single, latent representation of the retrieved documents, which is then used to guide the generation process.  This allows the model to leverage external knowledge more effectively.”\n\n"
+      }
+    }
+  ],
+  "created": 1781907390,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 165,
+    "prompt_tokens": 466,
+    "total_tokens": 631,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-znd4626rPOeZ9pdZl5xYRrz8ohQ0NlKw",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 466,
+    "prompt_ms": 884.893,
+    "prompt_per_token_ms": 1.8989120171673821,
+    "prompt_per_second": 526.6173424357521,
+    "predicted_n": 165,
+    "predicted_ms": 2326.013,
+    "predicted_per_token_ms": 14.097048484848484,
+    "predicted_per_second": 70.93683483282338
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 10,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 20,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

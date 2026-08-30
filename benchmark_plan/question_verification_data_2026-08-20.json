@@ -1,0 +1,807 @@
+[
+ {
+  "qid": "Q001",
+  "src": "D1",
+  "ev": "D1 abstract; D1 Introduction",
+  "ev_docs": [
+   "D1"
+  ],
+  "needs": "one_document",
+  "cov": 0.762,
+  "n": 21,
+  "miss": [
+   "limitations",
+   "difficulty",
+   "accessing",
+   "giving",
+   "unsupported"
+  ],
+  "miss_anywhere": [
+   "giving",
+   "unsupported"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q002",
+  "src": "D1",
+  "ev": "D1 abstract; D1 Introduction; D1 Methods section 2",
+  "ev_docs": [
+   "D1"
+  ],
+  "needs": "one_document",
+  "cov": 0.944,
+  "n": 18,
+  "miss": [
+   "plus"
+  ],
+  "miss_anywhere": [
+   "plus"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q003",
+  "src": "D1",
+  "ev": "D1 abstract; D1 Introduction",
+  "ev_docs": [
+   "D1"
+  ],
+  "needs": "one_document",
+  "cov": 0.615,
+  "n": 13,
+  "miss": [
+   "knowing",
+   "came",
+   "cited",
+   "judge",
+   "invented"
+  ],
+  "miss_anywhere": [
+   "knowing",
+   "came",
+   "judge",
+   "invented"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q004",
+  "src": "D1",
+  "ev": "D1 Methods section 2; D1 Retriever section 2.2",
+  "ev_docs": [
+   "D1"
+  ],
+  "needs": "one_document",
+  "cov": 1.0,
+  "n": 12,
+  "miss": [],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q005",
+  "src": "D1",
+  "ev": "D1 Introduction; D1 final paragraph of Introduction",
+  "ev_docs": [
+   "D1"
+  ],
+  "needs": "one_document",
+  "cov": 0.882,
+  "n": 17,
+  "miss": [
+   "look",
+   "memorised"
+  ],
+  "miss_anywhere": [
+   "memorised"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q006",
+  "src": "D1",
+  "ev": "D1 Introduction; D1 Open-domain QA section; D1 Results sections 4.1-4.3",
+  "ev_docs": [
+   "D1"
+  ],
+  "needs": "one_document",
+  "cov": 0.833,
+  "n": 18,
+  "miss": [
+   "relies",
+   "allowing",
+   "succeeds"
+  ],
+  "miss_anywhere": [
+   "succeeds"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q007",
+  "src": "D1",
+  "ev": "D1 Experiments section 3; D1 sections 3.1-3.4",
+  "ev_docs": [
+   "D1"
+  ],
+  "needs": "one_document",
+  "cov": 1.0,
+  "n": 14,
+  "miss": [],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q008",
+  "src": "D1",
+  "ev": "D1 abstract; D1 Introduction paragraphs 1-2",
+  "ev_docs": [
+   "D1"
+  ],
+  "needs": "one_document",
+  "cov": 0.8,
+  "n": 15,
+  "miss": [
+   "struggle",
+   "reliably",
+   "fail"
+  ],
+  "miss_anywhere": [
+   "struggle"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q009",
+  "src": "D1",
+  "ev": "D1 Introduction; D1 Results section 4.2; D1 Table 3 discussion",
+  "ev_docs": [
+   "D1"
+  ],
+  "needs": "one_document",
+  "cov": 0.842,
+  "n": 19,
+  "miss": [
+   "material",
+   "grounding",
+   "eliminates"
+  ],
+  "miss_anywhere": [
+   "grounding"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q010",
+  "src": "D1",
+  "ev": "D1 Figure 1; D1 Methods section 2",
+  "ev_docs": [
+   "D1"
+  ],
+  "needs": "one_document",
+  "cov": 0.929,
+  "n": 14,
+  "miss": [
+   "document-grounded"
+  ],
+  "miss_anywhere": [
+   "document-grounded"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q011",
+  "src": "D2",
+  "ev": "D2 README title; D2 Description section",
+  "ev_docs": [
+   "D2"
+  ],
+  "needs": "one_document",
+  "cov": 0.8,
+  "n": 10,
+  "miss": [
+   "strong",
+   "across"
+  ],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q012",
+  "src": "D2",
+  "ev": "D2 README Quick start; D2 Description; D2 hardware/backend bullets",
+  "ev_docs": [
+   "D2"
+  ],
+  "needs": "one_document",
+  "cov": 0.769,
+  "n": 13,
+  "miss": [
+   "quantised",
+   "exposes",
+   "laptop-based"
+  ],
+  "miss_anywhere": [
+   "quantised",
+   "laptop-based"
+  ],
+  "proj": [
+   "benchmark"
+  ]
+ },
+ {
+  "qid": "Q013",
+  "src": "D2",
+  "ev": "D2 README Obtaining and quantizing models; D2 GGUF references",
+  "ev_docs": [
+   "D2"
+  ],
+  "needs": "one_document",
+  "cov": 0.909,
+  "n": 11,
+  "miss": [
+   "quantised"
+  ],
+  "miss_anywhere": [
+   "quantised"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q014",
+  "src": "D2",
+  "ev": "D2 README Description quantisation bullet; D2 quantisation documentation reference",
+  "ev_docs": [
+   "D2"
+  ],
+  "needs": "one_document",
+  "cov": 0.467,
+  "n": 15,
+  "miss": [
+   "quantisation",
+   "fewer",
+   "bits",
+   "reducing",
+   "often",
+   "improving",
+   "speed",
+   "benchmarked"
+  ],
+  "miss_anywhere": [
+   "quantisation",
+   "benchmarked"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q015",
+  "src": "D2",
+  "ev": "D2 README llama-server section",
+  "ev_docs": [
+   "D2"
+  ],
+  "needs": "one_document",
+  "cov": 0.846,
+  "n": 13,
+  "miss": [
+   "including",
+   "applications"
+  ],
+  "miss_anywhere": [],
+  "proj": [
+   "backend"
+  ]
+ },
+ {
+  "qid": "Q016",
+  "src": "D2",
+  "ev": "D2 README llama-server section; project architecture context",
+  "ev_docs": [
+   "D2"
+  ],
+  "needs": "one_document",
+  "cov": 0.786,
+  "n": 14,
+  "miss": [
+   "familiar",
+   "reducing",
+   "avoiding"
+  ],
+  "miss_anywhere": [
+   "familiar"
+  ],
+  "proj": [
+   "fastapi",
+   "backend"
+  ]
+ },
+ {
+  "qid": "Q017",
+  "src": "D2",
+  "ev": "D2 README Description hardware/backend bullets",
+  "ev_docs": [
+   "D2"
+  ],
+  "needs": "one_document",
+  "cov": 1.0,
+  "n": 12,
+  "miss": [],
+  "miss_anywhere": [],
+  "proj": [
+   "backend"
+  ]
+ },
+ {
+  "qid": "Q018",
+  "src": "D2",
+  "ev": "D2 README Description; D4 ICO security/data minimisation for limitation context",
+  "ev_docs": [
+   "D2",
+   "D4"
+  ],
+  "needs": "one_document",
+  "cov": 0.312,
+  "n": 16,
+  "miss": [
+   "computation",
+   "happen",
+   "user's",
+   "remote",
+   "provider",
+   "depending",
+   "privacy",
+   "leaves",
+   "storage",
+   "logs",
+   "device-security"
+  ],
+  "miss_anywhere": [
+   "user's",
+   "leaves",
+   "storage",
+   "logs",
+   "device-security"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q019",
+  "src": "D2",
+  "ev": "D2 README Quick start; D2 Description",
+  "ev_docs": [
+   "D2"
+  ],
+  "needs": "one_document",
+  "cov": 0.647,
+  "n": 17,
+  "miss": [
+   "runtime",
+   "quantisation",
+   "repeated",
+   "feasible",
+   "limited",
+   "practicality"
+  ],
+  "miss_anywhere": [
+   "quantisation",
+   "repeated",
+   "practicality"
+  ],
+  "proj": [
+   "laptop",
+   "benchmark"
+  ]
+ },
+ {
+  "qid": "Q020",
+  "src": "D2",
+  "ev": "D2 README Description; D2 Quick start; D4 ICO security/data minimisation context",
+  "ev_docs": [
+   "D2",
+   "D4"
+  ],
+  "needs": "one_document",
+  "cov": 0.667,
+  "n": 18,
+  "miss": [
+   "remove",
+   "speed",
+   "software",
+   "security",
+   "present",
+   "constrained"
+  ],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q021",
+  "src": "D3",
+  "ev": "D3 NIST AI RMF web overview; D3 AI RMF Executive Summary",
+  "ev_docs": [
+   "D3"
+  ],
+  "needs": "one_document",
+  "cov": 0.909,
+  "n": 11,
+  "miss": [
+   "incorporation"
+  ],
+  "miss_anywhere": [
+   "incorporation"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q022",
+  "src": "D3",
+  "ev": "D3 AI RMF Executive Summary; D3 Framing Risk section",
+  "ev_docs": [
+   "D3"
+  ],
+  "needs": "one_document",
+  "cov": 1.0,
+  "n": 18,
+  "miss": [],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q023",
+  "src": "D3",
+  "ev": "D3 AI RMF section 3; D3 Figure 4 discussion",
+  "ev_docs": [
+   "D3"
+  ],
+  "needs": "one_document",
+  "cov": 1.0,
+  "n": 17,
+  "miss": [],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q024",
+  "src": "D3",
+  "ev": "D3 AI RMF section 3; D3 Core functions section",
+  "ev_docs": [
+   "D3"
+  ],
+  "needs": "one_document",
+  "cov": 0.938,
+  "n": 16,
+  "miss": [
+   "discussing"
+  ],
+  "miss_anywhere": [
+   "discussing"
+  ],
+  "proj": [
+   "dissertation"
+  ]
+ },
+ {
+  "qid": "Q025",
+  "src": "D3",
+  "ev": "D3 AI RMF web overview; D3 Executive Summary; D3 Framing Risk",
+  "ev_docs": [
+   "D3"
+  ],
+  "needs": "one_document",
+  "cov": 0.789,
+  "n": 19,
+  "miss": [
+   "organisational",
+   "wider",
+   "separately",
+   "reducing"
+  ],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q026",
+  "src": "D3",
+  "ev": "D3 AI RMF section 3.6 Privacy-Enhanced; D3 AI RMF Core",
+  "ev_docs": [
+   "D3"
+  ],
+  "needs": "one_document",
+  "cov": 0.917,
+  "n": 12,
+  "miss": [
+   "trade-offs"
+  ],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q027",
+  "src": "D3",
+  "ev": "D3 AI RMF Framing Risk; D3 Challenges for AI Risk Management; D3 Human-AI Interaction appendix",
+  "ev_docs": [
+   "D3"
+  ],
+  "needs": "one_document",
+  "cov": 0.929,
+  "n": 14,
+  "miss": [
+   "overclaiming"
+  ],
+  "miss_anywhere": [
+   "overclaiming"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q028",
+  "src": "D3",
+  "ev": "D3 AI RMF Executive Summary; D3 Core functions Govern Map Measure Manage",
+  "ev_docs": [
+   "D3"
+  ],
+  "needs": "one_document",
+  "cov": 0.722,
+  "n": 18,
+  "miss": [
+   "practicality",
+   "trade-offs",
+   "automatically",
+   "suitable",
+   "manageable"
+  ],
+  "miss_anywhere": [
+   "practicality",
+   "manageable"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q029",
+  "src": "D3",
+  "ev": "D3 AI RMF section 3 trustworthiness; D3 Figure 4 discussion",
+  "ev_docs": [
+   "D3"
+  ],
+  "needs": "one_document",
+  "cov": 0.75,
+  "n": 16,
+  "miss": [
+   "guarantee",
+   "separating",
+   "conditional",
+   "defensible"
+  ],
+  "miss_anywhere": [
+   "guarantee",
+   "conditional",
+   "defensible"
+  ],
+  "proj": [
+   "dissertation"
+  ]
+ },
+ {
+  "qid": "Q030",
+  "src": "D4",
+  "ev": "D4 ICO guidance contents page",
+  "ev_docs": [
+   "D4"
+  ],
+  "needs": "one_document",
+  "cov": 1.0,
+  "n": 15,
+  "miss": [],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q031",
+  "src": "D4",
+  "ev": "D4 ICO transparency chapter",
+  "ev_docs": [
+   "D4"
+  ],
+  "needs": "one_document",
+  "cov": 1.0,
+  "n": 15,
+  "miss": [],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q032",
+  "src": "D4",
+  "ev": "D4 ICO lawfulness chapter",
+  "ev_docs": [
+   "D4"
+  ],
+  "needs": "one_document",
+  "cov": 1.0,
+  "n": 16,
+  "miss": [],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q033",
+  "src": "D4",
+  "ev": "D4 ICO accuracy and statistical accuracy chapter",
+  "ev_docs": [
+   "D4"
+  ],
+  "needs": "one_document",
+  "cov": 1.0,
+  "n": 20,
+  "miss": [],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q034",
+  "src": "D4",
+  "ev": "D4 ICO security and data minimisation chapter",
+  "ev_docs": [
+   "D4"
+  ],
+  "needs": "one_document",
+  "cov": 0.909,
+  "n": 22,
+  "miss": [
+   "worsen",
+   "harder"
+  ],
+  "miss_anywhere": [
+   "worsen",
+   "harder"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q035",
+  "src": "D4",
+  "ev": "D4 ICO security and data minimisation chapter; D4 privacy attacks section",
+  "ev_docs": [
+   "D4"
+  ],
+  "needs": "one_document",
+  "cov": 0.652,
+  "n": 23,
+  "miss": [
+   "storage",
+   "logs",
+   "cached",
+   "backups",
+   "insecure",
+   "leakage",
+   "equals",
+   "private"
+  ],
+  "miss_anywhere": [
+   "storage",
+   "logs",
+   "cached",
+   "backups",
+   "insecure",
+   "leakage"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q036",
+  "src": "D4",
+  "ev": "D4 ICO transparency; lawfulness; security and data minimisation chapters",
+  "ev_docs": [
+   "D4"
+  ],
+  "needs": "one_document",
+  "cov": 0.952,
+  "n": 21,
+  "miss": [
+   "logging"
+  ],
+  "miss_anywhere": [
+   "logging"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q037",
+  "src": "D4",
+  "ev": "D4 ICO lawfulness chapter; D4 transparency chapter; D4 security and data minimisation chapter",
+  "ev_docs": [
+   "D4"
+  ],
+  "needs": "one_document",
+  "cov": 0.913,
+  "n": 23,
+  "miss": [
+   "regardless",
+   "cloud-based"
+  ],
+  "miss_anywhere": [],
+  "proj": []
+ },
+ {
+  "qid": "Q038",
+  "src": "D1+D2",
+  "ev": "D1 abstract/Methods; D2 README Description/llama-server",
+  "ev_docs": [
+   "D1",
+   "D2"
+  ],
+  "needs": "multiple_documents",
+  "cov": 0.789,
+  "n": 19,
+  "miss": [
+   "grounding",
+   "complementary",
+   "private",
+   "execution"
+  ],
+  "miss_anywhere": [
+   "grounding",
+   "complementary",
+   "execution"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q039",
+  "src": "D2+D4",
+  "ev": "D2 README Description/llama-server/GGUF; D4 security and data minimisation; D4 lawfulness/transparency",
+  "ev_docs": [
+   "D2",
+   "D4"
+  ],
+  "needs": "multiple_documents",
+  "cov": 0.833,
+  "n": 24,
+  "miss": [
+   "runtime",
+   "quantised",
+   "logs",
+   "settle"
+  ],
+  "miss_anywhere": [
+   "quantised",
+   "logs",
+   "settle"
+  ],
+  "proj": []
+ },
+ {
+  "qid": "Q040",
+  "src": "D1+D2+D3+D4",
+  "ev": "D1 RAG motivation; D2 local inference and quantisation; D3 trustworthiness/risk management; D4 data protection obligations",
+  "ev_docs": [
+   "D1",
+   "D2",
+   "D3",
+   "D4"
+  ],
+  "needs": "multiple_documents",
+  "cov": 0.769,
+  "n": 26,
+  "miss": [
+   "synthesise",
+   "grounding",
+   "quantisation",
+   "duties",
+   "practicality",
+   "winner"
+  ],
+  "miss_anywhere": [
+   "synthesise",
+   "grounding",
+   "quantisation",
+   "duties",
+   "practicality",
+   "winner"
+  ],
+  "proj": [
+   "configuration"
+  ]
+ }
+]

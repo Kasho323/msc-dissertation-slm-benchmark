@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "According to the paper, knowledge-intensive tasks are those that require humans to access and precisely manipulate knowledge, and where the AI system's performance lags behind task-specific architectures."
+      }
+    }
+  ],
+  "created": 1781906976,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 35,
+    "prompt_tokens": 388,
+    "total_tokens": 423,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Up6szIXHD72DSiz2kEqoFSiJPaVMoUva",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 388,
+    "prompt_ms": 519.256,
+    "prompt_per_token_ms": 1.3382886597938144,
+    "prompt_per_second": 747.2229497588859,
+    "predicted_n": 35,
+    "predicted_ms": 471.28,
+    "predicted_per_token_ms": 13.465142857142856,
+    "predicted_per_second": 74.26582923103038
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf",
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 14,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 1,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 387,
+        "page": 31,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

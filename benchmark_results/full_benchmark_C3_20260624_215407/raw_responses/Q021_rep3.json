@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The NIST AI Risk Management Framework (AI RMF) is designed to help organizations minimize potential negative impacts of AI systems, while also maximizing positive impacts. It aims to improve the trustworthiness of AI systems through effective risk management, addressing, documenting, and managing risks and potential negative impacts. Essentially, it’s a framework to guide organizations in how to approach and mitigate the risks associated with AI."
+      }
+    }
+  ],
+  "created": 1782335504,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 79,
+    "prompt_tokens": 408,
+    "total_tokens": 487,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-An4JBXI7vPnCb1ETrLEnDeYnV1TJK28c",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 408,
+    "prompt_ms": 885.504,
+    "prompt_per_token_ms": 2.170352941176471,
+    "prompt_per_second": 460.7545533391153,
+    "predicted_n": 79,
+    "predicted_ms": 1233.97,
+    "predicted_per_token_ms": 15.61987341772152,
+    "predicted_per_second": 64.0210053729021
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 248,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 344,
+        "page": 24,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 243,
+        "page": 8,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

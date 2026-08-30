@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Risks to individuals, groups, communities, organizations, society, and the environment are considered separately because they are context-specific and application and use-case specific. Risk management involves coordinated activities to direct and control organizations with regard to risk. While organizations or society are highly contextual and application and use-case specific, risks to individuals, groups, communities, organizations, society, and the environment are also context-specific and application and use-case specific."
+      }
+    }
+  ],
+  "created": 1782333003,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 87,
+    "prompt_tokens": 407,
+    "total_tokens": 494,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-WXVrn7rAmeQRqE4vS4wSkAcSt9MhzdPc",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 407,
+    "prompt_ms": 558.569,
+    "prompt_per_token_ms": 1.3724054054054053,
+    "prompt_per_second": 728.6476693121173,
+    "predicted_n": 87,
+    "predicted_ms": 968.201,
+    "predicted_per_token_ms": 11.128747126436782,
+    "predicted_per_second": 89.85737465670867
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 250,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 268,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 460,
+        "page": 44,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

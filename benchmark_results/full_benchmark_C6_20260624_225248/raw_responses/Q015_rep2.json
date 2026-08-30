@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The purpose of running llama-server rather than only a command-line model is to provide a lightweight, OpenAI API compatible, HTTP server for serving LLMs. This server allows for the serving of LLMs with minimal setup and state-of-the-art performance across a wide range of tasks. It supports multiple users and parallel decoding, enabling up to 4 concurrent requests with a maximum context size of 16384. Additionally, llama.cpp requires the model to be stored in the GGUF file format, and models in other data formats can be converted to GGUF using the convert_*.py Python scripts in this repository. The Hugging Face platform offers tools for converting, quantizing, and hosting models with llama.cpp, including the GGUF-my-repo space for converting to GGUF format and quantizing model weights to smaller sizes, and the GGUF-my-LoRA space for converting LoRA adapters to smaller sizes."
+      }
+    }
+  ],
+  "created": 1782338519,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 189,
+    "prompt_tokens": 472,
+    "total_tokens": 661,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-7XcNzznLSDbjR4cs1xz0InBdpLMcoCF8",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 472,
+    "prompt_ms": 1445.938,
+    "prompt_per_token_ms": 3.063427966101695,
+    "prompt_per_second": 326.4317003910264,
+    "predicted_n": 189,
+    "predicted_ms": 4320.332,
+    "predicted_per_token_ms": 22.858899470899473,
+    "predicted_per_second": 43.746637989858186
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 201,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 194,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

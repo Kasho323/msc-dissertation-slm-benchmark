@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Separating technical performance from broader trust and governance concerns is useful because it allows organizations to focus on the essential aspects of AI risk management, such as understanding contexts, identifying risks, and aligning technical practices with organizational policies and culture.\n\nBy separating these concerns, organizations can:\n\n1. **Improve understanding of contexts**: Technical performance helps identify technical risks, while broader trust and governance concerns inform the overall risk management strategy.\n2. **Prevent negative risks**: By focusing on technical performance, organizations can proactively identify and mitigate risks, whereas broader trust and governance concerns can help prevent negative risks.\n3. **Develop trustworthy AI systems**: By aligning technical practices with organizational policies and culture, organizations can develop AI systems that are more trustworthy and reliable.\n4. **Enhance organizational risk culture**: Strong governance and broader trust and governance concerns can drive organizational risk culture, which is essential for effective AI risk management.\n5. **Facilitate organizational practices**: Separating technical performance from broader trust and governance"
+      }
+    }
+  ],
+  "created": 1781906814,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 373,
+    "total_tokens": 573,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-o91NCqio24JMiUAUPjCc8AFuKwPBxQyu",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 373,
+    "prompt_ms": 499.02,
+    "prompt_per_token_ms": 1.3378552278820375,
+    "prompt_per_second": 747.4650314616649,
+    "predicted_n": 200,
+    "predicted_ms": 2460.514,
+    "predicted_per_token_ms": 12.302570000000001,
+    "predicted_per_second": 81.2838293137125
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 226,
+        "page": 5,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 379,
+        "page": 30,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 359,
+        "page": 27,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

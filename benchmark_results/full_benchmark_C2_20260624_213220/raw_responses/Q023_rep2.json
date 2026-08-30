@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "To consider trustworthiness in AI design and evaluation, it means taking into account the various characteristics that make an AI system trustworthy or not. These characteristics are not just technical, but also social and organizational, and are influenced by the interactions between humans, AI systems, and other stakeholders.\n\nTrustworthiness is not just about the technical aspects of an AI system, such as its accuracy or efficiency, but also about how it is designed, deployed, and used. It involves considering factors like:\n\n1. **Human judgment**: Deciding on the specific metrics related to trustworthiness characteristics and the threshold values for those metrics.\n2. **Input from interested parties**: Understanding the perspectives and needs of various stakeholders, including users, developers, and regulators.\n3. **Interactions with humans**: Managing the interactions between AI systems and humans, including oversight, feedback, and guidance.\n4. **Social context**: Considering the social implications and consequences of AI systems, such as biases, fairness, and transparency.\n\nBy considering trustworthiness in AI design and evaluation, developers can:\n\n1. **Manage risks**: Identify and mitigate risks that may arise in social contexts.\n2. **Enhance evaluations**: Inform contextually sensitive evaluations and identify AI system benefits and positive impacts.\n3. **Increase trust**: Build trust with users, developers, and regulators by demonstrating a commitment to trustworthiness.\n\nUltimately, trustworthiness is a complex concept that requires a nuanced understanding of the social, organizational, and technical aspects of AI systems. By considering trustworthiness in AI design and evaluation, developers can create more trustworthy AI systems that are better equipped to support society and address complex social challenges."
+      }
+    }
+  ],
+  "created": 1782333802,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 334,
+    "prompt_tokens": 388,
+    "total_tokens": 722,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-KejmY7amqGGBasIYcckE2Xt1fY9ICevn",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 388,
+    "prompt_ms": 509.957,
+    "prompt_per_token_ms": 1.3143221649484536,
+    "prompt_per_second": 760.8484636939977,
+    "predicted_n": 334,
+    "predicted_ms": 4171.88,
+    "predicted_per_token_ms": 12.49065868263473,
+    "predicted_per_second": 80.05982914177781
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 298,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 304,
+        "page": 18,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 299,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

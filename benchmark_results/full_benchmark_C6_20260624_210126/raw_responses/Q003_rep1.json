@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "In a question-answering system, provenance is crucial because it ensures that the information provided is reliable and trustworthy. This is important for several reasons:\n\n1. **Trustworthiness**: Provenance helps verify the authenticity and accuracy of the information. It provides a way to check if the data is based on factual evidence and can be verified by external sources.\n\n2. **Quality Assurance**: By establishing provenance, the system can ensure that the information is of high quality and meets certain standards. This helps in maintaining the integrity of the information and the overall performance of the system.\n\n3. **User Confidence**: Users are more likely to trust information that has a provenance. This can lead to increased user engagement and satisfaction with the system.\n\n4. **Compliance with Standards**: In many domains, there are specific standards and regulations that require information to be verified and proven. Provenance helps the system comply with these standards.\n\n5. **Enhanced Accuracy**: By ensuring that the information is reliable, the system can provide more accurate answers, which is crucial for effective communication and decision-making.\n\n6. **Scalability**: With provenance, the system can handle a larger volume of data and queries without compromising the quality of the answers. This is particularly important in large-scale systems where the volume of data and queries can be immense.\n\nIn summary, provenance is essential for a question-answering system because it ensures the reliability, trustworthiness, and accuracy of the information provided. This, in turn, enhances the overall performance and user satisfaction of the system."
+      }
+    }
+  ],
+  "created": 1782331324,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 319,
+    "prompt_tokens": 502,
+    "total_tokens": 821,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-jh9rPfwOumdaIOPQ4p0m7xoQ8vnanlUz",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 502,
+    "prompt_ms": 1751.397,
+    "prompt_per_token_ms": 3.4888386454183267,
+    "prompt_per_second": 286.6283315547531,
+    "predicted_n": 319,
+    "predicted_ms": 8185.505,
+    "predicted_per_token_ms": 25.659890282131663,
+    "predicted_per_second": 38.97132797548838
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 92,
+        "page": 10,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

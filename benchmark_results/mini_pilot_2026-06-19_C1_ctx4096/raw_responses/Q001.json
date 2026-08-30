@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Retrieval-augmented generation aims to address the problem of knowledge-intensive NLP tasks by retrieving and augmenting pre-trained language models with factual knowledge. This approach allows for the storage and retrieval of information from the models, which can then be used to improve NLP performance."
+      }
+    }
+  ],
+  "created": 1781888003,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 57,
+    "prompt_tokens": 469,
+    "total_tokens": 526,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-mNUpyS69Bi52eUSLExOXH5aK8jVcBQ6t",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 469,
+    "prompt_ms": 674.815,
+    "prompt_per_token_ms": 1.4388379530916846,
+    "prompt_per_second": 695.0052977482717,
+    "predicted_n": 57,
+    "predicted_ms": 603.616,
+    "predicted_per_token_ms": 10.589754385964913,
+    "predicted_per_second": 94.4308964639771
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 148,
+        "page": 17,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The retrieval-based memory in a model like RAG can help access knowledge that is not stored in its parameters by leveraging external knowledge sources. Here's a rephrased version of the context combined with relevant parts:\n\nRetrieval-based memory in models like RAG can be utilized to access knowledge that is not stored in their parameters by leveraging external knowledge sources. This is achieved through the use of a retriever component that can retrieve text documents from a database or other external source. This allows the model to access knowledge that is not encoded in its own parameters, enabling it to make more accurate predictions and improve overall performance.\n\nIn essence, the retrieval-based memory in RAG models can be seen as a way to \"update the models knowledge as the world changes\" by incorporating external knowledge sources into the model's decision-making process. This approach can help address some of the limitations of traditional parametric memory models, such as the inability to easily expand or revise their knowledge base, and the potential for producing halluc"
+      }
+    }
+  ],
+  "created": 1781906607,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 436,
+    "total_tokens": 636,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-yXIbfCQV12z1z09YkL4xfGA9Z33wrR7v",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 436,
+    "prompt_ms": 534.338,
+    "prompt_per_token_ms": 1.225545871559633,
+    "prompt_per_second": 815.962929830931,
+    "predicted_n": 200,
+    "predicted_ms": 2777.189,
+    "predicted_per_token_ms": 13.885945,
+    "predicted_per_second": 72.01526435543279
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 163,
+        "page": 18,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

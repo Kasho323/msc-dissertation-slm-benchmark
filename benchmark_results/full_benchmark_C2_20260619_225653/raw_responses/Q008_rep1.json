@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The limitation of large pre-trained models that motivates the use of retrieval is that they often store factual knowledge in their parameters, which can lead to overfitting and decreased performance when fine-tuning them on downstream NLP tasks, such as question answering.\n\nIn other words, large pre-trained language models have been shown to retain a significant amount of knowledge from their training data, which can be difficult to transfer to new tasks. This can result in poor performance when the model is fine-tuned on a new task, such as question answering, where the model needs to learn new relationships and concepts.\n\nThe use of retrieval modules, which are designed to retrieve relevant information from a large pre-trained model, can help to mitigate this limitation. By learning a retrieval module to augment the pre-trained model, researchers can leverage the strengths of both the pre-trained model and the retrieval module, leading to improved performance on downstream tasks."
+      }
+    }
+  ],
+  "created": 1781906286,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 183,
+    "prompt_tokens": 449,
+    "total_tokens": 632,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-b7PEqnLush7DpHITPrFUMmeIVRdVc0k8",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 449,
+    "prompt_ms": 540.5,
+    "prompt_per_token_ms": 1.2037861915367483,
+    "prompt_per_second": 830.7123034227567,
+    "predicted_n": 183,
+    "predicted_ms": 2755.754,
+    "predicted_per_token_ms": 15.058765027322403,
+    "predicted_per_second": 66.40650798293316
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 79,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 78,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "It is useful to separate technical performance from broader trust and governance concerns because the two areas are often intertwined and it is important to understand the context and social and organizational factors that influence AI systems. The datasets used, selection of AI models and algorithms, and the decisions made by those who build them are all influenced by these factors. Additionally, the interactions with the humans who provide insight and oversight of AI systems are also important. Therefore, separating technical performance from broader trust and governance concerns allows for a more comprehensive understanding of AI systems and their impact on organizations."
+      }
+    }
+  ],
+  "created": 1782336815,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 111,
+    "prompt_tokens": 365,
+    "total_tokens": 476,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-UY3MQdOy5kjMV0RSAQjdP7kBwNoodGQy",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 365,
+    "prompt_ms": 876.963,
+    "prompt_per_token_ms": 2.4026383561643834,
+    "prompt_per_second": 416.2091217075293,
+    "predicted_n": 111,
+    "predicted_ms": 1280.824,
+    "predicted_per_token_ms": 11.538954954954956,
+    "predicted_per_second": 86.66296071903712
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 226,
+        "page": 5,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 379,
+        "page": 30,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 298,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

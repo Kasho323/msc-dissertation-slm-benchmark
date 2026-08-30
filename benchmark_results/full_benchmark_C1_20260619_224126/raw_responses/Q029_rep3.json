@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "It is useful to separate technical performance from broader trust and governance concerns because it allows organizations to proactively prevent negative risks and develop more trustworthy AI systems. This approach helps organizations manage and mitigate risks by improving their understanding of contexts, checking assumptions about context of use, recognizing when systems are not functional within or out of their intended context, identifying positive and beneficial uses of their existing AI systems, and improving understanding of limitations in AI and ML. By focusing on these areas, organizations can enhance their organizational risk culture and drive internal practices and norms to facilitate organizational risk management. Additionally, strong governance can drive and enhance internal practices and norms to facilitate organizational risk culture, while senior leadership sets the tone for risk management within an organization."
+      }
+    }
+  ],
+  "created": 1781906068,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 144,
+    "prompt_tokens": 356,
+    "total_tokens": 500,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-1LVVToX8R9VTyE2VaZOFhpuYy9IsG0qv",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 356,
+    "prompt_ms": 429.125,
+    "prompt_per_token_ms": 1.2054073033707866,
+    "prompt_per_second": 829.5951063210019,
+    "predicted_n": 144,
+    "predicted_ms": 1238.594,
+    "predicted_per_token_ms": 8.601347222222223,
+    "predicted_per_second": 116.26085706857937
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 226,
+        "page": 5,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 379,
+        "page": 30,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 359,
+        "page": 27,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

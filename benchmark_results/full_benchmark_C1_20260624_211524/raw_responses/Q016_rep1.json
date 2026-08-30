@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "An OpenAI-compatible endpoint is useful for this project because it allows for seamless integration with the open-source machine learning frameworks and code libraries. The project relies on third-party frameworks and code libraries, which are often open-source and can be used to develop AI systems. By using an OpenAI-compatible endpoint, the team can leverage the rich ecosystem of contributors and services built up around existing frameworks. This allows for a more efficient and effective development process, as the team can benefit from the existing code and infrastructure without having to reinvent the wheel. Additionally, the use of an OpenAI-compatible endpoint can help to reduce the risk of dependencies on other pieces of software being already installed on an IT system, which can be a significant challenge for developing AI systems."
+      }
+    }
+  ],
+  "created": 1782332257,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 150,
+    "prompt_tokens": 394,
+    "total_tokens": 544,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-bv2asvNaOe6dP0GizqZD9LD0bNdY9voY",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 394,
+    "prompt_ms": 525.605,
+    "prompt_per_token_ms": 1.334022842639594,
+    "prompt_per_second": 749.6123514806746,
+    "predicted_n": 150,
+    "predicted_ms": 1408.222,
+    "predicted_per_token_ms": 9.388146666666666,
+    "predicted_per_second": 106.51729627856972
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 618,
+        "page": 16,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 189,
+        "page": 8,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 619,
+        "page": 16,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

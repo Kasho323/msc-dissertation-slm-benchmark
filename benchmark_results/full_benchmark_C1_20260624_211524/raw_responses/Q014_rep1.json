@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Quantisation supports faster inference and reduced memory use by enabling faster inference and reducing memory usage in models. The project is designed to enable LLM inference with minimal setup and state-of-the-art performance on a wide range of hardware, including local and cloud-based setups. The main playground for developing new features for the ggml library is the llama.cpp project, which is the main playground for developing new features for the ggml library. The llama.cpp project is the main playground for developing new features for the ggml library."
+      }
+    }
+  ],
+  "created": 1782332242,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 104,
+    "prompt_tokens": 470,
+    "total_tokens": 574,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-ruVEpG3ahwvFFoQ1KF6O4lcOOK305Gnu",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 470,
+    "prompt_ms": 606.592,
+    "prompt_per_token_ms": 1.2906212765957445,
+    "prompt_per_second": 774.8206372652459,
+    "predicted_n": 104,
+    "predicted_ms": 989.778,
+    "predicted_per_token_ms": 9.517096153846154,
+    "predicted_per_second": 105.07406711403972
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 176,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+run_id,model_config_id,question_id,repetition,relevance,correctness,faithfulness_to_source,completeness,hallucination_risk,source_grounding,average_quality_score,scoring_notes,scored_by,scored_date
+FULL_C5_20260624_210813,C5,Q001,1,,,,,,,,,Cairenbading,
+FULL_C5_20260624_210813,C5,Q002,1,,,,,,,,,Cairenbading,
+FULL_C5_20260624_210813,C5,Q003,1,,,,,,,,,Cairenbading,
+FULL_C5_20260624_210813,C5,Q004,1,,,,,,,,,Cairenbading,
+FULL_C5_20260624_210813,C5,Q005,1,,,,,,,,,Cairenbading,

@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Okay, here’s a rephrased and expanded answer to your question, drawing on the provided context and adding some general knowledge where appropriate:\n\n**Why is grounding an answer in retrieved evidence useful for reducing unsupported claims?**\n\nThe context highlights that FEVER, a system for retrieving evidence, is designed to be adaptable to a wider range of tasks, even when supervision isn’t readily available.  A crucial aspect of this adaptability is the use of “grounding” – essentially, linking an answer directly to the source documents that support it.  When a model answers a question, it’s valuable to ensure that the answer is based on actual evidence, rather than simply making up information.  By retrieving documents that support the answer, we reduce the risk of the model generating unsupported claims or providing answers that are not firmly rooted in reality.  This is particularly important in fields like medical diagnosis or where the correct answer is subjective – for example, determining if a social media post is"
+      }
+    }
+  ],
+  "created": 1781907414,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 412,
+    "total_tokens": 612,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-xyoosNO2lMzaWjWz5eSnB54AHfAriAdR",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 412,
+    "prompt_ms": 800.606,
+    "prompt_per_token_ms": 1.9432184466019418,
+    "prompt_per_second": 514.6101827865392,
+    "predicted_n": 200,
+    "predicted_ms": 2858.833,
+    "predicted_per_token_ms": 14.294165,
+    "predicted_per_second": 69.95861598071662
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf",
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 63,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 44,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 584,
+        "page": 13,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

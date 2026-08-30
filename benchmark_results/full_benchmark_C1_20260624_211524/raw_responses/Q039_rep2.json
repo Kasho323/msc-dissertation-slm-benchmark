@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Technical deployment choices play a crucial role in the connection between technical deployment and privacy and data protection concerns. These choices significantly influence the security, bias, and transparency of an AI system. For instance, the choice of technical features can promote or reduce privacy, and specific technical features may also promote or reduce bias. These technical features can also present new risks to privacy by allowing inference to identify individuals or previously private information about individuals. Privacy-enhancing technologies (PETs) for AI, as well as data identity, and dignity, are normative and practice-based approaches that address freedom from intrusion, limiting observation, or individuals' agency to consent to disclosure or control of their identities (e.g., body, data, reputation). These norms and practices typically address privacy values such as anonymity, confidentiality, and control. Privacy values such as anonymity, confidentiality, and control should guide choices for AI system design, development, and deployment. Technical deployment choices can also present new risks to privacy by allowing inference to identify individuals or previously private information about individuals."
+      }
+    }
+  ],
+  "created": 1782332789,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 207,
+    "prompt_tokens": 361,
+    "total_tokens": 568,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-PKZlCXKEk759WucYOBpPq9HirmM20gkk",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 361,
+    "prompt_ms": 522.532,
+    "prompt_per_token_ms": 1.4474570637119115,
+    "prompt_per_second": 690.8667794508278,
+    "predicted_n": 207,
+    "predicted_ms": 2017.818,
+    "predicted_per_token_ms": 9.747913043478261,
+    "predicted_per_second": 102.58606078447114
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 335,
+        "page": 22,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 334,
+        "page": 22,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 654,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

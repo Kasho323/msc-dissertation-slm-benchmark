@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Question: Retrieval-augmented generation in knowledge-intensive NLP tasks aims to improve the performance of large pre-trained language models by leveraging the stored factual knowledge in their parameters.\n\nAnswer: Retrieval-augmented generation in knowledge-intensive NLP tasks is an attempt to address the challenge of improving the performance of large pre-trained language models by utilizing the stored factual knowledge in their parameters."
+      }
+    }
+  ],
+  "created": 1781906571,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 77,
+    "prompt_tokens": 475,
+    "total_tokens": 552,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-PerhQ8LJRcgtafXrryjpmB5bzRQqbecV",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 475,
+    "prompt_ms": 604.253,
+    "prompt_per_token_ms": 1.2721115789473685,
+    "prompt_per_second": 786.0945663488637,
+    "predicted_n": 77,
+    "predicted_ms": 1131.511,
+    "predicted_per_token_ms": 14.694948051948051,
+    "predicted_per_second": 68.0505978289208
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 148,
+        "page": 17,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

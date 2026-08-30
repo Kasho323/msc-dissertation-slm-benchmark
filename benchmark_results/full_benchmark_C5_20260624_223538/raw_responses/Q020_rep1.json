@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The deployment limitation that might still remain even if the runtime supports local inference is the restriction on the number of queries that can be performed by a particular user within a given time limit."
+      }
+    }
+  ],
+  "created": 1782337103,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 37,
+    "prompt_tokens": 324,
+    "total_tokens": 361,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-gNycTYH27VIhiSX0wEzaSEMjHUcHfXzr",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 324,
+    "prompt_ms": 588.768,
+    "prompt_per_token_ms": 1.8171851851851852,
+    "prompt_per_second": 550.301646828632,
+    "predicted_n": 37,
+    "predicted_ms": 559.407,
+    "predicted_per_token_ms": 15.11910810810811,
+    "predicted_per_second": 66.14146766129133
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 690,
+        "page": 23,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 594,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 653,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

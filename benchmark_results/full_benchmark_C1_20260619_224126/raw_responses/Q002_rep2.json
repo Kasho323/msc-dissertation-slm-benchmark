@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG combines parametric and non-parametric memory by using the input sequence to retrieve text documents and using them as additional context when generating the target sequence."
+      }
+    }
+  ],
+  "created": 1781905601,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 32,
+    "prompt_tokens": 419,
+    "total_tokens": 451,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-0D3smLWTRHddmFmNo7bL9CltbW8XXHj8",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 419,
+    "prompt_ms": 501.305,
+    "prompt_per_token_ms": 1.1964319809069213,
+    "prompt_per_second": 835.8185136792971,
+    "predicted_n": 32,
+    "predicted_ms": 262.551,
+    "predicted_per_token_ms": 8.20471875,
+    "predicted_per_second": 121.88108215165816
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 12,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 84,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

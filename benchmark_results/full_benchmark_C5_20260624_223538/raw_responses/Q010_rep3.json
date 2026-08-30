@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG adds a retrieval mechanism that learns to retrieve relevant information for the task during training. This improves the effectiveness of the generation model across various tasks. RAGs dense retriever outperforms a word overlap-based retrieval mechanism in 7.1% of cases, while RAG is more factual in 42.7% of cases, demonstrating its superiority over state-of-the-art generation models. Additionally, RAG generates more specific and factually accurate responses compared to other models."
+      }
+    }
+  ],
+  "created": 1782337704,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 99,
+    "prompt_tokens": 431,
+    "total_tokens": 530,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-E1EycKmW6Cj1Lg30yAz7zfKPawrUWgAu",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 431,
+    "prompt_ms": 806.724,
+    "prompt_per_token_ms": 1.8717494199535964,
+    "prompt_per_second": 534.2595484949004,
+    "predicted_n": 99,
+    "predicted_ms": 1623.865,
+    "predicted_per_token_ms": 16.402676767676766,
+    "predicted_per_second": 60.96565909111903
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 53,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 59,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

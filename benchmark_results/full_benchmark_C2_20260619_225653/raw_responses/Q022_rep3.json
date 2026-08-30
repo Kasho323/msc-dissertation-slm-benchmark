@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "AI risk management is crucial when deploying AI systems because it helps to mitigate potential risks that could compromise the integrity, security, and reliability of the AI system. Here's why:\n\n1. **Transparency and Trust**: AI systems are often opaque, making it challenging for users to understand the risks associated with them. By managing risks, developers can ensure that users have a clear understanding of the potential downsides, fostering trust and confidence in the AI system.\n\n2. **Regulatory Compliance**: AI systems can be used in various industries, such as finance, healthcare, and transportation, where regulatory compliance is critical. Risk management helps ensure that AI systems comply with relevant regulations, reducing the risk of non-compliance and associated penalties.\n\n3. **Data Security**: AI systems often rely on third-party data or systems, which can introduce new risks if not properly managed. Risk management helps identify and mitigate these risks, protecting sensitive data and maintaining the security of the AI system.\n\n4. **System Integration**: AI systems"
+      }
+    }
+  ],
+  "created": 1781907102,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 352,
+    "total_tokens": 552,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Ne8QHqi2b1rwsK3L61kHfP8PYJKVSSr6",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 352,
+    "prompt_ms": 493.971,
+    "prompt_per_token_ms": 1.4033267045454545,
+    "prompt_per_second": 712.5924396371446,
+    "predicted_n": 200,
+    "predicted_ms": 2263.533,
+    "predicted_per_token_ms": 11.317665,
+    "predicted_per_second": 88.35744828990786
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 258,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 275,
+        "page": 13,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

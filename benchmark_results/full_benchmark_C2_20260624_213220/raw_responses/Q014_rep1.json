@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The quantization support in the llama.cpp project enables faster inference and lower memory use by:\n\n1. **Reducing computational complexity**: By using lower-bit integer types (e.g., 1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit), the model's computational complexity is decreased, allowing for faster inference and reduced memory usage.\n\n2. **Minimizing memory footprint**: Lower-bit integer types result in a smaller memory footprint, which is particularly beneficial when dealing with models that require large amounts of memory, such as those finetuning base models.\n\n3. **Accelerating inference**: By reducing the computational complexity and memory footprint, the model can process data more efficiently, leading to faster inference times.\n\n4. **Optimizing for ARM NEON, Metal, and AVX support**: The quantization support is optimized for ARM NEON, Metal, and AVX (AVX, AVX2, AVX512, and AMX) support, allowing the model to take advantage of these hardware accelerators and frameworks.\n\n5. **Hybrid approach for non-convolutional models**: The project also supports hybrid models that combine parametric memory with non-parametric (i.e., retrieval-based) memories, which can help address some of the limitations of LLMs, such as lack of expandability and lack of insight into predictions.\n\nOverall, the quantization support in the llama.cpp project enables faster inference and lower memory use by reducing computational complexity, minimizing memory footprint, and optimizing for specific hardware accelerators and frameworks."
+      }
+    }
+  ],
+  "created": 1782333274,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 326,
+    "prompt_tokens": 479,
+    "total_tokens": 805,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-nr0iyAQbFjDElAWhjOWT3FabJYEcmWWU",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 479,
+    "prompt_ms": 645.588,
+    "prompt_per_token_ms": 1.3477828810020875,
+    "prompt_per_second": 741.9592681400522,
+    "predicted_n": 326,
+    "predicted_ms": 4478.539,
+    "predicted_per_token_ms": 13.737849693251533,
+    "predicted_per_second": 72.79159565206422
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 176,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

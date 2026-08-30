@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Grounding answers in retrieved evidence is beneficial because it helps mitigate unsupported claims. Essentially, it addresses the challenge of AI systems generating responses without sufficient real-world data. When retrieval supervision isn’t available, models need to be evaluated against existing data – like test cases or high-quality datasets – to ensure accuracy. This process helps to avoid misinterpretations of statistical results and ensures that decisions are based on potentially flawed inferences. It also allows for the inclusion of counter-evidence to correct incorrect inferences."
+      }
+    }
+  ],
+  "created": 1782334528,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 101,
+    "prompt_tokens": 396,
+    "total_tokens": 497,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-D8IuApbLiH82jkj4qWVCmQZj1KyvEIYQ",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 396,
+    "prompt_ms": 777.573,
+    "prompt_per_token_ms": 1.9635681818181818,
+    "prompt_per_second": 509.2769424864289,
+    "predicted_n": 101,
+    "predicted_ms": 1377.554,
+    "predicted_per_token_ms": 13.639148514851486,
+    "predicted_per_second": 73.31835993362147
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 44,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 584,
+        "page": 13,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 570,
+        "page": 11,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

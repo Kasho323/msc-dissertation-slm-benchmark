@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Accuracy and statistical accuracy are crucial for AI outputs because they ensure that the outputs are reliable and fair. In the context of AI systems, accuracy refers to the degree to which the system's predictions or decisions match the actual outcomes. This is important because it allows the system to be trusted and reliable, even if it is not always possible to know for certain the true nature of the data or the underlying factors that led to the results. On the other hand, statistical accuracy refers to the degree to which the system's outputs can be reliably predicted or inferred from the data. This is important because it allows the system to be trusted and reliable, even if it is not always possible to know for certain the true nature of the data or the underlying factors that led to the results. In the case of AI systems, accuracy and statistical accuracy are necessary to ensure that the outputs are reliable and fair, even if they are not always possible to know for certain the true nature of the data or the underlying factors that led"
+      }
+    }
+  ],
+  "created": 1781905532,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 379,
+    "total_tokens": 579,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-YELtGW4GEXwOejvdZZZYyklvWrNTxJtq",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 379,
+    "prompt_ms": 482.275,
+    "prompt_per_token_ms": 1.2724934036939313,
+    "prompt_per_second": 785.8586905811001,
+    "predicted_n": 200,
+    "predicted_ms": 1954.3,
+    "predicted_per_token_ms": 9.7715,
+    "predicted_per_second": 102.33843319858774
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 567,
+        "page": 11,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 568,
+        "page": 11,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 574,
+        "page": 12,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

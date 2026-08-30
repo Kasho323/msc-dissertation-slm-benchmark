@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The difference between generating from model parameters alone and generating with retrieved passages lies in the way the model incorporates additional context. When generating from model parameters alone, the model relies solely on the input sequence to generate the target sequence. This means that the model uses the input sequence to retrieve text documents and incorporates them as additional context when generating the target sequence. On the other hand, when generating with retrieved passages, the model uses the retrieved documents as additional context. The retrieved documents are treated as a single latent variable, and the model generates the output sequence probability for each document, which are then marginalized, resulting in a more comprehensive and context-rich output."
+      }
+    }
+  ],
+  "created": 1782337672,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 129,
+    "prompt_tokens": 449,
+    "total_tokens": 578,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-yn58Euy6DfAGF5xgYN9jDgdwLpxOS3Uq",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 449,
+    "prompt_ms": 773.954,
+    "prompt_per_token_ms": 1.723728285077951,
+    "prompt_per_second": 580.137837649266,
+    "predicted_n": 129,
+    "predicted_ms": 2007.322,
+    "predicted_per_token_ms": 15.560635658914729,
+    "predicted_per_second": 64.26472683505686
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 10,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 20,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

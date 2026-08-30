@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "In the context of AI and data protection, lawfulness refers to the requirement that any processing of personal data by an AI system must be based on a lawful basis. This means that the processing must be done in a way that is allowed by law, such as being necessary for the performance of a task carried out for the public interest or essential for the performance of a contract. The ICO provides guidance on how to ensure lawfulness in AI, including considering an alternative lawful basis if the use of an AI system is integral to the service."
+      }
+    }
+  ],
+  "created": 1782337208,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 108,
+    "prompt_tokens": 408,
+    "total_tokens": 516,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-IL3TTcJxrQSEVVao3QePK0aFoWSbJPXj",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 408,
+    "prompt_ms": 712.571,
+    "prompt_per_token_ms": 1.746497549019608,
+    "prompt_per_second": 572.5745223984698,
+    "predicted_n": 108,
+    "predicted_ms": 1692.002,
+    "predicted_per_token_ms": 15.666685185185186,
+    "predicted_per_second": 63.82971178521066
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 508,
+        "page": 4,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 534,
+        "page": 7,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 509,
+        "page": 4,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

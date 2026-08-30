@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Retrieved context: on the users own hardware. However, recent advances in purpose-built hardware for smartphones and embedded devices mean that this is an increasingly viable option. It is important to note that local processing is not necessarily out of scope of data protection law. Even if the personal data involved in training is being processed on the users device, the organisation which creates and distributes the model is still a controller in so far as it determines the means and purposes of processing. Similarly, if the way you intend to use peoples data would be unexpected or cause unnecessary harm. It also means you are taking on additional responsibility for considering and protecting peoples rights and interests. You must also be able to demonstrate the necessity and proportionality of the processing. Additionally, if you are a public authority you can only rely on legitimate interests if you are processing for a legitimate reason other than performing your tasks as a public authority. There are three elements to consider when balancing test). There can be a wide range of interests that constitute legitimate interests"
+      }
+    }
+  ],
+  "created": 1781905845,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 364,
+    "total_tokens": 564,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-25KFgDmc0fy9aRxY5PODhZPxnqHUD3JM",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 364,
+    "prompt_ms": 437.162,
+    "prompt_per_token_ms": 1.2009945054945055,
+    "prompt_per_second": 832.643276405543,
+    "predicted_n": 200,
+    "predicted_ms": 2005.176,
+    "predicted_per_token_ms": 10.025879999999999,
+    "predicted_per_second": 99.74186804549825
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 709,
+        "page": 25,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 543,
+        "page": 8,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 541,
+        "page": 8,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

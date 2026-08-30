@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Here's a rephrased version of the retrieved context combined with relevant parts:\n\nGrounding an answer in retrieved evidence is useful for reducing unsupported claims because it helps ensure that any decisions made based on potentially incorrect inferences are informed by evidence that may be wrong. This approach is particularly relevant in situations where statistical accuracy may be misconstrued or the AI system used to generate the answer is statistically flawed.\n\nIn such cases, retrieving evidence from a reliable source can provide a more accurate understanding of the situation. By grounding an answer in retrieved evidence, individuals can counter unsupported claims and make more informed decisions. This approach can be particularly useful in areas such as medical diagnosis, where high-quality test data may not be available, or in social media analysis, where subjective judgments may be difficult to quantify.\n\nThe use of retrieved evidence can also help mitigate the risk of statistical accuracy being misconstrued. By grounding an answer in evidence, individuals can ensure that any decisions made are based on a more accurate understanding of the"
+      }
+    }
+  ],
+  "created": 1781906295,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 416,
+    "total_tokens": 616,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-drfmL4stdx9Tn4PSiWzWkBdtI9bZ3bTM",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 416,
+    "prompt_ms": 523.121,
+    "prompt_per_token_ms": 1.2575024038461537,
+    "prompt_per_second": 795.2271080686877,
+    "predicted_n": 200,
+    "predicted_ms": 2914.899,
+    "predicted_per_token_ms": 14.574494999999999,
+    "predicted_per_second": 68.61301197743043
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 44,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 584,
+        "page": 13,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 570,
+        "page": 11,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

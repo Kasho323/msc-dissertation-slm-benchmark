@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "According to the paper, knowledge-intensive tasks include:\n\n1. Ar- ticulating and documenting the systems concept and objectives.\n2. Gathering and cleaning data.\n3. Documenting the metadata and characteristics of the dataset."
+      }
+    }
+  ],
+  "created": 1781905635,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 44,
+    "prompt_tokens": 443,
+    "total_tokens": 487,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-8NfDtT5uPb8DafCuc1v1OW6RFDcNpvEV",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 443,
+    "prompt_ms": 549.938,
+    "prompt_per_token_ms": 1.241395033860045,
+    "prompt_per_second": 805.545352385178,
+    "predicted_n": 44,
+    "predicted_ms": 370.186,
+    "predicted_per_token_ms": 8.413318181818182,
+    "predicted_per_second": 118.85916809387714
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 387,
+        "page": 31,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 432,
+        "page": 40,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 102,
+        "page": 11,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

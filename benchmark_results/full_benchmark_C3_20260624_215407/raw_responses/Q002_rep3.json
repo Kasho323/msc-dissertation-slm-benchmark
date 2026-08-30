@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Okay, let's break down how RAG (Retrieval-Augmented Generation) combines parametric and non-parametric memory.\n\nRAG works by first retrieving relevant text documents from an external source (like a database or the internet) based on a user’s query. Then, it uses this retrieved information as context alongside the original query to generate an answer.  Essentially, it’s a hybrid approach.\n\nHere’s a more detailed explanation:\n\n*   **Parametric Memory:** This component is like a \"knowledge base\" that stores pre-defined facts and relationships. It’s trained to remember and retrieve information based on specific patterns and rules.\n*   **Non-Parametric Memory:** This component is designed to adapt to new information and changes in the world. It learns from the retrieved documents and updates its understanding as the data evolves.\n\n**In essence, RAG combines these two types of memory to provide a more flexible and adaptable system.**\n\n**Key points from the text:**\n\n*   The model uses the input sequence to retrieve text documents and uses them as additional context when generating the target sequence.\n*   It leverages two components: a retriever (which finds relevant documents) and a generator (which produces the answer).\n*   The text demonstrates that the non-parametric memory can be updated as the world changes.\n\n"
+      }
+    }
+  ],
+  "created": 1782335316,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 277,
+    "prompt_tokens": 416,
+    "total_tokens": 693,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-SrfCjPYRRp28dHs9dc7PefDwNMQZv67d",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 416,
+    "prompt_ms": 804.796,
+    "prompt_per_token_ms": 1.9346057692307694,
+    "prompt_per_second": 516.9011774412397,
+    "predicted_n": 277,
+    "predicted_ms": 4439.697,
+    "predicted_per_token_ms": 16.027787003610108,
+    "predicted_per_second": 62.39164519560681
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 12,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 84,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

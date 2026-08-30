@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The retriever in a RAG pipeline is responsible for learning to retrieve relevant information for the task. It is used to train the RAGs, which uses retrieval supervision on Natural Questions and TriviaQA. The RAGs demonstrate that neither a re-ranker nor an extractive reader is necessary for state-of-the-art performance. The retriever is initialized using a DPRs retriever, which uses retrieval supervision on Natural Questions and TriviaQA. The RAGs are more diverse than the RAG-Token model and both are significantly more diverse than BART without needing any diversity-promoting decoding. The retriever is a key feature of the RAGs and is used to improve the results for all tasks. The top K documents are retrieved using the retriever, and then the generator produces a distribution for the next output token for each document, before marginalizing and repeating the process with the following output token. The word overlap-based RAG-Token model is compared to the RAG-Token model, and the top K documents are retrieved using the retriever, and then the generator produces a distribution for the next output token for each document, before marginalizing and repeating the process with the following output token."
+      }
+    }
+  ],
+  "created": 1782335766,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 243,
+    "prompt_tokens": 417,
+    "total_tokens": 660,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-uPN5tWOvBFXuEFUqnmTsr1zdeoaJEVxv",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 417,
+    "prompt_ms": 1014.703,
+    "prompt_per_token_ms": 2.4333405275779376,
+    "prompt_per_second": 410.9576890972038,
+    "predicted_n": 243,
+    "predicted_ms": 2810.193,
+    "predicted_per_token_ms": 11.56458024691358,
+    "predicted_per_second": 86.47092922087558
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 46,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 21,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

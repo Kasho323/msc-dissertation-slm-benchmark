@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG and local deployment address different parts of the question-answering problem in the following ways:\n\n1. **RAG (Recurrent and Attentional Generation)**:\n   - **Recurrent Neural Networks (RNNs)**: RAG utilizes RNNs to capture the sequential nature of text, allowing it to handle long-range dependencies and context.\n   - **Attention Mechanisms**: It employs attention mechanisms to focus on relevant parts of the input text, improving the model's ability to understand and respond to complex questions.\n   - **Multi-Head Attention**: This allows RAG to consider multiple aspects of the input text simultaneously, enhancing its ability to generate accurate and contextually relevant answers.\n   - **Recurrent Neural Networks (RNNs)**: RAG uses RNNs to handle the sequential nature of text, allowing it to capture long-range dependencies and context.\n   - **Attention Mechanisms**: It employs attention mechanisms to focus on relevant parts of the input text, improving the model's ability to understand and respond to complex questions.\n   - **Multi-Head Attention**: This allows RAG to consider multiple aspects of the input text simultaneously, enhancing its ability to generate accurate and contextually relevant answers.\n   - **Recurrent Neural Networks (RNNs)**: RAG uses RNNs to handle the sequential nature of text, allowing it to capture long-range dependencies and context.\n   - **Attention Mechanisms**: It employs attention mechanisms to focus on relevant parts of the input text, improving the model's ability to understand and respond to complex questions.\n   - **Multi-Head Attention**: This allows RAG to consider multiple aspects of the input text simultaneously, enhancing its ability to generate accurate and contextually relevant answers.\n   - **Recurrent Neural Networks (RNNs)**: RAG uses RNNs to handle the sequential nature of text, allowing it to capture long-range dependencies and context.\n   - **Attention Mechanisms**: It employs attention mechanisms to focus on relevant parts of the input text, improving the model's ability to understand and respond to complex questions.\n   - **Multi-Head Attention**: This allows RAG to consider multiple aspects of the input text simultaneously, enhancing its ability to generate accurate and contextually relevant answers.\n   - **Recurrent Neural Networks (RNNs)**: RAG uses RNNs to handle the sequential nature of text, allowing it to capture long-range dependencies and context.\n   - **Attention Mechanisms**: It employs attention mechanisms to focus on relevant parts of the input text"
+      }
+    }
+  ],
+  "created": 1782338766,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 502,
+    "total_tokens": 1014,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-8Fc5FFFInfDEfvZONhoOpGTNFUOZEkfM",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 502,
+    "prompt_ms": 1599.044,
+    "prompt_per_token_ms": 3.185346613545817,
+    "prompt_per_second": 313.93757770267734,
+    "predicted_n": 512,
+    "predicted_ms": 11934.727,
+    "predicted_per_token_ms": 23.310013671875,
+    "predicted_per_second": 42.90001773815186
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 50,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 33,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 35,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

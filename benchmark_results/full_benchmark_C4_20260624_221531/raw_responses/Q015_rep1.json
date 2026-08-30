@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The purpose of running llama-server rather than only a command-line model is to enable multiple users and parallel decoding. It allows for the use of the CLI tools to run the model locally, see below. It requires the model to be stored in the GGUF file format, and models in other data formats can be converted to GGUF using Python scripts in this repo. The Hugging Face platform provides a variety of online tools for converting, quantizing, and hosting models with the model: - Use the GGUF-my-repo space to convert to GGUF format and quantize model weights to smaller sizes - Use the GGUF-my-LoRA space to convert LoRA adapters to smaller sizes."
+      }
+    }
+  ],
+  "created": 1782335871,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 140,
+    "prompt_tokens": 472,
+    "total_tokens": 612,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-rDkITbpMp9CdVabGqo8IisdeoZJ4fWeE",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 472,
+    "prompt_ms": 1122.225,
+    "prompt_per_token_ms": 2.377595338983051,
+    "prompt_per_second": 420.5930183341131,
+    "predicted_n": 140,
+    "predicted_ms": 1615.805,
+    "predicted_per_token_ms": 11.541464285714286,
+    "predicted_per_second": 86.64411856628739
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 201,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 194,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

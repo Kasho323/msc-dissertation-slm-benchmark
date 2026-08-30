@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG adds a retrieval mechanism to a standard language generation system, which helps in generating more diverse and factually accurate responses. The retrieval mechanism allows RAG to learn to retrieve relevant information for the task, improving the effectiveness of the generation model. RAG is more diverse than RAG-Tokens and BART, and it performs better than BART in terms of factual accuracy and specificity."
+      }
+    }
+  ],
+  "created": 1782338472,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 79,
+    "prompt_tokens": 431,
+    "total_tokens": 510,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-ulVf8onRNEoHBYTZBxDIziy79qR1Depe",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 431,
+    "prompt_ms": 1338.234,
+    "prompt_per_token_ms": 3.104951276102088,
+    "prompt_per_second": 322.06624551461107,
+    "predicted_n": 79,
+    "predicted_ms": 1870.402,
+    "predicted_per_token_ms": 23.675974683544304,
+    "predicted_per_second": 42.23690949859977
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 53,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 59,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

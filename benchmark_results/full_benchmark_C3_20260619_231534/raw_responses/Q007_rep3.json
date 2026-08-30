@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "According to the paper, knowledge-intensive tasks are those that humans could not reasonably be expected to perform without access to an external knowledge source. This includes tasks like open-domain question answering, fact checking, long-form question answering, Wikipedia article generation, dialogue, and language modeling."
+      }
+    }
+  ],
+  "created": 1781908133,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 58,
+    "prompt_tokens": 428,
+    "total_tokens": 486,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-K5vPIOLXknoKP6CrmHepencB2GKXuJ1n",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 428,
+    "prompt_ms": 818.423,
+    "prompt_per_token_ms": 1.9122032710280374,
+    "prompt_per_second": 522.9569550220363,
+    "predicted_n": 58,
+    "predicted_ms": 809.868,
+    "predicted_per_token_ms": 13.963241379310345,
+    "predicted_per_second": 71.61660912642553
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 14,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 1,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

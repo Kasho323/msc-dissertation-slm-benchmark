@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "According to the provided context, the retriever plays a crucial role in a RAG (Retrieval-Augmented Generation) pipeline. It’s used to retrieve relevant information from a knowledge base before the generator produces an answer. \n\nHere’s a breakdown of its function:\n\n*   **Retrieval:** The retriever uses retrieval supervision to find relevant documents before the generator.\n*   **Initial Retrieval:** RAG initially uses a DPR (Retrieval-Based Pointer Retriever) retriever, which relies on natural questions and triviaQA to find relevant documents.\n*   **Ranking & Re-ranking:** The retriever then uses a BERT-based cross-encoder to re-rank the documents and select the most relevant ones.\n*   **Diversity:** RAG-Sequences generates more diverse outputs than RAG-Tokens, and both are significantly more diverse than BART without needing diversity-promoting decoding.\n\n"
+      }
+    }
+  ],
+  "created": 1781907737,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 184,
+    "prompt_tokens": 412,
+    "total_tokens": 596,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-UT0P9xjSdAv4d41b3zHPTAm8b5ShDfTv",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 412,
+    "prompt_ms": 801.234,
+    "prompt_per_token_ms": 1.944742718446602,
+    "prompt_per_second": 514.2068359555385,
+    "predicted_n": 184,
+    "predicted_ms": 3069.743,
+    "predicted_per_token_ms": 16.683385869565218,
+    "predicted_per_second": 59.93987118791378
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 46,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 21,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

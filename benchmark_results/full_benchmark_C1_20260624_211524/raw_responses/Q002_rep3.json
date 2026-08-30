@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG models combine parametric and non-parametric memory by leveraging two components: a retriever that returns (top-K truncated) distributions over text passages given a query, and a generator that generates text documents z and uses them as additional context when generating the target sequence y."
+      }
+    }
+  ],
+  "created": 1782332813,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 56,
+    "prompt_tokens": 419,
+    "total_tokens": 475,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Vn7BUJz7lfEPCTJYfmTTQvMvWfrHyrKn",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 419,
+    "prompt_ms": 505.029,
+    "prompt_per_token_ms": 1.2053198090692123,
+    "prompt_per_second": 829.6553267238119,
+    "predicted_n": 56,
+    "predicted_ms": 539.521,
+    "predicted_per_token_ms": 9.634303571428571,
+    "predicted_per_second": 103.79577439988435
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 12,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 84,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "An AI system should be evaluated for limitations as well as capabilities because it is essential to understand the potential impact of its operations on humans and other systems. The system's limitations can include its inability to handle certain types of data, its susceptibility to errors or biases, or its potential to cause unintended consequences. By identifying and mitigating these limitations, an AI system can ensure that it operates safely and effectively in a wide range of scenarios."
+      }
+    }
+  ],
+  "created": 1782333018,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 87,
+    "prompt_tokens": 328,
+    "total_tokens": 415,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-DXdic1S3vZVkUmq7ZPeY0QzzlyFOy1M8",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 328,
+    "prompt_ms": 447.985,
+    "prompt_per_token_ms": 1.3658079268292684,
+    "prompt_per_second": 732.1673716753909,
+    "predicted_n": 87,
+    "predicted_ms": 847.958,
+    "predicted_per_token_ms": 9.74664367816092,
+    "predicted_per_second": 102.599421197748
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 380,
+        "page": 30,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 254,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 313,
+        "page": 19,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

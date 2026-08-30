@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG adds a key feature to standard language generation systems: it learns to retrieve relevant information for the task. This retrieval mechanism improves the system’s performance significantly, as demonstrated by Ablations where the retriever is frozen during training.  In experiments, RAG models consistently outperform other models, particularly in terms of factual accuracy.  Specifically, RAG models are more accurate than BART in 7.1% of cases, while RAG was more accurate in 42.7% of cases.  Evaluators also find RAG generations to be more specific and factually accurate."
+      }
+    }
+  ],
+  "created": 1782334964,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 119,
+    "prompt_tokens": 423,
+    "total_tokens": 542,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-ds2jBX4PdGaOUD1fmmrCwJqX2Uas99mb",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 423,
+    "prompt_ms": 910.77,
+    "prompt_per_token_ms": 2.1531205673758866,
+    "prompt_per_second": 464.44217530221675,
+    "predicted_n": 119,
+    "predicted_ms": 1841.282,
+    "predicted_per_token_ms": 15.472957983193277,
+    "predicted_per_second": 64.62888357133781
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 53,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 59,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

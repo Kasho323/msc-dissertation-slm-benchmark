@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The context suggests that the answer is that there are two main approaches to generating text: 1. Generating from model parameters alone, which involves using the model to generate text without any additional context or retrieval of information. 2. Generating with retrieved passages, which involves using the model to generate text by retrieving and using specific passages that are relevant to the task or context. This approach requires the model to access and use the non-parametric memory, which in this context appears to be a pre-trained Wikipedia-based system."
+      }
+    }
+  ],
+  "created": 1782336586,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 104,
+    "prompt_tokens": 449,
+    "total_tokens": 553,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-e78xgMo4JuXiAEzdLA2GOjqWSEryIJ6T",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 449,
+    "prompt_ms": 1095.548,
+    "prompt_per_token_ms": 2.4399732739420936,
+    "prompt_per_second": 409.84055468131015,
+    "predicted_n": 104,
+    "predicted_ms": 1208.333,
+    "predicted_per_token_ms": 11.618586538461539,
+    "predicted_per_second": 86.06898926041083
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 10,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 20,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

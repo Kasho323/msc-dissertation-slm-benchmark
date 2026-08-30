@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The AI RMF could support the privacy discussion in this dissertation by providing a common language and understanding of AI risks. It would offer taxonomy, terminology, definitions, metrics, and characterizations for AI risk, which could help clarify and standardize the discussion on privacy concerns related to AI technologies. Additionally, the Framework's focus on communication of AI risks across an organization, between organizations, with customers, and to the public at large, could facilitate a broader discussion on privacy issues in the context of AI implementation and use. The clear and plain language used in the AI RMF could also make the privacy discussion more accessible to a wider audience, including non-technical stakeholders, while still being sufficiently technical for practitioners."
+      }
+    }
+  ],
+  "created": 1782339040,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 142,
+    "prompt_tokens": 383,
+    "total_tokens": 525,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Kq3NSBWlXOOOnm2KF1NytfzRyx8peCyx",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 383,
+    "prompt_ms": 1240.075,
+    "prompt_per_token_ms": 3.237793733681462,
+    "prompt_per_second": 308.8522871600508,
+    "predicted_n": 142,
+    "predicted_ms": 3181.548,
+    "predicted_per_token_ms": 22.405267605633803,
+    "predicted_per_second": 44.63236135365552
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 240,
+        "page": 7,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 481,
+        "page": 47,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 480,
+        "page": 47,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

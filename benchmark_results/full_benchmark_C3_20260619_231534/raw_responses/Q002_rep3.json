@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG models combine parametric memory and non-parametric memory through a process of aggregating content from several pieces of retrieved items. Essentially, the parametric memory is a pre-trained seq2seq model, while the non-parametric memory is a dense vector index of Wikipedia, accessed with a per-token basis.\n\nHere’s a breakdown of how it works:\n\n*   **Parametric Memory:** This is a pre-trained seq2seq model that acts as the “memory” – it stores and retrieves information based on the sequence of text.\n*   **Non-Parametric Memory:** This is a dense vector index of Wikipedia, which is accessed with different tokens for different documents. This allows the model to retrieve evidence documents rather than just related training pairs.\n\n"
+      }
+    }
+  ],
+  "created": 1781908087,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 156,
+    "prompt_tokens": 403,
+    "total_tokens": 559,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-F1sOGhlcOx2lUDChR7Nmmbz9bIzrBIWR",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 403,
+    "prompt_ms": 761.194,
+    "prompt_per_token_ms": 1.888818858560794,
+    "prompt_per_second": 529.431393311035,
+    "predicted_n": 156,
+    "predicted_ms": 2523.441,
+    "predicted_per_token_ms": 16.175903846153844,
+    "predicted_per_second": 61.82034769190166
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 2,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 12,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 84,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

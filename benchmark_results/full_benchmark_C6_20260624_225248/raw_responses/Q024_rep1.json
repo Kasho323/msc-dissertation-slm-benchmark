@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "An AI risk framework can support evaluation beyond accuracy alone by considering qualitative and quantitative measurements that provide unique and meaningful information about the assessment of AI risks. It enhances the capacity to comprehensively evaluate system trustworthiness, identify and track existing and emergent risks, and verify the efficacy of metrics. The framework's outcomes will be utilized in the MANAGE function to assist risk monitoring and response. It should be intuitive and adaptable as part of an organization's broader risk management strategy and processes, consistent or aligned with other approaches to managing AI risks, and useful to a wide range of perspectives, sectors, and technology domains. The framework should be outcome-focused and non-prescriptive, providing a catalog of outcomes and approaches rather than established in GOVERN and utilized in MAP and MEASURE to bolster AI risk management efforts and increase transparency and accountability."
+      }
+    }
+  ],
+  "created": 1782338192,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 166,
+    "prompt_tokens": 365,
+    "total_tokens": 531,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-zel4x0kPAInSiRrHUDUYh1rJtz72e5t6",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 365,
+    "prompt_ms": 1147.735,
+    "prompt_per_token_ms": 3.144479452054794,
+    "prompt_per_second": 318.01766087119415,
+    "predicted_n": 166,
+    "predicted_ms": 3768.752,
+    "predicted_per_token_ms": 22.70332530120482,
+    "predicted_per_second": 44.04641111964916
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 399,
+        "page": 33,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 482,
+        "page": 47,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 415,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

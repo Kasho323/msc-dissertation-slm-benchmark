@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Llama.cpp is relevant for local or on-device language model deployment because it provides a lightweight, efficient, and flexible framework for building and deploying language models. Here's why:\n\n1. **Lightweight**: Llama.cpp is designed to be lightweight, which means it can run on a single device (e.g., a mobile device or a server) without requiring a lot of resources or infrastructure.\n2. **Efficient**: The framework is optimized for performance, making it suitable for deployment on devices where resources are limited.\n3. **Flexible**: Llama.cpp allows for easy integration with various models, including those from Hugging Face, which means you can experiment with different models and architectures without having to rewrite code.\n4. **Easy to use**: The CLI tool (llama-cli) provides a simple and intuitive way to access and experiment with Llama.cpp's functionality, making it easy to get started with local or on-device deployment.\n5. **Support for various models**: Llama.cpp supports"
+      }
+    }
+  ],
+  "created": 1781907020,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 400,
+    "total_tokens": 600,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-jZD81Tq0pgqhPfy0HdyYaZic8Q9x2DGf",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 400,
+    "prompt_ms": 508.667,
+    "prompt_per_token_ms": 1.2716675,
+    "prompt_per_second": 786.3690783950995,
+    "predicted_n": 200,
+    "predicted_ms": 2668.594,
+    "predicted_per_token_ms": 13.342970000000001,
+    "predicted_per_second": 74.94583289927205
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 171,
+        "page": 1,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 196,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

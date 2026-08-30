@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Retrieval-augmented generation aims to address the challenge of generating high-quality responses to complex, knowledge-intensive natural language questions. This approach leverages pre-trained language models to improve downstream NLP tasks by incorporating factual knowledge stored in their parameters. The method combines retrieval with generation to enhance the accuracy and relevance of generated responses, particularly in domains where factual knowledge is crucial for answering questions effectively."
+      }
+    }
+  ],
+  "created": 1782338798,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 79,
+    "prompt_tokens": 469,
+    "total_tokens": 548,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-XJnApswtNBVRrdUKDOUwOruEyPw0Sl9l",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 469,
+    "prompt_ms": 1449.095,
+    "prompt_per_token_ms": 3.0897547974413646,
+    "prompt_per_second": 323.6502782771316,
+    "predicted_n": 79,
+    "predicted_ms": 1784.479,
+    "predicted_per_token_ms": 22.5883417721519,
+    "predicted_per_second": 44.270624647306015
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 148,
+        "page": 17,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

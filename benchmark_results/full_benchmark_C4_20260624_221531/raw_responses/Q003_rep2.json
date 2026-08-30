@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "[2] Petr Budič and Jan Edvý. Modeling of the question answering task in the yodaqa system. In International Conference of the Cross-Language Evaluation Forum for European Languages, pages 22228. Springer, 2015. URL https://link.springer.com/chapter/10.1007%2F978-3-319-24027-5_20 . [3] Jonathan Berant, Andrew Chou, Roy Frostig, and Percy Liang. Semantic Parsing on Freebase from Question-Answer Pairs. In Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing, pages\n\nThe context provided suggests that the answer is related to the evaluation of a question-answering system, specifically focusing on the importance of provenance in such a context. The answer is not directly stated but seems to be a summary of the main points discussed in the provided context. \n\nThe context discusses the question \"Why is provenance important in a question-answering system?\" and provides a response that is not directly stated but seems to be a summary of the main points discussed in the provided context. \n\nThe context suggests that the answer is related to the evaluation of a question-answering system, specifically focusing on the importance of provenance in such a context. The answer is not directly stated but seems to be a summary of the main points discussed in the provided context. \n\nThe context suggests that the answer is related to the evaluation of a question-answering system, specifically focusing on the importance of provenance in such a context. The answer is not directly stated but seems to be a summary of the main points discussed in the provided context."
+      }
+    }
+  ],
+  "created": 1782336156,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 364,
+    "prompt_tokens": 502,
+    "total_tokens": 866,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-vGOIZkwMr3qp1Y5oP8CdjUxfG84fLzaJ",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 502,
+    "prompt_ms": 1181.631,
+    "prompt_per_token_ms": 2.3538466135458167,
+    "prompt_per_second": 424.836518337789,
+    "predicted_n": 364,
+    "predicted_ms": 4272.463,
+    "predicted_per_token_ms": 11.737535714285714,
+    "predicted_per_second": 85.19675887187321
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 92,
+        "page": 10,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "    The problem that retrieval-augmented generation is trying to address in knowledge-intensive NLP tasks is the improvement of performance across a variety of NLP tasks when retrieval is considered in isolation. This includes tasks such as open-domain question answering, fact checking, fact completion, long-form question answering, Wikipedia article generation, dialogue, translation, and language modeling. The main focus is on the Open-domain QA and Open-MSMarco and Jeopardy question generation, with the implementation details reported using the Bleu-1 and Rouge-L as performance metrics. The retrieval is described as being more thorough and the answers are generally shorter. The implementation of greedy decoding is noted as not being improved by beam search."
+      }
+    }
+  ],
+  "created": 1782335736,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 141,
+    "prompt_tokens": 469,
+    "total_tokens": 610,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-KRIv6S1DyJ1Z7VAVhVng8B0zHSe5Y4CE",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 469,
+    "prompt_ms": 1099.873,
+    "prompt_per_token_ms": 2.3451449893390195,
+    "prompt_per_second": 426.4128676674489,
+    "predicted_n": 141,
+    "predicted_ms": 1688.192,
+    "predicted_per_token_ms": 11.972992907801418,
+    "predicted_per_second": 83.52130563348244
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 148,
+        "page": 17,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

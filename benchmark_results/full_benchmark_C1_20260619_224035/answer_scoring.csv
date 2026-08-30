@@ -1,0 +1,2 @@
+run_id,model_config_id,question_id,repetition,relevance,correctness,faithfulness_to_source,completeness,hallucination_risk,source_grounding,average_quality_score,scoring_notes,scored_by,scored_date
+FULL_C1_20260619_224035,C1,Q001,1,,,,,,,,,Cairenbading,

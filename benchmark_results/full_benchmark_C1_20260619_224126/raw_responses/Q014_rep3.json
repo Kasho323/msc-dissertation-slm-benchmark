@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Quantization supports faster inference and reduced memory use by enabling models to run with minimal setup and state-of-the-art performance on a wide range of hardware. The llama.cpp project is the main playground for developing new features for the ggml library. Models typically finetunes of the base models, enabling LLM inference with minimal setup and state-of-the-art performance on a wide range of hardware. The project supports both locally and in the cloud, and uses plain C/C++ implementation without any dependencies. It is optimized via ARM NEON, Accelerate, and Metal frameworks, and supports x86 and RISC-V architectures. The project supports 1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit integer quantization for faster inference and reduced memory use."
+      }
+    }
+  ],
+  "created": 1781905963,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 170,
+    "prompt_tokens": 470,
+    "total_tokens": 640,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-REMYJHdqPpeK7sXeoBPAhMEVhoawHnwd",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 470,
+    "prompt_ms": 525.009,
+    "prompt_per_token_ms": 1.1170404255319148,
+    "prompt_per_second": 895.2227485624055,
+    "predicted_n": 170,
+    "predicted_ms": 1459.322,
+    "predicted_per_token_ms": 8.584247058823529,
+    "predicted_per_second": 116.49245334477244
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf",
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 176,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

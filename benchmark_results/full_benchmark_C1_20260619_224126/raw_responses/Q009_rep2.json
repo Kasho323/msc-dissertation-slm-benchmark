@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Grounding an answer in retrieved evidence is useful for reducing unsupported claims because it allows the AI system used to generate the answer to be more accurate and reliable. Retrieving evidence from the original documents helps ensure that the AI system is not only retrieving information but also verifying its accuracy. This reduces the likelihood of errors in the generated answer, which can lead to a more accurate and reliable result. Additionally, grounding the answer in retrieved evidence can help prevent the AI system from being influenced by incorrect information, which can further reduce the likelihood of unsupported claims."
+      }
+    }
+  ],
+  "created": 1781905650,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 109,
+    "prompt_tokens": 404,
+    "total_tokens": 513,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-cDj7tOMmQsnYjuAAgLcxJn8VIfuab9Ji",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 404,
+    "prompt_ms": 509.8,
+    "prompt_per_token_ms": 1.261881188118812,
+    "prompt_per_second": 792.4676343664181,
+    "predicted_n": 109,
+    "predicted_ms": 1029.958,
+    "predicted_per_token_ms": 9.449155963302752,
+    "predicted_per_second": 105.82955809848556
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 63,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 44,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 570,
+        "page": 11,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

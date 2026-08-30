@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "When deploying AI systems, it is crucial to manage risks effectively. The risk management function is essential because it helps organizations identify, assess, and prioritize potential risks associated with the deployment of AI systems. By applying the MANAGE function to deployed AI systems, organizations can allocate resources based on assessed and prioritized risks. This approach ensures that the deployment of AI systems is not only safe but also efficient, as it allows for the identification and mitigation of potential risks before they become significant issues."
+      }
+    }
+  ],
+  "created": 1781905451,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 97,
+    "prompt_tokens": 334,
+    "total_tokens": 431,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Ow6XwqRcVnZUfrIHc2stCrlEuEwlZgH6",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 334,
+    "prompt_ms": 430.175,
+    "prompt_per_token_ms": 1.2879491017964073,
+    "prompt_per_second": 776.4281978264659,
+    "predicted_n": 97,
+    "predicted_ms": 720.907,
+    "predicted_per_token_ms": 7.432030927835052,
+    "predicted_per_second": 134.5527231667885
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 258,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 275,
+        "page": 13,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

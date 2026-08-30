@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The quantization support in the llama.cpp project enables faster inference and lower memory use by:\n\n1. **Reducing the size of models**: By using smaller integer sizes (1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit), the models can be more compact and require less memory, making inference faster and more efficient.\n\n2. **Minimizing memory usage**: The use of quantization reduces the memory footprint of the models, allowing them to run on devices with limited or no access to external memory.\n\n3. **Optimizing for ARM NEON, Metal, and AVX/AVX2/AVX512/AMX**: The quantization support is optimized for the ARM NEON, Metal, and AVX/AVX2/AVX512/AMX frameworks, which are commonly used on Apple Silicon and other ARM-based devices. This allows for efficient execution on these platforms.\n\n4"
+      }
+    }
+  ],
+  "created": 1781906335,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 479,
+    "total_tokens": 679,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-KhokNHgxHU62byS27EoT6UbNUML0Yfsn",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 479,
+    "prompt_ms": 595.986,
+    "prompt_per_token_ms": 1.2442296450939456,
+    "prompt_per_second": 803.7101542653686,
+    "predicted_n": 200,
+    "predicted_ms": 2865.845,
+    "predicted_per_token_ms": 14.329225,
+    "predicted_per_second": 69.78744488972713
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf",
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 176,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

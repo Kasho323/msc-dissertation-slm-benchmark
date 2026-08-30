@@ -1,0 +1,4 @@
+model_config_id,model_name,model_file_size_mb,run_folder,answer_rows,raw_json_files,error_count,mean_latency_seconds,min_latency_seconds,max_latency_seconds,mean_peak_memory_mb,mean_tokens_per_second,status
+C1,Qwen2.5 0.5B Instruct Q4_K_M,468.64,full_benchmark_C1_20260619_224126,120,120,0,3.738,2.760,4.947,566.28,114.27,completed
+C2,Llama 3.2 1B Instruct Q4_K_M,770.28,full_benchmark_C2_20260619_225653,120,120,0,5.127,2.957,6.009,1479.27,77.20,completed
+C3,Gemma 3 1B IT Q4_K_M,768.72,full_benchmark_C3_20260619_231534,120,120,0,5.793,3.683,7.318,1001.03,61.35,completed

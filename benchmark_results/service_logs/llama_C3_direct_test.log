@@ -1,0 +1,44 @@
+[34m0.00.078.206[0m [32mI [0mlog_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+[34m0.00.078.212[0m [32mI [0mdevice_info:
+[34m0.00.078.219[0m [32mI [0m  - CPU     : Intel(R) Core(TM) Ultra 9 275HX (32189 MiB, 12701 MiB free)
+[34m0.00.078.287[0m [32mI [0msystem_info: n_threads = 24 (n_threads_batch = 24) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+[34m0.00.078.335[0m [32mI [0msrv          init: running without SSL
+[34m0.00.078.364[0m [32mI [0msrv          init: using 23 threads for HTTP server
+[34m0.00.078.502[0m [32mI [0msrv         start: binding port with default address family
+[34m0.00.088.502[0m [32mI [0msrv  llama_server: loading model
+[34m0.00.088.530[0m [32mI [0msrv    load_model: loading model 'C:\Users\Crbd2\Desktop\Dissertation\Jetson-Nano-RAG-LLM\models\gemma-3-1b-it.Q4_K_M.gguf'
+[34m0.00.088.631[0m [32mI [0mcommon_init_result: fitting params to device memory ...
+[34m0.00.088.632[0m [32mI [0mcommon_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+[34m0.00.473.733[0m [32mI [0mcommon_params_fit_impl: projected to use 782 MiB of host memory vs. 32189 MiB of total host memory
+[34m0.00.829.440[0m [35mW load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.01.065.759[0m [35mW llama_context: n_ctx_seq (4096) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+[0m[34m0.01.084.140[0m [32mI [0msrv    load_model: initializing slots, n_slots = 1
+[34m0.01.284.656[0m [35mW common_speculative_init: no implementations specified for speculative decoding
+[0m[34m0.01.284.663[0m [32mI [0mslot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+[34m0.01.284.753[0m [32mI [0msrv    load_model: prompt cache is disabled - use `--cache-ram N` to enable it
+[34m0.01.284.753[0m [32mI [0msrv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+[34m0.01.284.754[0m [32mI [0msrv    load_model: context checkpoints disabled
+[34m0.01.284.793[0m [35mW srv          init: --cache-idle-slots requires --cache-ram, disabling
+[0m[34m0.01.287.915[0m [32mI [0minit: chat template, example_format: '<start_of_turn>user
+You are a helpful assistant
+
+Hello<end_of_turn>
+<start_of_turn>model
+Hi there<end_of_turn>
+<start_of_turn>user
+How are you?<end_of_turn>
+<start_of_turn>model
+'
+[34m0.01.289.185[0m [32mI [0msrv          init: init: chat template, thinking = 0
+[34m0.01.289.206[0m [32mI [0msrv  llama_server: model loaded
+[34m0.01.289.208[0m [32mI [0msrv  llama_server: server is listening on http://127.0.0.1:8080
+[34m0.01.289.213[0m [32mI [0msrv  update_slots: all slots are idle
+[34m0.02.508.477[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m0.02.508.655[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+[34m0.02.508.754[0m [32mI [0mslot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+[34m0.02.673.517[0m [32mI [0mslot print_timing: id  0 | task 0 | prompt eval time =     109.57 ms /    16 tokens (    6.85 ms per token,   146.03 tokens per second)
+[34m0.02.673.523[0m [32mI [0mslot print_timing: id  0 | task 0 |        eval time =      55.17 ms /     4 tokens (   13.79 ms per token,    72.50 tokens per second)
+[34m0.02.673.524[0m [32mI [0mslot print_timing: id  0 | task 0 |       total time =     164.74 ms /    20 tokens
+[34m0.02.673.525[0m [32mI [0mslot print_timing: id  0 | task 0 |    graphs reused =          2
+[34m0.02.673.544[0m [32mI [0mslot      release: id  0 | task 0 | stop processing: n_tokens = 19, truncated = 0
+[34m0.02.673.550[0m [32mI [0msrv  update_slots: all slots are idle

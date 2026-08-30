@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Retrieval can help a model access knowledge that is not stored in its parameters by leveraging the retrieval capabilities of the model itself. This is achieved through the use of a retriever component, which uses the input sequence to retrieve text documents and use them as additional context when generating the target sequence.\n\nHere's a rephrased version of the retrieved context combined with relevant parts:\n\nRetrieval can be used to update a model's knowledge base by accessing external knowledge sources, such as text documents. In the context of Retrieval-Augmented Generative Adversarial Networks (RAG), a retriever component is used to retrieve relevant text documents from a knowledge graph, which is then used as additional context when generating the target sequence.\n\nThe retriever component in RAG models is trained on a large dataset of text documents and uses this knowledge to retrieve relevant passages when generating the target sequence. This process is often referred to as \"knowledge retrieval\" or \"knowledge retrieval-based\" generation.\n\nThe use of"
+      }
+    }
+  ],
+  "created": 1781887458,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 436,
+    "total_tokens": 636,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-sQGlIvCxkVEhlm55ZscN5iYHcBPlKN5B",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 436,
+    "prompt_ms": 567.236,
+    "prompt_per_token_ms": 1.301,
+    "prompt_per_second": 768.6395080707149,
+    "predicted_n": 200,
+    "predicted_ms": 2677.987,
+    "predicted_per_token_ms": 13.389935000000001,
+    "predicted_per_second": 74.68296149309164
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 163,
+        "page": 18,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

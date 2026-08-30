@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "GGUF (Generalized GEMM) enables local model serving by enabling speculative decoding, which is a technique used to optimize the inference process by predicting the next token in the input sequence. This allows the model to skip over unnecessary computations and focus on the most relevant ones, leading to improved performance and efficiency."
+      }
+    }
+  ],
+  "created": 1781905955,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 63,
+    "prompt_tokens": 437,
+    "total_tokens": 500,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-l3g7eMAjSYYu75eeN41GBMn7t9F4FwJG",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 437,
+    "prompt_ms": 506.84,
+    "prompt_per_token_ms": 1.1598169336384438,
+    "prompt_per_second": 862.2050351195644,
+    "predicted_n": 63,
+    "predicted_ms": 637.868,
+    "predicted_per_token_ms": 10.12488888888889,
+    "predicted_per_second": 98.76651595627935
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 202,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 193,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

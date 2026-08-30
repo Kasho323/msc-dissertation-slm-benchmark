@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The retriever in a RAG pipeline is responsible for learning to retrieve relevant information for the task. It is evaluated through ablations where the retriever is frozen during training, and the results show that learned retrieval improves performance across all tasks."
+      }
+    }
+  ],
+  "created": 1782331251,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 49,
+    "prompt_tokens": 417,
+    "total_tokens": 466,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-A5hzp0dJ3kQwAbhqjOhGBzbYtkk9tQjp",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 417,
+    "prompt_ms": 762.097,
+    "prompt_per_token_ms": 1.8275707434052757,
+    "prompt_per_second": 547.1744410488428,
+    "predicted_n": 49,
+    "predicted_ms": 854.413,
+    "predicted_per_token_ms": 17.437,
+    "predicted_per_second": 57.34931467568962
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 46,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 21,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

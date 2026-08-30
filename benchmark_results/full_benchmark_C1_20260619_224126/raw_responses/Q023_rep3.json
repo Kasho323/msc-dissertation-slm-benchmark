@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "To consider trustworthiness in AI design and evaluation, it is essential to understand and treat the specific metrics related to AI trustworthiness characteristics. These characteristics are crucial in various aspects of AI systems, including social and organizational behavior, datasets used by AI systems, selection of AI models and algorithms, and decisions made by those who build them. Human judgment should be employed when deciding on the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics. These practices can enhance opportunities for informing contextually sensitive evaluations, and for identifying AI system benefits and positive impacts. Additionally, these practices can increase the likelihood that risks arising in social contexts are managed appropriately. Understanding and treating trustworthiness characteristics depends on an AI actor's particular role within the AI lifecycle. For any given AI system, an AI designer or developer should consider the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics. Addressing AI trustworthiness characteristics individually will not ensure AI system"
+      }
+    }
+  ],
+  "created": 1781906027,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 369,
+    "total_tokens": 569,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-rPWf0pn711IVY74N1bIyiYBQpKf90rbO",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 369,
+    "prompt_ms": 460.29,
+    "prompt_per_token_ms": 1.24739837398374,
+    "prompt_per_second": 801.6685133285537,
+    "predicted_n": 200,
+    "predicted_ms": 1689.832,
+    "predicted_per_token_ms": 8.449160000000001,
+    "predicted_per_second": 118.35496072982403
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 298,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 304,
+        "page": 18,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 299,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

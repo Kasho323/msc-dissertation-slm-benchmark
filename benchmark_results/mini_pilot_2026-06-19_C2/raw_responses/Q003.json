@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The question \"Why is provenance important in a question-answering system?\" can be answered in several ways, depending on the context and perspective. Here are a few possible rephrased versions:\n\n1. **Informed decision-making**: Provenance refers to the origin, history, and authenticity of information. In a question-answering system, having provenance ensures that the answers are not only accurate but also trustworthy. This is particularly important in fields like law, medicine, and science, where the accuracy of information can have significant consequences.\n\n2. **Trust and credibility**: Provenance helps build trust and credibility in a question-answering system. When users can verify the origin and history of an answer, they are more likely to accept it as reliable and trustworthy. This is essential in applications like Wikipedia, where the accuracy of information is crucial for maintaining the integrity of the platform.\n\n3. **Contextual understanding**: Provenance can also facilitate contextual understanding in"
+      }
+    }
+  ],
+  "created": 1781887439,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 489,
+    "total_tokens": 689,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-MQjRvfJ16IeLCMMnMvqj1nwMjANun1yd",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 489,
+    "prompt_ms": 659.844,
+    "prompt_per_token_ms": 1.3493742331288345,
+    "prompt_per_second": 741.0842562787567,
+    "predicted_n": 200,
+    "predicted_ms": 2743.774,
+    "predicted_per_token_ms": 13.718869999999999,
+    "predicted_per_second": 72.89230089650242
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 92,
+        "page": 10,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

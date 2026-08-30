@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The difference between generating from model parameters alone and generating with retrieved passages lies in the way the model incorporates external context. When generating from model parameters alone, the model relies solely on the parameters of the model to generate the output sequence. This means that the model does not use any external context or information beyond the input sequence. On the other hand, when generating with retrieved passages, the model uses the retrieved text documents as additional context when generating the target sequence. This means that the model incorporates external context beyond the input sequence, which can improve the quality and relevance of the generated output."
+      }
+    }
+  ],
+  "created": 1782338847,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 117,
+    "prompt_tokens": 449,
+    "total_tokens": 566,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-QrcgeSJKcjSqMKUtOfN9hsiH7lG6pp4T",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 449,
+    "prompt_ms": 1416.39,
+    "prompt_per_token_ms": 3.1545434298440984,
+    "prompt_per_second": 317.00308530842494,
+    "predicted_n": 117,
+    "predicted_ms": 2726.083,
+    "predicted_per_token_ms": 23.299854700854702,
+    "predicted_per_second": 42.91872257741235
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 10,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 20,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

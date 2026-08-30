@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "AI risk management is crucial when deploying AI systems because it helps organizations manage the risks associated with these systems. The context provided highlights that risk management is essential when developing, deploying, or using AI systems. It emphasizes that risk management is not just a theoretical concept but a practical necessity in the real world. The context also mentions that risk management can be complicated by how customers use or integrate third-party data or systems into AI products or services, particularly without sufficient internal governance structures and technical safeguards. The importance of risk management is underscored by the fact that all parties and AI actors should manage risk in the AI systems they develop, deploy, or use as standalone or integrated components."
+      }
+    }
+  ],
+  "created": 1781905737,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 135,
+    "prompt_tokens": 334,
+    "total_tokens": 469,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-e3Y7ZwYgb6j5rjufCm2AmuQkALmkBHAB",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 334,
+    "prompt_ms": 408.517,
+    "prompt_per_token_ms": 1.2231047904191616,
+    "prompt_per_second": 817.5914343833917,
+    "predicted_n": 135,
+    "predicted_ms": 1138.008,
+    "predicted_per_token_ms": 8.429688888888888,
+    "predicted_per_second": 118.62834004681865
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 258,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 275,
+        "page": 13,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

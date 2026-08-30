@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "In a RAG pipeline, the retriever plays a crucial role in selecting relevant information for the task. It helps in identifying the most pertinent documents that are essential for generating an accurate response. By using retrieval supervision on datasets like Natural Questions and TriviaQA, the retriever improves the performance of the RAG system."
+      }
+    }
+  ],
+  "created": 1782331334,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 65,
+    "prompt_tokens": 417,
+    "total_tokens": 482,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-YFaLbKdVolV7XoC8c4KtQKcTLDDsDcQR",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 417,
+    "prompt_ms": 1698.025,
+    "prompt_per_token_ms": 4.072002398081535,
+    "prompt_per_second": 245.57942315336933,
+    "predicted_n": 65,
+    "predicted_ms": 1791.009,
+    "predicted_per_token_ms": 27.553984615384614,
+    "predicted_per_second": 36.29239160718902
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 46,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 21,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

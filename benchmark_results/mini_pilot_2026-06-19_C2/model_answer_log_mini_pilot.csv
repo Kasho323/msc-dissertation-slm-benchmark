@@ -1,0 +1,36 @@
+run_id,model_config_id,question_id,repetition,question_text,generated_answer,sources_returned,latency_seconds,time_to_first_token_seconds,tokens_generated,tokens_per_second,peak_memory_mb,error_notes
+MINI_C2_20260619_174335,C2,Q001,1,What problem does retrieval-augmented generation try to address in knowledge-intensive NLP tasks?,"Question: Retrieval-augmented generation is an approach used in knowledge-intensive NLP tasks to improve performance by leveraging the stored factual knowledge in pre-trained language models.
+
+Answer: Retrieval-augmented generation is an approach used in knowledge-intensive NLP tasks to improve performance by leveraging the stored factual knowledge in pre-trained language models.","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 0, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 148, ""page"": 17, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",3.7792,,67,76.42042181791636,877.7,
+MINI_C2_20260619_174335,C2,Q002,1,How does RAG combine parametric memory and non-parametric memory?,"RAG (Retrieval-Augmented Generative Adversarial Network) combines parametric and non-parametric memory in the following way:
+
+RAG models use both parametric and non-parametric memory in their architecture. The parametric memory is used to learn latent retrieval, which is a way of representing the content of the retrieved item in a way that can be used to generate new text. This latent retrieval is learned from scratch for specific tasks, such as memory networks.
+
+The non-parametric memory, on the other hand, is used to aggregate content from multiple pieces of retrieved content. This non-parametric memory is not learned from scratch, but rather is a learned representation of the aggregated content.
+
+In other words, RAG models use parametric memory to learn the underlying structure of the retrieved item, and non-parametric memory to aggregate content from multiple sources and represent it in a way that can be used to generate new text.
+
+This combination of parametric and non-parametric memory allows RAG","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 12, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 84, ""page"": 9, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.6384,,200,71.6328016627406,880.93,
+MINI_C2_20260619_174335,C2,Q003,1,Why is provenance important in a question-answering system?,"The question ""Why is provenance important in a question-answering system?"" can be answered in several ways, depending on the context and perspective. Here are a few possible rephrased versions:
+
+1. **Informed decision-making**: Provenance refers to the origin, history, and authenticity of information. In a question-answering system, having provenance ensures that the answers are not only accurate but also trustworthy. This is particularly important in fields like law, medicine, and science, where the accuracy of information can have significant consequences.
+
+2. **Trust and credibility**: Provenance helps build trust and credibility in a question-answering system. When users can verify the origin and history of an answer, they are more likely to accept it as reliable and trustworthy. This is essential in applications like Wikipedia, where the accuracy of information is crucial for maintaining the integrity of the platform.
+
+3. **Contextual understanding**: Provenance can also facilitate contextual understanding in","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 92, ""page"": 10, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 41, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.6122,,200,72.89230089650242,886.97,
+MINI_C2_20260619_174335,C2,Q004,1,What is the role of the retriever in a RAG pipeline?,"The role of the retriever in a RAG (Relevance-Aware Generator) pipeline is crucial for achieving strong results without expensive, specialized salient span masking pre-training. The retriever is responsible for retrieving relevant information for the task, which is essential for the generator to produce accurate and informative outputs.
+
+In a RAG pipeline, the retriever is typically used to retrieve documents or other relevant information that can be used to answer a question or complete a task. This process involves identifying the most relevant information from a large corpus of text, which is then used to inform the generator's output.
+
+The retriever in RAG is initialized using a different approach than other models, such as DPR (Deep Predictive Reader), which uses retrieval supervision on Natural Questions and TriviaQA. Instead, the retriever is trained using retrieval supervision on Natural Questions and TriviaQA, which allows it to learn to retrieve relevant information for the task.
+
+The retriever is also compared to a word overlap-based RAG","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 46, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 65, ""page"": 7, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 21, ""page"": 3, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.4328,,200,75.56619863482105,888.76,
+MINI_C2_20260619_174335,C2,Q005,1,How can retrieval help a model access knowledge that is not stored in its parameters?,"Retrieval can help a model access knowledge that is not stored in its parameters by leveraging the retrieval capabilities of the model itself. This is achieved through the use of a retriever component, which uses the input sequence to retrieve text documents and use them as additional context when generating the target sequence.
+
+Here's a rephrased version of the retrieved context combined with relevant parts:
+
+Retrieval can be used to update a model's knowledge base by accessing external knowledge sources, such as text documents. In the context of Retrieval-Augmented Generative Adversarial Networks (RAG), a retriever component is used to retrieve relevant text documents from a knowledge graph, which is then used as additional context when generating the target sequence.
+
+The retriever component in RAG models is trained on a large dataset of text documents and uses this knowledge to retrieve relevant passages when generating the target sequence. This process is often referred to as ""knowledge retrieval"" or ""knowledge retrieval-based"" generation.
+
+The use of","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 5, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 163, ""page"": 18, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.4386,,200,74.68296149309164,889.47,

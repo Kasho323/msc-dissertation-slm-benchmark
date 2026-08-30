@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG (Reversible and Adaptive Generations) adds a significant amount of diversity to a standard language generation system by introducing more diverse retrieval mechanisms. The system is more effective in generating responses that are more specific and factually accurate compared to a state-of-the-art generation model. This is demonstrated through the use of a word overlap-based comparison, where the model is more factual in only 7.1% of cases, while the model is more factual in 42.7% of cases, and both the models are factual in a further 17% of cases, showing the effectiveness of RAG on the task over a state-of-the-art generation model. Additionally, the model is more specific and factually accurate in generating responses for Jeopardy generation tasks, where it is able to generate responses more effectively than the BART model, demonstrating its effectiveness in specific language generation tasks."
+      }
+    }
+  ],
+  "created": 1782335821,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 180,
+    "prompt_tokens": 431,
+    "total_tokens": 611,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-D28KU201qkXKhmgE60YKWNjBI4BtO9bh",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 431,
+    "prompt_ms": 1032.935,
+    "prompt_per_token_ms": 2.3966009280742457,
+    "prompt_per_second": 417.2576202762032,
+    "predicted_n": 180,
+    "predicted_ms": 2101.922,
+    "predicted_per_token_ms": 11.677344444444445,
+    "predicted_per_second": 85.63590846853499
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 53,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 59,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

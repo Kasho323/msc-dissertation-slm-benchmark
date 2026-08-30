@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The main difference between generating from model parameters alone and generating with retrieved passages in the context of Retrieval-Augmented Generation (RAG) models lies in the way the model's knowledge is updated as the world changes.\n\n**Model Parameters Alone:**\n\nWhen generating from model parameters alone, the model's knowledge is updated based on the current training data. The model's parameters are updated through backpropagation and optimization, which means that the model's knowledge is updated based on the data it has seen so far.\n\n**Retrieved Passages:**\n\nIn contrast, when generating with retrieved passages, the model's knowledge is updated by leveraging the retrieved passages. The model uses the retrieved passages as additional context to generate the output sequence. The retrieved passages are treated as a single latent variable that is marginalized to get the sequence probability.\n\n**Key Differences:**\n\nThe key differences between these two approaches are:\n\n1. **Data-Driven vs. Model-Driven**: Model parameters alone are driven by the data, while retrieved"
+      }
+    }
+  ],
+  "created": 1781906617,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 467,
+    "total_tokens": 667,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-aXxCfVSFgt92nii3wszUiHLcCUdrhr3x",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 467,
+    "prompt_ms": 574.029,
+    "prompt_per_token_ms": 1.2291841541755888,
+    "prompt_per_second": 813.5477475876655,
+    "predicted_n": 200,
+    "predicted_ms": 3157.487,
+    "predicted_per_token_ms": 15.787435,
+    "predicted_per_second": 63.34151177819576
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 10,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 20,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

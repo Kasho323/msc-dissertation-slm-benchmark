@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Based on the provided context, it seems that the main issue is related to the limitations of the deployment of a particular system or method, particularly in relation to local inference and privacy attacks. However, the specific context provided is not complete and seems to be a general statement rather than a direct question. \n\nTo be more precise, the context suggests that there is a challenge in the deployment of a particular system or method, particularly in relation to local inference and privacy attacks. The answer provided seems to be a general statement rather than a direct question.\n\nThis context appears to be a general statement rather than a direct question, and the answer provided seems to be a general statement rather than a direct question. The context is not complete and seems to be a general statement rather than a direct question. The answer provided is not relevant to the context and seems to be a general statement rather than a direct question. The context and answer do not match and are not relevant to the question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question. The context and answer are not relevant and seem to be a general statement rather than a direct question"
+      }
+    }
+  ],
+  "created": 1782335924,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 324,
+    "total_tokens": 836,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-G498VbINLbJVTR9jZFCjEwzpCFlPKnVU",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 324,
+    "prompt_ms": 794.473,
+    "prompt_per_token_ms": 2.452077160493827,
+    "prompt_per_second": 407.81750921680157,
+    "predicted_n": 512,
+    "predicted_ms": 6734.315,
+    "predicted_per_token_ms": 13.152958984375,
+    "predicted_per_second": 76.02851960444382
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 690,
+        "page": 23,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 594,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 653,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Risk management helps frame deployment practicality by ensuring that AI systems are developed and deployed in a way that minimizes potential negative impacts while maximizing positive ones. By addressing, documenting, and managing AI risks and potential negative impacts effectively, organizations can create more trustworthy AI systems. This involves assessing the trustworthiness of each AI system, prioritizing resources based on risk level and impact, and allocating resources accordingly. Additionally, it is important to continuously monitor and adapt to evolving methods, contexts, risks, and needs or expectations from relevant AI actors. This ongoing process helps ensure that AI systems remain practical and effective as they evolve over time."
+      }
+    }
+  ],
+  "created": 1782338645,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 126,
+    "prompt_tokens": 364,
+    "total_tokens": 490,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-HKq5Lqq5EcSAf5Iv3IooY94aUIBXI9cN",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 364,
+    "prompt_ms": 1169.671,
+    "prompt_per_token_ms": 3.213381868131868,
+    "prompt_per_second": 311.1986190988748,
+    "predicted_n": 126,
+    "predicted_ms": 2854.447,
+    "predicted_per_token_ms": 22.65434126984127,
+    "predicted_per_second": 44.14164985371948
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 248,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 273,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

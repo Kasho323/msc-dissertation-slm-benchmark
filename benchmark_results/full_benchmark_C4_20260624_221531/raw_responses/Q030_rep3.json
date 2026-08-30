@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The question asks about what data protection principles are relevant to AI systems, and the answer is that these principles are relevant to AI systems. However, the context provided does not include any specific principles or guidelines that are relevant to AI systems. Instead, it seems to be a general overview of how AI systems might be adopted and managed, without delving into the specifics of data protection principles. The context focuses on the overall approach to AI systems, including ensuring that all functions and those responsible for its development, testing, validation, deployment, and monitoring are adequately trained to understand the statistical accuracy requirements and measures; ensuring that data is clearly labelled as inferences and predictions, and is not claimed to be factual; and managing trade-offs and reasonable expectations. It also mentions adopting common principles and ensuring ICOs AI guidance is user-friendly, reduces the burden of compliance for organisations and reflects upcoming changes in relation to AI regulation and data protection. However, the context does not provide a direct answer to the question of what data protection principles are relevant to AI systems. The context seems to be more of a general overview of how AI systems might be adopted and managed, rather than a specific set of principles."
+      }
+    }
+  ],
+  "created": 1782336826,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 237,
+    "prompt_tokens": 353,
+    "total_tokens": 590,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-EwbPf6cCnGQeScaGBsHIzYe8lJI4VP2v",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 353,
+    "prompt_ms": 879.533,
+    "prompt_per_token_ms": 2.4915949008498584,
+    "prompt_per_second": 401.34935244044283,
+    "predicted_n": 237,
+    "predicted_ms": 3299.417,
+    "predicted_per_token_ms": 13.921590717299578,
+    "predicted_per_second": 71.83087193889102
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 593,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 491,
+        "page": 1,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 600,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

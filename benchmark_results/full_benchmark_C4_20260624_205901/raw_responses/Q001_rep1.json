@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "    The problem that retrieval-augmented generation is trying to address in knowledge-intensive NLP tasks is the improvement of performance across a variety of downstream NLP tasks when retrieval is considered as an entity. This includes tasks such as open-domain question answering, fact checking, fact completion, long-form question answering, Wikipedia article generation, dialogue, translation, and language modeling. The specific example provided is the implementation of retrieval in large pre-trained language models, and the performance is shown to be state-of-the-art when ne-tuned on downstream NLP tasks."
+      }
+    }
+  ],
+  "created": 1782331154,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 111,
+    "prompt_tokens": 469,
+    "total_tokens": 580,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-mdnrhRL9I9PjXUiZAXVp9qfX7cZ2eP4G",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 469,
+    "prompt_ms": 1173.617,
+    "prompt_per_token_ms": 2.5023816631130065,
+    "prompt_per_second": 399.6192965848314,
+    "predicted_n": 111,
+    "predicted_ms": 1731.75,
+    "predicted_per_token_ms": 15.60135135135135,
+    "predicted_per_second": 64.09701169337376
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 148,
+        "page": 17,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

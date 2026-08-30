@@ -1,0 +1,35 @@
+# This repository is a whitelist. Everything is ignored by default and only the
+# material listed in Appendix G of the dissertation is tracked. Paths below are
+# relative to dissertation_project/, matching the appendix.
+#
+# Deliberately excluded:
+#   literature source PDFs   downloaded papers and example theses; third-party copyright
+#   course_official/         university regulations and marking criteria; not mine to publish
+#   planning drafts          chapter drafts; the submitted PDF is the deliverable
+#   model weights            identified instead by SHA-256 in Appendix A
+
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/benchmark_plan/
+!/benchmark_results/
+!/literature/
+!/planning/
+
+# literature: written records only, never the downloaded source PDFs
+/literature/*
+!/literature/*.md
+
+# planning: the official word-count script only
+/planning/*
+!/planning/wordcount_official.py
+
+__pycache__/
+*.pyc
+*.gguf
+~$*
+
+# working backups, not part of the record
+_backup_*
+*.BAK-*

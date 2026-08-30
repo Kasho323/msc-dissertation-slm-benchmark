@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG adds a key feature to standard language generation systems: it learns to retrieve relevant information for the task. This retrieval process improves the system’s performance significantly, as demonstrated by Ablations where the retriever is frozen during training.  The results show that RAG models, particularly the dense retriever, are more factually accurate than BART, with a higher percentage of accurate responses (17%) compared to 42.7% for BART.  Furthermore, evaluators consistently find RAG generations to be more specific and accurate.  The retrieval mechanism is crucial because it allows the model to focus on the most relevant information, leading to better responses, especially in tasks like Jeopardy generation where information is often presented as separate pieces."
+      }
+    }
+  ],
+  "created": 1781908160,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 147,
+    "prompt_tokens": 423,
+    "total_tokens": 570,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-VzZEhlmNGvzKPVOr3IPLp5vVpzc8euCm",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 423,
+    "prompt_ms": 810.638,
+    "prompt_per_token_ms": 1.9164018912529552,
+    "prompt_per_second": 521.8112153637012,
+    "predicted_n": 147,
+    "predicted_ms": 2436.905,
+    "predicted_per_token_ms": 16.577585034013605,
+    "predicted_per_second": 60.322417164395
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 53,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 59,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

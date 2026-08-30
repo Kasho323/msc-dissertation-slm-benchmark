@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Grounding an answer in retrieved evidence is useful for reducing unsupported claims because it ensures that the information used to support a claim is accurate and relevant. When retrieval supervision signals are not available, models that do not require such supervision can be more applicable to a wider range of tasks. In some real-world applications, such as medical diagnostic tools, the ground truth may be unattainable due to factors like the lack of high-quality test data or subjective predictions. This can lead to misconstrued statistical accuracy. Additionally, if the processing of incorrect inference may have an impact on individuals, an individual may request additional information to counter the incorrect inference, ensuring that any decisions based on the potentially incorrect inference are informed by any evidence that it may be wrong. The UK GDPR mentions statistical accuracy, emphasizing the importance of ensuring that the data used to support claims is reliable and relevant."
+      }
+    }
+  ],
+  "created": 1782338876,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 174,
+    "prompt_tokens": 398,
+    "total_tokens": 572,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-RiqbePAjfkQ5IE688lrxhTmmrNHoEWsu",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 398,
+    "prompt_ms": 1243.002,
+    "prompt_per_token_ms": 3.1231206030150753,
+    "prompt_per_second": 320.19256606184064,
+    "predicted_n": 174,
+    "predicted_ms": 4325.899,
+    "predicted_per_token_ms": 24.86148850574713,
+    "predicted_per_second": 40.22285309943667
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 44,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 584,
+        "page": 13,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 570,
+        "page": 11,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

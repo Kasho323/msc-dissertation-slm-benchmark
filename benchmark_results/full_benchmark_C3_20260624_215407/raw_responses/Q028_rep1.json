@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Risk management plays a crucial role in helping organizations effectively frame the practical deployment of AI systems. It focuses on minimizing potential negative impacts – both threats to civil liberties and rights and opportunities for positive impact – that AI systems might pose.  Specifically, risk management helps organizations prioritize and allocate resources based on the assessed risk level and potential impact of each AI system. It encourages a systematic approach to understanding and addressing risks, impacts, and harms, ensuring that resources are directed towards the most critical areas.  Furthermore, it emphasizes the need to continually apply the MANAGE function – which includes assessing trustworthiness, potential risks, needs, and expectations – as AI actors evolve over time."
+      }
+    }
+  ],
+  "created": 1782334726,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 133,
+    "prompt_tokens": 350,
+    "total_tokens": 483,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Arv3Tnkoy25v3jeHzci96Wj0FpLmAhcV",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 350,
+    "prompt_ms": 733.985,
+    "prompt_per_token_ms": 2.0971,
+    "prompt_per_second": 476.8489819274236,
+    "predicted_n": 133,
+    "predicted_ms": 2007.47,
+    "predicted_per_token_ms": 15.09375939849624,
+    "predicted_per_second": 66.25254673793381
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 248,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 273,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

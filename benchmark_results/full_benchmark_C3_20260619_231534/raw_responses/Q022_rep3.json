@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "AI risk management is crucial because it’s incumbent on Framework users to continually apply the MANAGE function to deployed AI systems as evolving contexts, risks, and needs from relevant AI actors change. It’s important to ensure that risk measurement and management is complicated by how customers integrate third-party data or systems, particularly without sufficient internal governance and technical safeguards.  Ultimately, organizations should cease development and deployment until risks are sufficiently managed.  Furthermore, risk prioritization can differ significantly depending on whether an AI system is designed to directly interact with humans versus not."
+      }
+    }
+  ],
+  "created": 1781908267,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 111,
+    "prompt_tokens": 328,
+    "total_tokens": 439,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-FOjveRRmJXmnRuq5mCcsvT8WOIqEtU3Q",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 328,
+    "prompt_ms": 668.793,
+    "prompt_per_token_ms": 2.0390030487804878,
+    "prompt_per_second": 490.43575515892064,
+    "predicted_n": 111,
+    "predicted_ms": 1963.713,
+    "predicted_per_token_ms": 17.691108108108107,
+    "predicted_per_second": 56.525571710326304
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 258,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 275,
+        "page": 13,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

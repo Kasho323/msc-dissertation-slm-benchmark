@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "AI risk management is crucial because it’s incumbent on Framework users to continue applying the MANAGE function to deployed AI systems as evolving contexts, risks, and needs from relevant AI actors change. It’s important to manage risk in AI systems, especially considering how customers integrate third-party data and systems, and that integration can be complex.  Furthermore, organizations must track emergent risks – meaning, risks that arise during development and deployment.  Ultimately, it’s necessary to cease development and deployment until risks can be sufficiently managed, and prioritizing risk should differ based on whether the AI system interacts directly with humans versus not."
+      }
+    }
+  ],
+  "created": 1781907528,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 125,
+    "prompt_tokens": 328,
+    "total_tokens": 453,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-60eyUwtLlwhKGGpe1VFzXhBjKXnw39YE",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 328,
+    "prompt_ms": 675.931,
+    "prompt_per_token_ms": 2.060765243902439,
+    "prompt_per_second": 485.256631224193,
+    "predicted_n": 125,
+    "predicted_ms": 1881.032,
+    "predicted_per_token_ms": 15.048255999999999,
+    "predicted_per_second": 66.4528833108634
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 258,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 275,
+        "page": 13,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

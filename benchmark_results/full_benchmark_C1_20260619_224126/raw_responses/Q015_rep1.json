@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The purpose of running llama-server is to enable LLM inference with minimal setup and state-of-the-art performance on a wide range of models."
+      }
+    }
+  ],
+  "created": 1781905399,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 29,
+    "prompt_tokens": 472,
+    "total_tokens": 501,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-kJ0AVMBOnodfU75lDi8mcfnwVXYmXK2T",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 472,
+    "prompt_ms": 543.728,
+    "prompt_per_token_ms": 1.1519661016949152,
+    "prompt_per_second": 868.081099373216,
+    "predicted_n": 29,
+    "predicted_ms": 208.113,
+    "predicted_per_token_ms": 7.176310344827586,
+    "predicted_per_second": 139.3473737825124
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 201,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 194,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

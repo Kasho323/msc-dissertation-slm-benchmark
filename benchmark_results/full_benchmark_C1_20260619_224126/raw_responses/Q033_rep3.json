@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Accuracy and statistical accuracy are crucial in the context of AI outputs because they are essential for ensuring that the outputs are reliable, fair, and compliant with legal and ethical standards. The accuracy of an AI system's outputs is critical because it determines whether the data it generates is accurate and reliable. A system that is not accurate can lead to incorrect predictions or decisions, which can have serious consequences. On the other hand, an accurate AI system can provide valuable insights and predictions that can be used to make informed decisions. Therefore, the accuracy of an AI system's outputs is important for ensuring that the data it generates is reliable and fair."
+      }
+    }
+  ],
+  "created": 1781906096,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 126,
+    "prompt_tokens": 379,
+    "total_tokens": 505,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-1QQkzExriBbs9S97HnRIjeVwu8EkOrR4",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 379,
+    "prompt_ms": 488.295,
+    "prompt_per_token_ms": 1.288377308707124,
+    "prompt_per_second": 776.1701430487716,
+    "predicted_n": 126,
+    "predicted_ms": 1172.099,
+    "predicted_per_token_ms": 9.302373015873016,
+    "predicted_per_second": 107.49945183811266
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 567,
+        "page": 11,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 568,
+        "page": 11,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 574,
+        "page": 12,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Technical deployment choices in AI systems can significantly impact privacy and data protection concerns. Here's how:\n\n1. **Data Collection and Storage**: The type of data collected, stored, and processed can affect privacy. For instance, collecting sensitive information like biometric data, financial information, or personal identifiable information (PII) may raise concerns about data protection and privacy.\n2. **Model Training and Deployment**: The way AI models are trained and deployed can impact privacy. For example, using data that is not anonymized or aggregated can lead to the exposure of personal data.\n3. **Model Serving and Deployment**: The location and infrastructure where AI models are deployed can also impact privacy. For instance, deploying models on cloud services or edge devices may raise concerns about data protection and privacy.\n4. **User Interface and Experience**: The design of user interfaces and experiences can also impact privacy. For example, using user data to personalize ads or recommending products based on user behavior can raise concerns about data protection and privacy.\n"
+      }
+    }
+  ],
+  "created": 1781906556,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 380,
+    "total_tokens": 580,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Hayw3eTTq7l0kAtHZR7ozXLx7xX7xgg4",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 380,
+    "prompt_ms": 453.303,
+    "prompt_per_token_ms": 1.1929026315789473,
+    "prompt_per_second": 838.2913856736003,
+    "predicted_n": 200,
+    "predicted_ms": 2541.996,
+    "predicted_per_token_ms": 12.70998,
+    "predicted_per_second": 78.67832994229731
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 335,
+        "page": 22,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 334,
+        "page": 22,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 654,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

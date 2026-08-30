@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "It is useful to separate technical performance from broader trust and governance concerns because technical performance is a critical aspect of AI systems, but it is also influenced by broader trust and governance concerns. Technical performance refers to the operational efficiency and accuracy of AI systems, while broader trust and governance concerns involve the ethical, social, and organizational behavior of AI systems. Separating these concerns allows organizations to focus on the specific metrics and metrics related to AI trustworthiness characteristics, which are crucial for ensuring the reliability and trustworthiness of AI systems."
+      }
+    }
+  ],
+  "created": 1782332363,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 106,
+    "prompt_tokens": 365,
+    "total_tokens": 471,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-WPAeBgJnBRprNjkyrCvxl4NbnTZujVbZ",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 365,
+    "prompt_ms": 527.657,
+    "prompt_per_token_ms": 1.4456356164383564,
+    "prompt_per_second": 691.7372459760792,
+    "predicted_n": 106,
+    "predicted_ms": 1088.452,
+    "predicted_per_token_ms": 10.268415094339623,
+    "predicted_per_second": 97.38601242866015
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 226,
+        "page": 5,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 379,
+        "page": 30,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 298,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Risks to individuals, organizations, and society should be considered separately for several reasons:\n\n1. **Contextual differences**: Each entity has unique needs, priorities, and circumstances that influence their risk tolerances. For instance, an organization may have a different risk tolerance than an individual or society due to their organizational structure, resources, and goals.\n\n2. **Risk management approaches**: Risk management strategies and approaches may vary between individuals, organizations, and society. For example, an organization may have a more formalized risk management process, while an individual may rely on personal experience and intuition.\n\n3. **Emerging knowledge and mitigation**: The development of AI systems and the associated risks is a rapidly evolving field. As new knowledge and technologies emerge, risk tolerances may change, and existing risk management approaches may need to be updated or adapted.\n\n4. **Regulatory and legal requirements**: Different sectors, industries, and organizations may have distinct regulatory and legal requirements that need to be considered when assessing risks. For instance"
+      }
+    }
+  ],
+  "created": 1781906778,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 398,
+    "total_tokens": 598,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-9KRC0yc5YaOvm7NRCkNR5YuPo5H19ifl",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 398,
+    "prompt_ms": 521.702,
+    "prompt_per_token_ms": 1.3108090452261307,
+    "prompt_per_second": 762.8876255026817,
+    "predicted_n": 200,
+    "predicted_ms": 2472.557,
+    "predicted_per_token_ms": 12.362784999999999,
+    "predicted_per_second": 80.88792290733844
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 250,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 268,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 270,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

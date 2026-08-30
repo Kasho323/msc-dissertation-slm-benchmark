@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Running llama-server is the primary purpose of the tool, as it allows for the creation of an HTTP server for serving LLMs. The server is designed to be lightweight, compatible with OpenAI's API, and accessible via a web browser. It also supports multiple users and parallel decoding, enabling efficient processing of multiple requests simultaneously. The server's capabilities include a chat completion endpoint for real-time communication and the ability to run multiple models concurrently, each with a maximum context size of 4096."
+      }
+    }
+  ],
+  "created": 1781905689,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 102,
+    "prompt_tokens": 472,
+    "total_tokens": 574,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-bnWvM92paaiMr8utybT4n3FftP0NUFKt",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 472,
+    "prompt_ms": 547.582,
+    "prompt_per_token_ms": 1.1601313559322033,
+    "prompt_per_second": 861.971357714461,
+    "predicted_n": 102,
+    "predicted_ms": 904.76,
+    "predicted_per_token_ms": 8.870196078431372,
+    "predicted_per_second": 112.73707944648305
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 201,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 194,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

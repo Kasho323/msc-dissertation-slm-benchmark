@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "According to the provided context, the relevant data protection principles for AI systems are:\n\n*   **Ensuring adequate training for individuals responsible for development, testing, validation, deployment, and monitoring:** This emphasizes the need to train those involved in AI systems to understand the statistical accuracy requirements and measures.\n*   **Clearly labelling inferences and predictions as such:** This is crucial for transparency and accountability.\n*   **Managing trade-offs and reasonable expectations:** This highlights the importance of considering the potential consequences of AI systems.\n*   **Adopting a common and opportunities presented by AI:** This acknowledges the need to be aware of and engage with the evolving landscape of AI.\n\nThe context also suggests that the ICO (Information Commissioner’s Office) is focusing on providing user-friendly guidance for AI compliance and reflecting upcoming changes in AI regulation and data protection."
+      }
+    }
+  ],
+  "created": 1781908343,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 173,
+    "prompt_tokens": 350,
+    "total_tokens": 523,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Jrz4HHrQSmj6cuymYHnnSAEdg3EOrBLM",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 350,
+    "prompt_ms": 795.19,
+    "prompt_per_token_ms": 2.2719714285714288,
+    "prompt_per_second": 440.1463801104139,
+    "predicted_n": 173,
+    "predicted_ms": 2918.594,
+    "predicted_per_token_ms": 16.870485549132948,
+    "predicted_per_second": 59.27511671715901
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 593,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 491,
+        "page": 1,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 600,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

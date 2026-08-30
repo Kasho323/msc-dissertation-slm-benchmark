@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The dissertation conclusion should be a conditional recommendation rather than a single universal winner because it allows for flexibility and consideration of various factors. This approach is more realistic and practical, as it acknowledges that different situations may require different approaches or recommendations."
+      }
+    }
+  ],
+  "created": 1782337619,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 47,
+    "prompt_tokens": 463,
+    "total_tokens": 510,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-VMIBvz0xru1giId1Q8Wb0TapwlG4JnoX",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 463,
+    "prompt_ms": 788.955,
+    "prompt_per_token_ms": 1.7040064794816416,
+    "prompt_per_second": 586.8522285808442,
+    "predicted_n": 47,
+    "predicted_ms": 733.514,
+    "predicted_per_token_ms": 15.60668085106383,
+    "predicted_per_second": 64.07512331052986
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 160,
+        "page": 18,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

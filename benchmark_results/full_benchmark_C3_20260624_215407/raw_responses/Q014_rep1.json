@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Quantization is a key technique used to improve LLM inference speed and reduce memory footprint. It involves reducing the precision of the numbers used to represent the model's weights and activations. Specifically, it’s implemented in various bit depths – 1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit – which allows for faster processing and reduced memory requirements.\n\nHere’s a breakdown of how it achieves this:\n\n*   **Faster Inference:** Lower bit depths require less computation, leading to quicker model execution.\n*   **Reduced Memory Use:** By using fewer bits per value, the model’s memory footprint is significantly reduced, allowing for larger models to run on devices with limited memory.\n\nEssentially, quantisation transforms the model into a more compact representation, enabling it to perform better with less computational power."
+      }
+    }
+  ],
+  "created": 1782334580,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 190,
+    "prompt_tokens": 486,
+    "total_tokens": 676,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-uzOnGJ0BgPt41hloXHg3FhqBEfpDFIiT",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 486,
+    "prompt_ms": 914.21,
+    "prompt_per_token_ms": 1.881090534979424,
+    "prompt_per_second": 531.606523665241,
+    "predicted_n": 190,
+    "predicted_ms": 2524.973,
+    "predicted_per_token_ms": 13.289331578947369,
+    "predicted_per_second": 75.24832938807663
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 176,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

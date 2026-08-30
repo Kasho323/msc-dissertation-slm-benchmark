@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The hardware or backend options described as relevant to llama.cpp deployment include:\n\n- Vulkan\n- CANN (Chiplet Accelerated Neural Network)\n- OpenCL\n- IBM zDNN\n- WebGPU\n- VirtGPU\n- Snapdragon\n- VirtGPU APIR\n- Hexagon (In Progress)\n- IBM Z & LinuxONE\n\nThese options are mentioned in the context as potential hardware or backend configurations that can be used with llama.cpp."
+      }
+    }
+  ],
+  "created": 1782337419,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 91,
+    "prompt_tokens": 431,
+    "total_tokens": 522,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-r26cIWfqsiabUxlG5WdcUVnKAy3bwyxW",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 431,
+    "prompt_ms": 740.978,
+    "prompt_per_token_ms": 1.7192064965197216,
+    "prompt_per_second": 581.663693119094,
+    "predicted_n": 91,
+    "predicted_ms": 1406.354,
+    "predicted_per_token_ms": 15.45443956043956,
+    "predicted_per_second": 64.70632571884461
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 192,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 173,
+        "page": 1,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

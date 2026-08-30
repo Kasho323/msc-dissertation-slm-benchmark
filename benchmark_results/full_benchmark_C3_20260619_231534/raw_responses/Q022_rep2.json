@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "AI risk management is crucial because it’s incumbent on Framework users to continue applying the MANAGE function to deployed AI systems as evolving AI actors and contexts change. It’s important to manage risks associated with these systems, particularly because AI systems may not always be transparent about the risk metrics they used.  Furthermore, integrating third-party data and systems into AI products or services can complicate risk measurement and management, especially without adequate internal governance and technical safeguards.  Ultimately, organizations should cease development and deployment until risks are sufficiently managed.  Prioritization of risk management should differ based on whether the AI system directly interacts with humans versus not."
+      }
+    }
+  ],
+  "created": 1781907896,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 128,
+    "prompt_tokens": 328,
+    "total_tokens": 456,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-alP6MHAvdw503wFZSrARIMi8hjohyFsE",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 328,
+    "prompt_ms": 694.972,
+    "prompt_per_token_ms": 2.1188170731707316,
+    "prompt_per_second": 471.9614603178258,
+    "predicted_n": 128,
+    "predicted_ms": 2135.635,
+    "predicted_per_token_ms": 16.6846484375,
+    "predicted_per_second": 59.935335392049666
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 416,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 258,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 275,
+        "page": 13,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

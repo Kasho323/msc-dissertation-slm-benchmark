@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG (Relevance-Aware Generation) is a more diverse and effective generation model compared to RAG-Tokens and BART (Bidirectional Transformers for Attention). \n\nRAG is particularly effective in tasks that require retrieving relevant information for the task, such as Jeopardy questions. It achieves this by learning to retrieve the most relevant information from a large corpus of documents, which enables it to generate more accurate and factually correct responses.\n\nIn contrast, RAG-Tokens and BART are more diverse than RAG because they do not require the same level of retrieval mechanism. RAG-Tokens are a type of language model that can generate text based on a given input, but they do not require the same level of retrieval as RAG. BART, on the other hand, is a state-of-the-art generation model that can generate text based on a given input, but it also requires some form of retrieval mechanism.\n\nThe key feature of RAG is its ability to learn to retrieve relevant"
+      }
+    }
+  ],
+  "created": 1781906304,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 448,
+    "total_tokens": 648,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-8X4puZhrg3R8cq43Qbs80HraWd9Unbi4",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 448,
+    "prompt_ms": 547.583,
+    "prompt_per_token_ms": 1.222283482142857,
+    "prompt_per_second": 818.1408115299416,
+    "predicted_n": 200,
+    "predicted_ms": 2766.484,
+    "predicted_per_token_ms": 13.832419999999999,
+    "predicted_per_second": 72.2939297678931
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 53,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 59,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

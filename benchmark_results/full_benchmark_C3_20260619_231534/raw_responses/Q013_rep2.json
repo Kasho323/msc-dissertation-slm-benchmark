@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "GGUF enables local model serving by providing a framework for running LLM models with minimal setup and state-of-the-art performance on a wide range of devices. It allows you to use models from Hugging Face or other model hosting sites, by utilizing the `-hf` option to specify the model format.\n\nHere’s a breakdown of what it does:\n\n*   **Model Format:** GGUF is a format specifically designed for LLM inference, making it easier to deploy and run models locally.\n*   **Minimal Setup:** It simplifies the process of getting and running LLMs, reducing the need for complex configurations.\n*   **State-of-the-art Performance:** It’s designed to deliver excellent performance, often approaching that of server-side models.\n*   **Wide Model Support:** It supports models from various sources, including Hugging Face and other hosting sites.\n*   **API Server:** It allows you to serve models using the"
+      }
+    }
+  ],
+  "created": 1781907819,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 471,
+    "total_tokens": 671,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-j76PGmcUAzife3v1ZFaBJmY9p6Nn6ZM9",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 471,
+    "prompt_ms": 910.864,
+    "prompt_per_token_ms": 1.9338938428874735,
+    "prompt_per_second": 517.0914648070403,
+    "predicted_n": 200,
+    "predicted_ms": 3180.191,
+    "predicted_per_token_ms": 15.900955,
+    "predicted_per_second": 62.889304447437276
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 202,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 193,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

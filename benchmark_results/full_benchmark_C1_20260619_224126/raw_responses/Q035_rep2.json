@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Even if a model does not send data to a cloud API, there are still local risks that can be addressed. These risks include:\n\n1. **Privacy Risks**: If a model is provided in whole to a third party rather than being accessible via an API, the model provider is less able to monitor the model during deployment and assess and mitigate privacy attacks. This means that genuine end users may not be able to rely on the output of the model, and there is a risk that personal data used to train the model may be exposed as a result of the way clients have deployed the model.\n\n2. **White Box Attacks**: The model provider remains responsible for assessing and mitigating the risk of white box attacks. This means that the model provider is not subject to white box attacks in this way, because the APIs users will not have direct access to the model itself. However, the model provider may still be subjected to black box attacks. To mitigate this risk, the model provider could monitor queries from"
+      }
+    }
+  ],
+  "created": 1781905829,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 395,
+    "total_tokens": 595,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Qrrgt3dqLOW35KfLR5oV1DrXzAG4ANXQ",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 395,
+    "prompt_ms": 458.458,
+    "prompt_per_token_ms": 1.160653164556962,
+    "prompt_per_second": 861.5838310161454,
+    "predicted_n": 200,
+    "predicted_ms": 2011.405,
+    "predicted_per_token_ms": 10.057025,
+    "predicted_per_second": 99.43298341209254
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 653,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 651,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 654,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

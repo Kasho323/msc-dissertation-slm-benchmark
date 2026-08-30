@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Even if the runtime supports local inference, there might still be limitations that prevent it from fully minimizing data protection. For instance, local processing is not necessarily out of scope of data protection laws. Even if the personal data involved in training is being processed on the user's device, the organization which creates and distributes the model is still a controller in so far as it determines the means and purposes of processing. Similarly, if the organization's methods and purposes are not fully aligned with data protection requirements, local processing may not be sufficient to minimize data protection. Therefore, it is crucial to monitor developments in these methods and assess whether they can provide meaningful data minimization before attempting to implement them."
+      }
+    }
+  ],
+  "created": 1781906006,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 137,
+    "prompt_tokens": 371,
+    "total_tokens": 508,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-X6UxlWH5yURYmL6ApZ71XbhaW1VJ2JZT",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 371,
+    "prompt_ms": 479.448,
+    "prompt_per_token_ms": 1.2923126684636117,
+    "prompt_per_second": 773.806544192488,
+    "predicted_n": 137,
+    "predicted_ms": 1178.308,
+    "predicted_per_token_ms": 8.600788321167883,
+    "predicted_per_second": 116.26841199414754
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 709,
+        "page": 25,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 690,
+        "page": 23,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

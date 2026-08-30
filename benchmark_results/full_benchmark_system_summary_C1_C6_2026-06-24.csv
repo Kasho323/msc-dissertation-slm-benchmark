@@ -1,0 +1,7 @@
+model_config_id,model_name,quantisation,model_file_size_mb,answers,errors,finish_stop,finish_length,mean_latency_seconds,median_latency_seconds,p95_latency_seconds,mean_tokens_per_second,mean_observed_rss_mb,min_observed_rss_mb,max_observed_rss_mb,mean_output_tokens,seed,max_tokens,power_profile
+C1,Qwen2.5 0.5B Instruct,Q4_K_M,468.64,120,0,114,6,4.4498,3.814,7.527,103.42,568.37,553.81,570.48,171.93,42,512,Balanced (381b4222-f694-41f0-9685-ff5bb260df2e)
+C2,Llama 3.2 1B Instruct,Q4_K_M,770.28,120,0,105,15,7.0135,7.0321,9.7995,76.07,1479.16,1469.84,1480.56,319.18,42,512,Balanced (381b4222-f694-41f0-9685-ff5bb260df2e)
+C3,Gemma 3 1B IT,Q4_K_M,768.72,120,0,117,3,6.8214,6.9125,9.835,67.15,1001.06,998.13,1001.41,246.57,42,512,Balanced (381b4222-f694-41f0-9685-ff5bb260df2e)
+C4,Qwen2.5 1.5B Instruct,Q2_K,718.0,120,0,96,24,6.2154,5.5786,9.4471,82.74,906.26,886.65,908.97,247.1,42,512,Balanced (381b4222-f694-41f0-9685-ff5bb260df2e)
+C5,Qwen2.5 1.5B Instruct,Q4_K_M,1065.56,120,0,120,0,4.7106,4.5847,6.2103,62.15,1793.69,1772.66,1796.61,108.03,42,512,Balanced (381b4222-f694-41f0-9685-ff5bb260df2e)
+C6,Qwen2.5 1.5B Instruct,Q8_0,1806.77,120,0,117,3,6.5811,5.8744,9.9432,42.82,1829.38,1806.18,1832.63,129.18,42,512,Balanced (381b4222-f694-41f0-9685-ff5bb260df2e)

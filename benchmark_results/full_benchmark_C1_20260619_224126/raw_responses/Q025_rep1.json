@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Risks to individuals, groups, communities, organizations, society, and the environment are considered separately because they are context-specific and application and use-case specific. These risks can have different impacts and magnitudes, and their likelihood of occurrence can vary widely. Therefore, organizations need to take into account the unique circumstances and applications when managing risks."
+      }
+    }
+  ],
+  "created": 1781905472,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 68,
+    "prompt_tokens": 388,
+    "total_tokens": 456,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-I2hdJ81f0OcUQhyCU9BGqrni0Ar8usrC",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 388,
+    "prompt_ms": 491.135,
+    "prompt_per_token_ms": 1.265811855670103,
+    "prompt_per_second": 790.0068209351807,
+    "predicted_n": 68,
+    "predicted_ms": 536.823,
+    "predicted_per_token_ms": 7.894455882352941,
+    "predicted_per_second": 126.67117467023583
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 250,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 268,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 270,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

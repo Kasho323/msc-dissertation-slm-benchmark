@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The main purpose of llama.cpp is to enable LLM inference with minimal setup and state-of-the-art performance on a wide range of tasks. It aims to provide a user-friendly interface that makes it easy for users to get started with using the LLMs, while also ensuring that the performance is at the best possible level. The package is designed to support downstream consumers and is actively being improved through collaboration with NVIDIA and the extension of support for the gpt-oss model with native MXFP4 format."
+      }
+    }
+  ],
+  "created": 1782336229,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 102,
+    "prompt_tokens": 382,
+    "total_tokens": 484,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-vXQZM6i8j2LrCypfQiAFVoTSP50oT6oq",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 382,
+    "prompt_ms": 926.717,
+    "prompt_per_token_ms": 2.425960732984293,
+    "prompt_per_second": 412.2078261216747,
+    "predicted_n": 102,
+    "predicted_ms": 1177.747,
+    "predicted_per_token_ms": 11.546539215686275,
+    "predicted_per_second": 86.6060367803951
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 171,
+        "page": 1,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 196,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

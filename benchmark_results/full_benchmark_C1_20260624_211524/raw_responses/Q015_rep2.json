@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Running llama-server is essential because it provides a web UI for accessing the server, allowing users to interact with the model through a browser. This makes it easier for users to interact with the model and perform various operations, such as chat completions. Additionally, running llama-server allows for multiple users to connect to the server simultaneously, enabling parallel decoding."
+      }
+    }
+  ],
+  "created": 1782332585,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 70,
+    "prompt_tokens": 472,
+    "total_tokens": 542,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Xpr9TvGzNCi31bJLKoTJTLm0xMzHstgt",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 472,
+    "prompt_ms": 617.708,
+    "prompt_per_token_ms": 1.3087033898305085,
+    "prompt_per_second": 764.1150835022373,
+    "predicted_n": 70,
+    "predicted_ms": 653.072,
+    "predicted_per_token_ms": 9.3296,
+    "predicted_per_second": 107.18573143543132
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 201,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 194,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

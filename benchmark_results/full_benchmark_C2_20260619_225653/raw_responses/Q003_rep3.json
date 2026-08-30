@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Here's a rephrased version of the text in my own words, combining relevant parts, and addressing any gaps in the context:\n\n**The Importance of Factuality in Question-Answering Systems**\n\nIn the context of question-answering systems, factuality plays a crucial role in ensuring the accuracy and reliability of the output. Factuality refers to the ability of a statement to be corroborated by trusted external sources, which is essential for maintaining the trustworthiness of the system.\n\n**The Role of Specicity in Question-Answering Systems**\n\nSpecicity, on the other hand, refers to the high mutual dependence between the input and output of a question-answering system. This means that the system should be able to understand the context and nuances of the input, and respond accordingly.\n\n**The BART and RAG Comparison**\n\nOur work compares two state-of-the-art models, BART (Bidirectional Transformers for Reasoning) and RAG (Recurrent Attention Graph-based"
+      }
+    }
+  ],
+  "created": 1781906941,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 489,
+    "total_tokens": 689,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-VKzNp0UI3tHqqLUQMwspiOvekI9LNEO2",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 489,
+    "prompt_ms": 615.759,
+    "prompt_per_token_ms": 1.2592208588957055,
+    "prompt_per_second": 794.1418639435234,
+    "predicted_n": 200,
+    "predicted_ms": 2472.845,
+    "predicted_per_token_ms": 12.364225,
+    "predicted_per_second": 80.87850229189456
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 92,
+        "page": 10,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

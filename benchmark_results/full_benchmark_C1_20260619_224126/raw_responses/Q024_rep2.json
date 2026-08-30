@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "An AI risk framework can support evaluation beyond accuracy by providing a catalog of outcomes and approaches that are outcome-focused and non-prescriptive. This approach allows for a more comprehensive and comprehensive evaluation of AI risks, as it provides a structured framework for assessing and managing them."
+      }
+    }
+  ],
+  "created": 1781905750,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 53,
+    "prompt_tokens": 348,
+    "total_tokens": 401,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-cIj25RTJWp43NlTU581gFOrwc9NSV4Gy",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 348,
+    "prompt_ms": 440.422,
+    "prompt_per_token_ms": 1.265580459770115,
+    "prompt_per_second": 790.1512640149674,
+    "predicted_n": 53,
+    "predicted_ms": 448.57,
+    "predicted_per_token_ms": 8.463584905660378,
+    "predicted_per_second": 118.15324252625008
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 482,
+        "page": 47,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 415,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 410,
+        "page": 35,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

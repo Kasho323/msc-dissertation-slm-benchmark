@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when tuned on downstream NLP tasks. However, there are limitations to their use. One of the main issues is the difficulty in predicting failure modes for emergent properties of large-scale pre-trained models. This can lead to privacy risks and issues with scientific validity and reproducibility. Additionally, the use of pre-trained models that can advance research and improve performance can increase levels of statistical uncertainty and cause issues with bias management, reproducibility, and reproducibility."
+      }
+    }
+  ],
+  "created": 1781905921,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 117,
+    "prompt_tokens": 421,
+    "total_tokens": 538,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-mr9Sci5qsqZkVsia4YnU7JNDeaejJZn2",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 421,
+    "prompt_ms": 524.044,
+    "prompt_per_token_ms": 1.2447600950118765,
+    "prompt_per_second": 803.3676561510102,
+    "predicted_n": 117,
+    "predicted_ms": 1093.981,
+    "predicted_per_token_ms": 9.350264957264958,
+    "predicted_per_second": 106.9488409762144
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf",
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 79,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 456,
+        "page": 43,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Retrieval can help a model access knowledge that is not stored in its parameters by using the input sequence to retrieve text documents and incorporating them as additional context when generating the target sequence. This allows the model to learn from a wider range of information beyond what is explicitly stored in its parameters."
+      }
+    }
+  ],
+  "created": 1782331789,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 59,
+    "prompt_tokens": 432,
+    "total_tokens": 491,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-vFX4sf7vQgZM8FC0Vgv4ZuOQxxmQcN89",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 432,
+    "prompt_ms": 1522.222,
+    "prompt_per_token_ms": 3.523662037037037,
+    "prompt_per_second": 283.79566186797985,
+    "predicted_n": 59,
+    "predicted_ms": 1531.766,
+    "predicted_per_token_ms": 25.96213559322034,
+    "predicted_per_second": 38.51763258878967
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 16,
+        "page": 2,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 163,
+        "page": 18,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

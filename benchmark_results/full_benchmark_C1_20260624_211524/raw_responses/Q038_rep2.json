@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG and local deployment address the following parts of the question-answering problem:\n\n1. **Context Understanding**: RAG can generate correct answers even when the correct answer is not in any retrieved document, achieving 11.8% accuracy in such cases for NQ, where an extractive model would score 0%. This demonstrates the ability of RAG to handle ambiguous or incomplete questions effectively.\n\n2. **Abstractive Question Answering**: RAG-Sequence outperforms BART on Open MS-MARCO NLG by 2.6 Bleu points and 2.6 Rouge-L points. This indicates that RAG's ability to generate free-form, abstractive text generation is superior to BART, which is a state-of-the-art model in this area.\n\n3. **Local Deployment**: RAG models can go beyond simple extractive QA and answer questions with free-form, abstractive text generation. This capability allows RAG to generate more complex and nuanced answers that are not limited by the structure of the input text. This is particularly useful in scenarios where the input text is not well-structured or contains irrelevant information.\n\n4. **Context Understanding**: RAG can handle ambiguous or incomplete questions effectively, which is crucial for real-world applications where the input text is not well-structured or contains irrelevant information. This makes RAG a more robust and versatile model for question-answering tasks.\n\n5. **Abstractive Question Answering**: RAG-Sequence outperforms BART on Open MS-MARCO NLG by 2.6 Bleu points and 2.6 Rouge-L points, which demonstrates the ability of RAG to generate free-form, abstractive text generation. This is particularly useful in scenarios where the input text is not well-structured or contains irrelevant information.\n\nIn summary, RAG and local deployment address the context understanding, abstractive question answering, and local deployment aspects of the question-answering problem, making them more versatile and effective in handling various real-world applications."
+      }
+    }
+  ],
+  "created": 1782332781,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 417,
+    "prompt_tokens": 502,
+    "total_tokens": 919,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-xMIPepD1PMszIXLoCWNWnaDvJ5DsiIAB",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 502,
+    "prompt_ms": 646.699,
+    "prompt_per_token_ms": 1.2882450199203186,
+    "prompt_per_second": 776.2498473014493,
+    "predicted_n": 417,
+    "predicted_ms": 3939.482,
+    "predicted_per_token_ms": 9.447199040767385,
+    "predicted_per_second": 105.85147996614785
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 50,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 33,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 35,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

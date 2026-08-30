@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The purpose of running `llama-server` is to create a lightweight, OpenAI API compatible HTTP server for serving LLMs (Large Language Models). This server is designed to be a simple and efficient way to host and serve LLMs, making it easy to integrate with other tools and services.\n\nRunning `llama-server` provides several benefits:\n\n1. **Easy deployment**: The server can be easily deployed on a local machine or in a cloud environment, making it simple to test and develop LLMs.\n2. **Simplified model serving**: The server can be used to serve LLMs directly, without the need to run a separate model inference process.\n3. **Support for multiple users**: The server can handle multiple users simultaneously, making it suitable for large-scale LLM development and deployment.\n4. **Parallel decoding**: The server can support parallel decoding, allowing for faster inference times and improved performance.\n\nIn contrast, running a local HTTP server with default configuration (e.g.,"
+      }
+    }
+  ],
+  "created": 1781907045,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 478,
+    "total_tokens": 678,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-gVQrI9hZSNIeIQnTEiQptjMgWDm0LbNe",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 478,
+    "prompt_ms": 583.126,
+    "prompt_per_token_ms": 1.219928870292887,
+    "prompt_per_second": 819.719923309885,
+    "predicted_n": 200,
+    "predicted_ms": 2419.585,
+    "predicted_per_token_ms": 12.097925,
+    "predicted_per_second": 82.6588030592023
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 201,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 194,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

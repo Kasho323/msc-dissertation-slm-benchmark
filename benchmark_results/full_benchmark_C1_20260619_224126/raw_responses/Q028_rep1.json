@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Risk management helps frame deployment practicality by providing clear guidelines for assessing trustworthiness of each AI system. Organizations can prioritize the assessment based on the assessed risk level and potential impact of the AI system. This ensures that resources are allocated purposefully to mitigate risks."
+      }
+    }
+  ],
+  "created": 1781905493,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 53,
+    "prompt_tokens": 311,
+    "total_tokens": 364,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-4bHdaUmHn7muEVAXnBSZ07UQCwqHgI3n",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 311,
+    "prompt_ms": 413.722,
+    "prompt_per_token_ms": 1.3302958199356913,
+    "prompt_per_second": 751.7125025983632,
+    "predicted_n": 53,
+    "predicted_ms": 402.912,
+    "predicted_per_token_ms": 7.60211320754717,
+    "predicted_per_second": 131.5423715352236
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 273,
+        "page": 12,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 259,
+        "page": 10,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 264,
+        "page": 11,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

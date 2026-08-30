@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG (Relevant Information Aggregation) adds to a standard language generation system by learning to retrieve relevant information for the task. This retrieval mechanism is essential for the system to efficiently and accurately generate responses. The retrieval mechanism is trained to identify and retrieve relevant information for the task, which is particularly useful in tasks like language generation. The retrieval mechanism is more diverse than the retrieval mechanism in BART, as it is trained to learn to retrieve relevant information for the task. The retrieval mechanism is also more factual than the retrieval mechanism in BART, as it is trained to learn to retrieve relevant information for the task. The retrieval mechanism is more factually accurate than the retrieval mechanism in BART, as it is trained to learn to retrieve relevant information for the task. The retrieval mechanism is more factually accurate than the retrieval mechanism in BART, as it is trained to learn to retrieve relevant information for the task. The retrieval mechanism is more factually accurate than the retrieval mechanism in BART, as"
+      }
+    }
+  ],
+  "created": 1781905936,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 431,
+    "total_tokens": 631,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-KZ6lmmT7Nm1avI2RzfGBRfiNZsEU6GKa",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 431,
+    "prompt_ms": 507.02,
+    "prompt_per_token_ms": 1.1763805104408351,
+    "prompt_per_second": 850.0650861898939,
+    "predicted_n": 200,
+    "predicted_ms": 1901.678,
+    "predicted_per_token_ms": 9.50839,
+    "predicted_per_second": 105.17027593525296
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 53,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 59,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

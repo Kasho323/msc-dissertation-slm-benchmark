@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Separating technical performance from broader trust and governance concerns is useful because it allows organizations to focus on the essential aspects of AI risk management while also ensuring that their AI systems are developed and deployed with trustworthiness in mind.\n\nTechnical performance refers to the technical capabilities and efficiency of AI systems, such as their accuracy, speed, and scalability. While these are crucial for achieving desired outcomes, they do not directly address the trustworthiness of AI systems.\n\nOn the other hand, broader trust and governance concerns encompass the social, organizational, and human factors that influence the development and deployment of AI systems. These concerns include:\n\n1.  Ensuring that AI systems are developed and deployed in a way that respects human values and dignity.\n2.  Preventing negative risks and ensuring that AI systems are used for beneficial purposes.\n3.  Ensuring that AI systems are transparent, accountable, and fair.\n\nBy separating technical performance from broader trust and governance concerns, organizations can:\n\n1.  Focus on developing and deploying AI systems that are technically sound and efficient.\n2.  Ensure that AI systems are developed and deployed in a way that respects human values and dignity.\n3.  Prevent negative risks and ensure that AI systems are used for beneficial purposes.\n\nThis approach allows organizations to prioritize the development of trustworthiness characteristics, such as governance, accountability, and transparency, alongside technical performance. This can help organizations build more trustworthy AI systems that are better equipped to support their goals and objectives."
+      }
+    }
+  ],
+  "created": 1782334308,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 295,
+    "prompt_tokens": 382,
+    "total_tokens": 677,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-qGRoZYczy1cE3d87DX8dH6RXe2xRjZbZ",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 382,
+    "prompt_ms": 511.082,
+    "prompt_per_token_ms": 1.337910994764398,
+    "prompt_per_second": 747.4338755816092,
+    "predicted_n": 295,
+    "predicted_ms": 4096.316,
+    "predicted_per_token_ms": 13.885816949152542,
+    "predicted_per_second": 72.01592845864431
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 226,
+        "page": 5,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 379,
+        "page": 30,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 298,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

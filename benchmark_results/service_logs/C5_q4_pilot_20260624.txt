@@ -1,0 +1,32 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260624210003
+Username: KASHO\CodexSandboxOffline
+RunAs User: KASHO\CodexSandboxOffline
+Configuration Name: 
+Machine: KASHO (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Crbd2\Desktop\Dissertation\dissertation_project\benchmark_plan\run_full_benchmark_with_backend.ps1 -ModelConfigId C5 -Repetitions 1 -Limit 5 -MaxTokens 512 -UploadCorpus -StopOnError -TranscriptPath C:\Users\Crbd2\Desktop\Dissertation\dissertation_project\benchmark_results\service_logs\C5_q4_pilot_20260624.txt
+Process ID: 22580
+PSVersion: 5.1.26100.8655
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8655
+BuildVersion: 10.0.26100.8655
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Crbd2\Desktop\Dissertation\dissertation_project\benchmark_results\service_logs\C5_q4_pilot_20260624.txt
+PS>TerminatingError(Invoke-WebRequest): "无法连接到远程服务器"
+Starting temporary FastAPI backend on port 8000.
+Temporary backend PID: 39808
+PS>TerminatingError(Invoke-WebRequest): "无法连接到远程服务器"
+Backend ready after 4s
+Running full benchmark helper for C5.
+
+Benchmark helper finished for C5.
+Stopped temporary backend PID 39808
+**********************
+Windows PowerShell transcript end
+End time: 20260624210103
+**********************

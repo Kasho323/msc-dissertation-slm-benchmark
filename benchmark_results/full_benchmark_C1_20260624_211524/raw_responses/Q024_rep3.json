@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "An AI risk framework can support evaluation beyond accuracy by providing a comprehensive catalog of outcomes and approaches. It should be outcome-focused and non-prescriptive, offering a catalog of outcomes and approaches rather than established in GOVERN or utilized in MAP and MEASURE. Processes for assessing emergent risks are in place, along with mechanisms for continual improvement. After completing the MANAGE function, plans for prioritizing risk and regular monitoring and improvement will be in place. Framework users will have enhanced capacity to manage the risks of deployed AI systems and to allocate risk management resources based on assessed outcomes."
+      }
+    }
+  ],
+  "created": 1782332995,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 115,
+    "prompt_tokens": 365,
+    "total_tokens": 480,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-3ZJPkNOZ90bgyWQQFlfQxim7kh0z6wzm",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 365,
+    "prompt_ms": 514.727,
+    "prompt_per_token_ms": 1.4102109589041094,
+    "prompt_per_second": 709.113763218172,
+    "predicted_n": 115,
+    "predicted_ms": 1107.39,
+    "predicted_per_token_ms": 9.629478260869567,
+    "predicted_per_second": 103.84778623610471
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 399,
+        "page": 33,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 482,
+        "page": 47,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 415,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

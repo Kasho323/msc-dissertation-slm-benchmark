@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "GGUF enables the use of a local model for inference, which is a variant of the target model."
+      }
+    }
+  ],
+  "created": 1782333692,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 22,
+    "prompt_tokens": 449,
+    "total_tokens": 471,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-3oYrfORNyuSJ2PCdtMaJ2tM9qLvUp0X8",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 449,
+    "prompt_ms": 581.447,
+    "prompt_per_token_ms": 1.2949821826280623,
+    "prompt_per_second": 772.2113967395136,
+    "predicted_n": 22,
+    "predicted_ms": 269.842,
+    "predicted_per_token_ms": 12.265545454545453,
+    "predicted_per_second": 81.52919115630628
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 202,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 193,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

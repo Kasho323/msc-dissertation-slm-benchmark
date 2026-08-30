@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "GGUF (Google Model Format) enables the local serving of embedding models and reranking models. In the context provided, the GGUF format is used to serve an embedding model via the `/embedding` endpoint, and to serve a reranking model by specifying the `--embedding` flag with `cls` as the pooling method and `8192` as the batch size. The GGUF format is also mentioned as a way to serve a model, which can be a local model file or downloaded from a model hosting site like Hugging Face. The GGUF format is described as enabling minimal setup and state-of-the-art performance for inference with LLMs."
+      }
+    }
+  ],
+  "created": 1782337728,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 135,
+    "prompt_tokens": 437,
+    "total_tokens": 572,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-NhRnq9K9m0p9liySrD1gHfkheWI42ru1",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 437,
+    "prompt_ms": 797.434,
+    "prompt_per_token_ms": 1.82479176201373,
+    "prompt_per_second": 548.0077348094012,
+    "predicted_n": 135,
+    "predicted_ms": 2433.224,
+    "predicted_per_token_ms": 18.02388148148148,
+    "predicted_per_second": 55.4819449421837
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 202,
+        "page": 11,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 193,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

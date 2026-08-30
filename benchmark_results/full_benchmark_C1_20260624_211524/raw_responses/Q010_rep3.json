@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG (Recurrent Attention-Augmented Generative) adds diversity to a standard language generation system. It learns to retrieve relevant information for the task, which is essential for generating diverse responses. The retrieval mechanism is effective in improving results for all tasks, with RAG being more factual in 42.7% of cases compared to BART. RAG's ability to generate documents with a posterior probability of 1.0 for each generated token is particularly notable, indicating that it can generate responses accurately. The model's ability to document posterior probabilities for each generated token is also significant, suggesting that it can generate responses with high accuracy."
+      }
+    }
+  ],
+  "created": 1782332881,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 129,
+    "prompt_tokens": 431,
+    "total_tokens": 560,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-cneF7lHJIuUKAY1T5HxSGU5NKHAM6Gjw",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 431,
+    "prompt_ms": 601.415,
+    "prompt_per_token_ms": 1.3953944315545244,
+    "prompt_per_second": 716.6432496695294,
+    "predicted_n": 129,
+    "predicted_ms": 1212.262,
+    "predicted_per_token_ms": 9.39737984496124,
+    "predicted_per_second": 106.41264017184405
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 53,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 59,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

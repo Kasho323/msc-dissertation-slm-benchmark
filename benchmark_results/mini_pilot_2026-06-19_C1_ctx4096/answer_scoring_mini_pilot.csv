@@ -1,0 +1,6 @@
+run_id,model_config_id,question_id,repetition,relevance,correctness,faithfulness_to_source,completeness,hallucination_risk,source_grounding,average_quality_score,scoring_notes,scored_by,scored_date
+MINI_C1_20260619_175319,C1,Q001,1,4,3,3,3,3,3,3.17,"Relevant and concise, but it blurs external retrieval with knowledge stored inside the model.",Cairenbading,2026-06-19
+MINI_C1_20260619_175319,C1,Q002,1,4,4,4,4,4,4,4.00,"Good answer describing retriever and generator components, although the parametric/non-parametric distinction could be more explicit.",Cairenbading,2026-06-19
+MINI_C1_20260619_175319,C1,Q003,1,0,0,1,0,1,1,0.50,"Failure case: returns bibliography/related-work text instead of explaining why provenance matters.",Cairenbading,2026-06-19
+MINI_C1_20260619_175319,C1,Q004,1,4,4,4,3,4,4,3.83,"Correctly says the retriever finds relevant information, but gives a narrow training/ablation-focused explanation.",Cairenbading,2026-06-19
+MINI_C1_20260619_175319,C1,Q005,1,4,4,4,3,4,4,3.83,"Mostly correct explanation that retrieval supplies relevant documents and supports updated knowledge, but it is brief.",Cairenbading,2026-06-19

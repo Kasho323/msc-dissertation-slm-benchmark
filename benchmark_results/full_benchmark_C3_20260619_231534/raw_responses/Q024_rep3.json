@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Okay, here’s a response addressing how an AI risk framework can support evaluation beyond accuracy, drawing on the provided context:\n\n“An AI risk framework should support evaluation beyond accuracy alone by focusing on a broader range of outcomes and capabilities. While accuracy is a critical component, a robust framework will incorporate evaluation metrics related to things like fairness, transparency, safety, and societal impact. This evaluation should consider how well the AI system performs its intended purpose *and* how it interacts with the broader environment and stakeholders. It’s about assessing the *value* and *responsibility* of the AI system, not just its technical performance.\n\nSpecifically, the framework should encourage evaluation across multiple dimensions – such as the system’s ability to handle diverse inputs, its resilience to unexpected situations, and its alignment with ethical principles. It should also incorporate assessments of potential unintended consequences and societal effects, which are often overlooked in purely accuracy-focused evaluations.  The framework’s goal is to move beyond simply measuring accuracy"
+      }
+    }
+  ],
+  "created": 1781908286,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 364,
+    "total_tokens": 564,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-L8yCtSWXXpEQF0LjyCxP9VtM4WXKxksY",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 364,
+    "prompt_ms": 740.812,
+    "prompt_per_token_ms": 2.035197802197802,
+    "prompt_per_second": 491.3527318671944,
+    "predicted_n": 200,
+    "predicted_ms": 3458.143,
+    "predicted_per_token_ms": 17.290715,
+    "predicted_per_second": 57.83450828956466
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 482,
+        "page": 47,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 415,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 428,
+        "page": 38,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

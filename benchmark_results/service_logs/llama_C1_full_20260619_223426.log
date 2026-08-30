@@ -1,0 +1,46 @@
+[34m0.00.087.386[0m [32mI [0mlog_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+[34m0.00.087.394[0m [32mI [0mdevice_info:
+[34m0.00.087.401[0m [32mI [0m  - CPU     : Intel(R) Core(TM) Ultra 9 275HX (32189 MiB, 14082 MiB free)
+[34m0.00.087.453[0m [32mI [0msystem_info: n_threads = 24 (n_threads_batch = 24) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+[34m0.00.087.503[0m [32mI [0msrv          init: running without SSL
+[34m0.00.087.537[0m [32mI [0msrv          init: using 23 threads for HTTP server
+[34m0.00.087.708[0m [32mI [0msrv         start: binding port with default address family
+[34m0.00.093.521[0m [32mI [0msrv  llama_server: loading model
+[34m0.00.093.532[0m [32mI [0msrv    load_model: loading model 'C:\Users\Crbd2\Desktop\Dissertation\Jetson-Nano-RAG-LLM\models\qwen2.5-0.5b-instruct-q4_k_m.gguf'
+[34m0.00.093.619[0m [32mI [0mcommon_init_result: fitting params to device memory ...
+[34m0.00.093.620[0m [32mI [0mcommon_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+[34m0.00.355.432[0m [32mI [0mcommon_params_fit_impl: projected to use 522 MiB of host memory vs. 32189 MiB of total host memory
+[34m0.00.562.608[0m [35mW load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.00.643.345[0m [35mW llama_context: n_ctx_seq (4096) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+[0m[34m0.00.658.577[0m [32mI [0mcommon_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+[34m0.00.783.750[0m [32mI [0msrv    load_model: initializing slots, n_slots = 1
+[34m0.00.810.131[0m [35mW common_speculative_init: no implementations specified for speculative decoding
+[0m[34m0.00.810.137[0m [32mI [0mslot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+[34m0.00.810.209[0m [32mI [0msrv    load_model: prompt cache is disabled - use `--cache-ram N` to enable it
+[34m0.00.810.209[0m [32mI [0msrv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+[34m0.00.810.209[0m [32mI [0msrv    load_model: context checkpoints disabled
+[34m0.00.810.246[0m [35mW srv          init: --cache-idle-slots requires --cache-ram, disabling
+[0m[34m0.00.814.296[0m [32mI [0minit: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+[34m0.00.816.962[0m [32mI [0msrv          init: init: chat template, thinking = 0
+[34m0.00.816.984[0m [32mI [0msrv  llama_server: model loaded
+[34m0.00.816.986[0m [32mI [0msrv  llama_server: server is listening on http://127.0.0.1:8080
+[34m0.00.816.991[0m [32mI [0msrv  update_slots: all slots are idle
+[34m0.10.842.577[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m0.10.842.926[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+[34m0.10.842.967[0m [32mI [0mslot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+[34m0.12.569.871[0m [32mI [0mslot print_timing: id  0 | task 0 | n_decoded =    100, tg =  92.13 t/s
+[34m0.12.601.459[0m [32mI [0mslot print_timing: id  0 | task 0 | prompt eval time =     641.41 ms /   469 tokens (    1.37 ms per token,   731.20 tokens per second)
+[34m0.12.601.465[0m [32mI [0mslot print_timing: id  0 | task 0 |        eval time =    1117.06 ms /   103 tokens (   10.85 ms per token,    92.21 tokens per second)
+[34m0.12.601.466[0m [32mI [0mslot print_timing: id  0 | task 0 |       total time =    1758.47 ms /   572 tokens
+[34m0.12.601.469[0m [32mI [0mslot print_timing: id  0 | task 0 |    graphs reused =        101
+[34m0.12.601.509[0m [32mI [0mslot      release: id  0 | task 0 | stop processing: n_tokens = 571, truncated = 0
+[34m0.12.601.519[0m [32mI [0msrv  update_slots: all slots are idle

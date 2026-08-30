@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Keeping processing local does not remove all data protection responsibilities because the organization that creates and distributes the model is still considered a controller. This means they determine the means and purposes of processing, even if the personal data involved in training is being processed on the user's device. The controller must assess the impact of their processing on individuals and demonstrate that there is a compelling benefit to the processing. Additionally, if the way they intend to use the data would be unexpected or cause unnecessary harm, they must take on additional responsibility for considering and protecting individuals' rights and interests."
+      }
+    }
+  ],
+  "created": 1782337250,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 112,
+    "prompt_tokens": 364,
+    "total_tokens": 476,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Q81SREZEM4KepiS9T7eVUbRTsYZhokwu",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 364,
+    "prompt_ms": 654.418,
+    "prompt_per_token_ms": 1.7978516483516485,
+    "prompt_per_second": 556.2194193924984,
+    "predicted_n": 112,
+    "predicted_ms": 1727.683,
+    "predicted_per_token_ms": 15.425741071428572,
+    "predicted_per_second": 64.82670721422853
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 709,
+        "page": 25,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 543,
+        "page": 8,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 541,
+        "page": 8,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

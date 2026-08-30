@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Grounding an answer in retrieved evidence is useful for reducing unsupported claims because it allows the AI system to analyze and verify the information retrieved from the source. This process helps ensure that the retrieved evidence is accurate and reliable, which can improve the overall quality of the inference. By using the retrieved evidence, the AI system can identify any inconsistencies or errors in the information, which can be used to correct or invalidate the original claim. This approach can help maintain the integrity and credibility of the inference, even if the original claim is not supported by the evidence."
+      }
+    }
+  ],
+  "created": 1781905357,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 110,
+    "prompt_tokens": 404,
+    "total_tokens": 514,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-yh7tdAj3YGjMGDIj33PoK3vXbMuci54S",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 404,
+    "prompt_ms": 537.665,
+    "prompt_per_token_ms": 1.3308539603960394,
+    "prompt_per_second": 751.3972454967312,
+    "predicted_n": 110,
+    "predicted_ms": 1172.06,
+    "predicted_per_token_ms": 10.655090909090909,
+    "predicted_per_second": 93.85185058785387
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 63,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 44,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 570,
+        "page": 11,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

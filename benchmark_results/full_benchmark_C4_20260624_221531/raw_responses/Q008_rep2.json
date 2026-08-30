@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The limitation of large pre-trained models, which has been shown to store factual knowledge in their parameters and achieve state-of-the-art results when ne-tuned on downstream NLP tasks, motivates the need for a retrieval-based approach. This is because while there is significant work on learning to optimize the retrieval module for a specific downstream task such as question answering, using search, reinforcement learning, or a latent variable approach, these successes do not leverage different retrieval-based architectures and achieve strong performance across both discriminative and generative tasks. For further improvement, BART [32] and T5 [51, 52] propose a single, pre-trained encoder-decoder model that leverages bi-directional attention to achieve stronger performance on discriminative and generative tasks. Therefore, the use of retrieval-based approaches is motivated by the need to expand the space of possible tasks with a single, unified architecture, as a single, unified architecture can potentially achieve stronger performance across a range of downstream tasks."
+      }
+    }
+  ],
+  "created": 1782336203,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 202,
+    "prompt_tokens": 440,
+    "total_tokens": 642,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-PmiRgnkQhQk88YrKFktBqpMK8054ysY2",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 440,
+    "prompt_ms": 1041.699,
+    "prompt_per_token_ms": 2.3674977272727276,
+    "prompt_per_second": 422.386889110962,
+    "predicted_n": 202,
+    "predicted_ms": 2570.009,
+    "predicted_per_token_ms": 12.722816831683168,
+    "predicted_per_second": 78.59894654065414
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 79,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 78,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

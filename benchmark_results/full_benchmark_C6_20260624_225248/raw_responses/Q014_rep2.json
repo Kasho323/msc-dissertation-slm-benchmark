@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Quantization supports faster inference and lower memory use by reducing the precision of the data. This is achieved through various techniques such as 1-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit integer quantization. By using fewer bits to represent the data, the model requires less memory and can process the data more quickly, leading to faster inference times."
+      }
+    }
+  ],
+  "created": 1782338507,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 86,
+    "prompt_tokens": 470,
+    "total_tokens": 556,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-86qScAhpUpBYEiqi19Vp9xzitHxmWzeX",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 470,
+    "prompt_ms": 1649.651,
+    "prompt_per_token_ms": 3.5098957446808514,
+    "prompt_per_second": 284.9087473653518,
+    "predicted_n": 86,
+    "predicted_ms": 2104.949,
+    "predicted_per_token_ms": 24.4761511627907,
+    "predicted_per_second": 40.85609675103767
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 176,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

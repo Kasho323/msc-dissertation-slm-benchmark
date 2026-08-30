@@ -1,0 +1,41 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260624211510
+Username: KASHO\CodexSandboxOffline
+RunAs User: KASHO\CodexSandboxOffline
+Configuration Name: 
+Machine: KASHO (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Crbd2\Desktop\Dissertation\dissertation_project\benchmark_plan\run_benchmark_suite.ps1 -ModelConfigIds C1,C2,C3,C4,C5,C6 -Repetitions 3 -MaxTokens 512 -Seed 42 -StopOnError -TranscriptPath C:\Users\Crbd2\Desktop\Dissertation\dissertation_project\benchmark_results\service_logs\full_suite_C1_C6_20260624.txt
+Process ID: 47732
+PSVersion: 5.1.26100.8655
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8655
+BuildVersion: 10.0.26100.8655
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Crbd2\Desktop\Dissertation\dissertation_project\benchmark_results\service_logs\full_suite_C1_C6_20260624.txt
+PS>TerminatingError(Invoke-WebRequest): "无法连接到远程服务器"
+Started shared FastAPI backend PID 42380
+PS>TerminatingError(Invoke-WebRequest): "无法连接到远程服务器"
+Backend ready after 4s
+Running C1 (1/6) with the shared vector store.
+
+Running C2 (2/6) with the shared vector store.
+
+Running C3 (3/6) with the shared vector store.
+
+Running C4 (4/6) with the shared vector store.
+
+Running C5 (5/6) with the shared vector store.
+
+Running C6 (6/6) with the shared vector store.
+
+Controlled benchmark suite completed.
+Stopped shared FastAPI backend PID 42380
+**********************
+Windows PowerShell transcript end
+End time: 20260624231328
+**********************

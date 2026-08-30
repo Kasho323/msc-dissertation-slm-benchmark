@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Even if the runtime supports local inference, there are still several deployment limitations that might remain:\n\n1. **Data Storage and Transfer**: Local inference requires storing and transferring data to and from the device, which can be a challenge, especially for large datasets. Ensuring that this data is securely stored and transferred, while also adhering to data protection laws, might still be a challenge.\n\n2. **Scalability and Performance**: Local inference might not be scalable or performant enough for certain workloads, especially those requiring high-throughput or complex computations. This could limit the applicability of local inference in certain scenarios.\n\n3. **Security and Trust**: Local inference might not provide the same level of security and trust as cloud-based inference, especially if the device is not trusted or if the data is not properly authenticated. This could lead to security risks if the local inference is not properly secured.\n\n4. **Interoperability and Compatibility**: Local inference might not be compatible with existing applications or services that rely"
+      }
+    }
+  ],
+  "created": 1781907086,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 387,
+    "total_tokens": 587,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-98JZkKDMBk7jMBYAwBAd4cdYZQZunjft",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 387,
+    "prompt_ms": 486.861,
+    "prompt_per_token_ms": 1.2580387596899225,
+    "prompt_per_second": 794.88806866847,
+    "predicted_n": 200,
+    "predicted_ms": 2242.285,
+    "predicted_per_token_ms": 11.211424999999998,
+    "predicted_per_second": 89.19472769964568
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 709,
+        "page": 25,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 690,
+        "page": 23,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

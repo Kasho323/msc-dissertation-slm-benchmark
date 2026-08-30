@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Large pre-trained language models, while achieving impressive results, present several limitations that motivate the use of retrieval. Specifically, the models store factual knowledge within their parameters, which makes them susceptible to errors and biases. Furthermore, the sheer number of decision points within these models – often trillions – can lead to increased statistical uncertainty and make it challenging to manage and predict potential failures, particularly when considering emergent properties of these large models. Finally, there’s a privacy risk associated with enhanced data aggregation capabilities that AI systems possess."
+      }
+    }
+  ],
+  "created": 1781907772,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 104,
+    "prompt_tokens": 414,
+    "total_tokens": 518,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-0LsTqcczNvwDSMyVC3UagMN7iVtgmVhS",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 414,
+    "prompt_ms": 813.888,
+    "prompt_per_token_ms": 1.965913043478261,
+    "prompt_per_second": 508.66949752300064,
+    "predicted_n": 104,
+    "predicted_ms": 1783.251,
+    "predicted_per_token_ms": 17.14664423076923,
+    "predicted_per_second": 58.32044956094235
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf",
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 79,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 456,
+        "page": 43,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

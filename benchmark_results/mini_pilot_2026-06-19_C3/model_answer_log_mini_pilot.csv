@@ -1,0 +1,37 @@
+run_id,model_config_id,question_id,repetition,question_text,generated_answer,sources_returned,latency_seconds,time_to_first_token_seconds,tokens_generated,tokens_per_second,peak_memory_mb,error_notes
+MINI_C3_20260619_174949,C3,Q001,1,What problem does retrieval-augmented generation try to address in knowledge-intensive NLP tasks?,"Retrieval-Augmented Generation (RAG) aims to address the problem of knowledge-intensive NLP tasks by leveraging external knowledge sources to improve performance. Essentially, it combines the power of large language models with the ability to access and utilize relevant information to answer questions and complete tasks more effectively.","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 0, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 148, ""page"": 17, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",4.4424,,59,50.50634753503343,859.32,
+MINI_C3_20260619_174949,C3,Q002,1,How does RAG combine parametric memory and non-parametric memory?,"Okay, let's break down how RAG (Retrieval-Augmented Generation) combines parametric and non-parametric memory.
+
+RAG works by first retrieving relevant text documents from an external source (like a database or the internet) based on a given input sequence. Then, it uses this retrieved information as context when generating the output. Essentially, it’s a hybrid approach.  The key difference is that it uses *both* a parametric memory (which learns patterns and relationships) and a non-parametric memory (which allows the model to adapt to new information).
+
+Here’s a more detailed explanation:
+
+*   **Parametric Memory:** This component learns patterns and relationships within the data itself. It’s used to store and retrieve information that’s already been learned.
+*   **Non-parametric Memory:** This component is designed to be updated as the world changes. It’s used to store new information that’s not explicitly learned.
+
+In the context","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 12, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 84, ""page"": 9, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",6.1437,,200,65.90031193912655,862.74,
+MINI_C3_20260619_174949,C3,Q003,1,Why is provenance important in a question-answering system?,"Provenance is crucial in question-answering systems because it ensures the reliability and trustworthiness of the answers. Essentially, provenance focuses on verifying the source of information used to generate a response. It’s about establishing that the answer is backed by credible, external data – a process known as factuality.  Specifically, provenance considers whether a statement can be corroborated by trusted sources, and the level of dependence between the input question and the output answer.  This is a key aspect of ensuring accuracy and avoiding misleading information. 
+
+Here’s a breakdown of why provenance is important, based on the provided context:
+
+*   **Factuality:** The context highlights the importance of verifying the truthfulness of the answers, which provenance directly addresses.
+*   **Source Verification:**  Provenance emphasizes the need to confirm that the answer is based on reliable external data, rather than simply relying on the system's internal knowledge.
+*   **Best Practices:** The use of pairwise comparative evaluation (BART vs","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 92, ""page"": 10, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 75, ""page"": 8, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 41, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",6.7973,,200,56.96674850889536,869.45,
+MINI_C3_20260619_174949,C3,Q004,1,What is the role of the retriever in a RAG pipeline?,"According to the provided context, the retriever in a RAG (Retrieval-Augmented Generation) pipeline plays a crucial role in retrieving relevant information from a source dataset. It’s used to find the most pertinent documents before the generator produces an answer. 
+
+Here’s a breakdown of its function:
+
+*   **Retrieval:** The retriever uses retrieval supervision to find relevant documents based on the question.
+*   **Initial Retrieval:** RAG initially uses a DPR (Retrieval-Based Pointer Retriever) retriever, which relies on natural questions and triviaQA to find documents.
+*   **Ranking & Re-ranking:** The retriever then uses a BERT-based cross-encoder to re-rank the retrieved documents.
+*   **Diversity:** RAG-Sequences generates more diverse outputs than RAG-Tokens, and both are significantly more diverse than BART without needing any diversity-promoting decoding.
+
+","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 46, ""page"": 5, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 65, ""page"": 7, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 21, ""page"": 3, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",5.9332,,186,65.22637937135096,871.02,
+MINI_C3_20260619_174949,C3,Q005,1,How can retrieval help a model access knowledge that is not stored in its parameters?,"Retrieval supervision is a technique that allows models to access knowledge beyond their internal parameters. In this approach, the model uses an external source of information – called a ""retrieval"" – to find relevant text documents. These documents are then used as additional context when generating an answer.  Essentially, the model retrieves relevant information from a database and uses it to inform its response. This is particularly useful because it allows the model to update its knowledge as the world changes, without needing to modify its core parameters.
+
+Here’s a breakdown of how it works:
+
+*   **RAG Models:** These models use a retriever to find relevant text documents.
+*   **Retrieval Process:** The retriever searches a database of documents (like a knowledge base) and returns a set of documents that are most relevant to a given query.
+*   **Parameterized Implicit Knowledge:** The retriever doesn't store the entire knowledge base itself; it just provides a set of documents.
+*   ","{""files"": [""./uploads/D1_RAG_Lewis_2020.pdf""], ""detailed_sources"": [{""chunk_id"": 16, ""page"": 2, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 5, ""page"": 1, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}, {""chunk_id"": 163, ""page"": 18, ""source"": ""./uploads/D1_RAG_Lewis_2020.pdf""}]}",6.2312,,200,63.24388645066139,872.09,

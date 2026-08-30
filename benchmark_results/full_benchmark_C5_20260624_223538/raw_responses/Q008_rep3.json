@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The limitation of large pre-trained models is their inability to directly access and retrieve specific information from external sources due to their reliance on stored factual knowledge in their parameters. This limitation is addressed by the use of retrieval, which allows the model to learn to retrieve documents from external sources, thereby improving its performance on downstream NLP tasks."
+      }
+    }
+  ],
+  "created": 1782337687,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 66,
+    "prompt_tokens": 440,
+    "total_tokens": 506,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-qD2Dedhbp3qzv4T3ve1Lbz95Z4I1zyfB",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 440,
+    "prompt_ms": 760.047,
+    "prompt_per_token_ms": 1.7273795454545455,
+    "prompt_per_second": 578.9115673109688,
+    "predicted_n": 66,
+    "predicted_ms": 1015.853,
+    "predicted_per_token_ms": 15.391712121212121,
+    "predicted_per_second": 64.97003011262457
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 79,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 78,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

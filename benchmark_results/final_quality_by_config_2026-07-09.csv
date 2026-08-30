@@ -1,0 +1,7 @@
+﻿config,model,n_answers,relevance,correctness,faithfulness_to_source,completeness,hallucination_risk,source_grounding,overall_quality
+C1,Qwen2.5 0.5B Q4_K_M,40,3.48,2.90,2.98,2.42,3.67,2.98,3.07
+C2,Llama 3.2 1B Q4_K_M,40,3.70,2.95,2.92,2.75,3.33,2.95,3.10
+C3,Gemma 3 1B Q4_K_M,40,4.00,3.50,3.45,3.12,3.95,3.42,3.57
+C4,Qwen2.5 1.5B Q2_K,40,2.98,2.52,2.65,1.93,3.38,2.65,2.68
+C5,Qwen2.5 1.5B Q4_K_M,40,3.80,3.23,3.42,2.65,4.12,3.38,3.43
+C6,Qwen2.5 1.5B Q8_0,40,3.88,3.33,3.35,2.70,4.08,3.35,3.45

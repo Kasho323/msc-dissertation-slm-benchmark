@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Okay, here’s a rephrased and expanded answer to your question, incorporating the provided context and adding some general knowledge where appropriate:\n\n**Answer:**\n\nRAG and local deployment represent distinct approaches to addressing the challenges of question answering. RAG (Retrieval-Augmented Generation) leverages the retrieved documents to generate answers, while local deployment utilizes the retrieved documents directly for answering.  The key difference lies in how the model handles the question. RAG focuses on providing answers based on the content of the retrieved documents, while local deployment allows the model to generate answers from scratch using the retrieved information.\n\nThe context highlights that RAG achieves 11.8% accuracy in NQ (Natural Question Answering) tasks, where extractive models typically score 0%.  Local deployment, on the other hand, often surpasses extractive models in this scenario, demonstrating state-of-the-art performance.  This is partly due to the retrieval process allowing the model to access more relevant"
+      }
+    }
+  ],
+  "created": 1781908049,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 499,
+    "total_tokens": 699,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-O6cKENZ6kXMxvkKNscUppkoQkqwwsk15",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 499,
+    "prompt_ms": 977.964,
+    "prompt_per_token_ms": 1.9598476953907817,
+    "prompt_per_second": 510.2437308530784,
+    "predicted_n": 200,
+    "predicted_ms": 3491.824,
+    "predicted_per_token_ms": 17.45912,
+    "predicted_per_second": 57.27665540989465
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 50,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 33,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 35,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

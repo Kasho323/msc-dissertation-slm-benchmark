@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Large pre-trained language models, while achieving impressive results, present several limitations that motivate the use of retrieval. Specifically, the models store factual knowledge within their parameters, which can lead to challenges like the need to optimize retrieval modules to aid specific downstream tasks like question answering.  Furthermore, these models often have a large number of decision points (potentially trillions) housed within their neural networks, increasing statistical uncertainty and raising concerns about bias management, scientific validity, and reproducibility. Finally, there’s a privacy risk associated with enhanced data aggregation capabilities for AI systems."
+      }
+    }
+  ],
+  "created": 1781907405,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 112,
+    "prompt_tokens": 414,
+    "total_tokens": 526,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-e5cOUiqEkFBxGdtjJ2ZtQJyzG79bv1vP",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 414,
+    "prompt_ms": 781.709,
+    "prompt_per_token_ms": 1.8881859903381641,
+    "prompt_per_second": 529.6088442118487,
+    "predicted_n": 112,
+    "predicted_ms": 1579.712,
+    "predicted_per_token_ms": 14.104571428571429,
+    "predicted_per_second": 70.89899931126686
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf",
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 0,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 79,
+        "page": 9,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 456,
+        "page": 43,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

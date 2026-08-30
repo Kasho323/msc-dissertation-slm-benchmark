@@ -1,0 +1,45 @@
+[34m0.00.075.562[0m [32mI [0mlog_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+[34m0.00.075.568[0m [32mI [0mdevice_info:
+[34m0.00.075.575[0m [32mI [0m  - CPU     : Intel(R) Core(TM) Ultra 9 275HX (32189 MiB, 13498 MiB free)
+[34m0.00.075.623[0m [32mI [0msystem_info: n_threads = 24 (n_threads_batch = 24) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+[34m0.00.075.668[0m [32mI [0msrv          init: running without SSL
+[34m0.00.075.697[0m [32mI [0msrv          init: using 23 threads for HTTP server
+[34m0.00.075.857[0m [32mI [0msrv         start: binding port with default address family
+[34m0.00.087.020[0m [32mI [0msrv  llama_server: loading model
+[34m0.00.087.052[0m [32mI [0msrv    load_model: loading model 'C:\Users\Crbd2\Desktop\Dissertation\Jetson-Nano-RAG-LLM\models\qwen2.5-0.5b-instruct-q4_k_m.gguf'
+[34m0.00.087.453[0m [32mI [0mcommon_init_result: fitting params to device memory ...
+[34m0.00.087.453[0m [32mI [0mcommon_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+[34m0.00.331.307[0m [32mI [0mcommon_params_fit_impl: projected to use 522 MiB of host memory vs. 32189 MiB of total host memory
+[34m0.00.536.131[0m [35mW load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0m[34m0.00.636.369[0m [35mW llama_context: n_ctx_seq (4096) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+[0m[34m0.00.654.912[0m [32mI [0mcommon_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+[34m0.00.780.626[0m [32mI [0msrv    load_model: initializing slots, n_slots = 1
+[34m0.00.804.357[0m [35mW common_speculative_init: no implementations specified for speculative decoding
+[0m[34m0.00.804.363[0m [32mI [0mslot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+[34m0.00.804.425[0m [32mI [0msrv    load_model: prompt cache is disabled - use `--cache-ram N` to enable it
+[34m0.00.804.425[0m [32mI [0msrv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+[34m0.00.804.425[0m [32mI [0msrv    load_model: context checkpoints disabled
+[34m0.00.804.453[0m [35mW srv          init: --cache-idle-slots requires --cache-ram, disabling
+[0m[34m0.00.808.566[0m [32mI [0minit: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+[34m0.00.810.934[0m [32mI [0msrv          init: init: chat template, thinking = 0
+[34m0.00.810.952[0m [32mI [0msrv  llama_server: model loaded
+[34m0.00.810.954[0m [32mI [0msrv  llama_server: server is listening on http://127.0.0.1:8080
+[34m0.00.810.959[0m [32mI [0msrv  update_slots: all slots are idle
+[34m0.12.910.717[0m [32mI [0msrv  params_from_: Chat format: peg-native
+[34m0.12.911.056[0m [32mI [0mslot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+[34m0.12.911.137[0m [32mI [0mslot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+[34m0.14.131.359[0m [32mI [0mslot print_timing: id  0 | task 0 | prompt eval time =     535.79 ms /   469 tokens (    1.14 ms per token,   875.33 tokens per second)
+[34m0.14.131.365[0m [32mI [0mslot print_timing: id  0 | task 0 |        eval time =     684.40 ms /    93 tokens (    7.36 ms per token,   135.88 tokens per second)
+[34m0.14.131.366[0m [32mI [0mslot print_timing: id  0 | task 0 |       total time =    1220.20 ms /   562 tokens
+[34m0.14.131.367[0m [32mI [0mslot print_timing: id  0 | task 0 |    graphs reused =         91
+[34m0.14.131.434[0m [32mI [0mslot      release: id  0 | task 0 | stop processing: n_tokens = 561, truncated = 0
+[34m0.14.131.441[0m [32mI [0msrv  update_slots: all slots are idle

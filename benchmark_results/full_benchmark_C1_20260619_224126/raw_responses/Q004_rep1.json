@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "In a RAG pipeline, the retriever plays a crucial role. It is responsible for retrieving relevant information for the task at hand. The retriever helps in optimizing the performance of the RAG by enabling the generator to choose content from multiple documents when producing an answer. The top K documents are retrieved using the retriever, and the generator then produces a distribution for the next output token for each document, before marginalizing. This allows the generator to choose content from several documents when producing an answer, thereby improving the overall performance of the RAG."
+      }
+    }
+  ],
+  "created": 1781905319,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 111,
+    "prompt_tokens": 417,
+    "total_tokens": 528,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-wrEk3ytJMfPyrf8cubmZNNVmssfUBuM3",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 417,
+    "prompt_ms": 497.855,
+    "prompt_per_token_ms": 1.1938968824940048,
+    "prompt_per_second": 837.5932751503952,
+    "predicted_n": 111,
+    "predicted_ms": 795.853,
+    "predicted_per_token_ms": 7.169846846846847,
+    "predicted_per_second": 139.47299312812794
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 46,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 21,
+        "page": 3,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

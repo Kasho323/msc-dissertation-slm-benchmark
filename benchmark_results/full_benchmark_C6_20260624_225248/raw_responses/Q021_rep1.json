@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The purpose of the NIST AI Risk Management Framework is to provide a structured approach for addressing and managing the risks associated with AI systems. It aims to minimize potential negative impacts while maximizing positive outcomes, thereby ensuring more trustworthy AI systems. The framework addresses risks, impacts, and harms, and provides metrics, methodologies, and goals for evaluating its effectiveness. It also aims to enhance processes for governing, mapping, measuring, and managing AI risk, and to clearly document outcomes."
+      }
+    }
+  ],
+  "created": 1782338161,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 94,
+    "prompt_tokens": 418,
+    "total_tokens": 512,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-W9LVGpXiX3QmvZ5c2JZvMzUpQ0HkxsCa",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 418,
+    "prompt_ms": 1292.95,
+    "prompt_per_token_ms": 3.0931818181818183,
+    "prompt_per_second": 323.29169728141073,
+    "predicted_n": 94,
+    "predicted_ms": 2138.621,
+    "predicted_per_token_ms": 22.751287234042554,
+    "predicted_per_second": 43.953556988358386
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 248,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 344,
+        "page": 24,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 243,
+        "page": 8,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

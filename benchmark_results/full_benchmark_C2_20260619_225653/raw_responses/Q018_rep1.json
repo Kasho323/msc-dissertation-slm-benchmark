@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Local inference changes where the machine learning (ML) model is computed. \n\nIn the context of the retrieved information, local inference refers to the process of making predictions or inferences about an individual's personal data (e.g., faceprints) without relying on a cloud server. This means that the ML model is not hosted on a cloud server, but rather is computed locally on the device from which the query is generated, which already collects and stores the individual's personal data.\n\nLocal inference is different from remote inference, where the model is computed on a cloud server. Remote inference is often used for data collection and storage, but local inference is used for prediction and inference, which is a different scenario.\n\nIn this scenario, local inference minimizes the personal data involved in prediction by computing the model on the device from which the query is generated, which already collects and stores the individual's personal data. This approach is often referred to as \"inference on-device\" or \"inference on-device with local"
+      }
+    }
+  ],
+  "created": 1781906371,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 389,
+    "total_tokens": 589,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-QMhOZXzpC6wWf3AVi45eymHWsVWUgUYm",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 389,
+    "prompt_ms": 485.761,
+    "prompt_per_token_ms": 1.2487429305912596,
+    "prompt_per_second": 800.8053343104943,
+    "predicted_n": 200,
+    "predicted_ms": 2941.217,
+    "predicted_per_token_ms": 14.706085,
+    "predicted_per_second": 67.99906297291223
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 707,
+        "page": 25,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 706,
+        "page": 25,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 637,
+        "page": 18,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

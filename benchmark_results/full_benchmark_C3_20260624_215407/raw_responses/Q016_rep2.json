@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Okay, let’s break down why an OpenAI-compatible endpoint would be useful for this project.\n\nBased on the context, an OpenAI-compatible endpoint is valuable because it allows the project to leverage the power of OpenAI’s models. Specifically, it enables the project to:\n\n*   **Easily integrate with OpenAI’s models:** It provides a standardized way to interact with OpenAI’s models, simplifying the development process.\n*   **Benefit from the rich ecosystem of contributors and services:** The project is designed to utilize the extensive community and support offered by OpenAI, including libraries, tools, and services.\n*   **Utilize pre-built Mobile and Web platform wrappers:** This reduces development time and effort by providing ready-to-use components for deploying the model.\n*   **Leverage a model example:** The project includes a model example, which is a significant benefit for testing and demonstration purposes.\n\nEssentially, it’s a way to quickly and efficiently integrate with OpenAI’s models without having to build everything from scratch.\n\n"
+      }
+    }
+  ],
+  "created": 1782335027,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 214,
+    "prompt_tokens": 399,
+    "total_tokens": 613,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-xpy0o7oF485BUWKEviS8wYe6OonjEFZz",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 399,
+    "prompt_ms": 859.18,
+    "prompt_per_token_ms": 2.1533333333333333,
+    "prompt_per_second": 464.39628482972137,
+    "predicted_n": 214,
+    "predicted_ms": 3251.995,
+    "predicted_per_token_ms": 15.19623831775701,
+    "predicted_per_second": 65.80575923394717
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf",
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 618,
+        "page": 16,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 189,
+        "page": 8,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 619,
+        "page": 16,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

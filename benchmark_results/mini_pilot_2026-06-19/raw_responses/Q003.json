@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Petr Baudi and Jan ediv`y have developed a model for question answering in the Yodaqa system. Their work was presented at the International Conference of the Cross-Language Evaluation Forum for European Languages, held in 2015. The context mentions that the authors have also published a paper titled \"Semantic Parsing on Freebase from Question-Answer Pairs\" in the Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing. The authors have shown that retrieval improves performance across a variety of NLP tasks when considered in isolation. Their work unites factuality and specicity, and follows best practice in evaluation. They use pairwise comparative evaluation and evaluate an answer and two generated questions. If the answer is better, they pick question B; if both are good, they pick question A; if neither is good, they pick question C."
+      }
+    }
+  ],
+  "created": 1781886438,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 178,
+    "prompt_tokens": 502,
+    "total_tokens": 680,
+    "prompt_tokens_details": {
+      "cached_tokens": 68
+    }
+  },
+  "id": "chatcmpl-1V1ftVYHwdzxU3RydAk7FFlVrS1XJ2Yo",
+  "timings": {
+    "cache_n": 68,
+    "prompt_n": 434,
+    "prompt_ms": 586.88,
+    "prompt_per_token_ms": 1.352258064516129,
+    "prompt_per_second": 739.5038167938932,
+    "predicted_n": 178,
+    "predicted_ms": 1927.972,
+    "predicted_per_token_ms": 10.831303370786516,
+    "predicted_per_second": 92.324992271672
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 92,
+        "page": 10,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 75,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 41,
+        "page": 5,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

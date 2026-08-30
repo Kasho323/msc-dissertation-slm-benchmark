@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The purpose of the NIST AI Risk Management Framework is to minimize potential negative impacts of AI systems, such as threats to civil liberties and rights, while also maximizing positive impacts. It provides a path to effectively address, document, and manage AI risks and potential negative impacts, leading to more trustworthy AI systems. The framework aims to collaboratively develop metrics, methodologies, and goals for evaluating its effectiveness and broadly share results and supporting information. It includes four specific functions: GOVERN, MAP, MEASURE, and MANAGE, which are broken down into categories and subcategories. These functions help organizations address the risks of AI systems in practice."
+      }
+    }
+  ],
+  "created": 1782337796,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 128,
+    "prompt_tokens": 418,
+    "total_tokens": 546,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-BXWKwo8e0JNGKQDUcySICy4VhSeOKGJJ",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 418,
+    "prompt_ms": 737.373,
+    "prompt_per_token_ms": 1.76405023923445,
+    "prompt_per_second": 566.8772792060463,
+    "predicted_n": 128,
+    "predicted_ms": 2003.316,
+    "predicted_per_token_ms": 15.65090625,
+    "predicted_per_second": 63.894063642480766
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 248,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 344,
+        "page": 24,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 243,
+        "page": 8,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

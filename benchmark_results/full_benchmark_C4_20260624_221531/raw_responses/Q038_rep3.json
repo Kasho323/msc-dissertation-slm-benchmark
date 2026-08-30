@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The context provided discusses the performance and architecture of a Retrieval-Augmented Generation (RAG) system in relation to Open-domain Question Answering (QA) and Abstractive Question Answering (QA). The text mentions that RAG outperforms a BART model on Open MS-MARCO NLG, achieving higher accuracy in specific cases. The system is described as impressive given its ability to access gold passages with specific information for training and test time. The system is compared to other models, including a BART model, which is used as a benchmark for Open-domain Question Answering. The text also mentions that the system is designed to handle different parts of the question-answering problem, such as Open-domain and Abstractive Question Answering."
+      }
+    }
+  ],
+  "created": 1782336908,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 154,
+    "prompt_tokens": 502,
+    "total_tokens": 656,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-sAdPo6Hbo697fQ1pWUa3ZtVRn48gPrDw",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 502,
+    "prompt_ms": 1170.345,
+    "prompt_per_token_ms": 2.331364541832669,
+    "prompt_per_second": 428.9333487134136,
+    "predicted_n": 154,
+    "predicted_ms": 1764.678,
+    "predicted_per_token_ms": 11.458948051948052,
+    "predicted_per_second": 87.2680455017856
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 50,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 33,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 35,
+        "page": 4,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Local inference means that an ML model is installed and runs on the device where the query is generated, rather than being hosted on a cloud server. This shifts the computation of the model to the device itself, making it closer to the data source."
+      }
+    }
+  ],
+  "created": 1782335046,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 50,
+    "prompt_tokens": 370,
+    "total_tokens": 420,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-1sHKf6x9uT1vFrRpVXSUansQgkui7yCH",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 370,
+    "prompt_ms": 741.687,
+    "prompt_per_token_ms": 2.0045594594594593,
+    "prompt_per_second": 498.86272780836117,
+    "predicted_n": 50,
+    "predicted_ms": 642.333,
+    "predicted_per_token_ms": 12.84666,
+    "predicted_per_second": 77.84124433899551
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 707,
+        "page": 25,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 637,
+        "page": 18,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 638,
+        "page": 18,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

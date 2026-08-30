@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Llama.cpp is relevant for local or on-device language model deployment because it aims to enable minimal setup and state-of-the-art performance across a wide range of tools. The primary goal of llama.cpp is to facilitate LLM inference with minimal setup and performance on a wide range of downstream consumers. It supports the gpt-oss model with native MXFP4 format and has been integrated with the collaboration with NVIDIA. It also includes a documentation guide for using the new WebUI of llama.cpp and supports collaboration with the gpt-oss model. Additionally, it includes a CLI tool for accessing and experimenting with most of the functionality of llama.cpp. The main focus is to enable LLM inference with minimal setup and state-of-the-art performance on a wide range of downstream consumers."
+      }
+    }
+  ],
+  "created": 1782336238,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 155,
+    "prompt_tokens": 387,
+    "total_tokens": 542,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-D21Dv6KsyvfKDK0rd388yZCAUjg5Fctg",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 387,
+    "prompt_ms": 926.018,
+    "prompt_per_token_ms": 2.392811369509044,
+    "prompt_per_second": 417.91844219010864,
+    "predicted_n": 155,
+    "predicted_ms": 2011.646,
+    "predicted_per_token_ms": 12.97836129032258,
+    "predicted_per_second": 77.05133010479975
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 171,
+        "page": 1,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 196,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

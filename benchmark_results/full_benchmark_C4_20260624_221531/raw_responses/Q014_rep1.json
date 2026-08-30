@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "To address the question about how quantisation supports faster inference or lower memory use, we need to understand the context provided. The context indicates that there is a range of quantisation methods for integers, including 1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit, which are used for faster inference and reduced memory use. \n\nHowever, the context does not directly answer the question about how quantisation supports faster inference or lower memory use. Instead, it provides a list of methods and their benefits. \n\nTo directly answer the question, we would need to focus on the specific methods mentioned, such as 1.5-bit, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, and 8-bit quantisation, and how they support faster inference and lower memory use. \n\nThe context does not provide a direct answer to this specific question. It focuses on the methods and their benefits, but not on the methods themselves. \n\nTherefore, the context does not provide a direct answer to how quantisation supports faster inference or lower memory use. It focuses on the methods and their benefits, but not on the methods themselves. \n\nThe context does not provide a direct answer to this specific question. It focuses on the methods and their benefits, but not on the methods themselves."
+      }
+    }
+  ],
+  "created": 1782335862,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 281,
+    "prompt_tokens": 470,
+    "total_tokens": 751,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-I5Jlxlto6v2ThixrY7jDkutvMGocKXkY",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 470,
+    "prompt_ms": 1129.565,
+    "prompt_per_token_ms": 2.4033297872340427,
+    "prompt_per_second": 416.08937953991136,
+    "predicted_n": 281,
+    "predicted_ms": 3432.241,
+    "predicted_per_token_ms": 12.21438078291815,
+    "predicted_per_second": 81.87070779703407
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 176,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 175,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 5,
+        "page": 1,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

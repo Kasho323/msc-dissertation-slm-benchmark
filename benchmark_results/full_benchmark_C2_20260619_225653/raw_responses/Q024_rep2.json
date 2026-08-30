@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The AI Risk Framework should not only focus on accuracy but also consider other aspects to provide a comprehensive evaluation of AI risks. Here are some ways it can support evaluation beyond accuracy alone:\n\n1. **Assessment of Uncertainty**: The framework should consider the uncertainty associated with AI risks, including the likelihood and potential impact of different scenarios. This can be achieved through probabilistic modeling and scenario analysis.\n\n2. **Risk Sensitivity**: The framework should account for the sensitivity of AI systems to different inputs, parameters, and environmental factors. This can be done by incorporating sensitivity analysis and scenario testing.\n\n3. **Value Alignment**: The framework should evaluate how AI systems align with human values, ethics, and societal norms. This can be achieved through the use of value-based metrics and assessments.\n\n4. **Adaptability and Flexibility**: The framework should consider the ability of AI systems to adapt and evolve in response to changing circumstances. This can be done by incorporating flexibility and scalability into the framework.\n\n5. **"
+      }
+    }
+  ],
+  "created": 1781906769,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 366,
+    "total_tokens": 566,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-OFNT4QkxWMQof3gJbsuCDeWilyJxWQOm",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 366,
+    "prompt_ms": 531.094,
+    "prompt_per_token_ms": 1.4510765027322405,
+    "prompt_per_second": 689.1435414446406,
+    "predicted_n": 200,
+    "predicted_ms": 2583.913,
+    "predicted_per_token_ms": 12.919565,
+    "predicted_per_second": 77.40198683159998
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 482,
+        "page": 47,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 415,
+        "page": 36,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 410,
+        "page": 35,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

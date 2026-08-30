@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "RAG (Reactive Attention Guidance) is a more diverse and effective language generation model compared to traditional RAG-Tokens and BART (Bidirectional Transformers for Attention). Unlike RAG-Tokens, which rely on token-level retrieval, RAG learns to retrieve relevant information for the task, leading to improved results across various tasks.\n\nIn contrast, RAG is more factually accurate than RAG-Tokens in only 7.1% of cases, while RAG was more factual in 42.7% of cases. Moreover, RAG outperforms BART in a further 17% of cases, demonstrating its effectiveness over a state-of-the-art generation model.\n\nRAG's ability to generate more specific and factually accurate responses is attributed to its ability to document posterior p(zi|x,yi,yi) for each generated token, allowing it to better capture the nuances of language. This is particularly evident in Jeopardy questions, where RAG performs best when generating responses that accurately recall two separate pieces of information.\n\nOverall, RAG's unique approach to language generation, which involves learning to retrieve relevant information for the task, makes it a more effective and diverse model compared to traditional RAG-Tokens and BART."
+      }
+    }
+  ],
+  "created": 1782333669,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 250,
+    "prompt_tokens": 448,
+    "total_tokens": 698,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-TOpfuNSTl4ASNWTyYLLlXaZkrALLMhib",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 448,
+    "prompt_ms": 572.925,
+    "prompt_per_token_ms": 1.2788504464285713,
+    "prompt_per_second": 781.9522625125453,
+    "predicted_n": 250,
+    "predicted_ms": 3090.143,
+    "predicted_per_token_ms": 12.360572,
+    "predicted_per_second": 80.90240484016435
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 65,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 53,
+        "page": 6,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 59,
+        "page": 7,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

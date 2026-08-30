@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "An AI system should be evaluated for both its limitations and capabilities to ensure that it is used effectively and responsibly. Here's why:\n\n**Limitations:**\n\n1. **Performance constraints**: AI systems may have limitations in terms of processing power, memory, or data storage, which can affect their ability to perform certain tasks or handle specific types of data.\n2. **Data quality issues**: AI systems may struggle with noisy, incomplete, or biased data, which can lead to inaccurate or biased outcomes.\n3. **Safety and security concerns**: AI systems may not be able to ensure the safety and security of humans or other systems, particularly in situations where AI is interacting with humans or other systems.\n4. **Ethical considerations**: AI systems may not be able to fully understand or respect human values, norms, and ethics, which can lead to unintended consequences.\n\n**Capabilities:**\n\n1. **Innovation and creativity**: AI systems can be used to generate new ideas, products, or services that may not"
+      }
+    }
+  ],
+  "created": 1781906450,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 333,
+    "total_tokens": 533,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-w0wnr0pcvOoa3IqeeAyBFIp1e7dkoG4k",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 333,
+    "prompt_ms": 442.063,
+    "prompt_per_token_ms": 1.3275165165165166,
+    "prompt_per_second": 753.2862962971342,
+    "predicted_n": 200,
+    "predicted_ms": 2768.86,
+    "predicted_per_token_ms": 13.8443,
+    "predicted_per_second": 72.2318932701545
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 380,
+        "page": 30,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 254,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 375,
+        "page": 29,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The NIST AI Risk Management Framework (RMF) is designed to help organizations minimize potential negative impacts of AI systems by addressing, documenting, and managing AI risks and potential negative impacts effectively. The framework aims to provide a structured approach to evaluating the effectiveness of AI Risk Management Frameworks and to promote more trustworthy AI systems.\n\nIn simpler terms, the NIST AI Risk Management Framework is a set of guidelines and best practices for organizations to manage AI risks and ensure that AI systems are developed, deployed, and used in a responsible and safe manner. The framework provides a framework for organizations to:\n\n1. Understand and address risks, impacts, and harms associated with AI systems.\n2. Develop and implement effective risk management strategies.\n3. Monitor and measure the effectiveness of AI Risk Management Frameworks.\n\nThe framework is designed to be adaptable and flexible, allowing organizations to tailor it to their specific needs and circumstances. By following the framework, organizations can demonstrate their commitment to AI risk management and contribute to the development of more"
+      }
+    }
+  ],
+  "created": 1781906397,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 433,
+    "total_tokens": 633,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-kz1jB2NMSSVSmevv8Zl4GD6WnULREw10",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 433,
+    "prompt_ms": 556.288,
+    "prompt_per_token_ms": 1.284729792147806,
+    "prompt_per_second": 778.3737919926368,
+    "predicted_n": 200,
+    "predicted_ms": 2763.389,
+    "predicted_per_token_ms": 13.816945,
+    "predicted_per_second": 72.37489908225008
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 248,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 344,
+        "page": 24,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 243,
+        "page": 8,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Local risks remain even if a model does not send data to a cloud API. These risks include:\n\n1. **White Box Attacks**: The model provider may not be able to monitor the model during deployment, making it harder to assess and mitigate privacy attacks on the model. The provider remains responsible for assessing and mitigating these risks.\n\n2. **Black Box Attacks**: Even if the model is provided via an Application Programming Interface (API), the APIs users do not have direct access to the model itself. This means that the APIs users might still be subjected to black box attacks. To mitigate this risk, the model provider can monitor queries from the APIs users to detect privacy attacks.\n\n3. **Privacy Attacks on Personal Data**: The model provider may not be able to fully assess the risk of personal data used to train the model being exposed as a result of how the model is deployed. This risk is influenced by the particular deployment contexts and associated threat models.\n\nTo mitigate these risks, the model provider should collaborate with the clients to understand the deployment contexts and associated threat models. This collaboration is part of the procurement policy, ensuring that sufficient information sharing between each party is performed to address their respective responsibilities."
+      }
+    }
+  ],
+  "created": 1782339141,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 239,
+    "prompt_tokens": 395,
+    "total_tokens": 634,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-y8mrviHGeGAu7JuJlRiwYrd6jDem8OvT",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 395,
+    "prompt_ms": 1477.1,
+    "prompt_per_token_ms": 3.7394936708860755,
+    "prompt_per_second": 267.4158824724122,
+    "predicted_n": 239,
+    "predicted_ms": 6263.112,
+    "predicted_per_token_ms": 26.205489539748953,
+    "predicted_per_second": 38.159943491350624
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 653,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 651,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 654,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

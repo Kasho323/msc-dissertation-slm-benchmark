@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "An AI system should be evaluated for limitations as well as capabilities because it is important to understand the boundaries and potential drawbacks of the system. By identifying limitations, we can better assess the system's potential negative impacts and ensure that it is used responsibly. Additionally, understanding limitations helps in anticipating risks and developing strategies to mitigate potential harms."
+      }
+    }
+  ],
+  "created": 1782337507,
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 66,
+    "prompt_tokens": 328,
+    "total_tokens": 394,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-W2LF69lVl7xM218kBeG11EdpeYUttarM",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 328,
+    "prompt_ms": 596.083,
+    "prompt_per_token_ms": 1.817326219512195,
+    "prompt_per_second": 550.2589404495683,
+    "predicted_n": 66,
+    "predicted_ms": 1038.793,
+    "predicted_per_token_ms": 15.739287878787877,
+    "predicted_per_second": 63.53527603670799
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 380,
+        "page": 30,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 254,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 313,
+        "page": 19,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

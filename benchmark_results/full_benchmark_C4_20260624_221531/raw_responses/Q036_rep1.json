@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Deploying a machine learning (ML) model locally can help reduce some privacy risks, but it is not sufficient to leave other data protection responsibilities intact. To fully assess the risk of personal data used to train the model being exposed as a result of its deployment, it is necessary to collaborate with the clients. This involves understanding the particular deployment contexts and associated threat models. The procurement policy should include sufficient information sharing between each party to perform their respective respective responsibilities. This involves understanding the development stage, where personal data is being processed to train the model, and the deployment stage, where the results of the model are applied to other individuals who were not part of the training dataset. The development stage involves the processing of personal data, while the deployment stage involves the application of the model's results to other individuals."
+      }
+    }
+  ],
+  "created": 1782336088,
+  "model": "qwen2.5-1.5b-instruct-q2_k.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 161,
+    "prompt_tokens": 350,
+    "total_tokens": 511,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-fNSw78SWdjD2ciT0xH6rhhry8kpedaoX",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 350,
+    "prompt_ms": 857.329,
+    "prompt_per_token_ms": 2.4495114285714283,
+    "prompt_per_second": 408.2446761978191,
+    "predicted_n": 161,
+    "predicted_ms": 1895.319,
+    "predicted_per_token_ms": 11.772167701863355,
+    "predicted_per_second": 84.94612252607608
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 654,
+        "page": 20,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 711,
+        "page": 26,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 554,
+        "page": 9,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

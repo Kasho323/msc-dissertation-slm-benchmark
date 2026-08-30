@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Okay, here’s a rephrased and expanded answer to your question, drawing on the provided context:\n\n“It’s beneficial to separate technical performance from broader trust and governance concerns because it allows for a more holistic approach to AI risk management. While technical performance – like accuracy or speed – is crucial, it’s not sufficient on its own.  The context surrounding AI systems – including social and organizational behavior, the data they’re trained on, the models used, and the decisions made by those building them – is equally important.  By focusing on trustworthiness characteristics (as outlined in Figure 4), we can proactively prevent negative risks and develop AI systems that are more reliable and beneficial.  This separation enables us to better understand the context in which AI operates, identify potential issues, and ultimately improve the overall trustworthiness of these systems.”\n\n---\n\n**Note:** The answer directly addresses your question and incorporates the key points from the provided context."
+      }
+    }
+  ],
+  "created": 1782335591,
+  "model": "gemma-3-1b-it.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 195,
+    "prompt_tokens": 360,
+    "total_tokens": 555,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-YTvCVZD2d6q16HMlSySrIC7Nojc4m951",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 360,
+    "prompt_ms": 719.928,
+    "prompt_per_token_ms": 1.9998,
+    "prompt_per_second": 500.0500050005001,
+    "predicted_n": 195,
+    "predicted_ms": 2972.703,
+    "predicted_per_token_ms": 15.244630769230769,
+    "predicted_per_second": 65.59686588266638
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 226,
+        "page": 5,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 379,
+        "page": 30,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 298,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

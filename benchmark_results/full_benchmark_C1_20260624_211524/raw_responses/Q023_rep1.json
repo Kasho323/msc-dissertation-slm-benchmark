@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "To consider trustworthiness in AI design and evaluation, it is essential to understand and treat the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics. This involves addressing AI trustworthiness individually, recognizing that tradeoffs are often involved, and determining that some characteristics may be more or less important in any given situation. Ultimately, trustworthiness is a social concept that ranges across a spectrum and is only as strong as its weakest."
+      }
+    }
+  ],
+  "created": 1782332318,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 94,
+    "prompt_tokens": 369,
+    "total_tokens": 463,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-5Rdggt8bhRcHjiIhW0o5a8vrN4LGSVDJ",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 369,
+    "prompt_ms": 528.824,
+    "prompt_per_token_ms": 1.4331273712737127,
+    "prompt_per_second": 697.7746849613483,
+    "predicted_n": 94,
+    "predicted_ms": 870.743,
+    "predicted_per_token_ms": 9.263223404255319,
+    "predicted_per_second": 107.95378199997013
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 298,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 304,
+        "page": 18,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 299,
+        "page": 17,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

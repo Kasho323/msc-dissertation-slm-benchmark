@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The main purpose of llama.cpp is to enable Large Language Models (LLMs) inference with minimal setup and state-of-the-art performance on a wide range of tools."
+      }
+    }
+  ],
+  "created": 1782333676,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 34,
+    "prompt_tokens": 395,
+    "total_tokens": 429,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-QMK0SBntGaasOJxtkOJcDi4QK8riLbGF",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 395,
+    "prompt_ms": 528.972,
+    "prompt_per_token_ms": 1.3391696202531644,
+    "prompt_per_second": 746.7313959907141,
+    "predicted_n": 34,
+    "predicted_ms": 467.859,
+    "predicted_per_token_ms": 13.760558823529411,
+    "predicted_per_second": 72.67146725829791
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 174,
+        "page": 2,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 171,
+        "page": 1,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 196,
+        "page": 9,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      }
+    ]
+  }
+}

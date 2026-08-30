@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The NIST AI Risk Management Framework (RMF) is designed to help organizations minimize potential negative impacts of AI systems by addressing, documenting, and managing AI risks and potential negative impacts effectively. The framework aims to provide a structured approach to evaluating and mitigating AI risks, ultimately leading to more trustworthy AI systems.\n\nTo achieve this purpose, the NIST AI RMF 1.0 Part 1: Foundational Information focuses on:\n\n1. **Understanding and Addressing Risks, Impacts, and Harms**: The framework emphasizes the importance of identifying, assessing, and mitigating AI risks, including their policies, processes, practices, implementation plans, indicators, measurements, and expected outcomes.\n\n2. **Enhanced Processes for Governing, Mapping, Measuring, and Managing AI Risk**: The framework provides guidelines for organizations to develop and implement effective processes for governing, mapping, measuring, and managing AI risk, including clearly documenting outcomes.\n\n3. **Improved Frameworks for Evaluating AI RMFs"
+      }
+    }
+  ],
+  "created": 1781906742,
+  "model": "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 200,
+    "prompt_tokens": 433,
+    "total_tokens": 633,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-SrYJIMF7kN47tQkCnhejFwSxVRdCHYXI",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 433,
+    "prompt_ms": 531.459,
+    "prompt_per_token_ms": 1.2273879907621246,
+    "prompt_per_second": 814.738295898649,
+    "predicted_n": 200,
+    "predicted_ms": 2479.382,
+    "predicted_per_token_ms": 12.39691,
+    "predicted_per_second": 80.66526255332982
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 248,
+        "page": 9,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 344,
+        "page": 24,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      },
+      {
+        "chunk_id": 243,
+        "page": 8,
+        "source": "./uploads/D3_NIST_AI_RMF_1_0.pdf"
+      }
+    ]
+  }
+}

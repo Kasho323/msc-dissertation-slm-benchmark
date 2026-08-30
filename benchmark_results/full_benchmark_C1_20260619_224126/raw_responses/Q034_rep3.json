@@ -1,0 +1,58 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Security and data minimisation are closely related to AI deployment. In the context of AI deployment, security and data minimisation are essential for ensuring the reliability and privacy of AI systems. By implementing security measures and minimizing data collection, AI systems can reduce the risk of unauthorized access, data breaches, and other security threats. This, in turn, helps to maintain the integrity and trustworthiness of the AI systems. Additionally, data minimisation techniques can be used to ensure that only necessary data is collected and used, thereby reducing the risk of data overload and data loss. Overall, security and data minimisation are critical components of AI deployment, as they help to ensure the reliability, privacy, and security of the AI systems."
+      }
+    }
+  ],
+  "created": 1781906104,
+  "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 145,
+    "prompt_tokens": 390,
+    "total_tokens": 535,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-Fr1EH5QYy3fNgSiWY1cFSd9MYifZ73CL",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 390,
+    "prompt_ms": 564.087,
+    "prompt_per_token_ms": 1.446376923076923,
+    "prompt_per_second": 691.3827122411969,
+    "predicted_n": 145,
+    "predicted_ms": 1338.071,
+    "predicted_per_token_ms": 9.228075862068964,
+    "predicted_per_second": 108.36495223347642
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 600,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 602,
+        "page": 15,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      },
+      {
+        "chunk_id": 599,
+        "page": 14,
+        "source": "./uploads/D4_ICO_AI_Data_Protection_Guidance.pdf"
+      }
+    ]
+  }
+}

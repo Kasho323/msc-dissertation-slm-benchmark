@@ -1,0 +1,59 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "A lightweight runtime is important for a laptop-based dissertation benchmark because it allows the system to run efficiently on a personal computer, ensuring that the benchmark can be completed within a reasonable timeframe. This is crucial for maintaining focus and productivity during the dissertation process, especially when working on a laptop with limited resources."
+      }
+    }
+  ],
+  "created": 1782338143,
+  "model": "qwen2.5-1.5b-instruct-q8_0.gguf",
+  "system_fingerprint": "b9587-d2e22ed97",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 60,
+    "prompt_tokens": 575,
+    "total_tokens": 635,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-AyVmOtUhQVi6uOobdfnvlzKijqytoT0H",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 575,
+    "prompt_ms": 1786.551,
+    "prompt_per_token_ms": 3.1070452173913043,
+    "prompt_per_second": 321.84919434149936,
+    "predicted_n": 60,
+    "predicted_ms": 1414.889,
+    "predicted_per_token_ms": 23.58148333333333,
+    "predicted_per_second": 42.40615341556829
+  },
+  "sources_used": {
+    "files": [
+      "./uploads/D1_RAG_Lewis_2020.pdf",
+      "./uploads/D2_llama_cpp_README.pdf"
+    ],
+    "detailed_sources": [
+      {
+        "chunk_id": 205,
+        "page": 13,
+        "source": "./uploads/D2_llama_cpp_README.pdf"
+      },
+      {
+        "chunk_id": 73,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      },
+      {
+        "chunk_id": 72,
+        "page": 8,
+        "source": "./uploads/D1_RAG_Lewis_2020.pdf"
+      }
+    ]
+  }
+}

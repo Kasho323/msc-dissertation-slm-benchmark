@@ -1,0 +1,45 @@
+0.00.176.034 I log_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.176.048 I device_info:
+0.00.176.058 I   - CPU     : Intel(R) Core(TM) Ultra 9 275HX (32189 MiB, 16799 MiB free)
+0.00.176.146 I system_info: n_threads = 24 (n_threads_batch = 24) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.00.176.238 I srv          init: running without SSL
+0.00.176.287 I srv          init: using 23 threads for HTTP server
+0.00.176.873 I srv         start: binding port with default address family
+0.00.192.522 I srv  llama_server: loading model
+0.00.192.567 I srv    load_model: loading model '..\Jetson-Nano-RAG-LLM\models\gemma-3-1b-it.Q4_K_M.gguf'
+0.00.192.681 I common_init_result: fitting params to device memory ...
+0.00.192.682 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.00.918.566 I common_params_fit_impl: projected to use 782 MiB of host memory vs. 32189 MiB of total host memory
+0.01.467.500 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.02.035.971 W llama_context: n_ctx_seq (4096) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+0.02.063.092 I common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.02.348.741 I srv    load_model: initializing slots, n_slots = 1
+0.02.390.123 W common_speculative_init: no implementations specified for speculative decoding
+0.02.390.131 I slot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+0.02.390.260 I srv    load_model: prompt cache is disabled - use `--cache-ram N` to enable it
+0.02.390.261 I srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+0.02.390.261 I srv    load_model: context checkpoints disabled
+0.02.390.846 W srv          init: --cache-idle-slots requires --cache-ram, disabling
+0.02.411.949 I init: chat template, example_format: '<start_of_turn>user
+You are a helpful assistant
+
+Hello<end_of_turn>
+<start_of_turn>model
+Hi there<end_of_turn>
+<start_of_turn>user
+How are you?<end_of_turn>
+<start_of_turn>model
+'
+0.02.414.608 I srv          init: init: chat template, thinking = 0
+0.02.415.041 I srv  llama_server: model loaded
+0.02.415.047 I srv  llama_server: server is listening on http://127.0.0.1:8080
+0.02.415.058 I srv  update_slots: all slots are idle
+18.59.973.695 I srv  params_from_: Chat format: peg-native
+18.59.974.656 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+18.59.974.766 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+19.02.941.685 I slot print_timing: id  0 | task 0 | prompt eval time =    1712.50 ms /   459 tokens (    3.73 ms per token,   268.03 tokens per second)
+19.02.941.699 I slot print_timing: id  0 | task 0 |        eval time =    1254.38 ms /    55 tokens (   22.81 ms per token,    43.85 tokens per second)
+19.02.941.701 I slot print_timing: id  0 | task 0 |       total time =    2966.88 ms /   514 tokens
+19.02.941.707 I slot print_timing: id  0 | task 0 |    graphs reused =         53
+19.02.941.944 I slot      release: id  0 | task 0 | stop processing: n_tokens = 513, truncated = 0
+19.02.941.957 I srv  update_slots: all slots are idle

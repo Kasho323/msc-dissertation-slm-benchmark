@@ -46,18 +46,18 @@ Gao, Y. et al. (2023) *Retrieval-augmented generation for large language models:
 
 Gemma Team (2025) *Gemma 3 technical report*. Google DeepMind. Available at: https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf (Accessed: 15 August 2026).
 
-ggml-org (2026a) *GGUF specification*. GitHub repository. Available at: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md (Accessed: 15 August 2026).
+ggml-org (2026a) *GGUF specification*. GitHub repository. Available at: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md.
 
-ggml-org (2026b) *llama.cpp*. GitHub repository. Available at: https://github.com/ggml-org/llama.cpp (Accessed: 15 August 2026).
+ggml-org (2026b) *llama.cpp*. GitHub repository. Available at: https://github.com/ggml-org/llama.cpp.
 
-ggml-org (2026c) *llama.cpp quantize documentation*. GitHub repository. Available at: https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md (Accessed: 15 August 2026).
+ggml-org (2026c) *llama.cpp quantize documentation*. GitHub repository. Available at: https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md.
 
 Google DeepMind (2025) *Gemma 3 model card*. Available at: https://ai.google.dev/gemma/docs/core/model_card_3 (Accessed: 15 August 2026).
 
 Huang, Y. et al. (2023) 'Privacy implications of retrieval-based language models', *Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing*. Association for Computational Linguistics, pp. 14887–14902. Available at: https://doi.org/10.18653/v1/2023.emnlp-main.921.
-Information Commissioner's Office (2023a) *Guidance on AI and data protection*. Available at: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/ (Accessed: 15 August 2026).
+Information Commissioner's Office (2023a) *Guidance on AI and data protection*. Available at: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/.
 
-Information Commissioner's Office (2023b) *How should we assess security and data minimisation in AI?* Available at: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-should-we-assess-security-and-data-minimisation-in-ai/ (Accessed: 15 August 2026).
+Information Commissioner's Office (2023b) *How should we assess security and data minimisation in AI?* Available at: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-should-we-assess-security-and-data-minimisation-in-ai/.
 
 Lewis, P. et al. (2020) 'Retrieval-augmented generation for knowledge-intensive NLP tasks', *Advances in Neural Information Processing Systems 33 (NeurIPS 2020)*. Available at: https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html (Accessed: 15 August 2026).
 
@@ -74,12 +74,12 @@ OWASP (2025) *OWASP top 10 for LLM applications and generative AI*. Available at
 
 Qwen Team (2024a) *Qwen2.5 technical report*. arXiv preprint arXiv:2412.15115. Available at: https://arxiv.org/abs/2412.15115 (Accessed: 15 August 2026).
 
-Qwen Team (2024b) *Qwen2.5-1.5B-Instruct model card*. Hugging Face. Available at: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct (Accessed: 15 August 2026).
+Qwen Team (2024b) *Qwen2.5-1.5B-Instruct model card*. Hugging Face. Available at: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct.
 
 Reimers, N. and Gurevych, I. (2019) 'Sentence-BERT: sentence embeddings using Siamese BERT-networks', *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing*. Association for Computational Linguistics, pp. 3980–3990. Available at: https://doi.org/10.18653/v1/D19-1410.
-Sentence Transformers (2026a) *all-MiniLM-L6-v2 model card*. Hugging Face. Available at: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2 (Accessed: 15 August 2026).
+Sentence Transformers (2026a) *all-MiniLM-L6-v2 model card*. Hugging Face. Available at: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2.
 
-Sentence Transformers (2026b) *ms-marco-MiniLM-L6-v2 cross-encoder model card*. Hugging Face. Available at: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2 (Accessed: 15 August 2026).
+Sentence Transformers (2026b) *ms-marco-MiniLM-L6-v2 cross-encoder model card*. Hugging Face. Available at: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2.
 
 Tabassi, E. (2023) *Artificial intelligence risk management framework (AI RMF 1.0)* (NIST AI 100-1). National Institute of Standards and Technology. Available at: https://doi.org/10.6028/NIST.AI.100-1.
 Wang, J. (2025) *Jetson-Nano-RAG-LLM*. GitHub repository. Available at: https://github.com/jackiewaang/Jetson-Nano-RAG-LLM (Accessed: 15 August 2026).

@@ -33,3 +33,6 @@ __pycache__/
 # working backups, not part of the record
 _backup_*
 *.BAK-*
+
+# working planning template, not a verification record
+literature/literature_matrix.md

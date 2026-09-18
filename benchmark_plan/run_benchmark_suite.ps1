@@ -1,6 +1,9 @@
 param(
     [string]$ModelConfigIds = "C1,C2,C3,C4,C5,C6",
 
+    [string]$AppDir = "",
+    [string]$LlamaDir = "",
+    [string]$CorpusDir = "",
     [int]$Repetitions = 3,
     [int]$Limit = 0,
     [int]$MaxTokens = 512,
@@ -11,11 +14,14 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$Root = "C:\Users\Crbd2\Desktop\Dissertation"
-$Repo = Join-Path $Root "Jetson-Nano-RAG-LLM"
+$Root = Split-Path -Parent $PSScriptRoot
+if (-not $AppDir) { $AppDir = Join-Path $Root ".runtime\rag-app" }
+if (-not $LlamaDir) { $LlamaDir = Join-Path $Root ".runtime\llama.cpp" }
+if (-not $CorpusDir) { $CorpusDir = Join-Path $Root "corpus" }
+$Repo = $AppDir
 $Python = Join-Path $Repo "venv\Scripts\python.exe"
-$Helper = Join-Path $Root "dissertation_project\benchmark_plan\run_benchmark_config.ps1"
-$LogDir = Join-Path $Root "dissertation_project\benchmark_results\service_logs"
+$Helper = Join-Path $Root "benchmark_plan\run_benchmark_config.ps1"
+$LogDir = Join-Path $Root "replication_runs\service_logs"
 $AllowedConfigIds = @("C1", "C2", "C3", "C4", "C5", "C6")
 $SelectedConfigIds = @(
     $ModelConfigIds.Split(",") |
@@ -74,6 +80,7 @@ if (Test-BackendReady) {
 }
 
 New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
+New-Item -ItemType Directory -Force -Path (Join-Path $Repo "uploads") | Out-Null
 
 $backend = Start-Process `
     -FilePath $Python `
@@ -93,6 +100,9 @@ try {
             "-ExecutionPolicy", "Bypass",
             "-File", $Helper,
             "-ModelConfigId", $configId,
+            "-AppDir", $Repo,
+            "-LlamaDir", $LlamaDir,
+            "-CorpusDir", $CorpusDir,
             "-Repetitions", "$Repetitions",
             "-MaxTokens", "$MaxTokens",
             "-Seed", "$Seed"

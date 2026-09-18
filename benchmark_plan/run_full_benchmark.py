@@ -16,10 +16,10 @@ import psutil
 import requests
 
 
-ROOT = Path(__file__).resolve().parents[2]
-QUESTION_SET = ROOT / "dissertation_project" / "benchmark_plan" / "question_set_template.csv"
-CORPUS_DIR = ROOT / "docs" / "final_benchmark_corpus"
-OUTPUT_ROOT = ROOT / "dissertation_project" / "benchmark_results"
+ROOT = Path(__file__).resolve().parents[1]
+QUESTION_SET = ROOT / "benchmark_plan" / "question_set_template.csv"
+CORPUS_DIR = ROOT / "corpus"
+OUTPUT_ROOT = ROOT / "replication_runs"
 BACKEND_URL = "http://127.0.0.1:8000"
 
 
@@ -229,6 +229,10 @@ def system_metadata() -> dict[str, str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    global CORPUS_DIR, OUTPUT_ROOT
+    parser.add_argument("--corpus-dir", type=Path, default=CORPUS_DIR)
+    parser.add_argument("--output-root", type=Path, default=OUTPUT_ROOT)
+    parser.add_argument("--app-dir", type=Path, default=ROOT / ".runtime" / "rag-app")
     parser.add_argument("--upload-corpus", action="store_true", help="Upload final corpus before running.")
     parser.add_argument("--model-config-id", required=True)
     parser.add_argument("--model-name", required=True)
@@ -249,6 +253,8 @@ def main() -> None:
     parser.add_argument("--stop-on-error", action="store_true")
     parser.add_argument("--dry-run", action="store_true", help="Validate selection and print planned run only.")
     args = parser.parse_args()
+    CORPUS_DIR = args.corpus_dir.resolve()
+    OUTPUT_ROOT = args.output_root.resolve()
 
     if args.repetitions < 1:
         raise ValueError("--repetitions must be at least 1.")
@@ -272,7 +278,11 @@ def main() -> None:
     output_dir_name = args.output_dir or f"full_benchmark_{args.model_config_id}_{run_stamp}"
     output_dir = OUTPUT_ROOT / output_dir_name
     raw_dir = output_dir / "raw_responses"
-    output_dir.mkdir(parents=True, exist_ok=True)
+    output_dir = output_dir.resolve()
+    protected = (ROOT / "benchmark_results").resolve()
+    if output_dir == protected or protected in output_dir.parents:
+        raise ValueError("Cannot write a replication into the retained benchmark_results.")
+    output_dir.mkdir(parents=True, exist_ok=False)
     raw_dir.mkdir(parents=True, exist_ok=True)
 
     upload_response = ""
@@ -389,7 +399,7 @@ def main() -> None:
             "quantisation": args.quantisation,
             "model_file": args.model_file,
             "model_file_size_mb": round(
-                (ROOT / "Jetson-Nano-RAG-LLM" / args.model_file).stat().st_size / (1024 * 1024),
+                (args.app_dir / args.model_file).stat().st_size / (1024 * 1024),
                 2,
             ),
             "runtime": "llama.cpp",

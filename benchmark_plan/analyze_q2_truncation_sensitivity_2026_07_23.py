@@ -5,6 +5,8 @@ from __future__ import annotations
 import csv
 from collections import defaultdict
 from pathlib import Path
+from reproduction_paths import output_directory
+OUTPUT = output_directory()
 from statistics import mean, median
 
 
@@ -12,8 +14,8 @@ PROJECT = Path(__file__).resolve().parents[1]
 RESULTS = PROJECT / "benchmark_results"
 QUALITY_FILE = RESULTS / "ai_second_rater_codex_gpt_C1_C6_2026-06-25.csv"
 FINISH_FILE = RESULTS / "full_benchmark_finish_reason_audit_C1_C6_2026-06-24.csv"
-DETAIL_FILE = RESULTS / "q2_truncation_sensitivity_per_question_2026-07-23.csv"
-REPORT_FILE = RESULTS / "q2_truncation_sensitivity_report_2026-07-23.md"
+DETAIL_FILE = OUTPUT / "q2_truncation_sensitivity_per_question_2026-07-23.csv"
+REPORT_FILE = OUTPUT / "q2_truncation_sensitivity_report_2026-07-23.md"
 
 Q2_CODE = "K8"
 Q4_CODE = "M4"

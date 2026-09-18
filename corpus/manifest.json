@@ -1,0 +1,38 @@
+[
+  {
+    "source_id": "D1",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "url": "https://arxiv.org/pdf/2005.11401",
+    "output": "D1_RAG_Lewis_2020.pdf",
+    "type": "downloaded_pdf",
+    "sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233",
+    "download_url": "https://arxiv.org/pdf/2005.11401v4"
+  },
+  {
+    "source_id": "D3",
+    "title": "NIST AI Risk Management Framework 1.0",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+    "output": "D3_NIST_AI_RMF_1_0.pdf",
+    "type": "downloaded_pdf",
+    "sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+    "download_url": null
+  },
+  {
+    "source_id": "D2",
+    "title": "llama.cpp README",
+    "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/master/README.md",
+    "output": "D2_llama_cpp_README.pdf",
+    "type": "generated_pdf_from_markdown",
+    "sha256": "310acba7608595e9e7026954c14e788b46a49d087fc72c4f3a74002a8f661135",
+    "download_url": null
+  },
+  {
+    "source_id": "D4",
+    "title": "ICO Guidance on AI and Data Protection - Selected Chapters",
+    "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/ ; https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-do-we-ensure-transparency-in-ai/ ; https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-do-we-ensure-lawfulness-in-ai/ ; https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/what-do-we-need-to-know-about-accuracy-and-statistical-accuracy/ ; https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-should-we-assess-security-and-data-minimisation-in-ai/",
+    "output": "D4_ICO_AI_Data_Protection_Guidance.pdf",
+    "type": "generated_pdf_from_html",
+    "sha256": "14561b8001cb6169463695fa274f51932d535130a2a5e001515586c928851379",
+    "download_url": null
+  }
+]

@@ -3,6 +3,9 @@ param(
     [ValidateSet("C1", "C2", "C3", "C4", "C5", "C6")]
     [string]$ModelConfigId,
 
+    [string]$AppDir = "",
+    [string]$LlamaDir = "",
+    [string]$CorpusDir = "",
     [int]$Repetitions = 3,
     [int]$Limit = 0,
     [int]$MaxTokens = 512,
@@ -13,13 +16,16 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$Root = "C:\Users\Crbd2\Desktop\Dissertation"
-$Repo = Join-Path $Root "Jetson-Nano-RAG-LLM"
+$Root = Split-Path -Parent $PSScriptRoot
+if (-not $AppDir) { $AppDir = Join-Path $Root ".runtime\rag-app" }
+if (-not $LlamaDir) { $LlamaDir = Join-Path $Root ".runtime\llama.cpp" }
+if (-not $CorpusDir) { $CorpusDir = Join-Path $Root "corpus" }
+$Repo = $AppDir
 $Python = Join-Path $Repo "venv\Scripts\python.exe"
-$LlamaDir = Join-Path $Root "llama.cpp"
+
 $LlamaServer = Join-Path $LlamaDir "llama-server.exe"
-$Runner = Join-Path $Root "dissertation_project\benchmark_plan\run_full_benchmark.py"
-$LogDir = Join-Path $Root "dissertation_project\benchmark_results\service_logs"
+$Runner = Join-Path $Root "benchmark_plan\run_full_benchmark.py"
+$LogDir = Join-Path $Root "replication_runs\service_logs"
 
 $Models = @{
     C1 = @{
@@ -103,7 +109,7 @@ $stamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $logFile = Join-Path $LogDir "llama_${ModelConfigId}_full_${stamp}.log"
 
 $llamaArgs = @(
-    "-m", $config.Path,
+    "-m", ('"' + $config.Path + '"'),
     "--port", "8080",
     "--ctx-size", "4096",
     "--parallel", "1",
@@ -111,7 +117,7 @@ $llamaArgs = @(
     "--no-cache-prompt",
     "--ctx-checkpoints", "0",
     "--seed", "$Seed",
-    "--log-file", $logFile
+    "--log-file", ('"' + $logFile + '"')
 )
 
 $llama = Start-Process `
@@ -148,6 +154,8 @@ try {
 
     $runnerArgs = @(
         $Runner,
+        "--app-dir", $Repo,
+        "--corpus-dir", $CorpusDir,
         "--model-config-id", $ModelConfigId,
         "--model-name", $config.Name,
         "--quantisation", $config.Quantisation,
@@ -169,6 +177,7 @@ try {
     }
 
     & $Python @runnerArgs
+    if ($LASTEXITCODE -ne 0) { throw "Benchmark runner failed with exit code $LASTEXITCODE" }
 }
 finally {
     if (Get-Process -Id $llama.Id -ErrorAction SilentlyContinue) {

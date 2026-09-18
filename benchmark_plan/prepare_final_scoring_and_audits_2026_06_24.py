@@ -5,13 +5,15 @@ import json
 import random
 from collections import Counter, defaultdict
 from pathlib import Path
+from reproduction_paths import output_directory
+OUTPUT = output_directory()
 from statistics import mean, median
 from typing import Any
 
 
-ROOT = Path(__file__).resolve().parents[2]
-QUESTION_SET = ROOT / "dissertation_project" / "benchmark_plan" / "question_set_template.csv"
-RESULTS_ROOT = ROOT / "dissertation_project" / "benchmark_results"
+ROOT = Path(__file__).resolve().parents[1]
+QUESTION_SET = ROOT / "benchmark_plan" / "question_set_template.csv"
+RESULTS_ROOT = ROOT / "benchmark_results"
 
 RUN_FOLDERS = {
     "C1": "full_benchmark_C1_20260624_211524",
@@ -282,15 +284,15 @@ def main() -> None:
     system_fields = list(system_rows[0])
     repetition_fields = list(repetition_rows[0])
 
-    blind_csv = RESULTS_ROOT / f"full_benchmark_blind_scoring_{OUTPUT_STEM}.csv"
-    blind_rep1_csv = RESULTS_ROOT / f"full_benchmark_blind_scoring_rep1_only_{OUTPUT_STEM}.csv"
-    key_csv = RESULTS_ROOT / f"full_benchmark_blind_model_key_{OUTPUT_STEM}.csv"
-    finish_csv = RESULTS_ROOT / f"full_benchmark_finish_reason_audit_{OUTPUT_STEM}.csv"
-    source_csv = RESULTS_ROOT / f"full_benchmark_source_consistency_audit_{OUTPUT_STEM}.csv"
-    source_summary_csv = RESULTS_ROOT / f"full_benchmark_source_consistency_summary_{OUTPUT_STEM}.csv"
-    memory_csv = RESULTS_ROOT / f"full_benchmark_memory_audit_{OUTPUT_STEM}.csv"
-    repetition_csv = RESULTS_ROOT / f"full_benchmark_repetition_consistency_{OUTPUT_STEM}.csv"
-    system_csv = RESULTS_ROOT / f"full_benchmark_system_summary_{OUTPUT_STEM}.csv"
+    blind_csv = OUTPUT / f"full_benchmark_blind_scoring_{OUTPUT_STEM}.csv"
+    blind_rep1_csv = OUTPUT / f"full_benchmark_blind_scoring_rep1_only_{OUTPUT_STEM}.csv"
+    key_csv = OUTPUT / f"full_benchmark_blind_model_key_{OUTPUT_STEM}.csv"
+    finish_csv = OUTPUT / f"full_benchmark_finish_reason_audit_{OUTPUT_STEM}.csv"
+    source_csv = OUTPUT / f"full_benchmark_source_consistency_audit_{OUTPUT_STEM}.csv"
+    source_summary_csv = OUTPUT / f"full_benchmark_source_consistency_summary_{OUTPUT_STEM}.csv"
+    memory_csv = OUTPUT / f"full_benchmark_memory_audit_{OUTPUT_STEM}.csv"
+    repetition_csv = OUTPUT / f"full_benchmark_repetition_consistency_{OUTPUT_STEM}.csv"
+    system_csv = OUTPUT / f"full_benchmark_system_summary_{OUTPUT_STEM}.csv"
 
     write_csv(blind_csv, blind_fields, blind_rows)
     write_csv(
@@ -340,7 +342,7 @@ def main() -> None:
     )
     total_repetition_groups = len(repetition_rows)
 
-    summary_md = RESULTS_ROOT / f"full_benchmark_audit_summary_{OUTPUT_STEM}.md"
+    summary_md = OUTPUT / f"full_benchmark_audit_summary_{OUTPUT_STEM}.md"
     lines = [
         "# Final C1-C6 Benchmark Audit Summary",
         "",

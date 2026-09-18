@@ -1,0 +1,9 @@
+# Retained evidence must remain byte-identical on Windows and Linux clones.
+benchmark_results/** -text
+benchmark_plan/question_set_template.csv -text
+provenance/** text eol=lf
+corpus/** -text
+corpus/*.md text eol=lf
+corpus/*.json text eol=lf
+corpus/*.txt text eol=lf
+*.pdf binary

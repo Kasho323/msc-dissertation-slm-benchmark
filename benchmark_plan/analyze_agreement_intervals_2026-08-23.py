@@ -39,11 +39,12 @@ import math
 import random
 import statistics
 from pathlib import Path
+from reproduction_paths import output_directory
 
 RESULTS = Path(__file__).resolve().parents[1] / "benchmark_results"
 AI_SCORES = RESULTS / "ai_second_rater_codex_gpt_C1_C6_2026-06-25.csv"
 HUMAN_SCORES = RESULTS / "human_independent_CLEAN_30_HUMAN_SCORED_2026-07-09.csv"
-OUT = RESULTS / "agreement_intervals_report_2026-08-23.md"
+OUT = output_directory() / "agreement_intervals_report_2026-08-23.md"
 
 SEED = 20260821
 RESAMPLES = 20000

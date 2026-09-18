@@ -11,6 +11,8 @@ Outputs (in benchmark_results/):
 """
 import csv
 from pathlib import Path
+from reproduction_paths import output_directory
+OUTPUT = output_directory()
 from collections import defaultdict
 import matplotlib
 matplotlib.use("Agg")
@@ -20,8 +22,8 @@ BASE = Path(__file__).resolve().parent.parent / "benchmark_results"
 AI = BASE / "ai_second_rater_codex_gpt_C1_C6_2026-06-25.csv"
 KEY = BASE / "full_benchmark_blind_model_key_C1_C6_2026-06-24.csv"
 SYS = BASE / "full_benchmark_system_summary_C1_C6_2026-06-24.csv"
-OUT_MD = BASE / "final_results_tables_2026-07-09.md"
-OUT_CSV = BASE / "final_quality_by_config_2026-07-09.csv"
+OUT_MD = OUTPUT / "final_results_tables_2026-07-09.md"
+OUT_CSV = OUTPUT / "final_quality_by_config_2026-07-09.csv"
 
 DIMS = ["relevance","correctness","faithfulness_to_source",
         "completeness","hallucination_risk","source_grounding"]
@@ -128,7 +130,7 @@ def scatter(xkey, xlabel, fname, invert=False):
     ax.set_xlabel(xlabel); ax.set_ylabel("Overall answer quality (0-5)")
     ax.set_title("Quality vs "+xlabel); ax.grid(True, alpha=.3)
     if invert: ax.invert_xaxis()
-    fig.tight_layout(); fig.savefig(BASE/fname, dpi=150); plt.close(fig)
+    fig.tight_layout(); fig.savefig(OUTPUT/fname, dpi=150); plt.close(fig)
 
 scatter("mean_tokens_per_second","Throughput (tokens/s)","fig_quality_vs_speed_2026-07-09.png")
 scatter("mean_observed_rss_mb","Memory RSS (MB)","fig_quality_vs_memory_2026-07-09.png", invert=True)

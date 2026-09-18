@@ -12,6 +12,14 @@
 !/.gitignore
 !/README.md
 !/requirements.txt
+!/requirements-analysis.txt
+!/requirements-experiment.txt
+!/reproduce.py
+!/reproduction/
+!/provenance/
+!/corpus/
+!/.gitattributes
+!/.github/
 !/benchmark_plan/
 !/benchmark_results/
 !/literature/
@@ -28,6 +36,11 @@
 __pycache__/
 *.pyc
 *.gguf
+.env
+.env.*
+*.pem
+*.key
+/corpus/D1_RAG_Lewis_2020.pdf
 ~$*
 
 # working backups, not part of the record

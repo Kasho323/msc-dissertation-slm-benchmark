@@ -6,15 +6,16 @@ Blind model key is NOT read.
 """
 import csv
 from pathlib import Path
+from reproduction_paths import output_directory
 from collections import Counter, defaultdict
 from scipy.stats import spearmanr
 from sklearn.metrics import cohen_kappa_score
 
 BASE = Path(__file__).resolve().parent.parent / "benchmark_results"
-HUMAN = Path(r"C:\Users\Crbd2\Downloads\human_independent_CLEAN_30_2026-07-07_HUMAN_SCORED.csv")
+HUMAN = BASE / "human_independent_CLEAN_30_HUMAN_SCORED_2026-07-09.csv"
 HUMAN_ARCHIVE = BASE / "human_independent_CLEAN_30_HUMAN_SCORED_2026-07-09.csv"
 AI = BASE / "ai_second_rater_codex_gpt_C1_C6_2026-06-25.csv"
-OUT = BASE / "clean30_agreement_report_2026-07-09.md"
+OUT = output_directory() / "clean30_agreement_report_2026-07-09.md"
 
 DIMS = ["relevance","correctness","faithfulness_to_source",
         "completeness","hallucination_risk","source_grounding"]
@@ -101,7 +102,7 @@ rep.append("")
 rep.append("Guide: Spearman >0.7 strong, 0.5-0.7 moderate. Weighted kappa >0.6 substantial, 0.4-0.6 moderate.")
 
 OUT.write_text("\n".join(rep), encoding="utf-8")
-HUMAN_ARCHIVE.write_bytes(HUMAN.read_bytes())
+# The archived human scores are inputs, never overwritten during reproduction.
 print("problems:", len(problems))
 print("overall Spearman rho:", round(rho,3), "MAD:", round(mad,3))
 print("report:", OUT.name)

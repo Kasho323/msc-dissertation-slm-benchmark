@@ -1,13 +1,34 @@
 # Local Small Language Models: Dissertation Reproduction Repository
 
-Supporting code and evidence for *Evaluating Local Small Language Models for an
-On-Device AI Assistant with Privacy-Preserving Question Answering*, MSc Applied
-Artificial Intelligence, ES9U9-60, WMG, University of Warwick.
+Supporting code and retained evidence for *Evaluating Local Small Language Models for an
+On-Device AI Assistant with Privacy-Preserving Question Answering*.
 
 This repository is prepared for public reviewer access. It contains the frozen
 question set, benchmark harness, raw observations, retained ratings, analysis
 scripts and instructions to reproduce preprocessing and run new experiments.
 The submitted dissertation and personal university records are not published here.
+
+[Reproduce statistics](#start-here-reproduce-the-reported-numbers) · [Reported checks](#expected-checks) · [New experiments](#reproduce-preprocessing-and-run-new-experiments) · [Evidence map](#repository-map)
+
+## Choose a review path
+
+| Your goal | Start here | What it establishes |
+|---|---|---|
+| Inspect the research design | [Frozen protocol](benchmark_plan/frozen_protocol_2026-06-19.md) and [protocol amendment](benchmark_plan/protocol_amendment_2026-06-24.md) | The recorded experimental choices and subsequent amendment |
+| Verify retained numerical results | `python reproduce.py` | Integrity and computations from the retained evidence, without model calls |
+| Inspect assumptions and sensitivity | [Validation notes](reproduction/VALIDATION.md) and [final results](benchmark_results/final_results_tables_2026-07-09.md) | Interpretation boundaries, agreement checks, and sensitivity findings |
+| Run fresh model generations | [Experiment guide](reproduction/EXPERIMENTS.md) | Setup for a new run with separately recorded measurements |
+
+```mermaid
+flowchart LR
+    Protocol[Frozen protocol and questions] --> Runs[Retained model responses]
+    Runs --> Ratings[Retained ratings]
+    Ratings --> Analysis[Reproduction and sensitivity analysis]
+    Provenance[Checksums and provenance] --> Analysis
+    Analysis --> Tables[Reported tables and validation]
+```
+
+The experimental records and reported scores are preserved. This documentation update improves navigation; it does not constitute a new experiment or a fresh validation run.
 
 ## Start here: reproduce the reported numbers
 
